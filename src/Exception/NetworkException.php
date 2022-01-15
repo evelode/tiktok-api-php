@@ -1,6 +1,6 @@
 <?php
 
-namespace NextpostTechAPI\Exception;
+namespace TikTokRESTAPI\Exception;
 
 /**
  * Used for endpoint calls that fail with networking error, but only

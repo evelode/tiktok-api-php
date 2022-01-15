@@ -1,6 +1,6 @@
 <?php
 
-namespace NextpostTechAPI;
+namespace TikTokRESTAPI;
 
 use Psr\Http\Message\ResponseInterface as HttpResponseInterface;
 use RuntimeException;

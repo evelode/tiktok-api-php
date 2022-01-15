@@ -1,6 +1,6 @@
 <?php
 
-namespace NextpostTechAPI\Exception;
+namespace TikTokRESTAPI\Exception;
 
 /**
  * Used for endpoint calls that fail with HTTP code "400 Bad Request", but only

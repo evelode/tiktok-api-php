@@ -1,8 +1,8 @@
 <?php
 
-namespace NextpostTechAPI\Response;
+namespace TikTokRESTAPI\Response;
 
-use NextpostTechAPI\Response;
+use TikTokRESTAPI\Response;
 
 /**
  * APIResponse.

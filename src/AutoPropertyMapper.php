@@ -1,6 +1,6 @@
 <?php
 
-namespace NextpostTechAPI;
+namespace TikTokRESTAPI;
 
 use LazyJsonMapper\LazyJsonMapper;
 

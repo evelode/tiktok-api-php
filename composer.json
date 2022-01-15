@@ -25,7 +25,7 @@
     "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "NextpostTechAPI\\TikTok\\": "src/"
+            "TikTokRESTAPI\\": "src/"
         }
     }
 }
