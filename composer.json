@@ -1,6 +1,42 @@
 {
     "name": "nextpost-tech/tiktok-api-php",
     "description": "TikTok REST API wrapper for PHP",
+    "homepage": "https://github.com/Nextpost-tech/tiktok-api-php",
+    "type": "library",
+    "require": {
+        "php": ">=7.0",
+        "guzzlehttp/guzzle": "^6.2",
+        "ext-curl": "*",
+        "ext-mbstring": "*",
+        "ext-gd": "*",
+        "ext-exif": "*",
+        "ext-zlib": "*",
+        "ext-bcmath": "*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Nextpost.tech",
+            "email": "contact@nextpost.tech",
+            "homepage": "https://nextpost.tech",
+            "role": "Founder"
+        },
+        {
+            "name": "Sergey Komlev",
+            "email": "sk@graftype.com",
+            "homepage": "https://github.com/sergeykomlev",
+            "role": "Web Developer"
+        }
+    ],
+    "suggest": {
+        "ext-curl": "Required for CURL handler support"
+    },
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "TikTokRESTAPI\\": "src/"
+        }
+    },
     "keywords": [
         "php",
         "php7",
@@ -22,32 +58,5 @@
         "xkhonos",
         "xtyhon",
         "xladon"
-    ],
-    "homepage": "https://github.com/Nextpost-tech/tiktok-api-php",
-    "type": "library",
-    "require": {
-        "php": ">=7.0",
-        "guzzlehttp/guzzle": "^6.2",
-        "ext-curl": "*",
-        "ext-mbstring": "*",
-        "ext-gd": "*",
-        "ext-exif": "*",
-        "ext-zlib": "*",
-        "ext-bcmath": "*"
-    },
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "nextpost-tech",
-            "email": "contact@nextpost.tech",
-            "homepage": "https://nextpost.tech",
-            "role": "Developer"
-        }
-    ],
-    "minimum-stability": "dev",
-    "autoload": {
-        "psr-4": {
-            "TikTokRESTAPI\\": "src/"
-        }
-    }
+    ]
 }
