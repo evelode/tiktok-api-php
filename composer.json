@@ -1,6 +1,28 @@
 {
     "name": "nextpost-tech/tiktok-api-php",
     "description": "TikTok REST API wrapper for PHP",
+    "keywords": [
+        "php",
+        "php7",
+        "rest-api",
+        "php-library",
+        "php-fpm", 
+        "scrapper", 
+        "php8",
+        "tiktok",
+        "tiktok-scraper",
+        "tiktok-api",
+        "tiktokapi",
+        "tiktok-automation",
+        "tiktok-downloader", 
+        "tiktok-signature", 
+        "ttencrypt", 
+        "nowatermark", 
+        "xgorgon",
+        "xkhonos",
+        "xtyhon",
+        "xladon"
+    ],
     "homepage": "https://github.com/Nextpost-tech/tiktok-api-php",
     "type": "library",
     "require": {
