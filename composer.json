@@ -1,7 +1,7 @@
 {
     "name": "nextpost-tech/tiktok-api-php",
     "description": "TikTok REST API wrapper for PHP",
-    "homepage": "https://github.com/Nextpost-tech/tiktok-api-php",
+    "homepage": "https://github.com/nextpost-tech/tiktok-api-php",
     "type": "library",
     "require": {
         "php": ">=7.0",
@@ -51,5 +51,9 @@
         "xkhonos",
         "xtyhon",
         "xladon"
-    ]
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/nextpost-tech/tiktok-api-php.git"
+    }
 }
