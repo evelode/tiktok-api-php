@@ -7,11 +7,11 @@ Try our [Trial license plan](https://nextpost.tech/downloads/tiktok-rest-api/) a
 
 # Navigation
 - [Installation](#installation)
-- Authentication
-- Rate Limits
-- License
-- Support
-- Endpoints
+- [Authentication](#authentication)
+- [Rate Limits](#rate-limits)
+- [License](#license)
+- [Support](#support)
+- [Endpoints](#endpoints)
 
 # Installation
 `composer require nextpost-tech/tiktok-api-php`
@@ -27,11 +27,13 @@ The developer `license_key` gives the right to use all methods within the TikTok
 Every license plan also have a requests per minute rate limit. More info about license plans you can check [here](https://nextpost.tech/downloads/tiktok-rest-api/).
 
 # License
-You can buy a valid license for TikTok REST API by Nextpost.tech [here](https://nextpost.tech/downloads/tiktok-rest-api/). This license based on period of usage and requests count.
+You can buy a valid `license_key` for TikTok REST API by Nextpost.tech [here](https://nextpost.tech/downloads/tiktok-rest-api/). This license based on period of usage and requests count.
 
 **Demo Access**: We offer a Trial access with limited requests count, if you want to test REST API you can get license key [here](https://nextpost.tech/downloads/tiktok-rest-api/). Trial license can't be renewed, but can be upgraded to another licenses types.
 
 # Support
-This is a developer's portal for TikTok REST API by Nextpost.tech and should not be used for support. Please contact us via [website chat](https://nextpost.tech/#chatraChatExpanded) if you need to submit a support request.
+This is a developer's portal for TikTok REST API wrapper for PHP by [Nextpost.tech](https://nextpost.tech) and should not be used for support. Please contact us via [website chat](https://nextpost.tech/#chatraChatExpanded) if you need to submit a support request.
 
 # Endpoints
+
+

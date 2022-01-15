@@ -1,0 +1,30 @@
+{
+    "name": "nextpost-tech/tiktok-api-php",
+    "description": "TikTok REST API wrapper for PHP",
+    "homepage": "https://github.com/Nextpost-tech/tiktok-api-php",
+    "type": "library",
+    "require": {
+        "php": ">=7.0",
+        "guzzlehttp/guzzle": "^6.2",
+        "ext-curl": "*",
+        "ext-mbstring": "*",
+        "ext-gd": "*",
+        "ext-exif": "*",
+        "ext-zlib": "*",
+        "ext-bcmath": "*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "nextpost-tech",
+            "email": "contact@nextpost.tech",
+            "homepage": "https://nextpost.tech",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "NextpostTech\\TikTokAPI\\TikTok\\": "src/"
+        }
+    }
+}
