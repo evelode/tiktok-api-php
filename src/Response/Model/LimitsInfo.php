@@ -1,8 +1,8 @@
 <?php
 
-namespace NextpostTech\TikTokAPI\Response\Model;
+namespace NextpostTechAPI\Response\Model;
 
-use NextpostTech\TikTokAPI\AutoPropertyMapper;
+use NextpostTechAPI\AutoPropertyMapper;
 
 /**
  * LimitsInfo.

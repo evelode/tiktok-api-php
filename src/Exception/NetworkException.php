@@ -1,6 +1,6 @@
 <?php
 
-namespace NextpostTech\TikTokAPI\Exception;
+namespace NextpostTechAPI\Exception;
 
 /**
  * Used for endpoint calls that fail with networking error, but only

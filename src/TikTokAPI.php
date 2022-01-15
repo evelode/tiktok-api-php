@@ -1,5 +1,5 @@
 <?php
-namespace NextpostTech\TikTokAPI;
+namespace NextpostTechAPI;
 
 /**
  * TikTok REST API wrapper for PHP
@@ -27,14 +27,14 @@ class TikTok
      * @param bool  $debug         Enables debug mode.
      * @param array $licenseKey    License key for authentication on REST API.
      * 
-     * @throws \NextpostTech\TikTokAPI\Exception\TikTokException
+     * @throws \NextpostTechAPI\Exception\TikTokException
      */
     public function __construct(
         $licenseKey = '',
         $debug = false) 
     {
         if (empty($licenseKey)) {
-            throw new \NextpostTech\TikTokAPI\Exception\TikTokException("License key can't be empty.");
+            throw new \NextpostTechAPI\Exception\TikTokException("License key can't be empty.");
         }
 
         $this->licenseKey = $licenseKey;
@@ -47,12 +47,12 @@ class TikTok
      * @param string $video_url TikTok video URL.
      * @param string $proxy     Your own proxy in for this request, this helps prevent your IP from getting banned. Proxy should match following pattern: http://ip:port OR http://username:password@ip:port.
      * 
-     * @throws \NextpostTech\TikTokAPI\Exception\TikTokException
-     * @throws \NextpostTech\TikTokAPI\Exception\BadRequestException
-     * @throws \NextpostTech\TikTokAPI\Exception\ForbiddenException
-     * @throws \NextpostTech\TikTokAPI\Exception\NotFoundException
-     * @throws \NextpostTech\TikTokAPI\Exception\ProxyAuthException
-     * @throws \NextpostTech\TikTokAPI\Exception\TooManyRequestsException
+     * @throws \NextpostTechAPI\Exception\TikTokException
+     * @throws \NextpostTechAPI\Exception\BadRequestException
+     * @throws \NextpostTechAPI\Exception\ForbiddenException
+     * @throws \NextpostTechAPI\Exception\NotFoundException
+     * @throws \NextpostTechAPI\Exception\ProxyAuthException
+     * @throws \NextpostTechAPI\Exception\TooManyRequestsException
      * 
      * @throws \GuzzleHttp\Exception\ConnectException
      * @throws \GuzzleHttp\Exception\ClientException
@@ -79,18 +79,18 @@ class TikTok
      *
      * @param string $endpoint
      * 
-     * @throws \NextpostTech\TikTokAPI\Exception\TikTokException
-     * @throws \NextpostTech\TikTokAPI\Exception\BadRequestException
-     * @throws \NextpostTech\TikTokAPI\Exception\ForbiddenException
-     * @throws \NextpostTech\TikTokAPI\Exception\NotFoundException
-     * @throws \NextpostTech\TikTokAPI\Exception\ProxyAuthException
-     * @throws \NextpostTech\TikTokAPI\Exception\TooManyRequestsException
+     * @throws \NextpostTechAPI\Exception\TikTokException
+     * @throws \NextpostTechAPI\Exception\BadRequestException
+     * @throws \NextpostTechAPI\Exception\ForbiddenException
+     * @throws \NextpostTechAPI\Exception\NotFoundException
+     * @throws \NextpostTechAPI\Exception\ProxyAuthException
+     * @throws \NextpostTechAPI\Exception\TooManyRequestsException
      * 
      * @throws \GuzzleHttp\Exception\ConnectException
      * @throws \GuzzleHttp\Exception\ClientException
      * @throws \GuzzleHttp\Exception\ServerException
      *
-     * @return \NextpostTech\Request
+     * @return \NextpostTechAPI\Request
      */
     public function request(
         $endpoint = '')

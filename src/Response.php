@@ -1,6 +1,6 @@
 <?php
 
-namespace NextpostTech\TikTokAPI;
+namespace NextpostTechAPI;
 
 use Psr\Http\Message\ResponseInterface as HttpResponseInterface;
 use RuntimeException;

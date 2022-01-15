@@ -1,6 +1,6 @@
 <?php
 
-namespace NextpostTech\TikTokAPI;
+namespace NextpostTechAPI;
 
 /**
  * Bridge between client calls and TikTok REST API, the object mapper & response objects.
@@ -16,7 +16,7 @@ class Request
     /**
      * The TikTok class instance we belong to.
      *
-     * @var \NextpostTech\TikTokAPI\TikTok
+     * @var NextpostTechAPI\TikTok
      */
     protected $_parent;
 
@@ -65,8 +65,8 @@ class Request
     /**
      * Constructor.
      *
-     * @param TikTok    $parent
-     * @param string    $url
+     * @param NextpostTechAPI\TikTok    $parent
+     * @param string                    $url
      */
     public function __construct(
         $parent,
@@ -297,12 +297,12 @@ class Request
      *
      * @param bool $assoc When FALSE, decode to object instead of associative array.
      * 
-     * @throws \NextpostTech\TikTokAPI\Exception\TikTokException
-     * @throws \NextpostTech\TikTokAPI\Exception\BadRequestException
-     * @throws \NextpostTech\TikTokAPI\Exception\ForbiddenException
-     * @throws \NextpostTech\TikTokAPI\Exception\NotFoundException
-     * @throws \NextpostTech\TikTokAPI\Exception\ProxyAuthException
-     * @throws \NextpostTech\TikTokAPI\Exception\TooManyRequestsException
+     * @throws \NextpostTechAPI\Exception\TikTokException
+     * @throws \NextpostTechAPI\Exception\BadRequestException
+     * @throws \NextpostTechAPI\Exception\ForbiddenException
+     * @throws \NextpostTechAPI\Exception\NotFoundException
+     * @throws \NextpostTechAPI\Exception\ProxyAuthException
+     * @throws \NextpostTechAPI\Exception\TooManyRequestsException
      * 
      * @throws \GuzzleHttp\Exception\ConnectException
      * @throws \GuzzleHttp\Exception\ClientException
@@ -374,20 +374,20 @@ class Request
 
             return $json;
         } catch (\GuzzleHttp\Exception\ConnectException $e) {
-            throw new \NextpostTech\TikTokAPI\Exception\NetworkException($e);
+            throw new \NextpostTechAPI\Exception\NetworkException($e);
         } catch (\GuzzleHttp\Exception\ServerException $e) {
-            throw new \NextpostTech\TikTokAPI\Exception\TikTokException($e);
+            throw new \NextpostTechAPI\Exception\TikTokException($e);
         } catch (\Exception $e) {
             if ($e->getCode() == 400) {
-                throw new \NextpostTech\TikTokAPI\Exception\BadRequestException($e);
+                throw new \NextpostTechAPI\Exception\BadRequestException($e);
             } elseif ($e->getCode() == 403) {
-                throw new \NextpostTech\TikTokAPI\Exception\ForbiddenException($e);
+                throw new \NextpostTechAPI\Exception\ForbiddenException($e);
             } elseif ($e->getCode() == 404) {
-                throw new \NextpostTech\TikTokAPI\Exception\NotFoundException($e);
+                throw new \NextpostTechAPI\Exception\NotFoundException($e);
             } elseif ($e->getCode() == 407) {
-                throw new \NextpostTech\TikTokAPI\Exception\ProxyAuthException($e);
+                throw new \NextpostTechAPI\Exception\ProxyAuthException($e);
             } elseif ($e->getCode() == 429) {
-                throw new \NextpostTech\TikTokAPI\Exception\TooManyRequestsException($e);
+                throw new \NextpostTechAPI\Exception\TooManyRequestsException($e);
             }
             throw $e;
         }

@@ -1,8 +1,8 @@
 <?php
 
-namespace NextpostTech\TikTokAPI\Exception;
+namespace NextpostTechAPI\Exception;
 
-use Nextpost\TikTokAPI\Response;
+use NextpostTechAPI\Response;
 
 /**
  * The core exception that ALL other library exceptions derive from.

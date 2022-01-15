@@ -1,6 +1,6 @@
 <?php
 
-namespace NextpostTech;
+namespace NextpostTechAPI;
 
 use LazyJsonMapper\LazyJsonMapper;
 

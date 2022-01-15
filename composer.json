@@ -22,9 +22,10 @@
             "role": "Developer"
         }
     ],
+    "minimum-stability": "dev",
     "autoload": {
         "psr-4": {
-            "NextpostTech\\TikTokAPI\\TikTok\\": "src/"
+            "NextpostTechAPI\\TikTok\\": "src/"
         }
     }
 }
