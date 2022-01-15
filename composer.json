@@ -23,7 +23,7 @@
         }
     ],
     "suggest": {
-        "ext-curl": "Required for CURL handler support"
+        "ext-curl": "Required for CURL handler support in requests"
     },
     "autoload": {
         "psr-4": {
