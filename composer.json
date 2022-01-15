@@ -19,13 +19,7 @@
             "name": "Nextpost.tech",
             "email": "contact@nextpost.tech",
             "homepage": "https://nextpost.tech",
-            "role": "Founder"
-        },
-        {
-            "name": "Sergey Komlev",
-            "email": "sk@graftype.com",
-            "homepage": "https://github.com/sergeykomlev",
-            "role": "Web Developer"
+            "role": "Developer"
         }
     ],
     "suggest": {
