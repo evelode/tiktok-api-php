@@ -14,7 +14,43 @@ Try our [Trial license plan](https://nextpost.tech/downloads/tiktok-rest-api/) a
 - [Endpoints](#endpoints)
 
 # Installation
-`composer require nextpost-tech/tiktok-api-php`
+
+If you want to install library **to exsiting project** using Composer:
+
+```php
+cd /path-to-app/
+composer require nextpost-tech/tiktok-api-php
+```
+
+- `/path-to-app/` project folder with existing `composer.json` file 
+
+If you want to install library **to new project** using Composer:
+
+- If Composer not installed on your server/local machine, please follow this [installation guide](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-composer-on-ubuntu-20-04)
+
+- Create blank file named as `composer.json` in project folder
+
+- Add following content to this file:
+
+```php
+{
+    "require": {
+        "nextpost-tech/tiktok-api-php": "1.0.0"
+    },
+    "repositories": [
+        {
+           "type": "git",
+           "url": "https://github.com/nextpost-tech/tiktok-api-php.git"
+        }
+    ]
+}
+```
+
+- After that install library using the following command:
+
+```php
+composer update
+```
 
 # Authentication
 Authentication occurs by passing the license key value through a query string named `license_key`, which can be purchased [here](https://nextpost.tech/downloads/tiktok-rest-api/).
