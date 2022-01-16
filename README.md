@@ -49,8 +49,11 @@ If you want to install library **to new project** using Composer:
 - After that install library using the following command:
 
 ```php
+cd /path-to-app/
 composer update
 ```
+
+- `/path-to-app/` project folder with existing `composer.json` file 
 
 # Authentication
 Authentication occurs by passing the license key value through a query string named `license_key`, which can be purchased [here](https://nextpost.tech/downloads/tiktok-rest-api/).
