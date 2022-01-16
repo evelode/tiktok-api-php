@@ -429,7 +429,7 @@ class Request
 
         $method = $this->getPosts() === null ? 'GET' : 'POST';
         if ($this->getParams() !== null) {
-            echo "\033[1;33;m".strtoupper($method).": \033[0m".$this->getUrl().'?'.urldecode(http_build_query($this->getParams()))."\n\n";
+            echo "\033[1;33;m".strtoupper($method).": \033[0m".$this->getUrl().'?'.urldecode(http_build_query($this->getParams()))."\n";
         } else {
             echo "\033[1;33;m".strtoupper($method).": \033[0m".$this->getUrl()."\n";
         }
