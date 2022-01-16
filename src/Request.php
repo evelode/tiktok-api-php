@@ -372,19 +372,19 @@ class Request
 
             return $json;
         } catch (\GuzzleHttp\Exception\ConnectException $e) {
-            $msg = getExceptionMessage($e);
+            $msg = $this->getExceptionMessage($e);
             if (!empty($msg)) {
                 throw new \TikTokRESTAPI\Exception\NetworkException($msg);
             }
             throw new \TikTokRESTAPI\Exception\NetworkException("Couldn't establish connection with REST API server.");
         } catch (\GuzzleHttp\Exception\ServerException $e) {
-            $msg = getExceptionMessage($e);
+            $msg = $this->getExceptionMessage($e);
             if (!empty($msg)) {
                 throw new \TikTokRESTAPI\Exception\ServerException($msg);
             }
             throw new \TikTokRESTAPI\Exception\ServerException("Something when wrong on REST API server.");
         } catch (\Exception $e) {
-            $msg = getExceptionMessage($e);
+            $msg = $this->getExceptionMessage($e);
             if (!empty($msg)) {
                 if ($e->getCode() == 400) {
                     throw new \TikTokRESTAPI\Exception\BadRequestException($msg);
