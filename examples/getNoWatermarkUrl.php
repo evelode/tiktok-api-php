@@ -33,7 +33,7 @@ try {
     // Couldn't establish connection with REST API server
     echo sprintf('TikTok REST API NetworkException: %s', $e->getMessage()) . "\n\n";
 } catch (TikTokRESTAPI\Exception\ServerException $e) {
-    // Invalid argument, missing or invalid data in request
+    // Something when wrong on REST API server
     echo sprintf('TikTok REST API Server Exception: %s', $e->getMessage()) . "\n\n";
 } catch (TikTokRESTAPI\Exception\TikTokException $e) {
     // Invalid argument, missing or invalid data in request
