@@ -1,4 +1,9 @@
 # TikTok REST API wrapper for PHP
+
+![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/nextpost-tech/tiktok-api-php)
+![GitHub last commit](https://img.shields.io/github/last-commit/nextpost-tech/tiktok-api-php)
+![GitHub](https://img.shields.io/github/license/nextpost-tech/tiktok-api-php)
+
 Easy to use [TikTok REST API by Nextpost.tech](https://nextpost.tech/downloads/tiktok-rest-api/). Get TikTok public user data, feed, trends, hashtags, music, and non watermarked TikTok videos.
 
 Using our detailed multipurpose [API Documentation](https://nextpost.tech/tiktok-rest-api-documentation/) and following TikTok REST API wrapper for PHP you can explore and reach all TikTok REST API endpoints with ease. 
