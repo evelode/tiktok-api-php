@@ -425,20 +425,21 @@ class Request
      */
     public function pre_debug()
     {
-        echo "\033[1;35;m[REQUEST]\n\n";
+        echo "\033[1;35;m[REQUEST]\n";
 
         $method = $this->getPosts() === null ? 'GET' : 'POST';
         if ($this->getParams() !== null) {
             echo "\033[1;33;m".strtoupper($method).": \033[0m".$this->getUrl().'?'.urldecode(http_build_query($this->getParams()))."\n\n";
         } else {
-            echo "\033[1;33;m".strtoupper($method).": \033[0m".$this->getUrl()."\n\n";
+            echo "\033[1;33;m".strtoupper($method).": \033[0m".$this->getUrl()."\n";
         }
 
+        echo "\033[1;35;mHEADERS:\n";
         foreach ($this->getHeaders() as $index => $value) {
             echo $value . "\n";
         }
 
-        echo "\n\033[1;35;mEncoding: \033[0m".$this->getEncoding()."\n\n";
+        echo "\033[1;35;mENCODING: \033[0m".$this->getEncoding()."\n";
 
         if ($this->getPosts() !== null) {
             echo "\033[1;35;mDATA: \033[0m".$this->getBody()."\n\n";
@@ -451,7 +452,7 @@ class Request
     public function post_debug(
         $response)
     {
-        echo "\033[1;35;m[RESPONSE]\n\n";
+        echo "\033[1;35;m[RESPONSE]\n";
         echo "\033[1;32;mSTATUS: \033[0m".$response->getStatusCode()."\n";
         if (!empty($response->getBody())) {
             echo "\033[1;32;mRESPONSE: \033[0m".$response->getBody()->getContents()."\n\n";
