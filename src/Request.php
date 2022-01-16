@@ -411,7 +411,7 @@ class Request
     {
         if ($e->hasResponse()) {
             $resp = $e->getResponse();
-            $rawResponse = (string) $response->getBody();
+            $rawResponse = (string) $resp->getBody();
             $json = $this->api_body_decode($rawResponse, true);
             if (!empty($json->message)) {
                 return $json->message;
