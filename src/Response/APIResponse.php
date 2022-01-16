@@ -11,25 +11,25 @@ use TikTokRESTAPI\Response;
  * @method string           getMessage()
  * @method Model\LimitsInfo getLimitsInfo()
  * @method bool             getRateLimitReached()
- * @method string           getTikTok()
+ * @method mixed            getTiktok()
  * @method string           getTimestamp()
  * @method bool             isStatus()
  * @method bool             isMessage()
  * @method bool             isLimitsInfo()
  * @method bool             isRateLimitReached()
- * @method bool             isTikTok()
+ * @method bool             isTiktok()
  * @method bool             isTimestamp()
  * @method $this            setStatus(string $value)
  * @method $this            setMessage(string $value)
  * @method $this            setLimitsInfo(Model\LimitsInfo $value)
  * @method $this            setRateLimitReached(bool $value)
- * @method $this            setTikTok(string $value)
+ * @method $this            setTiktok(mixed $value)
  * @method $this            setTimestamp(string $value)
  * @method $this            unsetStatus()
  * @method $this            unsetMessage()
  * @method $this            unsetLimitsInfo()
  * @method $this            unsetRateLimitReached()
- * @method $this            unsetTikTok()
+ * @method $this            unsetTiktok()
  * @method $this            unsetTimestamp()
  */
 class APIResponse extends Response
@@ -39,7 +39,7 @@ class APIResponse extends Response
         'message'                       => 'string',
         'limits_info'                   => 'Model\LimitsInfo[]',
         'rate_limit_reached'            => 'bool',
-        'tiktok'                        => 'string',
+        'tiktok'                        => '',
         'timestamp'                     => 'string',
     ];
 }
