@@ -96,7 +96,7 @@ class TikTok
             throw new TikTokException("Empty video ID sent to TikTok REST API.");
         }
 
-        $request = $this->request('getNoWatermarkUrl')
+        $request = $this->request('getNoWatermarkUrlByID')
             ->addParam('license_key', $this->licenseKey)
             ->addParam('video_id', $video_id);
         
