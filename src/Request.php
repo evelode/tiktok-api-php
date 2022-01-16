@@ -2,6 +2,15 @@
 
 namespace TikTokRESTAPI;
 
+use TikTokRESTAPI\Exception\TikTokException;
+use TikTokRESTAPI\Exception\NetworkException;
+use TikTokRESTAPI\Exception\BadRequestException;
+use TikTokRESTAPI\Exception\ForbiddenException;
+use TikTokRESTAPI\Exception\NotFoundException;
+use TikTokRESTAPI\Exception\ProxyAuthException;
+use TikTokRESTAPI\Exception\TooManyRequestsException;
+use LazyJsonMapper\Exception\LazyJsonMapperException;
+
 /**
  * Bridge between client calls and TikTok REST API, the object mapper & response objects.
  */
@@ -298,7 +307,6 @@ class Request
      * @param bool $assoc When FALSE, decode to object instead of associative array.
      * 
      * @throws \TikTokRESTAPI\Exception\TikTokException
-     * @throws \TikTokRESTAPI\Exception\ServerException
      * @throws \TikTokRESTAPI\Exception\BadRequestException
      * @throws \TikTokRESTAPI\Exception\ForbiddenException
      * @throws \TikTokRESTAPI\Exception\NotFoundException
@@ -310,114 +318,138 @@ class Request
      */
     public function getResponse()
     {
-        try {
-            $curl_options = [];
+        $curl_options = [];
 
-            if ($this->getParams() !== null) {
-                $url = $this->getUrl().'?'.urldecode(http_build_query($this->getParams()));
+        if ($this->getParams() !== null) {
+            $url = $this->getUrl().'?'.urldecode(http_build_query($this->getParams()));
+        } else {
+            $url = $this->getUrl();
+        }
+
+        if ($this->getPosts() !== null) {
+            if ($this->getEncoding() === 'json') {
+                $this->addHeader('content-type', 'application/json; charset=utf-8');
             } else {
-                $url = $this->getUrl();
+                $this->addHeader('content-type', 'application/x-www-form-urlencoded; charset=utf-8');
             }
+            $curl_options[CURLOPT_POST] = true;
+            $curl_options[CURLOPT_HTTPHEADER] = $this->getHeaders();
+            $curl_options[CURLOPT_POSTFIELDS] = $this->getBody();
+            $method = "POST";
+        } else { 
+            $curl_options[CURLOPT_HTTPHEADER] = $this->getHeaders();
+            $method = "GET";
+        }
 
-            if ($this->getPosts() !== null) {
-                if ($this->getEncoding() === 'json') {
-                    $this->addHeader('content-type', 'application/json; charset=utf-8');
-                } else {
-                    $this->addHeader('content-type', 'application/x-www-form-urlencoded; charset=utf-8');
-                }
-                $curl_options[CURLOPT_POST] = true;
-                $curl_options[CURLOPT_HTTPHEADER] = $this->getHeaders();
-                $curl_options[CURLOPT_POSTFIELDS] = $this->getBody();
-                $method = "POST";
-            } else { 
-                $curl_options[CURLOPT_HTTPHEADER] = $this->getHeaders();
-                $method = "GET";
-            }
+        $curl_options[CURLOPT_HEADER] = false;
+        $curl_options[CURLOPT_ENCODING] = 'gzip';
+        $curl_options[CURLOPT_RETURNTRANSFER] = true;
+        $curl_options[CURLOPT_SSL_VERIFYHOST] = false;
+        $curl_options[CURLOPT_SSL_VERIFYPEER] = false;
 
-            $curl_options[CURLOPT_HEADER] = false;
-            $curl_options[CURLOPT_ENCODING] = 'gzip';
-            $curl_options[CURLOPT_RETURNTRANSFER] = true;
-            $curl_options[CURLOPT_SSL_VERIFYHOST] = false;
-            $curl_options[CURLOPT_SSL_VERIFYPEER] = false;
+        // Make http client work with HTTP 2/0
+        $curl_options[CURLOPT_HTTP_VERSION] = CURL_HTTP_VERSION_2_0;
+        $curl_options[CURLOPT_SSLVERSION] = 1;
 
-            // Make http client work with HTTP 2/0
-            $curl_options[CURLOPT_HTTP_VERSION] = CURL_HTTP_VERSION_2_0;
-            $curl_options[CURLOPT_SSLVERSION] = 1;
+        $request_options = [
+            "debug"   => false,
+            "verify"  => file_exists('/etc/ssl/certs/cacert.pem') ? '/etc/ssl/certs/cacert.pem' : false,
+            "timeout" => 30,
+            'decode_content'  => true, // Decode gzip/deflate/etc HTTP responses.
+            "curl"    => $curl_options,
+            // Tells Guzzle to stop throwing exceptions on non-"2xx" HTTP codes,
+            // thus ensuring that it only triggers exceptions on socket errors!
+            // We'll instead MANUALLY be throwing on certain other HTTP codes.
+            'http_errors'     => false
+        ];
 
-            $request_options = [
-                "debug"   => false,
-                "verify"  => file_exists('/etc/ssl/certs/cacert.pem') ? '/etc/ssl/certs/cacert.pem' : false,
-                "timeout" => 10,
-                "curl"    => $curl_options
-            ];
+        // Request debug output
+        if ($this->_parent->debug === true) {
+            $this->pre_debug();
+        }
 
-            if ($this->_parent->debug === true) {
-                $this->pre_debug();
-            }
-
+        // Perform the request to API server
+        try {
             $client = new \GuzzleHttp\Client();
             $response = $client->request($method, $url, $request_options);
-
-            if ($this->_parent->debug === true) {
-                $this->post_debug($response);
-            }
-
-            $rawResponse = (string) $response->getBody();
-
-            if ($this->isGetRaw()) {
-                return $rawResponse;
-            }
-
-            $json = $this->api_body_decode($rawResponse, true);
-
-            return $json;
-        } catch (\GuzzleHttp\Exception\ConnectException $e) {
-            $msg = $this->getExceptionMessage($e);
-            if (!empty($msg)) {
-                throw new \TikTokRESTAPI\Exception\NetworkException($msg);
-            }
-            throw new \TikTokRESTAPI\Exception\NetworkException("Couldn't establish connection with REST API server.");
-        } catch (\GuzzleHttp\Exception\ServerException $e) {
-            $msg = $this->getExceptionMessage($e);
-            if (!empty($msg)) {
-                throw new \TikTokRESTAPI\Exception\ServerException($msg);
-            }
-            throw new \TikTokRESTAPI\Exception\ServerException("Something when wrong on REST API server.");
         } catch (\Exception $e) {
-            $msg = $this->getExceptionMessage($e);
-            if (!empty($msg)) {
-                if ($e->getCode() == 400) {
-                    throw new \TikTokRESTAPI\Exception\BadRequestException($msg);
-                } elseif ($e->getCode() == 403) {
-                    throw new \TikTokRESTAPI\Exception\ForbiddenException($msg);
-                } elseif ($e->getCode() == 404) {
-                    throw new \TikTokRESTAPI\Exception\NotFoundException($msg);
-                } elseif ($e->getCode() == 407) {
-                    throw new \TikTokRESTAPI\Exception\ProxyAuthException($msg);
-                } elseif ($e->getCode() == 429) {
-                    throw new \TikTokRESTAPI\Exception\TooManyRequestsException($msg);
-                }
-            }
-            throw $e;
+            // Re-wrap Guzzle's exception using our own NetworkException.
+            throw new NetworkException($e);
         }
-    }
 
-    /**
-     * Get message string from exception response
-     * 
-     * @return string|null
-     */
-    public function getExceptionMessage($e)
-    {
-        if ($e->hasResponse()) {
-            $resp = $e->getResponse();
-            $rawResponse = (string) $resp->getBody();
-            $json = $this->api_body_decode($rawResponse, true);
-            if (!empty($json['message'])) {
-                return $json['message'];
-            }
+        // Response debug output 
+        if ($this->_parent->debug === true) {
+            $this->post_debug($response);
         }
-        return null;
+
+        // Get RAW response body
+        $rawResponse = (string) $response->getBody();
+
+        // Attempt to decode the raw JSON to an array
+        $json = $this->api_body_decode($rawResponse, true);
+
+        // Detect HTTP status codes in the response
+        $httpCode = $response->getStatusCode();
+
+        // Trying to identify message in response
+        $message = null;
+        if (!empty($json['message'])) {
+            $message = $json['message'];
+        }
+
+        // Iterate in HTTP status codes and throw correct exception
+        switch ($httpCode) {
+            case 200: // Request performed successfully.
+                break;
+            case 400: // Request not performed because some data is missing or incorrect.
+                if (!empty($message)) {
+                    throw new BadRequestException($message);
+                } else {
+                    throw new BadRequestException("Request not performed because some data is missing or incorrect.");
+                }
+                break;
+            case 403: // Request failed due to invalid, expired, revoked license or access to API is restricted.
+                if (!empty($message)) {
+                    throw new ForbiddenException($message);
+                } else {
+                    throw new ForbiddenException("Request failed due to invalid, expired, revoked license or access to API is restricted.");
+                }
+                break;
+            case 404: // Requested resource doesn't exist in TikTok.
+                if (!empty($message)) {
+                    throw new NotFoundException($message);
+                } else {
+                    throw new NotFoundException("Requested resource doesn't exist in TikTok.");
+                }
+                break;
+            case 407: // Proxy auth data is missing or incorrect.
+                if (!empty($message)) {
+                    throw new ProxyAuthException($message);
+                } else {
+                    throw new ProxyAuthException("Proxy auth data is missing or incorrect.");
+                }
+                break;
+            case 429: // Too many requests sent to TikTok.
+                if (!empty($message)) {
+                    throw new TooManyRequestsException($message);
+                } else {
+                    throw new TooManyRequestsException("Too many requests sent to TikTok.");
+                }
+                break;
+            default: // Other errors
+                if (!empty($message)) {
+                    throw new TikTokException($message);
+                } else {
+                    throw new TikTokException($e->getMessage());
+                }
+                break;
+        }
+
+        if ($this->isGetRaw()) {
+            return $rawResponse;
+        } 
+
+        return $json;
     }
 
     /**
@@ -455,7 +487,22 @@ class Request
         echo "\033[1;35;m[RESPONSE]\n";
         echo "\033[1;32;mSTATUS: \033[0m".$response->getStatusCode()."\n";
         if (!empty($response->getBody())) {
-            echo "\033[1;32;mRESPONSE: \033[0m".$response->getBody()->getContents()."\n\n";
+            // Human-Readable Response
+            $rawResponse = (string) $response->getBody();
+            $json = $this->api_body_decode($rawResponse, false);
+            if (is_object($json)) {
+                $prettyJson = @json_encode(
+                    $json,
+                    JSON_PRETTY_PRINT | JSON_UNESCAPED_SLASHES | JSON_UNESCAPED_UNICODE
+                );
+                if ($prettyJson !== false) {
+                    echo "\033[1;32;mRESPONSE: \033[0m".$prettyJson."\n\n";
+                } else {
+                    echo "\033[1;32;mRESPONSE: \033[0m".$response->getBody()->getContents()."\n\n";
+                }
+            } else {
+                echo "\033[1;32;mRESPONSE: \033[0m".$response->getBody()->getContents()."\n\n";
+            }
         } else {
             echo "\033[1;32;mRESPONSE:\n\n";
         }

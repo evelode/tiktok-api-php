@@ -44,7 +44,6 @@ class TikTok
      * @param string $proxy     Your own proxy in for this request, this helps prevent your IP from getting banned. Proxy should match following pattern: http://ip:port OR http://username:password@ip:port.
      * 
      * @throws \TikTokRESTAPI\Exception\TikTokException
-     * @throws \TikTokRESTAPI\Exception\ServerException
      * @throws \TikTokRESTAPI\Exception\BadRequestException
      * @throws \TikTokRESTAPI\Exception\ForbiddenException
      * @throws \TikTokRESTAPI\Exception\NotFoundException
@@ -74,7 +73,6 @@ class TikTok
      * @param string $endpoint
      * 
      * @throws \TikTokRESTAPI\Exception\TikTokException
-     * @throws \TikTokRESTAPI\Exception\ServerException
      * @throws \TikTokRESTAPI\Exception\BadRequestException
      * @throws \TikTokRESTAPI\Exception\ForbiddenException
      * @throws \TikTokRESTAPI\Exception\NotFoundException
