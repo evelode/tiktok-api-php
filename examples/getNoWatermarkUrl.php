@@ -32,9 +32,12 @@ try {
 } catch (TikTokRESTAPI\Exception\NetworkException $e) {
     // Couldn't establish connection with REST API server
     echo sprintf('TikTok REST API NetworkException: %s', $e->getMessage()) . "\n\n";
+} catch (TikTokRESTAPI\Exception\ServerException $e) {
+    // Invalid argument, missing or invalid data in request
+    echo sprintf('TikTok REST API Server Exception: %s', $e->getMessage()) . "\n\n";
 } catch (TikTokRESTAPI\Exception\TikTokException $e) {
     // Invalid argument, missing or invalid data in request
-    echo sprintf('TikTok REST API Exception: %s', $e->getMessage()) . "\n\n";
+    echo sprintf('TikTok REST API TikTokException: %s', $e->getMessage()) . "\n\n";
 } catch (Exception $e) {
     echo sprintf('Oops, something went wrong: %s', $e->getMessage()) . "\n\n";
     echo var_dump($e->getTrace());

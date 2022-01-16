@@ -298,15 +298,13 @@ class Request
      * @param bool $assoc When FALSE, decode to object instead of associative array.
      * 
      * @throws \TikTokRESTAPI\Exception\TikTokException
+     * @throws \TikTokRESTAPI\Exception\ServerException
      * @throws \TikTokRESTAPI\Exception\BadRequestException
      * @throws \TikTokRESTAPI\Exception\ForbiddenException
      * @throws \TikTokRESTAPI\Exception\NotFoundException
      * @throws \TikTokRESTAPI\Exception\ProxyAuthException
      * @throws \TikTokRESTAPI\Exception\TooManyRequestsException
-     * 
-     * @throws \GuzzleHttp\Exception\ConnectException
-     * @throws \GuzzleHttp\Exception\ClientException
-     * @throws \GuzzleHttp\Exception\ServerException
+     * @throws \Exception
      * 
      * @return mixed
      */
@@ -374,20 +372,28 @@ class Request
 
             return $json;
         } catch (\GuzzleHttp\Exception\ConnectException $e) {
-            throw new \TikTokRESTAPI\Exception\NetworkException($e->getResponse());
+            if (!empty($e->getResponse()) && !empty($e->getResponse()->getMessage())) {
+                throw new \TikTokRESTAPI\Exception\NetworkException($e->getResponse()->getMessage());
+            }
+            throw new \TikTokRESTAPI\Exception\NetworkException("Couldn't establish connection with REST API server.");
         } catch (\GuzzleHttp\Exception\ServerException $e) {
-            throw new \TikTokRESTAPI\Exception\TikTokException($e->getResponse());
+            if (!empty($e->getResponse()) && !empty($e->getResponse()->getMessage())) {
+                throw new \TikTokRESTAPI\Exception\ServerException($e->getResponse()->getMessage());
+            }
+            throw new \TikTokRESTAPI\Exception\ServerException("Something went wrong on the REST API server.");
         } catch (\Exception $e) {
-            if ($e->getCode() == 400) {
-                throw new \TikTokRESTAPI\Exception\BadRequestException($e->getResponse());
-            } elseif ($e->getCode() == 403) {
-                throw new \TikTokRESTAPI\Exception\ForbiddenException($e->getResponse());
-            } elseif ($e->getCode() == 404) {
-                throw new \TikTokRESTAPI\Exception\NotFoundException($e->getResponse());
-            } elseif ($e->getCode() == 407) {
-                throw new \TikTokRESTAPI\Exception\ProxyAuthException($e->getResponse());
-            } elseif ($e->getCode() == 429) {
-                throw new \TikTokRESTAPI\Exception\TooManyRequestsException($e->getResponse());
+            if (!empty($e->getResponse()) && !empty($e->getResponse()->getMessage())) {
+                if ($e->getCode() == 400) {
+                    throw new \TikTokRESTAPI\Exception\BadRequestException($e->getResponse()->getMessage());
+                } elseif ($e->getCode() == 403) {
+                    throw new \TikTokRESTAPI\Exception\ForbiddenException($e->getResponse()->getMessage());
+                } elseif ($e->getCode() == 404) {
+                    throw new \TikTokRESTAPI\Exception\NotFoundException($e->getResponse()->getMessage());
+                } elseif ($e->getCode() == 407) {
+                    throw new \TikTokRESTAPI\Exception\ProxyAuthException($e->getResponse()->getMessage());
+                } elseif ($e->getCode() == 429) {
+                    throw new \TikTokRESTAPI\Exception\TooManyRequestsException($e->getResponse()->getMessage());
+                }
             }
             throw $e;
         }
