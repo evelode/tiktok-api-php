@@ -35,7 +35,7 @@ If you want to install library **to new project** using Composer:
 ```php
 {
     "require": {
-        "nextpost-tech/tiktok-api-php": "1.0.0"
+        "nextpost-tech/tiktok-api-php": "^1.0.0"
     },
     "repositories": [
         {
