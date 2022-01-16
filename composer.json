@@ -51,9 +51,5 @@
         "xkhonos",
         "xtyhon",
         "xladon"
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/nextpost-tech/tiktok-api-php.git"
-    }
+    ]
 }
