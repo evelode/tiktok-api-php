@@ -13,6 +13,13 @@ $proxy      = ''; // Your own proxy in for this request, this helps prevent your
 $tiktok = new \TikTokRESTAPI\TikTok($licenseKey, $debug);
 try {
     $response = $tiktok->getNoWatermarkUrl($video_url, $proxy);
+    if ($response->isOk()) {
+        $tiktok_resp = $response->getTiktok();
+        if (!empty($tiktok_resp["url"])) {
+            $video_url = $tiktok_resp["url"];
+            echo sprintf('Non-watermarked Video URL: %s', $video_url) . "\n\n";
+        }
+    }
 } catch (TikTokRESTAPI\Exception\BadRequestException $e) {
     // Request not performed because some data is missing or incorrect.
     echo sprintf('TikTok REST API BadRequestException: %s', $e->getMessage()) . "\n\n";
@@ -31,14 +38,11 @@ try {
 } catch (TikTokRESTAPI\Exception\NetworkException $e) {
     // Couldn't establish connection with REST API server
     echo sprintf('TikTok REST API NetworkException: %s', $e->getMessage()) . "\n\n";
-} catch (TikTokRESTAPI\Exception\ServerException $e) {
-    // Something when wrong on REST API server
-    echo sprintf('TikTok REST API Server Exception: %s', $e->getMessage()) . "\n\n";
 } catch (TikTokRESTAPI\Exception\TikTokException $e) {
     // Invalid argument, missing or invalid data in request
-    echo sprintf('TikTok REST API TikTokException: %s', $e->getMessage()) . "\n\n";
+    echo sprintf('TikTok REST API Exception: %s', $e->getMessage()) . "\n\n";
 } catch (Exception $e) {
-    echo sprintf('Oops, something went wrong: %s', $e->getMessage()) . "\n\n";
+    echo sprintf('Exception: %s', $e->getMessage()) . "\n\n";
     echo var_dump($e->getTrace());
 }
 
