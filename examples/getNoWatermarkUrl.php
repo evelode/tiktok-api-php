@@ -10,8 +10,7 @@ $licenseKey = ''; // Your own unique license key, which can be purchased here (h
 $video_url  = ''; // TikTok video URL.
 $proxy      = ''; // Your own proxy in for this request, this helps prevent your IP from getting banned. Proxy should match following pattern: http://ip:port OR http://username:password@ip:port. 
 
-$tiktok = new \TikTokRESTAPI\TikTok($debug, $licenseKey);
-
+$tiktok = new \TikTokRESTAPI\TikTok($licenseKey, $debug);
 try {
     $response = $tiktok->getNoWatermarkUrl($video_url, $proxy);
 } catch (TikTokRESTAPI\Exception\BadRequestException $e) {

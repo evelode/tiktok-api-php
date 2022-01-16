@@ -33,10 +33,6 @@ class TikTok
         $licenseKey = '',
         $debug = false) 
     {
-        if (empty($licenseKey)) {
-            throw new \TikTokRESTAPI\Exception\TikTokException("License key can't be empty.");
-        }
-
         $this->licenseKey = $licenseKey;
         $this->debug = $debug;
     }
