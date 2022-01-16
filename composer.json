@@ -5,6 +5,7 @@
     "type": "library",
     "require": {
         "php": ">=7.0",
+        "lazyjsonmapper/lazyjsonmapper": "^1.6.1",
         "guzzlehttp/guzzle": "^6.3",
         "ext-curl": "*",
         "ext-mbstring": "*",
