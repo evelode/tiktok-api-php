@@ -1,6 +1,8 @@
 <?php
 namespace TikTokRESTAPI;
 
+use \TikTokRESTAPI\Exception\TikTokException;
+
 /**
  * TikTok REST API wrapper for PHP
  * 
@@ -55,11 +57,54 @@ class TikTok
         $video_url = '',
         $proxy = '')
     {
-        $response = $this->request('getNoWatermarkUrl')
-                         ->addParam('license_key', $this->licenseKey)
-                         ->addParam('video_url', $video_url)
-                         ->addParam('proxy', $proxy)
-                         ->getResponse();
+        if (empty($video_url)) {
+            throw new TikTokException("Empty video URL sent to TikTok REST API.");
+        }
+
+        $request = $this->request('getNoWatermarkUrl')
+            ->addParam('license_key', $this->licenseKey)
+            ->addParam('video_url', $video_url);
+        
+        if (!empty($proxy)) {
+            $request->addParam('proxy', $proxy);
+        }
+
+        $response = $request->getResponse();
+
+        return new Response\APIResponse($response);
+    }
+
+    /**
+     * Get non watermarked video url by video ID
+     * 
+     * @param string $video_id  TikTok video ID.
+     * @param string $proxy     Your own proxy in for this request, this helps prevent your IP from getting banned. Proxy should match following pattern: http://ip:port OR http://username:password@ip:port.
+     * 
+     * @throws \TikTokRESTAPI\Exception\TikTokException
+     * @throws \TikTokRESTAPI\Exception\BadRequestException
+     * @throws \TikTokRESTAPI\Exception\ForbiddenException
+     * @throws \TikTokRESTAPI\Exception\NotFoundException
+     * @throws \TikTokRESTAPI\Exception\ProxyAuthException
+     * @throws \TikTokRESTAPI\Exception\TooManyRequestsException
+     * @throws \Exception
+     */
+    public function getNoWatermarkUrlByID(
+        $video_id = '',
+        $proxy = '')
+    {
+        if (empty($video_id)) {
+            throw new TikTokException("Empty video ID sent to TikTok REST API.");
+        }
+
+        $request = $this->request('getNoWatermarkUrl')
+            ->addParam('license_key', $this->licenseKey)
+            ->addParam('video_id', $video_id);
+        
+        if (!empty($proxy)) {
+            $request->addParam('proxy', $proxy);
+        }
+
+        $response = $request->getResponse();
 
         return new Response\APIResponse($response);
     }
