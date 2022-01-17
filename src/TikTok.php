@@ -59,7 +59,7 @@ class TikTok
             throw new TikTokException("Empty video URL.");
         }
 
-        $request = $this->request('getNoWatermarkUrl')
+        $response = $this->request('getNoWatermarkUrl')
             ->addParam('license_key', $this->licenseKey)
             ->addParam('video_url', $video_url)
             ->getResponse();
@@ -87,7 +87,7 @@ class TikTok
             throw new TikTokException("Empty video ID.");
         }
 
-        $request = $this->request('getNoWatermarkUrlByID')
+        $response = $this->request('getNoWatermarkUrlByID')
             ->addParam('license_key', $this->licenseKey)
             ->addParam('video_id', $video_id)
             ->getResponse();
@@ -115,7 +115,7 @@ class TikTok
             throw new TikTokException("Empty video ID.");
         }
 
-        $request = $this->request('getVideoByID')
+        $response = $this->request('getVideoByID')
             ->addParam('license_key', $this->licenseKey)
             ->addParam('video_id', $video_id)
             ->getResponse();
@@ -143,7 +143,7 @@ class TikTok
             throw new TikTokException("Empty video URL.");
         }
 
-        $request = $this->request('getVideoByUrl')
+        $response = $this->request('getVideoByUrl')
             ->addParam('license_key', $this->licenseKey)
             ->addParam('video_url', $video_url)
             ->getResponse();
@@ -175,7 +175,7 @@ class TikTok
             throw new TikTokException("Empty video URL.");
         }
 
-        $request = $this->request('getCommentsByUrl')
+        $response = $this->request('getCommentsByUrl')
             ->addParam('license_key', $this->licenseKey)
             ->addParam('video_url', $video_url)
             ->getResponse();
