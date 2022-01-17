@@ -12,6 +12,13 @@ $proxy      = ''; // Your own proxy in for this request, this helps prevent your
 
 $tiktok = new \TikTokRESTAPI\TikTok($licenseKey, $debug);
 try {
+    // Validate the TikTok video ID 
+    // This is an example how to get $video_id from Console/Terminal
+    if (empty($video_url)) {
+        echo 'Enter the TikTok video ID:\n';
+        $video_url = trim(fgets(STDIN));
+    }
+
     $resp = $tiktok->getNoWatermarkUrl($video_url, $proxy);
     if ($resp->isOk() && $resp->isTiktok()) {
         $video_url = $resp->getTiktok()->getUrl();

@@ -3,26 +3,33 @@
 require __DIR__.'/vendor/autoload.php';
 
 // API Configuration
-$debug = true;    // Debug mode
-$licenseKey = ''; // Your own unique license key, which can be purchased here (https://nextpost.tech/downloads/tiktok-rest-api/)
+$debug = false;     // Debug mode
+$licenseKey = '';   // Your own unique license key, which can be purchased here (https://nextpost.tech/downloads/tiktok-rest-api/)
 
 // Request parameters
-$video_id  = ''; // TikTok video URL.
-$proxy      = ''; // Your own proxy in for this request, this helps prevent your IP from getting banned. Proxy should match following pattern: http://ip:port OR http://username:password@ip:port. 
+$video_id  = '';    // TikTok video URL.
+$proxy      = '';   // Your own proxy in for this request, this helps prevent your IP from getting banned. Proxy should match following pattern: http://ip:port OR http://username:password@ip:port. 
 
 $tiktok = new \TikTokRESTAPI\TikTok($licenseKey, $debug);
 try {
+    // Validate the TikTok video ID 
+    // This is an example how to get $video_id from Console/Terminal
+    if (empty($video_id)) {
+        echo 'Enter the TikTok video ID:\n';
+        $video_id = trim(fgets(STDIN));
+    }
+
     $resp = $tiktok->getVideoByID($video_id, $proxy);
-    if ($resp->isOk() && $resp->isTikTok() && $resp->isAwemeDetail()) {
-        $aweme_detail = $resp->isAwemeDetail();
+    if ($resp->isOk() && $resp->isTiktok() && $resp->getTiktok()->isAwemeDetail()) {
+        $aweme_detail = $resp->getTiktok()->getAwemeDetail();
         if ($aweme_detail->isAuthor() && $aweme_detail->isStatistics()) {
             echo sprintf(
                 'Video published by @%s (%s) and have %s likes, %s plays and %s comments.',
                 $aweme_detail->getAuthor()->getUniqueId(),
                 $aweme_detail->getAuthor()->getNickname(),
-                number_format($aweme_detail->getStatistics()->getDiggCount(), 0 , '.' , ',' ),
-                number_format($aweme_detail->getStatistics()->getPlayCount(), 0 , '.' , ',' ),
-                number_format($aweme_detail->getStatistics()->getCommentCount(), 0 , '.' , ',' )
+                number_format($aweme_detail->getStatistics()->getDiggCount(), 0 , '.' , ' ' ),
+                number_format($aweme_detail->getStatistics()->getPlayCount(), 0 , '.' , ' ' ),
+                number_format($aweme_detail->getStatistics()->getCommentCount(), 0 , '.' , ' ' )
             );
         }
     }
