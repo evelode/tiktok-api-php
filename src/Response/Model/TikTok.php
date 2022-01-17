@@ -11,18 +11,34 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method string               getUrl()
  * @method int                  getStatusCode()
  * @method AwemeDetail          getAwemeDetail()
+ * @method Comments[]           getComments()
+ * @method int                  getCursor()
+ * @method int                  getHasMore()
+ * @method int                  getTotal()
  * @method bool                 isId()
  * @method bool                 isUrl()
  * @method bool                 isStatusCode()
  * @method bool                 isAwemeDetail()
+ * @method bool                 isComments()
+ * @method bool                 isCursor()
+ * @method bool                 isHasMore()
+ * @method bool                 isTotal()
  * @method $this                setId(string $value)
  * @method $this                setUrl(string $value)
  * @method $this                setStatusCode(int $value)
  * @method $this                setAwemeDetail(AwemeDetail $value)
+ * @method $this                setComments(Comments $value)
+ * @method $this                setCursor(int $value)
+ * @method $this                setHasMoreint $value)
+ * @method $this                setTotal(int $value)
  * @method $this                unsetId()
  * @method $this                unsetUrl()
  * @method $this                unsetStatusCode()
  * @method $this                unsetAwemeDetail()
+ * @method $this                unsetComments()
+ * @method $this                unsetCursor()
+ * @method $this                unsetHasMore()
+ * @method $this                unsetTotal()
  */
 class TikTok extends AutoPropertyMapper
 {
@@ -31,5 +47,9 @@ class TikTok extends AutoPropertyMapper
         'url'                   => 'string',
         'status_code'           => 'int',
         'aweme_detail'          => 'AwemeDetail',
+        'comments'              => 'Comment[]',
+        'cursor'                => 'int',
+        'has_more'              => 'int',
+        'total'                 => 'int',
     ];
 }
