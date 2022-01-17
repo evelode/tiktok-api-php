@@ -7,22 +7,29 @@ $debug      = false;    // Debug mode
 $licenseKey = '';       // Your own unique license key, which can be purchased here (https://nextpost.tech/downloads/tiktok-rest-api/)
 
 // Request parameters
-$video_id   = '';       // TikTok video ID.
+$video_url  = '';       // TikTok video URL.
 
 $tiktok = new \TikTokRESTAPI\TikTok($licenseKey, $debug);
 try {
-    // Validate the TikTok video ID 
-    // This is an example how to get $video_id from Console/Terminal
-    if (empty($video_id)) {
-        echo 'Enter the TikTok video ID:';
-        $video_id = trim(fgets(STDIN));
+    // Validate the TikTok video URL
+    // This is an example how to get $video_url from Console/Terminal
+    if (empty($video_url)) {
+        echo 'Enter the TikTok video URL:';
+        $video_url = trim(fgets(STDIN));
     }
-    
-    $resp = $tiktok->getNoWatermarkUrlByID($video_id);
-    if ($resp->isOk() && $resp->isTiktok()) {
-        $video_url = $resp->getTiktok()->getUrl();
-        if (!empty($video_url)) {
-            echo sprintf('Non-watermarked Video URL: %s', $video_url) . "\n";
+
+    $resp = $tiktok->getVideoByID($video_url);
+    if ($resp->isOk() && $resp->isTiktok() && $resp->getTiktok()->isAwemeDetail()) {
+        $aweme_detail = $resp->getTiktok()->getAwemeDetail();
+        if ($aweme_detail->isAuthor() && $aweme_detail->isStatistics()) {
+            echo sprintf(
+                'Video published by @%s (%s) and have %s likes, %s plays and %s comments.',
+                $aweme_detail->getAuthor()->getUniqueId(),
+                $aweme_detail->getAuthor()->getNickname(),
+                number_format($aweme_detail->getStatistics()->getDiggCount(), 0 , '.' , ' ' ),
+                number_format($aweme_detail->getStatistics()->getPlayCount(), 0 , '.' , ' ' ),
+                number_format($aweme_detail->getStatistics()->getCommentCount(), 0 , '.' , ' ' )
+            ) . "\n";
         }
     }
 } catch (TikTokRESTAPI\Exception\BadRequestException $e) {

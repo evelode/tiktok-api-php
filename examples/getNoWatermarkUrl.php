@@ -3,23 +3,22 @@
 require __DIR__.'/vendor/autoload.php';
 
 // API Configuration
-$debug = true;    // Debug mode
-$licenseKey = ''; // Your own unique license key, which can be purchased here (https://nextpost.tech/downloads/tiktok-rest-api/)
+$debug      = false;    // Debug mode
+$licenseKey = '';       // Your own unique license key, which can be purchased here (https://nextpost.tech/downloads/tiktok-rest-api/)
 
 // Request parameters
-$video_url  = ''; // TikTok video URL.
-$proxy      = ''; // Your own proxy in for this request, this helps prevent your IP from getting banned. Proxy should match following pattern: http://ip:port OR http://username:password@ip:port. 
+$video_url  = '';       // TikTok video URL.
 
 $tiktok = new \TikTokRESTAPI\TikTok($licenseKey, $debug);
 try {
-    // Validate the TikTok video ID 
-    // This is an example how to get $video_id from Console/Terminal
+    // Validate the TikTok video URL
+    // This is an example how to get $video_url from Console/Terminal
     if (empty($video_url)) {
-        echo 'Enter the TikTok video ID:';
+        echo 'Enter the TikTok video URL:';
         $video_url = trim(fgets(STDIN));
     }
 
-    $resp = $tiktok->getNoWatermarkUrl($video_url, $proxy);
+    $resp = $tiktok->getNoWatermarkUrl($video_url);
     if ($resp->isOk() && $resp->isTiktok()) {
         $video_url = $resp->getTiktok()->getUrl();
         if (!empty($video_url)) {

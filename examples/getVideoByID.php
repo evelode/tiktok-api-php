@@ -3,12 +3,11 @@
 require __DIR__.'/vendor/autoload.php';
 
 // API Configuration
-$debug = true;     // Debug mode
-$licenseKey = '';   // Your own unique license key, which can be purchased here (https://nextpost.tech/downloads/tiktok-rest-api/)
+$debug      = false;    // Debug mode
+$licenseKey = '';       // Your own unique license key, which can be purchased here (https://nextpost.tech/downloads/tiktok-rest-api/)
 
 // Request parameters
-$video_id  = '';    // TikTok video URL.
-$proxy      = '';   // Your own proxy in for this request, this helps prevent your IP from getting banned. Proxy should match following pattern: http://ip:port OR http://username:password@ip:port. 
+$video_id   = '';       // TikTok video ID.
 
 $tiktok = new \TikTokRESTAPI\TikTok($licenseKey, $debug);
 try {
@@ -19,7 +18,7 @@ try {
         $video_id = trim(fgets(STDIN));
     }
 
-    $resp = $tiktok->getVideoByID($video_id, $proxy);
+    $resp = $tiktok->getVideoByID($video_id);
     if ($resp->isOk() && $resp->isTiktok() && $resp->getTiktok()->isAwemeDetail()) {
         $aweme_detail = $resp->getTiktok()->getAwemeDetail();
         if ($aweme_detail->isAuthor() && $aweme_detail->isStatistics()) {
@@ -30,7 +29,7 @@ try {
                 number_format($aweme_detail->getStatistics()->getDiggCount(), 0 , '.' , ' ' ),
                 number_format($aweme_detail->getStatistics()->getPlayCount(), 0 , '.' , ' ' ),
                 number_format($aweme_detail->getStatistics()->getCommentCount(), 0 , '.' , ' ' )
-            );
+            ) . "\n";
         }
     }
 } catch (TikTokRESTAPI\Exception\BadRequestException $e) {
