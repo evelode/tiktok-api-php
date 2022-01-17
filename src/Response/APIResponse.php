@@ -40,6 +40,6 @@ class APIResponse extends Response
         'limits_info'                   => 'Model\LimitsInfo',
         'rate_limit_reached'            => 'bool',
         'tiktok'                        => 'Model\TikTok',
-        'timestamp'                     => 'string',
+        'timestamp'                     => 'string'
     ];
 }

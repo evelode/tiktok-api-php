@@ -12,12 +12,19 @@ $proxy      = ''; // Your own proxy in for this request, this helps prevent your
 
 $tiktok = new \TikTokRESTAPI\TikTok($licenseKey, $debug);
 try {
-    $response = $tiktok->getVideoByID($video_id, $proxy);
-    if ($response->isOk()) {
-        // $video_url = $response->getTiktok()->getUrl();
-        // if (!empty($video_url)) {
-        //     echo sprintf('Non-watermarked Video URL: %s', $video_url) . "\n";
-        // }
+    $resp = $tiktok->getVideoByID($video_id, $proxy);
+    if ($resp->isOk() && $resp->isTikTok() && $resp->isAwemeDetail()) {
+        $aweme_detail = $resp->isAwemeDetail();
+        if ($aweme_detail->isAuthor() && $aweme_detail->isStatistics()) {
+            echo sprintf(
+                'Video published by @%s (%s) and have %s likes, %s plays and %s comments.',
+                $aweme_detail->getAuthor()->getUniqueId(),
+                $aweme_detail->getAuthor()->getNickname(),
+                number_format($aweme_detail->getStatistics()->getDiggCount(), 0 , '.' , ',' ),
+                number_format($aweme_detail->getStatistics()->getPlayCount(), 0 , '.' , ',' ),
+                number_format($aweme_detail->getStatistics()->getCommentCount(), 0 , '.' , ',' )
+            );
+        }
     }
 } catch (TikTokRESTAPI\Exception\BadRequestException $e) {
     // Request not performed because some data is missing or incorrect.

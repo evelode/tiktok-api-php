@@ -12,9 +12,9 @@ $proxy      = ''; // Your own proxy in for this request, this helps prevent your
 
 $tiktok = new \TikTokRESTAPI\TikTok($licenseKey, $debug);
 try {
-    $response = $tiktok->getNoWatermarkUrl($video_url, $proxy);
-    if ($response->isOk()) {
-        $video_url = $response->getTiktok()->getUrl();
+    $resp = $tiktok->getNoWatermarkUrl($video_url, $proxy);
+    if ($resp->isOk() && $resp->isTiktok()) {
+        $video_url = $resp->getTiktok()->getUrl();
         if (!empty($video_url)) {
             echo sprintf('Non-watermarked Video URL: %s', $video_url) . "\n";
         }

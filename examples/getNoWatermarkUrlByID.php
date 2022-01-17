@@ -7,14 +7,14 @@ $debug = true;    // Debug mode
 $licenseKey = ''; // Your own unique license key, which can be purchased here (https://nextpost.tech/downloads/tiktok-rest-api/)
 
 // Request parameters
-$video_id  = ''; // TikTok video URL.
+$video_id   = ''; // TikTok video URL.
 $proxy      = ''; // Your own proxy in for this request, this helps prevent your IP from getting banned. Proxy should match following pattern: http://ip:port OR http://username:password@ip:port. 
 
 $tiktok = new \TikTokRESTAPI\TikTok($licenseKey, $debug);
 try {
-    $response = $tiktok->getNoWatermarkUrlByID($video_id, $proxy);
-    if ($response->isOk()) {
-        $video_url = $response->getTiktok()->getUrl();
+    $resp = $tiktok->getNoWatermarkUrlByID($video_id, $proxy);
+    if ($resp->isOk() && $resp->isTiktok()) {
+        $video_url = $resp->getTiktok()->getUrl();
         if (!empty($video_url)) {
             echo sprintf('Non-watermarked Video URL: %s', $video_url) . "\n";
         }
