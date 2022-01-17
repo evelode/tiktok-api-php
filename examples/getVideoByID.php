@@ -3,7 +3,7 @@
 require __DIR__.'/vendor/autoload.php';
 
 // API Configuration
-$debug = false;     // Debug mode
+$debug = true;     // Debug mode
 $licenseKey = '';   // Your own unique license key, which can be purchased here (https://nextpost.tech/downloads/tiktok-rest-api/)
 
 // Request parameters
@@ -15,7 +15,7 @@ try {
     // Validate the TikTok video ID 
     // This is an example how to get $video_id from Console/Terminal
     if (empty($video_id)) {
-        echo 'Enter the TikTok video ID:\n';
+        echo 'Enter the TikTok video ID:';
         $video_id = trim(fgets(STDIN));
     }
 

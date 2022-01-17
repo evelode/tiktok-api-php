@@ -15,7 +15,7 @@ try {
     // Validate the TikTok video ID 
     // This is an example how to get $video_id from Console/Terminal
     if (empty($video_id)) {
-        echo 'Enter the TikTok video ID:\n';
+        echo 'Enter the TikTok video ID:';
         $video_id = trim(fgets(STDIN));
     }
     
