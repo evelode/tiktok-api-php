@@ -186,6 +186,40 @@ class TikTok
     }
 
     /**
+     * Get comments list by video ID
+     * 
+     * @param string $video_id TikTok video ID.
+     * @param string $cursor    Used for scrolling (pagination) in comments items, you can get cursor value from the previous response.
+     * @param int    $count     Number of comments you want to get. For example: 30.
+     * 
+     * @throws \TikTokRESTAPI\Exception\TikTokException
+     * @throws \TikTokRESTAPI\Exception\BadRequestException
+     * @throws \TikTokRESTAPI\Exception\ForbiddenException
+     * @throws \TikTokRESTAPI\Exception\NotFoundException
+     * @throws \TikTokRESTAPI\Exception\ProxyAuthException
+     * @throws \TikTokRESTAPI\Exception\TooManyRequestsException
+     * @throws \Exception
+     */
+    public function getCommentsByID(
+        $video_id = '',
+        $cursor = '',
+        $count = 30)
+    {
+        if (empty($video_id)) {
+            throw new TikTokException("Empty video ID.");
+        }
+
+        $response = $this->request('getCommentsByID')
+            ->addParam('license_key', $this->licenseKey)
+            ->addParam('video_id', $video_id)
+            ->addParam('cursor', $cursor)
+            ->addParam('count', $count)
+            ->getResponse();
+
+        return new Response\APIResponse($response);
+    }
+
+    /**
      * Create a custom API request.
      *
      * Used internally, but can also be used by end-users if they want
