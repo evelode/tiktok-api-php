@@ -11,10 +11,10 @@ $video_url  = '';    // TikTok video Url.
 
 $tiktok = new \TikTokRESTAPI\TikTok($licenseKey, $debug);
 try {
-    getVideoUrl:
     // Validate the TikTok video Url 
     // This is an example how to get $video_url from Console/Terminal
     if (empty($video_url)) {
+        getVideoUrl:
         echo 'Enter the TikTok video Url:';
         $video_url = trim(fgets(STDIN));
     }

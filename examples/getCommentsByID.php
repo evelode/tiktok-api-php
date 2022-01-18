@@ -11,10 +11,10 @@ $video_id  = '';    // TikTok video ID.
 
 $tiktok = new \TikTokRESTAPI\TikTok($licenseKey, $debug);
 try {
-    getVideoID:
     // Validate the TikTok video ID
     // This is an example how to get $video_id from Console/Terminal
     if (empty($video_id)) {
+        getVideoID:
         echo 'Enter the TikTok video ID:';
         $video_id = trim(fgets(STDIN));
     }

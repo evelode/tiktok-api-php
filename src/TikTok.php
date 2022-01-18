@@ -254,6 +254,40 @@ class TikTok
     }
 
     /**
+     * Search for video by keyword
+     * 
+     * @param string $keyword   Any text or keyword
+     * @param string $offset    Used for scrolling (pagination) in comments items, you can get cursor value from the previous response.
+     * @param int    $count     Number of comments you want to get. For example: 20.
+     * 
+     * @throws \TikTokRESTAPI\Exception\TikTokException
+     * @throws \TikTokRESTAPI\Exception\BadRequestException
+     * @throws \TikTokRESTAPI\Exception\ForbiddenException
+     * @throws \TikTokRESTAPI\Exception\NotFoundException
+     * @throws \TikTokRESTAPI\Exception\ProxyAuthException
+     * @throws \TikTokRESTAPI\Exception\TooManyRequestsException
+     * @throws \Exception
+     */
+    public function searchVideo(
+        $keyword = '',
+        $cursor = '',
+        $count = 20)
+    {
+        if (empty($keyword)) {
+            throw new TikTokException("Empty keyword.");
+        }
+
+        $response = $this->request('searchVideo')
+            ->addParam('license_key', $this->licenseKey) 
+            ->addParam('keyword', $keyword)
+            ->addParam('cursor', $cursor)
+            ->addParam('count', $count)
+            ->getResponse();
+
+        return new Response\APIResponse($response);
+    }
+
+    /**
      * Create a custom API request.
      *
      * Used internally, but can also be used by end-users if they want
