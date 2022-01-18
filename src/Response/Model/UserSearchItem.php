@@ -14,7 +14,7 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method mixed    getMusics()
  * @method mixed    getPosition()
  * @method mixed    getUniqidPosition()
- * @method User     getUser()
+ * @method User     getUserInfo()
  * @method bool     isChallenges()
  * @method bool     isEffects()
  * @method bool     isItems()
@@ -22,7 +22,7 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method bool     isMusics()
  * @method bool     isPosition()
  * @method bool     isUniqidPosition()
- * @method bool     isUser()
+ * @method bool     isUserInfo()
  * @method $this    setChallenges(mixed $value)
  * @method $this    setEffects(mixed $value)
  * @method $this    setItems(mixed $value)
@@ -30,7 +30,7 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method $this    setMusics(mixed $value)
  * @method $this    setPosition(mixed $value)
  * @method $this    setUniqidPosition(mixed $value)
- * @method $this    setUser(User $value)
+ * @method $this    setUserInfo(User $value)
  * @method $this    unsetChallenges()
  * @method $this    unsetEffects()
  * @method $this    unsetItems()
@@ -38,7 +38,7 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method $this    unsetMusics()
  * @method $this    unsetPosition()
  * @method $this    unsetUniqidPosition()
- * @method $this    unsetUser()
+ * @method $this    unsetUserInfo()
  */
 class UserSearchItem extends AutoPropertyMapper
 {
