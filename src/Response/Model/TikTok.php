@@ -15,6 +15,8 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method int                  getCursor()
  * @method int                  getHasMore()
  * @method int                  getTotal()
+ * @method string               getInputKeyword()
+ * @method UserSearchItem       getUserList()
  * @method bool                 isId()
  * @method bool                 isUrl()
  * @method bool                 isStatusCode()
@@ -23,6 +25,8 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method bool                 isCursor()
  * @method bool                 isHasMore()
  * @method bool                 isTotal()
+ * @method bool                 isInputKeyword()
+ * @method bool                 isUserList()
  * @method $this                setId(string $value)
  * @method $this                setUrl(string $value)
  * @method $this                setStatusCode(int $value)
@@ -31,6 +35,8 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method $this                setCursor(int $value)
  * @method $this                setHasMoreint $value)
  * @method $this                setTotal(int $value)
+ * @method $this                setInputKeyword(string $value)
+ * @method $this                setUserList(UserSearchItem $value)
  * @method $this                unsetId()
  * @method $this                unsetUrl()
  * @method $this                unsetStatusCode()
@@ -39,6 +45,8 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method $this                unsetCursor()
  * @method $this                unsetHasMore()
  * @method $this                unsetTotal()
+ * @method $this                unsetInputKeyword()
+ * @method $this                unsetUserList()
  */
 class TikTok extends AutoPropertyMapper
 {
@@ -51,5 +59,7 @@ class TikTok extends AutoPropertyMapper
         'cursor'                => 'int',
         'has_more'              => 'int',
         'total'                 => 'int',
+        'input_keyword'         => 'string',
+        'user_list'             => 'UserSearchItem[]'
     ];
 }
