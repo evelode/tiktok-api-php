@@ -270,7 +270,7 @@ class TikTok
      */
     public function searchVideo(
         $keyword = '',
-        $cursor = '',
+        $offset = '',
         $count = 20)
     {
         if (empty($keyword)) {
@@ -280,7 +280,7 @@ class TikTok
         $response = $this->request('searchVideo')
             ->addParam('license_key', $this->licenseKey) 
             ->addParam('keyword', $keyword)
-            ->addParam('cursor', $cursor)
+            ->addParam('cursor', $offset)
             ->addParam('count', $count)
             ->getResponse();
 
