@@ -188,7 +188,7 @@ class TikTok
     /**
      * Get comments list by video ID
      * 
-     * @param string $video_id TikTok video ID.
+     * @param string $video_id  TikTok video ID.
      * @param string $cursor    Used for scrolling (pagination) in comments items, you can get cursor value from the previous response.
      * @param int    $count     Number of comments you want to get. For example: 30.
      * 
@@ -212,6 +212,40 @@ class TikTok
         $response = $this->request('getCommentsByID')
             ->addParam('license_key', $this->licenseKey)
             ->addParam('video_id', $video_id)
+            ->addParam('cursor', $cursor)
+            ->addParam('count', $count)
+            ->getResponse();
+
+        return new Response\APIResponse($response);
+    }
+
+    /**
+     * Search for user by keyword
+     * 
+     * @param string $keyword   Any text or keyword
+     * @param string $cursor    Used for scrolling (pagination) in comments items, you can get cursor value from the previous response.
+     * @param int    $count     Number of comments you want to get. For example: 20.
+     * 
+     * @throws \TikTokRESTAPI\Exception\TikTokException
+     * @throws \TikTokRESTAPI\Exception\BadRequestException
+     * @throws \TikTokRESTAPI\Exception\ForbiddenException
+     * @throws \TikTokRESTAPI\Exception\NotFoundException
+     * @throws \TikTokRESTAPI\Exception\ProxyAuthException
+     * @throws \TikTokRESTAPI\Exception\TooManyRequestsException
+     * @throws \Exception
+     */
+    public function searchUser(
+        $keyword = '',
+        $cursor = '',
+        $count = 20)
+    {
+        if (empty($keyword)) {
+            throw new TikTokException("Empty keyword.");
+        }
+
+        $response = $this->request('searchUser')
+            ->addParam('license_key', $this->licenseKey)
+            ->addParam('keyword', $keyword)
             ->addParam('cursor', $cursor)
             ->addParam('count', $count)
             ->getResponse();
