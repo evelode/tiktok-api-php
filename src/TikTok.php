@@ -178,6 +178,8 @@ class TikTok
         $response = $this->request('getCommentsByUrl')
             ->addParam('license_key', $this->licenseKey)
             ->addParam('video_url', $video_url)
+            ->addParam('cursor', $cursor)
+            ->addParam('count', $count)
             ->getResponse();
 
         return new Response\APIResponse($response);
