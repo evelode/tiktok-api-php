@@ -257,7 +257,7 @@ class TikTok
      * Search for video by keyword
      * 
      * @param string $keyword   Any text or keyword
-     * @param string $offset    Used for scrolling (pagination) in comments items, you can get cursor value from the previous response.
+     * @param string $cursor    Used for scrolling (pagination) in comments items, you can get cursor value from the previous response.
      * @param int    $count     Number of comments you want to get. For example: 20.
      * 
      * @throws \TikTokRESTAPI\Exception\TikTokException
@@ -270,7 +270,7 @@ class TikTok
      */
     public function searchVideo(
         $keyword = '',
-        $offset = '',
+        $cursor = '',
         $count = 20)
     {
         if (empty($keyword)) {
@@ -280,7 +280,7 @@ class TikTok
         $response = $this->request('searchVideo')
             ->addParam('license_key', $this->licenseKey) 
             ->addParam('keyword', $keyword)
-            ->addParam('offset', $offset)
+            ->addParam('cursor', $cursor)
             ->addParam('count', $count)
             ->getResponse();
 
