@@ -280,7 +280,7 @@ class TikTok
         $response = $this->request('searchVideo')
             ->addParam('license_key', $this->licenseKey) 
             ->addParam('keyword', $keyword)
-            ->addParam('cursor', $offset)
+            ->addParam('offset', $offset)
             ->addParam('count', $count)
             ->getResponse();
 
