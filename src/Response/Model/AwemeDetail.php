@@ -13,7 +13,7 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method bool                 getIsPgcshow()
  * @method mixed                getMiscInfo()
  * @method bool                 getNeedVsEntry()
- * @method Anchors[]            getAnchors()
+ * @method Anchor[]             getAnchors()
  * @method string               getContentDesc()
  * @method int                  getRate()
  * @method bool                 getIsRelieve()
@@ -109,7 +109,7 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method $this                setIsPgcshow(bool $value)
  * @method $this                setMiscInfo(mixed $value)
  * @method $this                setNeedVsEntry(bool $value)
- * @method $this                setAnchors(Anchors[] $value)
+ * @method $this                setAnchors(Anchor[] $value)
  * @method $this                setContentDesc(string $value)
  * @method $this                setRate(int $value)
  * @method $this                setIsRelieve(bool $value)
@@ -209,7 +209,7 @@ class AwemeDetail extends AutoPropertyMapper
         'is_pgcshow'                =>  'bool',
         'misc_info'                 =>  '',
         'need_vs_entry'             =>  'bool',
-        'anchors'                   =>  'Anchors[]',
+        'anchors'                   =>  'Anchor[]',
         'content_desc'              =>  'string',
         'rate'                      =>  'int',
         'is_relieve'                =>  'bool',

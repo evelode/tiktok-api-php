@@ -5,7 +5,7 @@ namespace TikTokRESTAPI\Response\Model;
 use TikTokRESTAPI\AutoPropertyMapper;
 
 /**
- * Anchors.
+ * Anchor.
  * 
  * @method string       getDescription()
  * @method Thumbnail    getThumbnail()
@@ -40,7 +40,7 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method $this        unsetIcon()
  * @method $this        unsetLogExtra()
  */
-class Anchors extends AutoPropertyMapper
+class Anchor extends AutoPropertyMapper
 {
     const JSON_PROPERTY_MAP = [
         'description'   => 'string',
