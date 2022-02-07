@@ -5,7 +5,7 @@ namespace TikTokRESTAPI\Response\Model;
 use TikTokRESTAPI\AutoPropertyMapper;
 
 /**
- * Actions.
+ * Action.
  * 
  * @method Icon     getIcon()
  * @method string   getSchema()
@@ -21,7 +21,7 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method $this    unsetActionType()
  * 
  */
-class Actions extends AutoPropertyMapper
+class Action extends AutoPropertyMapper
 {
     const JSON_PROPERTY_MAP = [
         'icon'          =>  'Icon',

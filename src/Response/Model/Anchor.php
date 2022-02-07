@@ -9,7 +9,7 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * 
  * @method string       getDescription()
  * @method Thumbnail    getThumbnail()
- * @method Actions[]    getActions()
+ * @method Action[]     getActions()
  * @method string       getKeyword()
  * @method string       getId()
  * @method int          getType()
@@ -25,7 +25,7 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method bool         isLogExtra()
  * @method $this        setDescription(string $value)
  * @method $this        setThumbnail(Thumbnail $value)
- * @method $this        setActions(Actions[] $value)
+ * @method $this        setActions(Action[] $value)
  * @method $this        setKeyword(string $value)
  * @method $this        setId(string $value)
  * @method $this        setType(int $value)
@@ -45,7 +45,7 @@ class Anchor extends AutoPropertyMapper
     const JSON_PROPERTY_MAP = [
         'description'   => 'string',
         'thumbnail'     => 'Thumbnail',
-        'actions'       => 'Actions[]',
+        'actions'       => 'Action[]',
         'keyword'       => 'string',
         'id'            => 'string',
         'type'          => 'int',
