@@ -9,7 +9,13 @@ $licenseKey = ''; // Your own unique license key, which can be purchased here (h
 // Request parameters
 $video_url  = '';    // TikTok video Url.
 
+// Initialize TikTok REST API class
 $tiktok = new \TikTokRESTAPI\TikTok($licenseKey, $debug);
+
+// By default we use caching system with 3600 seconds window to speed up similar requests to API. 
+// If you want to disable caching, you can set 0 here.
+$tiktok->setCacheTimeout(3600);
+
 try {
     // Validate the TikTok video Url 
     // This is an example how to get $video_url from Console/Terminal

@@ -7,7 +7,7 @@ use \TikTokRESTAPI\Exception\TikTokException;
  * TikTok REST API wrapper for PHP
  * 
  * @version 1.0.0
- * @author Nextpost.tech (https://nextpost.tech)
+ * @author Nextpost.tech (https://nextpost.tech/downloads/tiktok-rest-api/)
  */
 class TikTok
 {
@@ -24,6 +24,12 @@ class TikTok
     public $debug = false;
 
     /**
+     * API cache timeout.
+     * @var bool
+     */
+    public $cache_timeout = 3600;
+
+    /**
      * TikTok API constructor.
      *
      * @param bool  $debug         Enables debug mode.
@@ -37,6 +43,23 @@ class TikTok
     {
         $this->licenseKey = $licenseKey;
         $this->debug = $debug;
+    }
+
+    /**
+     * Set the API cache timeout
+     * 
+     * By default we use caching system with 3600 seconds window to speed up similar requests to API. 
+     * If you want to disable caching, you can set 0 here.
+     * 
+     * @param int $value Cache timeout in seconds
+     */
+    public function setCacheTimeout(
+        $value)
+    {
+        $value = (int) $value;
+        if ($value >= 0) {
+            $this->cache_timeout = $value;
+        }
     }
 
     /**
