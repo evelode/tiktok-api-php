@@ -362,7 +362,7 @@ class TikTok
             throw new TikTokException("Empty keyword.");
         }
 
-        $response = $this->request('searchVideo')
+        $response = $this->request('searchMusic')
             ->addParam('license_key', $this->licenseKey) 
             ->addParam('keyword', $keyword)
             ->addParam('cursor', $cursor)
