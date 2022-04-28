@@ -63,6 +63,16 @@ class TikTok
     }
 
     /**
+     * Set the API cache timeout back to default value
+     * 
+     * By default we use caching system with 3600 seconds window to speed up similar requests to API. 
+     */
+    public function unsetCacheTimeout()
+    {
+        $this->cache_timeout = 3600;
+    }
+
+    /**
      * Get non watermarked video URL.
      * 
      * @param string $video_url TikTok video URL.
@@ -74,6 +84,8 @@ class TikTok
      * @throws \TikTokRESTAPI\Exception\ProxyAuthException
      * @throws \TikTokRESTAPI\Exception\TooManyRequestsException
      * @throws \Exception
+     * 
+     * @return \TikTokRESTAPI\Response\APIResponse
      */
     public function getNoWatermarkUrl(
         $video_url = '')
@@ -102,6 +114,8 @@ class TikTok
      * @throws \TikTokRESTAPI\Exception\ProxyAuthException
      * @throws \TikTokRESTAPI\Exception\TooManyRequestsException
      * @throws \Exception
+     * 
+     * @return \TikTokRESTAPI\Response\APIResponse
      */
     public function getNoWatermarkUrlByID(
         $video_id = '')
@@ -130,6 +144,8 @@ class TikTok
      * @throws \TikTokRESTAPI\Exception\ProxyAuthException
      * @throws \TikTokRESTAPI\Exception\TooManyRequestsException
      * @throws \Exception
+     * 
+     * @return \TikTokRESTAPI\Response\APIResponse
      */
     public function getVideoByID(
         $video_id = '')
@@ -158,6 +174,8 @@ class TikTok
      * @throws \TikTokRESTAPI\Exception\ProxyAuthException
      * @throws \TikTokRESTAPI\Exception\TooManyRequestsException
      * @throws \Exception
+     * 
+     * @return \TikTokRESTAPI\Response\APIResponse
      */
     public function getVideoByUrl(
         $video_url = '')
@@ -188,6 +206,8 @@ class TikTok
      * @throws \TikTokRESTAPI\Exception\ProxyAuthException
      * @throws \TikTokRESTAPI\Exception\TooManyRequestsException
      * @throws \Exception
+     * 
+     * @return \TikTokRESTAPI\Response\APIResponse
      */
     public function getCommentsByUrl(
         $video_url = '',
@@ -222,6 +242,8 @@ class TikTok
      * @throws \TikTokRESTAPI\Exception\ProxyAuthException
      * @throws \TikTokRESTAPI\Exception\TooManyRequestsException
      * @throws \Exception
+     * 
+     * @return \TikTokRESTAPI\Response\APIResponse
      */
     public function getCommentsByID(
         $video_id = '',
@@ -256,6 +278,8 @@ class TikTok
      * @throws \TikTokRESTAPI\Exception\ProxyAuthException
      * @throws \TikTokRESTAPI\Exception\TooManyRequestsException
      * @throws \Exception
+     * 
+     * @return \TikTokRESTAPI\Response\APIResponse
      */
     public function searchUser(
         $keyword = '',
@@ -290,8 +314,46 @@ class TikTok
      * @throws \TikTokRESTAPI\Exception\ProxyAuthException
      * @throws \TikTokRESTAPI\Exception\TooManyRequestsException
      * @throws \Exception
+     * 
+     * @return \TikTokRESTAPI\Response\APIResponse
      */
     public function searchVideo(
+        $keyword = '',
+        $cursor = '',
+        $count = 20)
+    {
+        if (empty($keyword)) {
+            throw new TikTokException("Empty keyword.");
+        }
+
+        $response = $this->request('searchVideo')
+            ->addParam('license_key', $this->licenseKey) 
+            ->addParam('keyword', $keyword)
+            ->addParam('cursor', $cursor)
+            ->addParam('count', $count)
+            ->getResponse();
+
+        return new Response\APIResponse($response);
+    }
+
+    /**
+     * Search for music by keyword
+     * 
+     * @param string $keyword   Any text or keyword
+     * @param string $cursor    Used for scrolling (pagination) in comments items, you can get cursor value from the previous response.
+     * @param int    $count     Number of comments you want to get. For example: 20.
+     * 
+     * @throws \TikTokRESTAPI\Exception\TikTokException
+     * @throws \TikTokRESTAPI\Exception\BadRequestException
+     * @throws \TikTokRESTAPI\Exception\ForbiddenException
+     * @throws \TikTokRESTAPI\Exception\NotFoundException
+     * @throws \TikTokRESTAPI\Exception\ProxyAuthException
+     * @throws \TikTokRESTAPI\Exception\TooManyRequestsException
+     * @throws \Exception
+     * 
+     * @return \TikTokRESTAPI\Response\APIResponse
+     */
+    public function searchMusic(
         $keyword = '',
         $cursor = '',
         $count = 20)

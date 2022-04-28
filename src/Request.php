@@ -83,6 +83,7 @@ class Request
     {
         $this->_parent = $parent;
         $this->_endpoint = $endpoint;
+        $this->_params['cache_timeout'] = $parent->cache_timeout;
     }
 
     /**
