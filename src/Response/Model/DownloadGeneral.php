@@ -5,7 +5,7 @@ namespace TikTokRESTAPI\Response\Model;
 use TikTokRESTAPI\AutoPropertyMapper;
 
 /**
- * DownloadMaskPanel.
+ * DownloadGeneral.
  * 
  * @method int      getCode()
  * @method int      getShowType()
@@ -28,7 +28,7 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method $this    unsetMute()
  * @method $this    unsetExtra()
  */
-class DownloadMaskPanel extends AutoPropertyMapper
+class DownloadGeneral extends AutoPropertyMapper
 {
     const JSON_PROPERTY_MAP = [
         'code'      => 'int',
