@@ -31,6 +31,7 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method Media        getDynamicCover()
  * @method Media        getOriginCover()
  * @method int          getIsBytevc1()
+ * @method mixed        getCoverTsp()
  * @method bool         isHasWatermark()
  * @method bool         isPlayAddrH264()
  * @method bool         isNeedSetToken()
@@ -55,6 +56,7 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method bool         isDynamicCover()
  * @method bool         isOriginCover()
  * @method bool         isIsBytevc1()
+ * @method bool         isCoverTsp()
  * @method $this        setHasWatermark(bool $value)
  * @method $this        setPlayAddrH264(Play $value)
  * @method $this        setNeedSetToken(bool $value)
@@ -79,6 +81,7 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method $this        setDynamicCover(Media $value)
  * @method $this        setOriginCover(Media $value)
  * @method $this        setIsBytevc1(int $value)
+ * @method $this        setCoverTsp(mixed $value)
  * @method $this        unsetHasWatermark()
  * @method $this        unsetPlayAddrH264()
  * @method $this        unsetNeedSetToken()
@@ -103,6 +106,7 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method $this        unsetDynamicCover()
  * @method $this        unsetOriginCover()
  * @method $this        unsetIsBytevc1()
+ * @method $this        unsetCoverTsp()
  */
 class Video extends AutoPropertyMapper
 {
@@ -130,6 +134,7 @@ class Video extends AutoPropertyMapper
         'width'                 =>  'int',
         'dynamic_cover'         =>  'Media',
         'origin_cover'          =>  'Media',
-        'is_bytevc1'            =>  'int'
+        'is_bytevc1'            =>  'int',
+        'CoverTsp'              =>  ''
     ];
 }

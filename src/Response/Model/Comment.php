@@ -19,7 +19,7 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method int          getStatus()
  * @method int          getStickPosition()
  * @method string       getText()
- * @method mixed        getTextExtra()
+ * @method TextExtra    getTextExtra()
  * @method User         getUser()
  * @method bool         getUserBuried()
  * @method int          getUserDigged() 
@@ -51,7 +51,7 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method $this        setStatus(int $value)
  * @method $this        setStickPosition(int $value)
  * @method $this        setText(string $value)
- * @method $this        setTextExtra(mixed $value)
+ * @method $this        setTextExtra(TextExtra $value)
  * @method $this        setUser(User $value)
  * @method $this        setUserBuried(bool $value)
  * @method $this        setUserDigged(int $value)
@@ -87,7 +87,7 @@ class Comment extends AutoPropertyMapper
         'status'            =>  'int',
         'stick_position'    =>  'int',
         'text'              =>  'string',
-        'text_extra'        =>  '',
+        'text_extra'        =>  'TextExtra',
         'user'              =>  'User',
         'user_buried'       =>  'bool',
         'user_digged'       =>  'int'

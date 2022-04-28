@@ -18,9 +18,9 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method bool             isShareGeneral()
  * @method bool             isPlatformList()
  * @method $this            setDownloadGeneral(DownloadGeneral $value)
- * @method $this            setDownloadMaskPanel(DownloadGeneral $value)
+ * @method $this            setDownloadMaskPanel(DownloadMaskPanel $value)
  * @method $this            setShareListStatus(int $value)
- * @method $this            setShareGeneral(DownloadGeneral $value)
+ * @method $this            setShareGeneral(ShareGeneral $value)
  * @method $this            setPlatformList(mixed $value)
  * @method $this            unsetDownloadGeneral()
  * @method $this            unsetDownloadMaskPanel()
@@ -32,9 +32,9 @@ class AwemeAcl extends AutoPropertyMapper
 {
     const JSON_PROPERTY_MAP = [
         'download_general'      => 'DownloadGeneral',
-        'download_mask_panel'   => 'DownloadGeneral',
+        'download_mask_panel'   => 'DownloadMaskPanel',
         'share_list_status'     => 'int',
-        'share_general'         => 'DownloadGeneral',
+        'share_general'         => 'ShareGeneral',
         'platform_list'         => ''
     ];
 }

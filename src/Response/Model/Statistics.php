@@ -17,6 +17,7 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method int      getWhatsappShareCount()
  * @method int      getDiggCount()
  * @method int      getDownloadCount()
+ * @method int      getCollectCount()
  * @method bool     isLoseCount()
  * @method bool     isLoseCommentCount()
  * @method bool     isAwemeId()
@@ -27,6 +28,7 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method bool     isWhatsappShareCount()
  * @method bool     isDiggCount()
  * @method bool     isDownloadCount()
+ * @method bool     isCollectCount()
  * @method $this    setLoseCount(int $value)
  * @method $this    setLoseCommentCount(int $value)
  * @method $this    setAwemeId(string $value)
@@ -37,6 +39,7 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method $this    setWhatsappShareCount(int $value)
  * @method $this    setDiggCount(int $value)
  * @method $this    setDownloadCount(int $value)
+ * @method $this    setCollectCount(int $value)
  * @method $this    unsetLoseCount()
  * @method $this    unsetLoseCommentCount()
  * @method $this    unsetAwemeId()
@@ -47,6 +50,7 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method $this    unsetWhatsappShareCount()
  * @method $this    unsetDiggCount()
  * @method $this    unsetDownloadCount()
+ * @method $this    unsetCollectCount()
  */
 class Statistics extends AutoPropertyMapper
 {
@@ -60,6 +64,7 @@ class Statistics extends AutoPropertyMapper
         'forward_count'         => 'int',
         'whatsapp_share_count'  => 'int',
         'digg_count'            => 'int',
-        'download_count'        => 'int'
+        'download_count'        => 'int',
+        'collect_count'         => 'int'
     ];
 }
