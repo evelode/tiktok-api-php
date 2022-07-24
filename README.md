@@ -45,7 +45,7 @@ If you want to install library **to new project** using Composer:
     "repositories": [
         {
            "type": "git",
-           "url": "https://github.com/nextpost-tech/tiktok-api-php.git"
+           "url": "git@github.com:nextpost-tech/tiktok-api-php.git"
         }
     ]
 }
