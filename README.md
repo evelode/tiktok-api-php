@@ -81,7 +81,7 @@ You can buy a valid `license_key` for TikTok REST API by Nextpost.tech [here](ht
 
 # Support
 
-This is a developer's portal for TikTok REST API wrapper for PHP and should not be used for support. Please [contact us via website chat](https://nextpost.tech/#chatraChatExpanded) if you need to submit a support request.
+This is a developer's portal for TikTok REST API wrapper for PHP and should not be used for support. Please [contact us via website chat](https://nextpost.tech/#chatraChatExpanded) if you need to submit a support request or have any question about API functionality.
 
 # Endpoints
 
