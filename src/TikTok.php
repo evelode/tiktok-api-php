@@ -193,6 +193,36 @@ class TikTok
     }
 
     /**
+     * Convert short TikTok video URL to full TikTok video URL
+     * 
+     * @param string $video_url TikTok video URL.
+     * 
+     * @throws \TikTokRESTAPI\Exception\TikTokException
+     * @throws \TikTokRESTAPI\Exception\BadRequestException
+     * @throws \TikTokRESTAPI\Exception\ForbiddenException
+     * @throws \TikTokRESTAPI\Exception\NotFoundException
+     * @throws \TikTokRESTAPI\Exception\ProxyAuthException
+     * @throws \TikTokRESTAPI\Exception\TooManyRequestsException
+     * @throws \Exception
+     * 
+     * @return \TikTokRESTAPI\Response\APIResponse
+     */
+    public function getUnshortenedUrl(
+        $video_url = '')
+    {
+        if (empty($video_url)) {
+            throw new TikTokException("Empty video URL.");
+        }
+
+        $response = $this->request('getUnshortenedUrl')
+            ->addParam('license_key', $this->licenseKey)
+            ->addParam('video_url', $video_url)
+            ->getResponse();
+
+        return new Response\APIResponse($response);
+    }
+
+    /**
      * Get comments list by video URL
      * 
      * @param string $video_url TikTok video URL.
