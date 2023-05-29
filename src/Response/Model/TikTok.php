@@ -19,6 +19,7 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method UserSearchItem[]     getUserList()
  * @method AwemeListItem[]      getAwemeList()
  * @method MusicSearchItem[]    getMusic()
+ * @method Data[]               getData()
  * @method bool                 isId()
  * @method bool                 isUrl()
  * @method bool                 isStatusCode()
@@ -31,6 +32,7 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method bool                 isUserList()
  * @method bool                 isAwemeList()
  * @method bool                 isMusic()
+ * @method bool                 isData()
  * @method $this                setId(string $value)
  * @method $this                setUrl(string $value)
  * @method $this                setStatusCode(int $value)
@@ -43,6 +45,7 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method $this                setUserList(UserSearchItem[] $value)
  * @method $this                setAwemeList(AwemeListItem[] $value)
  * @method $this                setMusic(MusicSearchItem[] $value)
+ * @method $this                setData(Data[] $value)
  * @method $this                unsetId()
  * @method $this                unsetUrl()
  * @method $this                unsetStatusCode()
@@ -55,6 +58,7 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method $this                unsetUserList()
  * @method $this                unsetAwemeList()
  * @method $this                unsetMusic()
+ * @method $this                unsetData()
  */
 class TikTok extends AutoPropertyMapper
 {
@@ -70,6 +74,7 @@ class TikTok extends AutoPropertyMapper
         'input_keyword'         => 'string',
         'user_list'             => 'UserSearchItem[]',
         'aweme_list'            => 'AwemeListItem[]',
-        'music'                 => 'MusicSearchItem[]'
+        'music'                 => 'MusicSearchItem[]',
+        'data'                  => 'Data[]'
     ];
 }

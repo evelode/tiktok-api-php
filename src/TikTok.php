@@ -297,9 +297,11 @@ class TikTok
     /**
      * Search for user by keyword
      * 
-     * @param string $keyword   Any text or keyword
-     * @param string $cursor    Used for scrolling (pagination) in comments items, you can get cursor value from the previous response.
-     * @param int    $count     Number of comments you want to get. For example: 20.
+     * @param string $keyword       Any text or keyword
+     * @param string $cursor        Used for scrolling (pagination) in the list of users, you can get cursor value from the previous response.
+     * @param int    $count         Number of users you want to get. For example: 10.
+     * @param string $date_posted   How long ago was the video posted. Valid values: 'yesterday', 'this-week', 'this-month', 'last-3-months', 'last-6-months' and 'all-time'.
+     * @param string $sort_by       Sort videos by metrics. Valid values: 'most-liked' or 'relevance'.
      * 
      * @throws \TikTokRESTAPI\Exception\TikTokException
      * @throws \TikTokRESTAPI\Exception\BadRequestException
@@ -314,7 +316,9 @@ class TikTok
     public function searchUser(
         $keyword = '',
         $cursor = '',
-        $count = 20)
+        $count = 10,
+        $date_posted = 'all-time',
+        $sort_by = 'relevance')
     {
         if (empty($keyword)) {
             throw new TikTokException("Empty keyword.");
@@ -325,6 +329,8 @@ class TikTok
             ->addParam('keyword', $keyword)
             ->addParam('cursor', $cursor)
             ->addParam('count', $count)
+            ->addParam('date_posted', $date_posted)
+            ->addParam('sort_by', $sort_by)
             ->getResponse();
 
         return new Response\APIResponse($response);
@@ -334,8 +340,8 @@ class TikTok
      * Search for video by keyword
      * 
      * @param string $keyword   Any text or keyword
-     * @param string $cursor    Used for scrolling (pagination) in comments items, you can get cursor value from the previous response.
-     * @param int    $count     Number of comments you want to get. For example: 20.
+     * @param string $cursor    Used for scrolling (pagination) in the list of videos, you can get cursor value from the previous response.
+     * @param int    $count     Number of videos you want to get. For example: 10.
      * 
      * @throws \TikTokRESTAPI\Exception\TikTokException
      * @throws \TikTokRESTAPI\Exception\BadRequestException
@@ -350,7 +356,7 @@ class TikTok
     public function searchVideo(
         $keyword = '',
         $cursor = '',
-        $count = 20)
+        $count = 10)
     {
         if (empty($keyword)) {
             throw new TikTokException("Empty keyword.");
@@ -370,8 +376,8 @@ class TikTok
      * Search for music by keyword
      * 
      * @param string $keyword   Any text or keyword
-     * @param string $cursor    Used for scrolling (pagination) in comments items, you can get cursor value from the previous response.
-     * @param int    $count     Number of comments you want to get. For example: 20.
+     * @param string $cursor    Used for scrolling (pagination) in the list of music tracks, you can get cursor value from the previous response.
+     * @param int    $count     Number of music tracks you want to get. For example: 10.
      * 
      * @throws \TikTokRESTAPI\Exception\TikTokException
      * @throws \TikTokRESTAPI\Exception\BadRequestException
@@ -386,7 +392,7 @@ class TikTok
     public function searchMusic(
         $keyword = '',
         $cursor = '',
-        $count = 20)
+        $count = 10)
     {
         if (empty($keyword)) {
             throw new TikTokException("Empty keyword.");
@@ -396,6 +402,42 @@ class TikTok
             ->addParam('license_key', $this->licenseKey) 
             ->addParam('keyword', $keyword)
             ->addParam('cursor', $cursor)
+            ->addParam('count', $count)
+            ->getResponse();
+
+        return new Response\APIResponse($response);
+    }
+
+    /**
+     * Search for live by keyword
+     * 
+     * @param string $keyword   Any text or keyword
+     * @param string $offset    Used for scrolling (pagination) in the list of lives, you can get cursor value from the previous response.
+     * @param string $count     Number of lives you want to get. For example: 10.
+     * 
+     * @throws \TikTokRESTAPI\Exception\TikTokException
+     * @throws \TikTokRESTAPI\Exception\BadRequestException
+     * @throws \TikTokRESTAPI\Exception\ForbiddenException
+     * @throws \TikTokRESTAPI\Exception\NotFoundException
+     * @throws \TikTokRESTAPI\Exception\ProxyAuthException
+     * @throws \TikTokRESTAPI\Exception\TooManyRequestsException
+     * @throws \Exception
+     * 
+     * @return \TikTokRESTAPI\Response\APIResponse
+     */
+    public function searchLive(
+        $keyword = '',
+        $offset = '',
+        $count = 10)
+    {
+        if (empty($keyword)) {
+            throw new TikTokException("Empty keyword.");
+        }
+
+        $response = $this->request('searchLive')
+            ->addParam('license_key', $this->licenseKey) 
+            ->addParam('keyword', $keyword)
+            ->addParam('offset', $offset)
             ->addParam('count', $count)
             ->getResponse();
 
