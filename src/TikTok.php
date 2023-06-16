@@ -300,8 +300,6 @@ class TikTok
      * @param string $keyword       Any text or keyword
      * @param string $cursor        Used for scrolling (pagination) in the list of users, you can get cursor value from the previous response.
      * @param int    $count         Number of users you want to get. For example: 10.
-     * @param string $date_posted   How long ago was the video posted. Valid values: 'yesterday', 'this-week', 'this-month', 'last-3-months', 'last-6-months' and 'all-time'.
-     * @param string $sort_by       Sort videos by metrics. Valid values: 'most-liked' or 'relevance'.
      * 
      * @throws \TikTokRESTAPI\Exception\TikTokException
      * @throws \TikTokRESTAPI\Exception\BadRequestException
@@ -316,9 +314,7 @@ class TikTok
     public function searchUser(
         $keyword = '',
         $cursor = '',
-        $count = 10,
-        $date_posted = 'all-time',
-        $sort_by = 'relevance')
+        $count = 10)
     {
         if (empty($keyword)) {
             throw new TikTokException("Empty keyword.");
@@ -329,8 +325,6 @@ class TikTok
             ->addParam('keyword', $keyword)
             ->addParam('cursor', $cursor)
             ->addParam('count', $count)
-            ->addParam('date_posted', $date_posted)
-            ->addParam('sort_by', $sort_by)
             ->getResponse();
 
         return new Response\APIResponse($response);
@@ -342,6 +336,8 @@ class TikTok
      * @param string $keyword   Any text or keyword
      * @param string $cursor    Used for scrolling (pagination) in the list of videos, you can get cursor value from the previous response.
      * @param int    $count     Number of videos you want to get. For example: 10.
+     * @param string $date_posted   How long ago was the video posted. Valid values: 'yesterday', 'this-week', 'this-month', 'last-3-months', 'last-6-months' and 'all-time'.
+     * @param string $sort_by       Sort videos by metrics. Valid values: 'most-liked' or 'relevance'.
      * 
      * @throws \TikTokRESTAPI\Exception\TikTokException
      * @throws \TikTokRESTAPI\Exception\BadRequestException
@@ -356,7 +352,9 @@ class TikTok
     public function searchVideo(
         $keyword = '',
         $cursor = '',
-        $count = 10)
+        $count = 10,
+        $date_posted = 'all-time',
+        $sort_by = 'relevance')
     {
         if (empty($keyword)) {
             throw new TikTokException("Empty keyword.");
@@ -367,6 +365,8 @@ class TikTok
             ->addParam('keyword', $keyword)
             ->addParam('cursor', $cursor)
             ->addParam('count', $count)
+            ->addParam('date_posted', $date_posted)
+            ->addParam('sort_by', $sort_by)
             ->getResponse();
 
         return new Response\APIResponse($response);
