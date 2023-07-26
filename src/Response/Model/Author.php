@@ -28,6 +28,10 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method string   getUid()
  * @method bool     getIsBlock()
  * @method int      getRoomId()
+ * @method string   getRoomTitle()
+ * @method string   getRoomIdStr()
+ * @method string   getSearchUserName()
+ * @method string   getSearchUserDesc()
  * @method Media    getAvatarLarger()
  * @method int      getFollowerCount()
  * @method string   getLanguage()
@@ -56,6 +60,10 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method bool     isUid()
  * @method bool     isIsBlock()
  * @method bool     isRoomId()
+ * @method bool     isRoomTitle()
+ * @method bool     isRoomIdStr()
+ * @method bool     isSearchUserName()
+ * @method bool     isSearchUserDesc()
  * @method bool     isAvatarLarger()
  * @method bool     isFollowerCount()
  * @method bool     isLanguage()
@@ -84,6 +92,10 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method $this    setUid(string $value)
  * @method $this    setIsBlock(bool $value)
  * @method $this    setRoomId(int $value)
+ * @method $this    setRoomTitle(string $value)
+ * @method $this    setRoomIdStr(string $value)
+ * @method $this    setSearchUserName(string $value)
+ * @method $this    setSearchUserDesc(string $value)
  * @method $this    setAvatarLarger(Media $value)
  * @method $this    setFollowerCount(int $value)
  * @method $this    setLanguage(string $value)
@@ -112,6 +124,10 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method $this    unsetUid()
  * @method $this    unsetIsBlock()
  * @method $this    unsetRoomId()
+ * @method $this    unsetRoomTitle()
+ * @method $this    unsetRoomIdStr()
+ * @method $this    unsetSearchUserName()
+ * @method $this    unsetSearchUserDesc()
  * @method $this    unsetAvatarLarger()
  * @method $this    unsetFollowerCount()
  * @method $this    unsetLanguage()
@@ -144,6 +160,10 @@ class Author extends AutoPropertyMapper
         'uid'                       =>  'string',
         'is_block'                  =>  'bool',
         'room_id'                   =>  'int',
+        'room_title'                =>  'string',
+        'room_id_str'               =>  'string',
+        'search_user_name'          =>  'string',
+        'search_user_desc'          =>  'string',
         'avatar_larger'             =>  'Media',
         'follower_count'            =>  'int',      
         'language'                  =>  'string',

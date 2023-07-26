@@ -445,6 +445,42 @@ class TikTok
     }
 
     /**
+     * Search for hashtag by keyword
+     * 
+     * @param string $keyword   Any text or keyword
+     * @param string $cursor    Used for scrolling (pagination) in the list of lives, you can get cursor value from the previous response.
+     * @param string $count     Number of lives you want to get. For example: 10.
+     * 
+     * @throws \TikTokRESTAPI\Exception\TikTokException
+     * @throws \TikTokRESTAPI\Exception\BadRequestException
+     * @throws \TikTokRESTAPI\Exception\ForbiddenException
+     * @throws \TikTokRESTAPI\Exception\NotFoundException
+     * @throws \TikTokRESTAPI\Exception\ProxyAuthException
+     * @throws \TikTokRESTAPI\Exception\TooManyRequestsException
+     * @throws \Exception
+     * 
+     * @return \TikTokRESTAPI\Response\APIResponse
+     */
+    public function searchHashtag(
+        $keyword = '',
+        $cursor = '',
+        $count = 10)
+    {
+        if (empty($keyword)) {
+            throw new TikTokException("Empty keyword.");
+        }
+
+        $response = $this->request('searchLive')
+            ->addParam('license_key', $this->licenseKey) 
+            ->addParam('keyword', $keyword)
+            ->addParam('cursor', $cursor)
+            ->addParam('count', $count)
+            ->getResponse();
+
+        return new Response\APIResponse($response);
+    }
+
+    /**
      * Create a custom API request.
      *
      * Used internally, but can also be used by end-users if they want

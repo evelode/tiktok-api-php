@@ -26,23 +26,24 @@ try {
     }
 
     search:
-    $resp = $tiktok->searchMusic($keyword);
+    $resp = $tiktok->searchLive($keyword);
 
-    if ($resp->isOk() && $resp->isTiktok() && count($resp->getTiktok()->getMusic()) > 0) {
+    if ($resp->isOk() && $resp->hasTiktok() && $resp->getTiktok()->hasData() && count($resp->getTiktok()->getData()) > 0) {
 
-        $music_list = $resp->getTiktok()->getMusic();
-        echo sprintf('Music found by keyword "%s":', $keyword) . "\n";
+        $lives = $resp->getTiktok()->getData();
+        echo sprintf('Livestreams found by keyword "%s":', $keyword) . "\n";
 
-        foreach ($music_list as $key => $m) {
+        foreach ($lives as $key => $l) {
 
-            $title = $m->getTitle();
-            $author = $m->getAuthor();
-            $album = $m->getAlbum();
+            $title = $l->getLives()->getAuthor()->getRoomTitle() !== "" ? $l->getLives()->getAuthor()->getRoomTitle() : "Empty Title";
+            $nickname = $l->getLives()->getAuthor()->getNickname();
+            $unique_id = $l->getLives()->getAuthor()->getUniqueId();
+            $room_id = $l->getLives()->getAuthor()->getRoomId();
 
-            echo sprintf('%s. %s | Author: %s | Album: %s', $key + 1, $title, $author, $album) . "\n";
+            echo sprintf('%s. %s | Author: %s (@%s) | Room ID: %s', $key + 1, $title, $nickname, $unique_id, $room_id) . "\n";
         }
     } else {
-        echo sprintf('Music by keyword "%s" not found.', $keyword) . "\n";
+        echo sprintf('Livestreams by keyword "%s" not found.', $keyword) . "\n";
     }
 
     echo 'Do you want to use search again?' . "\n";
