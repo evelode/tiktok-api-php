@@ -20,7 +20,7 @@ class Request
      * API Base url
      * @var string
      */
-    const API_BASE = "https://nextpost.tech/tiktok-api/";
+    const API_BASE = "https://tiktok.evelode.com/tiktok-api/";
 
     /**
      * The TikTok class instance we belong to.

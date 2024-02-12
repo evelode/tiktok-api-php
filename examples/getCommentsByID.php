@@ -4,7 +4,7 @@ require __DIR__.'/vendor/autoload.php';
 
 // API Configuration
 $debug      = false;      // Debug mode
-$licenseKey = ''; // Your own unique license key, which can be purchased here (https://nextpost.tech/downloads/tiktok-rest-api/)
+$licenseKey = ''; // Your own unique license key, which can be purchased here (https://evelode.com/downloads/tiktok-rest-api/)
 
 // Request parameters
 $video_id  = '';    // TikTok video ID.

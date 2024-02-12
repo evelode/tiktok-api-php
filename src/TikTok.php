@@ -6,8 +6,7 @@ use \TikTokRESTAPI\Exception\TikTokException;
 /**
  * TikTok REST API wrapper for PHP
  * 
- * @version 1.0.2
- * @author Nextpost.tech (https://nextpost.tech/downloads/tiktok-rest-api/)
+ * @author Evelode (https://evelode.com/downloads/tiktok-rest-api/)
  */
 class TikTok
 {

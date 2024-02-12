@@ -1,7 +1,7 @@
 {
-    "name": "nextpost-tech/tiktok-api-php",
+    "name": "evelode/tiktok-api-php",
     "description": "TikTok REST API wrapper for PHP",
-    "homepage": "https://github.com/nextpost-tech/tiktok-api-php",
+    "homepage": "https://github.com/evelode/tiktok-api-php",
     "type": "library",
     "require": {
         "php": ">=7.0",
@@ -17,9 +17,9 @@
     "license": "MIT",
     "authors": [
         {
-            "name": "Nextpost.tech",
-            "email": "contact@nextpost.tech",
-            "homepage": "https://nextpost.tech",
+            "name": "Evelode",
+            "email": "contact@evelode.com",
+            "homepage": "https://evelode.com",
             "role": "Developer"
         }
     ],
