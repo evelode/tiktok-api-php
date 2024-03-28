@@ -79,4 +79,4 @@ This is a developer's portal for TikTok REST API wrapper for PHP and should not 
 
 # Endpoints
 
-
+Using our detailed [Postman collection](https://www.postman.com/evelode/workspace/evelode/api/e2ed8e20-0dbd-41a3-9363-092d810217ed?action=share&creator=24862082) you can explore and test all TikTok REST API endpoints in real time. Try our Trial license plan and test all API endpoints before buying a license.
