@@ -4,6 +4,8 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/evelode/tiktok-api-php)
 ![GitHub](https://img.shields.io/github/license/evelode/tiktok-api-php)
 
+[<img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">](https://app.getpostman.com/run-collection/24862082-d886cc87-4267-4e0c-b57a-2d083add50ad?action=collection%2Ffork&source=rip_markdown&collection-url=entityId%3D24862082-d886cc87-4267-4e0c-b57a-2d083add50ad%26entityType%3Dcollection%26workspaceId%3D24af3158-f1f6-4911-be7b-9c245435502f)
+
 Easy to use [TikTok REST API](https://evelode.com/downloads/tiktok-rest-api/). Get TikTok public user data, feed, trends, hashtags, music, and non watermarked TikTok videos.
 
 Using our detailed multipurpose [API Documentation](https://evelode.com/tiktok-rest-api-documentation/) and following TikTok REST API wrapper for PHP you can explore and reach all TikTok REST API endpoints with ease. 
