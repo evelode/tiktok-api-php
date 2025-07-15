@@ -469,11 +469,41 @@ class TikTok
             throw new TikTokException("Empty keyword.");
         }
 
-        $response = $this->request('searchLive')
+        $response = $this->request('searchHashtag')
             ->addParam('license_key', $this->licenseKey) 
             ->addParam('keyword', $keyword)
             ->addParam('cursor', $cursor)
             ->addParam('count', $count)
+            ->getResponse();
+
+        return new Response\APIResponse($response);
+    }
+
+    /**
+     * Get user info by profile URL or nickname
+     * 
+     * @param string $query    TikTok username
+     * 
+     * @throws \TikTokRESTAPI\Exception\TikTokException
+     * @throws \TikTokRESTAPI\Exception\BadRequestException
+     * @throws \TikTokRESTAPI\Exception\ForbiddenException
+     * @throws \TikTokRESTAPI\Exception\NotFoundException
+     * @throws \TikTokRESTAPI\Exception\ProxyAuthException
+     * @throws \TikTokRESTAPI\Exception\TooManyRequestsException
+     * @throws \Exception
+     * 
+     * @return \TikTokRESTAPI\Response\APIResponse
+     */
+    public function getUserInfo(
+        $query = '')
+    {
+        if (empty($query)) {
+            throw new TikTokException("Empty username.");
+        }
+
+        $response = $this->request('getUserInfo')
+            ->addParam('license_key', $this->licenseKey) 
+            ->addParam('query', $query)
             ->getResponse();
 
         return new Response\APIResponse($response);

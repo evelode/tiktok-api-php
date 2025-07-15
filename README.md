@@ -92,8 +92,20 @@ Using our detailed [Postman collection](https://www.postman.com/evelode/workspac
 ## Video
 
 - [getNoWatermarkUrl.php](/examples/getNoWatermarkUrl.php)
+- [getNoWatermarkUrlByID.php](/examples/getNoWatermarkUrlByID.php)
+- [getVideoByID.php](/examples/getVideoByID.php)
+- [getVideoByUrl.php](/examples/getVideoByUrl.php)
+- [getUnshortenedUrl.php](/examples/getUnshortenedUrl.php)
+- [getCommentsByUrl.php](/examples/getCommentsByUrl.php)
+- [getCommentsByID.php](/examples/getCommentsByID.php)
 
 ## Search
+
+- [searchUser.php](/examples/searchUser.php)
+- [searchVideo.php](/examples/searchVideo.php)
+- [searchMusic.php](/examples/searchMusic.php)
+- [searchLive.php](/examples/searchLive.php)
+- [searchHashtag.php](/examples/searchHashtag.php)
 
 ## User
 

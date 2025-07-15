@@ -20,7 +20,8 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method AwemeListItem[]      getAwemeList()
  * @method MusicSearchItem[]    getMusic()
  * @method Data[]               getData()
- * @method ChallengeList        getChallengeList()
+ * @method ChallengeList[]      getChallengeList()
+ * @method User                 getUser()
  * @method bool                 isId()
  * @method bool                 isUrl()
  * @method bool                 isStatusCode()
@@ -34,6 +35,7 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method bool                 isAwemeList()
  * @method bool                 isMusic()
  * @method bool                 isData()
+ * @method bool                 isUser()
  * @method bool                 isChallengeList()
  * @method $this                setId(string $value)
  * @method $this                setUrl(string $value)
@@ -48,7 +50,8 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method $this                setAwemeList(AwemeListItem[] $value)
  * @method $this                setMusic(MusicSearchItem[] $value)
  * @method $this                setData(Data[] $value)
- * @method $this                setChallengeList(ChallengeList $value)
+ * @method $this                setChallengeList(ChallengeList[] $value)
+ * @method $this                setUser(User $value)
  * @method $this                unsetId()
  * @method $this                unsetUrl()
  * @method $this                unsetStatusCode()
@@ -63,6 +66,7 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method $this                unsetMusic()
  * @method $this                unsetData()
  * @method $this                unsetChallengeList()
+ * @method $this                unsetUser()
  */
 class TikTok extends AutoPropertyMapper
 {
@@ -80,6 +84,7 @@ class TikTok extends AutoPropertyMapper
         'aweme_list'            => 'AwemeListItem[]',
         'music'                 => 'MusicSearchItem[]',
         'data'                  => 'Data[]',
-        'challenge_list'        => 'ChallengeList'
+        'challenge_list'        => 'ChallengeList[]',
+        'user'                  => 'User'
     ];
 }
