@@ -1,4 +1,4 @@
-# TikTok REST API wrapper for PHP
+# TikTok Scraper API for PHP - Extract Users, Posts, Comments & more
 
 ![Packagist PHP Version Support](https://img.shields.io/packagist/php-v/evelode/tiktok-api-php)
 ![GitHub last commit](https://img.shields.io/github/last-commit/evelode/tiktok-api-php)
