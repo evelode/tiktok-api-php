@@ -4,13 +4,13 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/evelode/tiktok-api-php)
 ![GitHub](https://img.shields.io/github/license/evelode/tiktok-api-php)
 
-[<img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">](https://www.postman.com/evelode/workspace/evelode/api/e2ed8e20-0dbd-41a3-9363-092d810217ed?action=share&creator=24862082)
+[<img src="https://run.pstmn.io/button.svg" alt="Run In Postman" style="width: 128px; height: 32px;">](https://www.postman.com/evelode/workspace/evelode/collection/24862082-d886cc87-4267-4e0c-b57a-2d083add50ad?action=share&creator=24862082)
 
-[<img width="2206" alt="evelode" src="https://github.com/user-attachments/assets/03630f3d-ef7c-4a55-88f7-d22708bda1f4">](https://www.postman.com/evelode/workspace/evelode/api/e2ed8e20-0dbd-41a3-9363-092d810217ed?action=share&creator=24862082)
+[<img width="2206" alt="evelode" src="https://github.com/user-attachments/assets/03630f3d-ef7c-4a55-88f7-d22708bda1f4">](https://www.postman.com/evelode/workspace/evelode/collection/24862082-d886cc87-4267-4e0c-b57a-2d083add50ad?action=share&creator=24862082)
 
 Easy to use [TikTok REST API](https://evelode.com/downloads/tiktok-rest-api/). Get TikTok public user data, feed, trends, hashtags, music, and non watermarked TikTok videos.
 
-Using our detailed multipurpose [API Documentation]([https://evelode.com/tiktok-rest-api-documentation/)](https://www.postman.com/evelode/workspace/evelode/api/e2ed8e20-0dbd-41a3-9363-092d810217ed?action=share&creator=24862082) and following TikTok REST API wrapper for PHP you can explore and reach all TikTok REST API endpoints with ease. 
+Using our detailed multipurpose [API Documentation]([https://evelode.com/tiktok-rest-api-documentation/)](https://www.postman.com/evelode/workspace/evelode/collection/24862082-d886cc87-4267-4e0c-b57a-2d083add50ad?action=share&creator=24862082) and following TikTok REST API wrapper for PHP you can explore and reach all TikTok REST API endpoints with ease. 
 
 Try our [Trial license plan](https://evelode.com/downloads/tiktok-rest-api/) and test all API endpoints before buying a license.
 
@@ -89,7 +89,7 @@ This is a developer's portal for TikTok REST API wrapper for PHP and should not 
 
 # Endpoints
 
-Using our detailed [Postman collection](https://www.postman.com/evelode/workspace/evelode/api/e2ed8e20-0dbd-41a3-9363-092d810217ed?action=share&creator=24862082) you can explore and test all TikTok REST API endpoints in real time. Try our Trial license plan and test all API endpoints before buying a license.
+Using our detailed [Postman collection](https://www.postman.com/evelode/workspace/evelode/collection/24862082-d886cc87-4267-4e0c-b57a-2d083add50ad?action=share&creator=24862082) you can explore and test all TikTok REST API endpoints in real time. Try our Trial license plan and test all API endpoints before buying a license.
 
 # Examples
 
@@ -110,3 +110,7 @@ Using our detailed [Postman collection](https://www.postman.com/evelode/workspac
 - [searchMusic.php](/examples/searchMusic.php)
 - [searchLive.php](/examples/searchLive.php)
 - [searchHashtag.php](/examples/searchHashtag.php)
+
+## More Examples in our Postman collection
+
+[View Postman collection](https://www.postman.com/evelode/workspace/evelode/collection/24862082-d886cc87-4267-4e0c-b57a-2d083add50ad?action=share&creator=24862082)
