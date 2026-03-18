@@ -10,7 +10,7 @@
 
 Easy to use [TikTok REST API](https://evelode.com/downloads/tiktok-rest-api/). Get TikTok public user data, feed, trends, hashtags, music, and non watermarked TikTok videos.
 
-Using our detailed multipurpose [API Documentation](https://evelode.com/tiktok-rest-api-documentation/)(https://www.postman.com/evelode/workspace/evelode/collection/24862082-d886cc87-4267-4e0c-b57a-2d083add50ad?action=share&creator=24862082) and following TikTok REST API wrapper for PHP you can explore and reach all TikTok REST API endpoints with ease. 
+Using our detailed multipurpose [API Documentation](https://www.postman.com/evelode/workspace/evelode/collection/24862082-d886cc87-4267-4e0c-b57a-2d083add50ad?action=share&creator=24862082) and following TikTok REST API wrapper for PHP you can explore and reach all TikTok REST API endpoints with ease. 
 
 Try our [Trial license plan](https://evelode.com/downloads/tiktok-rest-api/) and test all API endpoints before buying a license.
 
