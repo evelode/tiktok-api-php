@@ -36,6 +36,9 @@ class APIResponse extends Response
 {
     const JSON_PROPERTY_MAP = [
         'status'                        => 'string',
+        'license_cached' => 'bool',
+        'license_status' => 'string',
+        'req_time' => 'int',
         'message'                       => 'string',
         'limits_info'                   => 'Model\LimitsInfo',
         'rate_limit_reached'            => 'bool',

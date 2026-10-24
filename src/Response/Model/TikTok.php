@@ -11,7 +11,7 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method string               getUrl()
  * @method int                  getStatusCode()
  * @method AwemeDetail          getAwemeDetail()
- * @method Comments[]           getComments()
+ * @method Comment[]           getComments()
  * @method int                  getCursor()
  * @method int                  getHasMore()
  * @method int                  getTotal()
@@ -41,9 +41,9 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method $this                setUrl(string $value)
  * @method $this                setStatusCode(int $value)
  * @method $this                setAwemeDetail(AwemeDetail $value)
- * @method $this                setComments(Comments $value)
+ * @method $this                setComments(Comment $value)
  * @method $this                setCursor(int $value)
- * @method $this                setHasMoreint $value)
+ * @method $this                setHasMore(int $value)
  * @method $this                setTotal(int $value)
  * @method $this                setInputKeyword(string $value)
  * @method $this                setUserList(UserSearchItem[] $value)
@@ -72,6 +72,11 @@ class TikTok extends AutoPropertyMapper
 {
     const JSON_PROPERTY_MAP = [
         'id'                    => 'string',
+        'status_msg' => 'string',
+        'extra' => 'Extra',
+        'max_cursor' => 'string',
+        'min_cursor' => 'string',
+        'has_filtered_comments' => 'int',
         'url'                   => 'string',
         'status_code'           => 'int',
         'aweme_detail'          => 'AwemeDetail',

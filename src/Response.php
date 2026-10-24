@@ -24,7 +24,7 @@ class Response extends AutoPropertyMapper
          *
          * Can be: "ok", "fail",...
          */
-        'staus'  => 'string',
+        'status'  => 'string',
     ];
 
     /** @var HttpResponseInterface */

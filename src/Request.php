@@ -20,7 +20,7 @@ class Request
      * API Base url
      * @var string
      */
-    const API_BASE = "https://tiktok.evelode.com/tiktok-api/";
+    const API_BASE = "https://tiktok.evelode.com/";
 
     /**
      * The TikTok class instance we belong to.
@@ -48,7 +48,7 @@ class Request
      *
      * @var array
      */
-    protected $_posts = [];
+    protected $_posts = null;
 
     /**
      * An array of HTTP headers to add to the request.
@@ -84,6 +84,7 @@ class Request
         $this->_parent = $parent;
         $this->_endpoint = $endpoint;
         $this->_params['cache_timeout'] = $parent->cache_timeout;
+        $this->_params['license_key'] = $parent->licenseKey;
     }
 
     /**
@@ -278,10 +279,10 @@ class Request
      */
     public function getUrl()
     {
-        if (strncmp($this->_endpoint, 'http:', 5) !== 0 && strncmp($this->_endpoint, 'https:', 6) !== 0) {
-            return self::API_BASE . $this->_endpoint;
-        } 
-        return $this->_endpoint;
+        if (!is_string($this->_endpoint) || !preg_match('~^[A-Za-z0-9_/-]+$~D', $this->_endpoint) || strpos($this->_endpoint, '..') !== false || strpos($this->_endpoint, '//') !== false) {
+            throw new TikTokException('Use an API path, not an absolute URL.');
+        }
+        return rtrim($this->_parent->baseUrl, '/') . '/' . ltrim($this->_endpoint, '/');
     }
 
     /**
@@ -322,7 +323,7 @@ class Request
         $curl_options = [];
 
         if ($this->getParams() !== null) {
-            $url = $this->getUrl().'?'.urldecode(http_build_query($this->getParams()));
+            $url = $this->getUrl().'?'.http_build_query($this->getParams(), '', '&', PHP_QUERY_RFC3986);
         } else {
             $url = $this->getUrl();
         }
@@ -345,17 +346,19 @@ class Request
         $curl_options[CURLOPT_HEADER] = false;
         $curl_options[CURLOPT_ENCODING] = 'gzip';
         $curl_options[CURLOPT_RETURNTRANSFER] = true;
-        $curl_options[CURLOPT_SSL_VERIFYHOST] = false;
-        $curl_options[CURLOPT_SSL_VERIFYPEER] = false;
+        $curl_options[CURLOPT_SSL_VERIFYHOST] = 2;
+        $curl_options[CURLOPT_SSL_VERIFYPEER] = true;
 
         // Make http client work with HTTP 2/0
         $curl_options[CURLOPT_HTTP_VERSION] = CURL_HTTP_VERSION_2_0;
-        $curl_options[CURLOPT_SSLVERSION] = 1;
+
 
         $request_options = [
             "debug"   => false,
-            "verify"  => file_exists('/etc/ssl/certs/cacert.pem') ? '/etc/ssl/certs/cacert.pem' : false,
-            "timeout" => 30,
+            "verify" => true,
+            "allow_redirects" => false,
+            "connect_timeout" => $this->_parent->timeout,
+            "timeout" => $this->_parent->timeout,
             'decode_content'  => true, // Decode gzip/deflate/etc HTTP responses.
             "curl"    => $curl_options,
             // Tells Guzzle to stop throwing exceptions on non-"2xx" HTTP codes,
@@ -371,11 +374,11 @@ class Request
 
         // Perform the request to API server
         try {
-            $client = new \GuzzleHttp\Client();
+            $client = $this->_parent->httpClient ?? new \GuzzleHttp\Client();
             $response = $client->request($method, $url, $request_options);
         } catch (\Exception $e) {
             // Re-wrap Guzzle's exception using our own NetworkException.
-            throw new NetworkException($e);
+            throw new NetworkException('Unable to reach TikTok API.');
         }
 
         // Response debug output 
@@ -441,7 +444,7 @@ class Request
                 if (!empty($message)) {
                     throw new TikTokException($message);
                 } else {
-                    throw new TikTokException($e->getMessage());
+                    throw new TikTokException("API returned HTTP " . $httpCode);
                 }
                 break;
         }
@@ -462,7 +465,7 @@ class Request
 
         $method = $this->getPosts() === null ? 'GET' : 'POST';
         if ($this->getParams() !== null) {
-            echo "\033[1;33;m".strtoupper($method).": \033[0m".$this->getUrl().'?'.urldecode(http_build_query($this->getParams()))."\n";
+            echo strtoupper($method).': '.$this->getUrl().'?'.http_build_query(array_replace($this->getParams(), ['license_key'=>'[REDACTED]']), '', '&', PHP_QUERY_RFC3986)."\n";
         } else {
             echo "\033[1;33;m".strtoupper($method).": \033[0m".$this->getUrl()."\n";
         }
@@ -526,6 +529,7 @@ class Request
         $json,
         $assoc = true)
     {
-        return @json_decode($json, $assoc, 512, JSON_BIGINT_AS_STRING);
+        try { return json_decode($json, $assoc, 512, JSON_BIGINT_AS_STRING | JSON_THROW_ON_ERROR); }
+        catch (\JsonException $e) { throw new TikTokException('Invalid JSON response.'); }
     }
 }

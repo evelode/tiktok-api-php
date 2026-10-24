@@ -10,6 +10,34 @@ use \TikTokRESTAPI\Exception\TikTokException;
  */
 class TikTok
 {
+    /** @var string HTTPS API base; override with a local test server when needed. */
+    public $baseUrl = 'https://tiktok.evelode.com';
+    /** @var float Timeout in seconds. */
+    public $timeout = 30;
+    /** @var \GuzzleHttp\ClientInterface|null Dependency injection for framework integration and tests. */
+    public $httpClient;
+
+    public function setBaseUrl(string $url): self
+    {
+        $parts=parse_url($url);
+        if (!$parts || empty($parts['host']) || isset($parts['user']) || isset($parts['pass']) || isset($parts['query']) || isset($parts['fragment']) || (($parts['scheme']??'')!=='https' && !(($parts['scheme']??'')==='http' && in_array($parts['host'],['localhost','127.0.0.1','[::1]'],true)))) throw new \InvalidArgumentException('Use an HTTPS base URL');
+        $this->baseUrl=rtrim($url,'/');return $this;
+    }
+
+    public function setTimeout(float $seconds): self
+    {
+        if(!is_finite($seconds)||$seconds<=0)throw new \InvalidArgumentException('Timeout must be positive');
+        $this->timeout=$seconds;return $this;
+    }
+
+    /** Complete access to the current API; preserves unknown response fields. */
+    public function call(string $endpoint, array $parameters=[]): Response\APIResponse
+    {
+        $request=$this->request($endpoint);
+        foreach($parameters as $name=>$value)if($name!=='license_key' && $value!==null)$request->addParam($name,$value);
+        return new Response\APIResponse($request->getResponse());
+    }
+
     /**
      * License key for authentication in REST API.
      * @var string
@@ -532,4 +560,87 @@ class TikTok
     {
         return new Request($this, $endpoint);
     }
+
+    /** Get comments replies. See docs/endpoints.md for query parameters. */
+    public function getCommentsReplies(array $parameters=[]): Response\APIResponse { return $this->call('getCommentsReplies',$parameters); }
+    /** Search for location by keyword. See docs/endpoints.md for query parameters. */
+    public function searchLocation(array $parameters=[]): Response\APIResponse { return $this->call('searchLocation',$parameters); }
+    /** Top search by text query. See docs/endpoints.md for query parameters. */
+    public function searchTop(array $parameters=[]): Response\APIResponse { return $this->call('searchTop',$parameters); }
+    /** Search insights by text query. See docs/endpoints.md for query parameters. */
+    public function searchInsights(array $parameters=[]): Response\APIResponse { return $this->call('searchInsights',$parameters); }
+    /** Search comment suggested users. See docs/endpoints.md for query parameters. */
+    public function searchCommentSuggestedUsers(array $parameters=[]): Response\APIResponse { return $this->call('searchCommentSuggestedUsers',$parameters); }
+    /** Get user info by profile ID. See docs/endpoints.md for query parameters. */
+    public function getUserInfoByID(array $parameters=[]): Response\APIResponse { return $this->call('getUserInfoByID',$parameters); }
+    /** Get user info by username. See docs/endpoints.md for query parameters. */
+    public function getBasicUserInfo(array $parameters=[]): Response\APIResponse { return $this->call('getBasicUserInfo',$parameters); }
+    /** Get user feed by profile URL or nickname. See docs/endpoints.md for query parameters. */
+    public function getUserFeed(array $parameters=[]): Response\APIResponse { return $this->call('getUserFeed',$parameters); }
+    /** Get user feed by profile ID. See docs/endpoints.md for query parameters. */
+    public function getUserFeedByID(array $parameters=[]): Response\APIResponse { return $this->call('getUserFeedByID',$parameters); }
+    /** Get user ID by profile URL or nickname. See docs/endpoints.md for query parameters. */
+    public function getUserID(array $parameters=[]): Response\APIResponse { return $this->call('getUserID',$parameters); }
+    /** Get username by TikTok user ID. See docs/endpoints.md for query parameters. */
+    public function getUsernameByID(array $parameters=[]): Response\APIResponse { return $this->call('getUsernameByID',$parameters); }
+    /** Get Twitter username by profile URL, nickname or TikTok user ID. See docs/endpoints.md for query parameters. */
+    public function getTwitterUsername(array $parameters=[]): Response\APIResponse { return $this->call('getTwitterUsername',$parameters); }
+    /** Get Instagram username by profile URL, nickname or TikTok user ID. See docs/endpoints.md for query parameters. */
+    public function getInstagramUsername(array $parameters=[]): Response\APIResponse { return $this->call('getInstagramUsername',$parameters); }
+    /** Get YouTube channel info by profile URL, nickname or TikTok user ID. See docs/endpoints.md for query parameters. */
+    public function getYoutubeChannel(array $parameters=[]): Response\APIResponse { return $this->call('getYoutubeChannel',$parameters); }
+    /** Get user followers by profile URL or nickname. See docs/endpoints.md for query parameters. */
+    public function getFollowers(array $parameters=[]): Response\APIResponse { return $this->call('getFollowers',$parameters); }
+    /** Get user followers by profile ID. See docs/endpoints.md for query parameters. */
+    public function getFollowersByID(array $parameters=[]): Response\APIResponse { return $this->call('getFollowersByID',$parameters); }
+    /** Get user following by profile URL or nickname. See docs/endpoints.md for query parameters. */
+    public function getFollowing(array $parameters=[]): Response\APIResponse { return $this->call('getFollowing',$parameters); }
+    /** Get user following by profile ID. See docs/endpoints.md for query parameters. */
+    public function getFollowingByID(array $parameters=[]): Response\APIResponse { return $this->call('getFollowingByID',$parameters); }
+    /** Get live event info by ID. See docs/endpoints.md for query parameters. */
+    public function getLiveEventInfoByID(array $parameters=[]): Response\APIResponse { return $this->call('getLiveEventInfoByID',$parameters); }
+    /** Get hashtag info by URL or tag name. See docs/endpoints.md for query parameters. */
+    public function getHashtagInfo(array $parameters=[]): Response\APIResponse { return $this->call('getHashtagInfo',$parameters); }
+    /** Get hashtag feed by URL or tag name. See docs/endpoints.md for query parameters. */
+    public function getHashtagFeed(array $parameters=[]): Response\APIResponse { return $this->call('getHashtagFeed',$parameters); }
+    /** Get hashtag feed by ID. See docs/endpoints.md for query parameters. */
+    public function getHashtagFeedByID(array $parameters=[]): Response\APIResponse { return $this->call('getHashtagFeedByID',$parameters); }
+    /** Get location info by ID. See docs/endpoints.md for query parameters. */
+    public function getLocationInfoByID(array $parameters=[]): Response\APIResponse { return $this->call('getLocationInfoByID',$parameters); }
+    /** Get videos by location ID. See docs/endpoints.md for query parameters. */
+    public function getLocationFeedByID(array $parameters=[]): Response\APIResponse { return $this->call('getLocationFeedByID',$parameters); }
+    /** Get music info by URL or ID. See docs/endpoints.md for query parameters. */
+    public function getMusicInfo(array $parameters=[]): Response\APIResponse { return $this->call('getMusicInfo',$parameters); }
+    /** Get music feed by URL or ID. See docs/endpoints.md for query parameters. */
+    public function getMusicFeed(array $parameters=[]): Response\APIResponse { return $this->call('getMusicFeed',$parameters); }
+    /** Get music charts. See docs/endpoints.md for query parameters. */
+    public function getMusicCharts(array $parameters=[]): Response\APIResponse { return $this->call('getMusicCharts',$parameters); }
+    /** Get trending categories list. See docs/endpoints.md for query parameters. */
+    public function getTrendingCategoriesList(array $parameters=[]): Response\APIResponse { return $this->call('getTrendingCategoriesList',$parameters); }
+    /** Get trending feed. See docs/endpoints.md for query parameters. */
+    public function getTrendingFeed(array $parameters=[]): Response\APIResponse { return $this->call('getTrendingFeed',$parameters); }
+    /** Get effect information by IDs. See docs/endpoints.md for query parameters. */
+    public function getStickersByID(array $parameters=[]): Response\APIResponse { return $this->call('getStickersByID',$parameters); }
+    /** Get effect information by ID. See docs/endpoints.md for query parameters. */
+    public function getStickerByID(array $parameters=[]): Response\APIResponse { return $this->call('getStickerByID',$parameters); }
+    /** Get videos by effect ID. See docs/endpoints.md for query parameters. */
+    public function getStickerFeedByID(array $parameters=[]): Response\APIResponse { return $this->call('getStickerFeedByID',$parameters); }
+    /** Get user stories. See docs/endpoints.md for query parameters. */
+    public function getUserStories(array $parameters=[]): Response\APIResponse { return $this->call('getUserStories',$parameters); }
+    /** Get story info by ID. See docs/endpoints.md for query parameters. */
+    public function getStoryInfoByID(array $parameters=[]): Response\APIResponse { return $this->call('getStoryInfoByID',$parameters); }
+    /** Get user playlists. See docs/endpoints.md for query parameters. */
+    public function getUserPlaylists(array $parameters=[]): Response\APIResponse { return $this->call('getUserPlaylists',$parameters); }
+    /** Get user playlist by ID. See docs/endpoints.md for query parameters. */
+    public function getUserPlaylistByID(array $parameters=[]): Response\APIResponse { return $this->call('getUserPlaylistByID',$parameters); }
+    /** Get video by playlist ID. See docs/endpoints.md for query parameters. */
+    public function getVideoByPlaylistID(array $parameters=[]): Response\APIResponse { return $this->call('getVideoByPlaylistID',$parameters); }
+    /** Get available ranking list. See docs/endpoints.md for query parameters. */
+    public function getAvailableRankingList(array $parameters=[]): Response\APIResponse { return $this->call('getAvailableRankingList',$parameters); }
+    /** Get ranking info. See docs/endpoints.md for query parameters. */
+    public function getRankingInfo(array $parameters=[]): Response\APIResponse { return $this->call('getRankingInfo',$parameters); }
+    /** Get live info. See docs/endpoints.md for query parameters. */
+    public function getLiveInfo(array $parameters=[]): Response\APIResponse { return $this->call('getLiveInfo',$parameters); }
+    /** Get live feed. See docs/endpoints.md for query parameters. */
+    public function getLiveFeed(array $parameters=[]): Response\APIResponse { return $this->call('getLiveFeed',$parameters); }
 }
