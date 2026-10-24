@@ -5,6 +5,9 @@
 [![Last commit](https://img.shields.io/github/last-commit/evelode/tiktok-api-php?style=flat-square)](https://github.com/evelode/tiktok-api-php/commits)
 [![MIT license](https://img.shields.io/github/license/evelode/tiktok-api-php?style=flat-square)](LICENSE)
 
+[![Packagist version](https://img.shields.io/packagist/v/evelode/tiktok-api-php?style=flat-square)](https://packagist.org/packages/evelode/tiktok-api-php)
+[![Packagist PHP support](https://img.shields.io/packagist/php-v/evelode/tiktok-api-php?style=flat-square)](https://packagist.org/packages/evelode/tiktok-api-php)
+
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://www.postman.com/evelode/workspace/evelode/collection/24862082-d886cc87-4267-4e0c-b57a-2d083add50ad)
 
 
@@ -20,9 +23,11 @@ Official PHP client for the [jsonscraper TikTok Scraper API](https://jsonscraper
 - [Installation](#1-install)
 - [License key and access](#2-get-api-access)
 - [First request](#3-make-your-first-request)
+- [Available methods](#available-methods)
 - [Request examples](#more-request-examples)
 - [Complete example catalogue](#complete-request-example-catalogue)
 - [Endpoint reference](docs/endpoints.md)
+- [LazyJsonMapper response models](#typed-responses-with-lazyjsonmapper)
 - [Configuration](#configuration)
 - [Errors, pagination and caching](#errors-pagination-and-caching)
 - [FAQ](#faq)
@@ -40,11 +45,10 @@ This repository contains the **TikTok SDK only**. It calls the hosted jsonscrape
 Requirements: **PHP 8.1+, Composer, cURL and mbstring**.
 
 ```sh
-composer config repositories.tiktok vcs https://github.com/evelode/tiktok-api-php
 composer require evelode/tiktok-api-php:^2.0
 ```
 
-The GitHub installation above works independently of package registry registration. A public PyPI/npm/Packagist listing is a separate release step; this README does not claim those listings already exist.
+The Composer package is published on [Packagist](https://packagist.org/packages/evelode/tiktok-api-php).
 
 To develop from a checkout, clone this repository and install its dependencies. Python: `python -m pip install .`; Node.js: `npm ci`; PHP: `composer install`; Go: `go mod download`; Java: `mvn install`; C#: `dotnet build`.
 
@@ -92,6 +96,26 @@ The profile response follows this shape (shortened; fields can be absent or null
 ```
 
 **[Response handling guide](docs/responses.md)** explains the envelope, application errors and identifiers. Profile responses were verified against the live API on 2026-10-25.
+
+## Available methods
+
+54 named API methods are available. Start with these commonly used requests, then open the [complete method reference](docs/endpoints.md) for every method and its parameters.
+
+| Use case | SDK method | Query parameters |
+| --- | --- | --- |
+| Get user info by profile URL or nickname | `getUserInfo()` | `query`, `region`, `cache_timeout` |
+| Get video info by ID | `getVideoByID()` | `video_id`, `region`, `cache_timeout` |
+| Get non watermarked video url | `getNoWatermarkUrl()` | `video_url`, `region`, `cache_timeout` |
+| Get comments list by video ID | `getCommentsByID()` | `video_id`, `region`, `cursor`, `count`, `cache_timeout` |
+| Search for video by keyword | `searchVideo()` | `keyword`, `cursor`, `count`, `cache_timeout`, `date_posted`, `sort_by`, `region` |
+| Search for user by keyword | `searchUser()` | `keyword`, `cursor`, `count`, `region`, `follower_count`, `profile_type`, `other_pref`, `cache_timeout` |
+| Get user feed by profile URL or nickname | `getUserFeed()` | `query`, `max_cursor`, `count`, `region`, `with_pinned_posts`, `sort_type`, `cache_timeout` |
+| Get user followers by profile URL or nickname | `getFollowers()` | `query`, `count`, `min_time`, `cache_timeout` |
+| Get hashtag info by URL or tag name | `getHashtagInfo()` | `query`, `region`, `cache_timeout` |
+| Get music info by URL or ID | `getMusicInfo()` | `query`, `region`, `cache_timeout` |
+| Get trending feed | `getTrendingFeed()` | `region`, `pull_type`, `cache_timeout` |
+
+Each method is documented with a [complete runnable example](examples/README.md). The transport preserves the full response envelope, including application status, payload and optional quota metadata.
 
 ## Find the request you need
 
@@ -212,6 +236,23 @@ Every link opens a full program with parameters, authentication, timeout, errors
 - [Get music charts](examples/endpoints/get_music_charts.php) — `GET /getMusicCharts`.
 
 </details>
+
+## Typed responses with LazyJsonMapper
+
+**Guzzle + LazyJsonMapper** power the PHP client. `getVideoByID()` returns an `APIResponse`, which exposes nested `AwemeDetail`, `Author`, `Statistics`, `Video`, `Comment`, `User` and other ready-to-use models.
+
+```php
+$response = $client->getVideoByID('7106855913906081070');
+if ($response->isOk() && $response->getTiktok()?->isAwemeDetail()) {
+    $video = $response->getTiktok()->getAwemeDetail();
+    echo $video->getAuthor()?->getNickname();
+    echo $video->getStatistics()?->getPlayCount();
+}
+```
+
+**[Complete model guide and hierarchy](docs/models.md)** · **[Runnable model example](examples/models.php)** · **[All model classes](src/Response/Model)**
+
+The guide covers profiles, comments, pagination, optional fields and exporting the complete response to arrays. It builds on the model interface from the original Evelode library and preserves existing positional method signatures.
 
 ## Configuration
 
