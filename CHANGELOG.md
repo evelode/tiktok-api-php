@@ -1,3 +1,8 @@
+# 2.0.1
+
+- Simplify onboarding while retaining the complete method and model guides.
+- Link the separate TikTok MCP server and use numeric release names.
+
 # 2.0.0
 
 - Complete named access to 54 TikTok routes, plus `call()` and the existing fluent builder.
