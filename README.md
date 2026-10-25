@@ -94,6 +94,10 @@ Requests use a 30-second timeout by default. Configure caching and retries to fi
 
 [Configuration options, HTTP errors, caching and pagination](docs/configuration.md) · [Full integration guide](docs/guide.md)
 
+## Use with ChatGPT and Codex
+
+Prefer an assistant connection? Use the separate [TikTok MCP server](https://jsonscraper.com/mcp/tiktok?utm_source=github&utm_medium=sdk&utm_campaign=evelode-tiktok-api-php&utm_content=mcp). It accepts the same product API license and uses the normal API quota. [MCP source and setup](https://github.com/jsonscraper/tiktok-mcp-server).
+
 ## Access, pricing and support
 
 The SDK source is **MIT-licensed**. Hosted API access requires a separate TikTok license. Check [current plans and get access](https://jsonscraper.com/services/tiktok-scraper-api?utm_source=github&utm_medium=sdk&utm_campaign=evelode-tiktok-api-php&utm_content=readme).
