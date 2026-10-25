@@ -10,10 +10,14 @@
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://www.postman.com/evelode/workspace/evelode/collection/24862082-d886cc87-4267-4e0c-b57a-2d083add50ad)
 
-
 Official PHP client for the [jsonscraper TikTok Scraper API](https://jsonscraper.com/services/tiktok-scraper-api?utm_source=github&utm_medium=sdk&utm_campaign=evelode-tiktok-api-php&utm_content=readme). **54 documented GET routes**, simple installation, configurable requests, working examples, and responses ready for your application.
 
-![From API access to your first JSON response](quickstart.svg)
+<picture>
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="quickstart-mobile-dark.svg">
+  <source media="(max-width: 640px)" srcset="quickstart-mobile.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="quickstart-dark.svg">
+  <img src="quickstart.svg" alt="Quick start: API key, setup, first request, JSON response" width="880">
+</picture>
 
 **[Get an API key](https://jsonscraper.com/services/tiktok-scraper-api?utm_source=github&utm_medium=sdk&utm_campaign=evelode-tiktok-api-php&utm_content=get_access) · [Current pricing](https://jsonscraper.com/services/tiktok-scraper-api?utm_source=github&utm_medium=sdk&utm_campaign=evelode-tiktok-api-php&utm_content=pricing#pricing) · [Endpoint reference](endpoints.md) · [Runnable examples](../examples) · [Postman](https://www.postman.com/evelode/workspace/evelode/collection/24862082-d886cc87-4267-4e0c-b57a-2d083add50ad)**
 

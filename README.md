@@ -6,13 +6,19 @@
 [![MIT license](https://img.shields.io/github/license/evelode/tiktok-api-php?style=flat-square)](LICENSE)
 [![Packagist version](https://img.shields.io/packagist/v/evelode/tiktok-api-php?style=flat-square)](https://packagist.org/packages/evelode/tiktok-api-php)
 [![Packagist PHP support](https://img.shields.io/packagist/php-v/evelode/tiktok-api-php?style=flat-square)](https://packagist.org/packages/evelode/tiktok-api-php)
+
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://www.postman.com/evelode/workspace/evelode/collection/24862082-d886cc87-4267-4e0c-b57a-2d083add50ad)
 
 Composer client with **LazyJsonMapper response models** and ready-to-run examples. Supports **54 TikTok Scraper API methods**.
 
 **Package:** `evelode/tiktok-api-php` · **[Methods](#main-methods)** · **[Examples](#ready-to-run-examples)** · **[Documentation](docs/guide.md)**
 
-![Quick start: API key, installation, request, JSON](docs/quickstart.svg)
+<picture>
+  <source media="(max-width: 640px) and (prefers-color-scheme: dark)" srcset="docs/quickstart-mobile-dark.svg">
+  <source media="(max-width: 640px)" srcset="docs/quickstart-mobile.svg">
+  <source media="(prefers-color-scheme: dark)" srcset="docs/quickstart-dark.svg">
+  <img src="docs/quickstart.svg" alt="Quick start: API key, setup, first request, JSON response" width="880">
+</picture>
 
 ## Quick start
 
