@@ -102,7 +102,7 @@ Requests use a 30-second timeout by default. Configure caching and retries to fi
 
 ## Use with ChatGPT and Codex
 
-Prefer an assistant connection? Use the separate [TikTok MCP server](https://jsonscraper.com/mcp/tiktok?utm_source=github&utm_medium=sdk&utm_campaign=evelode-tiktok-api-php&utm_content=mcp). It accepts the same product API license and uses the normal API quota. [MCP source and setup](https://github.com/jsonscraper/tiktok-mcp-server).
+Prefer an assistant connection? Use the shared [jsonscraper MCP server](https://jsonscraper.com/mcp?utm_source=github&utm_medium=sdk&utm_campaign=legacy-tiktok-php&utm_content=mcp). Connect an Instagram API license, a TikTok API license, or both; each product keeps its own plan and quota. [MCP source and setup](https://github.com/jsonscraper/mcp-server).
 
 ## Access, pricing and support
 
