@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="252" viewBox="0 0 1100 252" role="img" aria-labelledby="title desc">
+  <title id="title">MCP is live — connect your APIs to AI</title>
+  <desc id="desc">Connect public Instagram and TikTok data to ChatGPT, Claude or Codex with your existing API key and plan. Connect via MCP at jsonscraper.com/mcp.</desc>
+  <defs><linearGradient id="wash" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fff0e5"/><stop offset="1" stop-color="#fffdfb"/></linearGradient></defs>
+  <rect x="1" y="1" width="1098" height="250" rx="20" fill="url(#wash)" stroke="#f4d6c3"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+  <rect x="34" y="29" width="113" height="27" rx="13.5" fill="#fff0e5"/>
+  <circle cx="49" cy="42.5" r="4" fill="#ff5e00"/>
+  <text x="60" y="47" font-size="11" font-weight="700" letter-spacing="1.2" fill="#bd4300">MCP IS LIVE</text>
+  <text x="34" y="103" font-size="38" font-weight="700" letter-spacing="-1.1" fill="#121826">Connect your APIs to AI.</text>
+  <text x="34" y="140" font-size="20" fill="#526071">Instagram + TikTok, inside your AI assistant.</text>
+  <text x="34" y="178" font-size="15" font-weight="600" fill="#121826">ChatGPT · Claude · Codex</text>
+  <text x="34" y="218" font-size="13" fill="#526071">Your existing API key. Your current plan.</text>
+  <text x="1058" y="46" font-size="14" text-anchor="end" font-weight="700" fill="#526071">jsonscraper</text>
+  <g transform="translate(905 82)" stroke="#bd4300" stroke-width="2.5" fill="#fffdfb">
+    <path d="M0 24H39M63 24H102M51 12V-7M51 36V55"/>
+    <rect x="37" y="10" width="28" height="28" rx="8" fill="#fff0e5"/>
+    <circle cx="0" cy="24" r="7"/><circle cx="102" cy="24" r="7"/>
+    <circle cx="51" cy="-7" r="7"/><circle cx="51" cy="55" r="7"/>
+  </g>
+  <rect x="820" y="171" width="238" height="49" rx="12" fill="#ff5e00"/>
+  <text x="939" y="202" font-size="17" text-anchor="middle" font-weight="700" fill="#fff">Connect via MCP  →</text>
+  </g>
+</svg>
