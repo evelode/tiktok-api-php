@@ -43,7 +43,7 @@ require __DIR__.'/vendor/autoload.php';
 $client = new TikTokRESTAPI\TikTok(getenv('JSONSCRAPER_TIKTOK_LICENSE_KEY'));
 $client->setCacheTimeout(60);
 $response = $client->getUserInfo('therock');
-if ($response->isOk() && $response->getTiktok()?->isUser()) {
+if ($response->isOk() && !$response->getRateLimitReached() && $response->getTiktok()?->isUser()) {
     echo $response->getTiktok()->getUser()->getUniqueId();
 }
 ```
@@ -74,13 +74,13 @@ The API payload is in `tiktok`. Live calls require a valid API license and may c
 - [List profile videos](examples/getUserFeed.php).
 - [Video, author, statistics and playback URL models](examples/models.php).
 
-Each example includes command-line parameters, key setup, timeouts, error handling and response output. Run it with `--help` first; this makes no API request.
+The main examples use named SDK methods and read LazyJsonMapper models directly. Shared setup handles the API key, timeouts, errors and optional `--output` JSON export. Run `--help` first; this makes no API request. For all query-parameter flags, use the preserved [diagnostic CLI programs](examples/endpoints/).
 
 **[Browse all 54 complete examples](examples/README.md)** · **[Full method and parameter reference](docs/endpoints.md)**
 
 ## Response models
 
-The PHP client uses **Guzzle + LazyJsonMapper**. A response is an `APIResponse` with nested models and readable getters:
+The PHP client uses **Guzzle + LazyJsonMapper**. `APIResponse` and its declared nested models inherit from `LazyJsonMapper`; the SDK constructs them automatically. Read the objects directly instead of exporting them to arrays first:
 
 ```php
 $video = $response->getTiktok()?->getAwemeDetail();

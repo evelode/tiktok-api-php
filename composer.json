@@ -37,6 +37,9 @@
         "sdk"
     ],
     "scripts": {
-        "test": "php tests/smoke.php"
+        "test": [
+            "@php tests/smoke.php",
+            "@php tests/examples.php"
+        ]
     }
 }
