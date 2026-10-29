@@ -1,3 +1,13 @@
+# 2.0.3
+
+- Complete all 54 endpoint examples with individual walkthroughs, captured output, real response excerpts and offline replay.
+- Correct model mappings for scalar account IDs, video search results, live/ranking objects, story details and nested lists; align IDE getter hints.
+- Add a responsive MCP announcement with desktop/mobile and light/dark variants.
+- Validation: 54 response replays and CLI/error cases passed on PHP 8.3; all 51 full Postman success responses map and export; PHP 8.1 syntax checks passed.
+- The three linked-account probes returned HTTP 404; their examples document the captured failures.
+
+**Full changelog:** [2.0.2...2.0.3](https://github.com/evelode/tiktok-api-php/compare/2.0.2...2.0.3)
+
 # 2.0.2
 
 - Rewrite all 54 primary examples around named SDK methods and visible LazyJsonMapper model access, with focused getter chains for profiles, videos, comments, feeds and search.
