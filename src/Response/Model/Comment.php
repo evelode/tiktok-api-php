@@ -51,7 +51,7 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method $this        setStatus(int $value)
  * @method $this        setStickPosition(int $value)
  * @method $this        setText(string $value)
- * @method $this        setTextExtra(TextExtra $value)
+ * @method $this        setTextExtra(TextExtra[] $value)
  * @method $this        setUser(User $value)
  * @method $this        setUserBuried(bool $value)
  * @method $this        setUserDigged(int $value)
