@@ -1,0 +1,138 @@
+{
+  "status": "ok",
+  "tiktok": {
+    "ad_info": {},
+    "challenge_list": [
+      {
+        "challenge_info": {
+          "banner_list": null,
+          "cha_attrs": null,
+          "cha_name": "apple",
+          "cid": "13100",
+          "collect_stat": 0,
+          "connect_music": [],
+          "desc": "",
+          "extra_attr": {
+            "is_live": false
+          },
+          "hashtag_profile": "",
+          "is_challenge": 0,
+          "is_commerce": false,
+          "is_pgcshow": false,
+          "schema": "aweme://aweme/challenge/detail?cid=13100",
+          "search_cha_name": "apple",
+          "search_highlight": null,
+          "share_info": {
+            "bool_persist": 0,
+            "now_invitation_card_image_urls": null,
+            "share_desc": "Check out #apple on TikTok!",
+            "share_desc_info": "Check out #apple on TikTok!",
+            "share_quote": "",
+            "share_signature_desc": "",
+            "share_signature_url": "",
+            "share_title": "It is a becoming a big trend on TikTok now! Click here: apple",
+            "share_title_myself": "",
+            "share_title_other": "",
+            "share_url": "https://www.tiktok.com/tag/apple?_r=1&name=apple&u_code=f0264cb8mc7b3l&_d=f29a9c135m49b2&share_challenge_id=13100&sharer_language=en&source=h5_m"
+          },
+          "show_items": null,
+          "sub_type": 0,
+          "type": 1,
+          "use_count": 7606253,
+          "user_count": 7606253,
+          "view_count": 242450524240
+        },
+        "items": null,
+        "position": null
+      },
+      {
+        "challenge_info": {
+          "banner_list": null,
+          "cha_attrs": null,
+          "cha_name": "apple🍎",
+          "cid": "1615063159898118",
+          "collect_stat": 0,
+          "connect_music": [],
+          "desc": "",
+          "extra_attr": {
+            "is_live": false
+          },
+          "hashtag_profile": "",
+          "is_challenge": 0,
+          "is_commerce": false,
+          "is_pgcshow": false,
+          "schema": "aweme://aweme/challenge/detail?cid=1615063159898118",
+          "search_cha_name": "apple🍎",
+          "search_highlight": null,
+          "share_info": {
+            "bool_persist": 0,
+            "now_invitation_card_image_urls": null,
+            "share_desc": "Check out #apple🍎 on TikTok!",
+            "share_desc_info": "Check out #apple🍎 on TikTok!",
+            "share_quote": "",
+            "share_signature_desc": "",
+            "share_signature_url": "",
+            "share_title": "It is a becoming a big trend on TikTok now! Click here: apple🍎",
+            "share_title_myself": "",
+            "share_title_other": "",
+            "share_url": "https://www.tiktok.com/tag/apple%F0%9F%8D%8E?_r=1&name=apple%F0%9F%8D%8E&u_code=f0264cb8mc7b3l&_d=f29a9c135m49b2&share_challenge_id=1615063159898118&sharer_language=en&source=h5_m"
+          },
+          "show_items": null,
+          "sub_type": 0,
+          "type": 1,
+          "use_count": 16700,
+          "user_count": 16700,
+          "view_count": 45539367
+        },
+        "items": null,
+        "position": null
+      }
+    ],
+    "cursor": 10,
+    "extra": {
+      "api_debug_info": null,
+      "fatal_item_ids": [],
+      "logid": "20260304152818E4BB4EDEE81E9171DE76",
+      "now": 1772638099000,
+      "search_request_id": "",
+      "server_stream_time": 331
+    },
+    "feedback_type": "challenge",
+    "global_doodle_config": {
+      "feedback_survey": [
+        {
+          "feedback_type": "challenge",
+          "long_stress_info": null,
+          "multiple_choices": [
+            {
+              "key": "Dislike",
+              "value": "Dislike"
+            },
+            {
+              "key": "Unrelated result",
+              "value": "Unrelated result"
+            }
+          ],
+          "send_us_multiple_choices": null
+        }
+      ],
+      "hashtag_vertical_style_type": 1,
+      "hide_results": false,
+      "hit_dolphin": false,
+      "hit_shark": false,
+      "keyword": "apple",
+      "new_source": "normal_search",
+      "search_channel": "musically_challenge",
+      "tns_search_result": "Pass"
+    },
+    "has_more": 1,
+    "is_match": false,
+    "keyword_disabled": 0,
+    "log_pb": {
+      "impr_id": "20260304152818E4BB4EDEE81E9171DE76"
+    },
+    "qc": "",
+    "status_code": 0
+  },
+  "timestamp": 1772638099
+}

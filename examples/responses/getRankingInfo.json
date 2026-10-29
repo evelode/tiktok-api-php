@@ -1,0 +1,688 @@
+{
+  "status": "ok",
+  "tiktok": {
+    "data": {
+      "rank_view": {
+        "bulletin": {
+          "enable": false,
+          "notice_type": "",
+          "schema": ""
+        },
+        "bulletin_loop": {
+          "bulletins": []
+        },
+        "countdown": 18415,
+        "cut_off_line": [
+          {
+            "content": {
+              "default_format": {
+                "bold": false,
+                "color": "#ffffffff",
+                "font_size": 0,
+                "italic": false,
+                "italic_angle": 0,
+                "use_heigh_light_color": false,
+                "use_remote_clor": false,
+                "weight": 400
+              },
+              "default_pattern": "Top 20 LIVE creators will get ranking rewards",
+              "key": "pm_mt_Live_WRbonus",
+              "pieces": []
+            },
+            "cut_off_index": 20
+          }
+        ],
+        "has_last_rank": true,
+        "is_position_safe": true,
+        "midday_peak_time_stamp": 1774465200,
+        "next_period_time_stamp": 1774411200,
+        "owner_rank": {
+          "gap": {
+            "ban_Info": 0,
+            "button": {
+              "action": 2,
+              "button_content": {
+                "default_format": {
+                  "bold": false,
+                  "color": "#ffffffff",
+                  "font_size": 0,
+                  "italic": false,
+                  "italic_angle": 0,
+                  "use_heigh_light_color": false,
+                  "use_remote_clor": false,
+                  "weight": 400
+                },
+                "default_pattern": "Send Gift",
+                "key": "pm_mt_live_page_gift",
+                "pieces": []
+              },
+              "button_display_type": 0,
+              "button_type": "",
+              "schema_url": ""
+            },
+            "display_type": 0,
+            "gap_description": {
+              "default_format": {
+                "bold": false,
+                "color": "#ffffffff",
+                "font_size": 0,
+                "italic": false,
+                "italic_angle": 0,
+                "use_heigh_light_color": false,
+                "use_remote_clor": false,
+                "weight": 400
+              },
+              "default_pattern": "{0:string} Diamonds to reach No. {1:string}",
+              "key": "pm_mt_Live_WRdiamonds",
+              "pieces": [
+                {
+                  "string_value": "302.8K",
+                  "type": 1
+                },
+                {
+                  "string_value": "99",
+                  "type": 1
+                }
+              ]
+            },
+            "gap_extra": {
+              "class_rank_extra": {
+                "bottom_schema": ""
+              },
+              "skip_info": {
+                "is_skip": false,
+                "skip_schema": ""
+              },
+              "tile_bottom_bar": {}
+            },
+            "gap_score": 0
+          },
+          "labels": [],
+          "rank": 0,
+          "rank_str": "99+",
+          "room_id": 0,
+          "room_id_str": "",
+          "score": 451,
+          "score_description": "451",
+          "team_rank_extra": {
+            "club_name": "",
+            "contributor_num": 0
+          },
+          "user": {
+            "allow_find_by_contacts": false,
+            "allow_others_download_video": false,
+            "allow_others_download_when_sharing_video": false,
+            "allow_share_show_profile": false,
+            "allow_show_in_gossip": false,
+            "allow_show_my_action": false,
+            "allow_strange_comment": false,
+            "allow_unfollower_comment": false,
+            "allow_use_linkmic": false,
+            "avatar_thumb": {
+              "avg_color": "",
+              "height": 0,
+              "image_type": 0,
+              "is_animated": false,
+              "open_web_url": "",
+              "uri": "100x100/tos-maliva-avt-0068/ea9615fd65e83736587517752c92e334",
+              "url_list": [
+                "https://p19-common-sign.tiktokcdn-eu.com/tos-maliva-avt-0068/ea9615fd65e83736587517752c92e334~tplv-tiktokx-cropcenter:100:100.webp?dr=10399&refresh_token=66c52708&x-expires=1774562400&x-signature=%2BApyDTib6srtJw263y2qFALH8I8%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=fdd36af4&idc=no1a",
+                "https://p16-common-sign.tiktokcdn-eu.com/tos-maliva-avt-0068/ea9615fd65e83736587517752c92e334~tplv-tiktokx-cropcenter:100:100.webp?dr=10399&refresh_token=6913d63b&x-expires=1774562400&x-signature=Bhgj%2B%2FhBdLBUIQfc2Gl%2BUEszZOA%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=fdd36af4&idc=no1a"
+              ],
+              "width": 0
+            },
+            "badge_image_list": [],
+            "badge_list": [],
+            "bg_img_url": "",
+            "bio_description": "",
+            "block_status": 0,
+            "border_list": [],
+            "comment_restrict": 0,
+            "commerce_webcast_config_ids": [],
+            "constellation": "",
+            "create_time": 1729286299,
+            "deprecated1": 0,
+            "deprecated12": 0,
+            "deprecated13": 0,
+            "deprecated15": 0,
+            "deprecated16": false,
+            "deprecated17": false,
+            "deprecated18": "",
+            "deprecated19": false,
+            "deprecated2": 0,
+            "deprecated21": 0,
+            "deprecated28": false,
+            "deprecated29": "",
+            "deprecated3": 0,
+            "deprecated4": 0,
+            "deprecated5": "",
+            "deprecated6": 0,
+            "deprecated7": "",
+            "deprecated8": 0,
+            "disable_ichat": 0,
+            "display_id": "apple87788",
+            "enable_ichat_img": 0,
+            "enigma_info": {
+              "is_enigma_mask_on": false
+            },
+            "exp": 0,
+            "fan_ticket_count": 0,
+            "fold_stranger_chat": false,
+            "follow_info": {
+              "follow_status": 0,
+              "follower_count": 1683,
+              "following_count": 1125,
+              "push_status": 0
+            },
+            "follow_status": 0,
+            "ichat_restrict_type": 0,
+            "id": 7427227547880047662,
+            "id_str": "7427227547880047662",
+            "is_anchor_marked": false,
+            "is_block": false,
+            "is_follower": false,
+            "is_following": false,
+            "is_subscribe": false,
+            "link_mic_stats": 1,
+            "media_badge_image_list": [],
+            "mint_type_label": [],
+            "modify_time": 0,
+            "need_profile_guide": false,
+            "new_real_time_icons": [],
+            "nickname": "Apple",
+            "pay_grade": {
+              "deprecated20": 0,
+              "deprecated22": 0,
+              "deprecated23": 0,
+              "deprecated24": 0,
+              "deprecated25": 0,
+              "deprecated26": 0,
+              "grade_banner": "",
+              "grade_describe": "",
+              "grade_icon_list": [],
+              "level": 0,
+              "name": "",
+              "next_name": "",
+              "next_privileges": "",
+              "score": 0,
+              "screen_chat_type": 0,
+              "upgrade_need_consume": 0
+            },
+            "pay_score": 0,
+            "pay_scores": 0,
+            "push_comment_status": false,
+            "push_digg": false,
+            "push_follow": false,
+            "push_friend_action": false,
+            "push_ichat": false,
+            "push_status": false,
+            "push_video_post": false,
+            "push_video_recommend": false,
+            "real_time_icons": [],
+            "scm_label": "",
+            "sec_uid": "MS4wLjABAAAAQRm3DkkU_G_hWkc277EVoUE8KbPZVr0GVgJQMeMhIkTruiCjMgarHNaUZvlrjPBA",
+            "secret": 0,
+            "share_qrcode_uri": "",
+            "special_id": "",
+            "status": 0,
+            "ticket_count": 0,
+            "top_fans": [],
+            "top_vip_no": 0,
+            "upcoming_event_list": [],
+            "user_attr": {
+              "admin_permissions": {},
+              "has_voting_function": false,
+              "is_admin": false,
+              "is_channel_admin": false,
+              "is_muted": false,
+              "is_super_admin": false,
+              "mute_duration": 0
+            },
+            "user_role": 0,
+            "verified": false,
+            "verified_content": "",
+            "verified_reason": "",
+            "with_car_management_permission": false,
+            "with_commerce_permission": false,
+            "with_fusion_shop_entry": false
+          },
+          "weekly_rank_extra": {
+            "curr_week_rank": 0,
+            "last_week_rank": 0
+          }
+        },
+        "rank_extra_info": {
+          "class_extra": {
+            "class_type": 500,
+            "creator_class_image": {
+              "avg_color": "",
+              "height": 14,
+              "image_type": 0,
+              "is_animated": false,
+              "open_web_url": "",
+              "uri": "tos-alisg-i-cuqfs489yo-sg/class_rank/D1.png",
+              "url_list": [
+                "http://p16-common-sign.tiktokcdn-eu.com/tos-alisg-i-cuqfs489yo-sg/class_rank/D1.png~tplv-tiktokx-origin.image?dr=10402&refresh_token=342de337&x-expires=1774411200&x-signature=njvcz9KPNZ7oFdUJgzVYXgVDGSw%3D&t=4d5b0474&ps=13740610&shp=75a09491&shcp=75a09491&idc=no1a"
+              ],
+              "width": 32
+            }
+          },
+          "hall_of_fame_rank_extra": {
+            "is_first_day": false
+          }
+        },
+        "rank_type": 8,
+        "ranks": [
+          {
+            "labels": [],
+            "rank": 1,
+            "rank_str": "1",
+            "room_id": 0,
+            "room_id_str": "0",
+            "score": 5089947,
+            "score_description": "5.0M",
+            "user": {
+              "allow_find_by_contacts": false,
+              "allow_others_download_video": false,
+              "allow_others_download_when_sharing_video": false,
+              "allow_share_show_profile": false,
+              "allow_show_in_gossip": false,
+              "allow_show_my_action": false,
+              "allow_strange_comment": false,
+              "allow_unfollower_comment": false,
+              "allow_use_linkmic": false,
+              "avatar_thumb": {
+                "avg_color": "",
+                "height": 0,
+                "image_type": 0,
+                "is_animated": false,
+                "open_web_url": "",
+                "uri": "100x100/tos-maliva-avt-0068/d998c09f3eff347a5e6a7ab9db8da633",
+                "url_list": [
+                  "https://p16-common-sign.tiktokcdn-eu.com/tos-maliva-avt-0068/d998c09f3eff347a5e6a7ab9db8da633~tplv-tiktokx-cropcenter:100:100.webp?dr=10399&refresh_token=4e2df54d&x-expires=1774562400&x-signature=aVtSC0wmvaZOp82MghT89fy2xY4%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=fdd36af4&idc=no1a",
+                  "https://p19-common-sign.tiktokcdn-eu.com/tos-maliva-avt-0068/d998c09f3eff347a5e6a7ab9db8da633~tplv-tiktokx-cropcenter:100:100.webp?dr=10399&refresh_token=6816a2bf&x-expires=1774562400&x-signature=%2F%2BT%2BZJ8AVEvQzs5zjqrTeOwF%2BW8%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=fdd36af4&idc=no1a"
+                ],
+                "width": 0
+              },
+              "badge_image_list": [],
+              "badge_list": [],
+              "bg_img_url": "",
+              "bio_description": "",
+              "block_status": 0,
+              "border_list": [],
+              "comment_restrict": 0,
+              "commerce_webcast_config_ids": [],
+              "constellation": "",
+              "create_time": 1720311737,
+              "deprecated1": 0,
+              "deprecated12": 0,
+              "deprecated13": 0,
+              "deprecated15": 0,
+              "deprecated16": false,
+              "deprecated17": false,
+              "deprecated18": "",
+              "deprecated19": false,
+              "deprecated2": 0,
+              "deprecated21": 0,
+              "deprecated28": false,
+              "deprecated29": "",
+              "deprecated3": 0,
+              "deprecated4": 0,
+              "deprecated5": "",
+              "deprecated6": 0,
+              "deprecated7": "",
+              "deprecated8": 0,
+              "disable_ichat": 0,
+              "display_id": "ljr561",
+              "enable_ichat_img": 0,
+              "enigma_info": {
+                "is_enigma_mask_on": false
+              },
+              "exp": 0,
+              "fan_ticket_count": 0,
+              "fold_stranger_chat": false,
+              "follow_info": {
+                "follow_status": 0,
+                "follower_count": 21532,
+                "following_count": 15,
+                "push_status": 0
+              },
+              "follow_status": 0,
+              "ichat_restrict_type": 0,
+              "id": 7366648351285543982,
+              "id_str": "7366648351285543982",
+              "is_anchor_marked": false,
+              "is_block": false,
+              "is_follower": false,
+              "is_following": false,
+              "is_subscribe": false,
+              "link_mic_stats": 1,
+              "media_badge_image_list": [],
+              "mint_type_label": [],
+              "modify_time": 0,
+              "need_profile_guide": false,
+              "new_real_time_icons": [],
+              "nickname": "🦂💣🚀",
+              "pay_grade": {
+                "deprecated20": 0,
+                "deprecated22": 0,
+                "deprecated23": 0,
+                "deprecated24": 0,
+                "deprecated25": 0,
+                "deprecated26": 0,
+                "grade_banner": "",
+                "grade_describe": "",
+                "grade_icon_list": [],
+                "level": 0,
+                "name": "",
+                "next_name": "",
+                "next_privileges": "",
+                "score": 0,
+                "screen_chat_type": 0,
+                "upgrade_need_consume": 0
+              },
+              "pay_score": 0,
+              "pay_scores": 0,
+              "push_comment_status": false,
+              "push_digg": false,
+              "push_follow": false,
+              "push_friend_action": false,
+              "push_ichat": false,
+              "push_status": false,
+              "push_video_post": false,
+              "push_video_recommend": false,
+              "real_time_icons": [],
+              "scm_label": "",
+              "sec_uid": "MS4wLjABAAAAnrpv3Cm1GRP13NpF_Q9EzCQpRTKaozOVzixjhiJusWAFMCjUSsbXVtGWQNEyH9At",
+              "secret": 0,
+              "share_qrcode_uri": "",
+              "special_id": "",
+              "status": 0,
+              "ticket_count": 0,
+              "top_fans": [],
+              "top_vip_no": 0,
+              "upcoming_event_list": [],
+              "user_attr": {
+                "admin_permissions": {},
+                "has_voting_function": false,
+                "is_admin": false,
+                "is_channel_admin": false,
+                "is_muted": false,
+                "is_super_admin": false,
+                "mute_duration": 0
+              },
+              "user_role": 0,
+              "verified": false,
+              "verified_content": "",
+              "verified_reason": "",
+              "with_car_management_permission": false,
+              "with_commerce_permission": false,
+              "with_fusion_shop_entry": false
+            }
+          },
+          {
+            "labels": [],
+            "rank": 2,
+            "rank_str": "2",
+            "room_id": 0,
+            "room_id_str": "0",
+            "score": 3255388,
+            "score_description": "3.2M",
+            "user": {
+              "allow_find_by_contacts": false,
+              "allow_others_download_video": false,
+              "allow_others_download_when_sharing_video": false,
+              "allow_share_show_profile": false,
+              "allow_show_in_gossip": false,
+              "allow_show_my_action": false,
+              "allow_strange_comment": false,
+              "allow_unfollower_comment": false,
+              "allow_use_linkmic": false,
+              "avatar_thumb": {
+                "avg_color": "",
+                "height": 0,
+                "image_type": 0,
+                "is_animated": false,
+                "open_web_url": "",
+                "uri": "100x100/tos-maliva-avt-0068/a16a2fbd751e1f284052ebd739a5a56c",
+                "url_list": [
+                  "https://p16-common-sign.tiktokcdn-eu.com/tos-maliva-avt-0068/a16a2fbd751e1f284052ebd739a5a56c~tplv-tiktokx-cropcenter:100:100.webp?dr=10399&refresh_token=302b5e65&x-expires=1774562400&x-signature=n7GAE29qs5sGdI%2B%2B7TZp94mzl3Q%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=fdd36af4&idc=no1a",
+                  "https://p19-common-sign.tiktokcdn-eu.com/tos-maliva-avt-0068/a16a2fbd751e1f284052ebd739a5a56c~tplv-tiktokx-cropcenter:100:100.webp?dr=10399&refresh_token=2078b145&x-expires=1774562400&x-signature=cX1c6SbexCW3DvRw%2BNjYrC1ACrI%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=fdd36af4&idc=no1a"
+                ],
+                "width": 0
+              },
+              "badge_image_list": [],
+              "badge_list": [],
+              "bg_img_url": "",
+              "bio_description": "Lealtad humildad y respeto🫡🫡🫡",
+              "block_status": 0,
+              "border_list": [],
+              "comment_restrict": 0,
+              "commerce_webcast_config_ids": [],
+              "constellation": "",
+              "create_time": 1642749456,
+              "deprecated1": 0,
+              "deprecated12": 0,
+              "deprecated13": 0,
+              "deprecated15": 0,
+              "deprecated16": false,
+              "deprecated17": false,
+              "deprecated18": "",
+              "deprecated19": false,
+              "deprecated2": 0,
+              "deprecated21": 0,
+              "deprecated28": false,
+              "deprecated29": "",
+              "deprecated3": 0,
+              "deprecated4": 0,
+              "deprecated5": "",
+              "deprecated6": 0,
+              "deprecated7": "",
+              "deprecated8": 0,
+              "disable_ichat": 0,
+              "display_id": "alvarothebadboy",
+              "enable_ichat_img": 0,
+              "enigma_info": {
+                "is_enigma_mask_on": false
+              },
+              "exp": 0,
+              "fan_ticket_count": 0,
+              "fold_stranger_chat": false,
+              "follow_info": {
+                "follow_status": 0,
+                "follower_count": 330904,
+                "following_count": 2781,
+                "push_status": 0
+              },
+              "follow_status": 0,
+              "ichat_restrict_type": 0,
+              "id": 7055554680433132549,
+              "id_str": "7055554680433132549",
+              "is_anchor_marked": false,
+              "is_block": false,
+              "is_follower": false,
+              "is_following": false,
+              "is_subscribe": false,
+              "link_mic_stats": 1,
+              "media_badge_image_list": [],
+              "mint_type_label": [],
+              "modify_time": 0,
+              "need_profile_guide": false,
+              "new_real_time_icons": [],
+              "nickname": "ALVAROTHEBADBOY💣💣💣🇺🇲🇳🇮",
+              "pay_grade": {
+                "deprecated20": 0,
+                "deprecated22": 0,
+                "deprecated23": 0,
+                "deprecated24": 0,
+                "deprecated25": 0,
+                "deprecated26": 0,
+                "grade_banner": "",
+                "grade_describe": "",
+                "grade_icon_list": [],
+                "level": 0,
+                "name": "",
+                "next_name": "",
+                "next_privileges": "",
+                "score": 0,
+                "screen_chat_type": 0,
+                "upgrade_need_consume": 0
+              },
+              "pay_score": 0,
+              "pay_scores": 0,
+              "push_comment_status": false,
+              "push_digg": false,
+              "push_follow": false,
+              "push_friend_action": false,
+              "push_ichat": false,
+              "push_status": false,
+              "push_video_post": false,
+              "push_video_recommend": false,
+              "real_time_icons": [],
+              "scm_label": "",
+              "sec_uid": "MS4wLjABAAAAfJ7LP6UqFkrbAj9ULvKBDM3V4fHfCy-yvb-WnxKhToEGpL9ZbKNyuOZT6ctjwnku",
+              "secret": 0,
+              "share_qrcode_uri": "",
+              "special_id": "",
+              "status": 0,
+              "ticket_count": 0,
+              "top_fans": [],
+              "top_vip_no": 0,
+              "upcoming_event_list": [],
+              "user_attr": {
+                "admin_permissions": {},
+                "has_voting_function": false,
+                "is_admin": false,
+                "is_channel_admin": false,
+                "is_muted": false,
+                "is_super_admin": false,
+                "mute_duration": 0
+              },
+              "user_role": 0,
+              "verified": false,
+              "verified_content": "",
+              "verified_reason": "",
+              "with_car_management_permission": false,
+              "with_commerce_permission": false,
+              "with_fusion_shop_entry": false
+            }
+          }
+        ],
+        "rule_url": "sslocal://webcast_webview_popup?hide_nav_bar=1&gravity=bottom&radius=10&rate_height=480&height=450&darkmode_color=BGSecondary&url=http%3A%2F%2Fwww.tiktok.com%2Flive%2Fmonetization%2Franking%2Fday-rule%2Ffaq%3Ffinalize_time%3D1665374400000%26show_turn_off_creator_ranking%3D1%26is_from_live%3D1%26mid_peak_settle%3D1665428400000",
+        "sub_tabs": [
+          {
+            "dark_icon": {
+              "avg_color": "",
+              "height": 12,
+              "image_type": 0,
+              "is_animated": false,
+              "open_web_url": "",
+              "uri": "tos-alisg-i-cuqfs489yo-sg/daily_rank/sub_tab_icon.png",
+              "url_list": [
+                "http://p16-common-sign.tiktokcdn-eu.com/tos-alisg-i-cuqfs489yo-sg/daily_rank/sub_tab_icon.png~tplv-tiktokx-origin.image?dr=10402&refresh_token=65ae1f76&x-expires=1774411200&x-signature=KM%2Fezxksf4OmA6Tn5mETyPIdlnM%3D&t=4d5b0474&ps=13740610&shp=75a09491&shcp=75a09491&idc=no1a"
+              ],
+              "width": 12
+            },
+            "icon": {
+              "avg_color": "",
+              "height": 12,
+              "image_type": 0,
+              "is_animated": false,
+              "open_web_url": "",
+              "uri": "tos-alisg-i-cuqfs489yo-sg/daily_rank/sub_tab_icon.png",
+              "url_list": [
+                "http://p16-common-sign.tiktokcdn-eu.com/tos-alisg-i-cuqfs489yo-sg/daily_rank/sub_tab_icon.png~tplv-tiktokx-origin.image?dr=10402&refresh_token=65ae1f76&x-expires=1774411200&x-signature=KM%2Fezxksf4OmA6Tn5mETyPIdlnM%3D&t=4d5b0474&ps=13740610&shp=75a09491&shcp=75a09491&idc=no1a"
+              ],
+              "width": 12
+            },
+            "rank_type": 8,
+            "selected_bg_color": {
+              "dark": "#ffffe19a",
+              "light": "#ffffe19a"
+            },
+            "selected_text_color": {
+              "dark": "#ff512219",
+              "light": "#ff512219"
+            },
+            "title_text": {
+              "default_format": {
+                "bold": false,
+                "color": "#ffffffff",
+                "font_size": 0,
+                "italic": false,
+                "italic_angle": 0,
+                "use_heigh_light_color": false,
+                "use_remote_clor": false,
+                "weight": 400
+              },
+              "default_pattern": "Daily Ranking",
+              "key": "pm_mt_daily_entrance",
+              "pieces": []
+            }
+          },
+          {
+            "dark_icon": {
+              "avg_color": "",
+              "height": 12,
+              "image_type": 0,
+              "is_animated": false,
+              "open_web_url": "",
+              "uri": "tos-alisg-i-cuqfs489yo-sg/class_rank/league_D_tab_icon.png",
+              "url_list": [
+                "http://p16-common-sign.tiktokcdn-eu.com/tos-alisg-i-cuqfs489yo-sg/class_rank/league_D_tab_icon.png~tplv-tiktokx-origin.image?dr=10402&refresh_token=b5f7805c&x-expires=1774411200&x-signature=Y0keJkasiWVGuB5VMIu0ZX%2FQfjE%3D&t=4d5b0474&ps=13740610&shp=75a09491&shcp=75a09491&idc=no1a"
+              ],
+              "width": 12
+            },
+            "icon": {
+              "avg_color": "",
+              "height": 12,
+              "image_type": 0,
+              "is_animated": false,
+              "open_web_url": "",
+              "uri": "tos-alisg-i-cuqfs489yo-sg/class_rank/league_D_tab_icon.png",
+              "url_list": [
+                "http://p16-common-sign.tiktokcdn-eu.com/tos-alisg-i-cuqfs489yo-sg/class_rank/league_D_tab_icon.png~tplv-tiktokx-origin.image?dr=10402&refresh_token=b5f7805c&x-expires=1774411200&x-signature=Y0keJkasiWVGuB5VMIu0ZX%2FQfjE%3D&t=4d5b0474&ps=13740610&shp=75a09491&shcp=75a09491&idc=no1a"
+              ],
+              "width": 12
+            },
+            "rank_type": 16,
+            "selected_bg_color": {
+              "dark": "#fff5dbdb",
+              "light": "#fff5dbdb"
+            },
+            "selected_text_color": {
+              "dark": "#ff461517",
+              "light": "#ff461517"
+            },
+            "title_text": {
+              "default_format": {
+                "bold": false,
+                "color": "#ffffffff",
+                "font_size": 0,
+                "italic": false,
+                "italic_angle": 0,
+                "use_heigh_light_color": false,
+                "use_remote_clor": false,
+                "weight": 400
+              },
+              "default_pattern": "League {0:string}",
+              "key": "pm_mt_league_subTab_league",
+              "pieces": [
+                {
+                  "string_value": "D1",
+                  "type": 1
+                }
+              ]
+            }
+          }
+        ],
+        "title": "Daily Ranking"
+      }
+    },
+    "extra": {
+      "now": 1774392785335
+    },
+    "status_code": 0
+  },
+  "timestamp": 1774392786
+}

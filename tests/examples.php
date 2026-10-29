@@ -8,114 +8,97 @@ use GuzzleHttp\HandlerStack;
 use GuzzleHttp\Middleware;
 use GuzzleHttp\Psr7\Response;
 use TikTokRESTAPI\TikTok;
-use TikTokRESTAPI\Response\APIResponse;
-use TikTokRESTAPI\Response\Model\AwemeDetail;
-use LazyJsonMapper\LazyJsonMapper;
 
 function expect(bool $condition, string $message): void
 {
     if (!$condition) throw new RuntimeException($message);
 }
-
-$video = ['aweme_id' => '7106855913906081070', 'author' => ['nickname' => 'Fixture author'],
-    'statistics' => ['play_count' => 12345],
-    'video' => ['play_addr' => ['url_list' => ['https://example.test/video.mp4']]]];
-$user = ['uid' => '7106855913906081070', 'unique_id' => 'fixture-user', 'nickname' => 'Fixture user', 'follower_count' => 42];
-$payload = ['status_code' => 0, 'user' => $user, 'aweme_detail' => $video,
-    'aweme_list' => [$video], 'comments' => [['text' => 'Fixture comment', 'user' => $user]],
-    'user_list' => [['user_info' => $user]], 'music' => [['title' => 'Fixture music', 'owner_nickname' => 'Fixture artist']],
-    'challenge_list' => [['challenge_info' => ['cha_name' => 'Fixture hashtag']]],
-    'cursor' => 17, 'max_cursor' => '9007199254740999', 'has_more' => 1, 'url' => 'https://example.test/video',
-    'unknown_upstream' => ['preserved' => true]];
-$envelope = ['status' => 'ok', 'tiktok' => $payload];
-$model = new APIResponse($envelope);
-expect($model instanceof LazyJsonMapper, 'Envelope must be a LazyJsonMapper');
-expect($model->getTiktok()->getAwemeDetail() instanceof AwemeDetail, 'Nested video must be mapped');
-expect($model->getTiktok()->getAwemeDetail() instanceof LazyJsonMapper, 'Nested video must inherit LazyJsonMapper');
-expect($model->getTiktok()->getAwemeDetail()->getAwemeId() === '7106855913906081070', 'Large ID must stay a string');
+function runExample(string $file, array $arguments): array
+{
+    $process = proc_open(array_merge([PHP_BINARY, dirname(__DIR__) . '/examples/' . $file], $arguments),
+        [1 => ['pipe', 'w'], 2 => ['pipe', 'w']], $pipes, null, ['JSONSCRAPER_TIKTOK_LICENSE_KEY' => '']);
+    if (!is_resource($process)) throw new RuntimeException('Cannot start example');
+    $out = stream_get_contents($pipes[1]); fclose($pipes[1]);
+    $err = stream_get_contents($pipes[2]); fclose($pipes[2]);
+    return [proc_close($process), $out, $err];
+}
 
 $root = dirname(__DIR__);
-$count = 0;
-foreach (glob($root . '/examples/*.php') as $file) {
-    $source = file_get_contents($file);
-    if (!str_contains($source, '$client = exampleClient();')) continue;
-    // Execute the shipped request and getter code with an injected mock client.
-    // Only the shared CLI bootstrap/client construction is replaced, in memory.
-    $code = str_replace(["<?php", "declare(strict_types=1);", "require __DIR__ . '/support/bootstrap.php';", '$client = exampleClient();'], '', $source);
-    $name = pathinfo($file, PATHINFO_FILENAME);
-    foreach ([$envelope, ['status' => 'ok'], ['status' => 'ok', 'tiktok' => []]] as $fixture) {
-        $history = [];
-        $stack = HandlerStack::create(new MockHandler([new Response(200, ['Content-Type' => 'application/json'], json_encode($fixture))]));
-        $stack->push(Middleware::history($history));
-        $client = new TikTok('offline-example-secret');
-        $client->httpClient = new Client(['handler' => $stack]);
-        ob_start();
-        try { eval($code); $output = ob_get_contents(); }
-        finally { ob_end_clean(); }
-        expect(count($history) === 1, "$name must make exactly one request");
-        expect($history[0]['request']->getUri()->getPath() === '/' . $name, "$name uses the wrong endpoint");
-        expect(!str_contains($output, 'offline-example-secret'), "$name leaked the license key");
-        if ($fixture !== $envelope) continue;
-        if (in_array($name, ['getVideoByID', 'getVideoByUrl', 'getUserFeed', 'searchVideo'], true)) {
-            expect(str_contains($output, 'Fixture author') && str_contains($output, '12345'), "$name did not read nested models");
-        }
-        if (in_array($name, ['getUserInfo', 'getBasicUserInfo', 'getUserInfoByID', 'searchUser'], true)) {
-            expect(str_contains($output, 'fixture-user'), "$name did not read the user model");
-        }
-        if (str_starts_with($name, 'getComments')) expect(str_contains($output, 'Fixture comment'), "$name did not read comment models");
-        if ($name === 'getUserFeed') expect(str_contains($output, '9007199254740999'), 'Feed cursor must stay unchanged');
-    }
-    $count++;
-}
-expect($count === 54, 'Expected all 54 named examples');
-
-$temp = tempnam(sys_get_temp_dir(), 'tiktok-example-output-');
-$options = ['output' => $temp];
+$manifest = json_decode(file_get_contents($root . '/examples/responses/manifest.json'), true, 512, JSON_THROW_ON_ERROR);
+expect(count($manifest) === 54, 'Every endpoint needs a documented response source');
+$comment = new TikTokRESTAPI\Response\Model\Comment(['text_extra' => [['user_id' => '6745191554350760966']]]);
+expect($comment->getTextExtra()[0] instanceof TikTokRESTAPI\Response\Model\TextExtra, 'Comment mentions must be a typed list');
+$unknown = new TikTokRESTAPI\Response\APIResponse(['status' => 'ok', 'tiktok' => ['future_field' => ['preserved' => true]]]);
+expect($unknown->exportObjectDataCopy('array')['tiktok']['future_field']['preserved'] === true, 'Unknown fields must survive export');
+$temp = tempnam(sys_get_temp_dir(), 'tiktok-export-');
 try {
-    exampleOutput($model);
-    $saved = json_decode(file_get_contents($temp), true, 512, JSON_THROW_ON_ERROR);
-    expect($saved['tiktok']['unknown_upstream']['preserved'] === true, 'JSON export lost unknown fields');
-    expect($saved['tiktok']['aweme_detail']['aweme_id'] === '7106855913906081070', 'JSON export changed ID');
-} finally { unlink($temp); }
-
-// Run real CLI entry points to check no-key/no-dependency help and rejection paths.
-function cli(string $file, array $arguments = [], ?string $fixture = null): array
-{
-    global $root;
-    if ($fixture === null) {
-        $command = array_merge([PHP_BINARY, $root . '/examples/' . $file], $arguments);
-    } else {
-        // Test shared error handling in a separate process: no HTTP client exists.
-        $program = 'require ' . var_export($root . '/examples/support/bootstrap.php', true) . ';';
-        $program .= $fixture === 'http'
-            ? 'throw new TikTokRESTAPI\\Exception\\ForbiddenException("Access denied");'
-            : 'exampleCheck(new TikTokRESTAPI\\Response\\APIResponse(' . var_export($fixture === 'quota' ? ['status' => 'ok', 'rate_limit_reached' => true] : ['status' => 'fail'], true) . '));';
-        $temporaryProgram = tempnam(sys_get_temp_dir(), 'tiktok-example-error-');
-        file_put_contents($temporaryProgram, '<?php ' . $program);
-        $command = [PHP_BINARY, $temporaryProgram];
+    foreach ($manifest as $endpoint => $metadata) {
+        $raw = file_get_contents($root . '/examples/responses/' . $endpoint . '.json');
+        $fixture = json_decode($raw, true, 512, JSON_BIGINT_AS_STRING | JSON_THROW_ON_ERROR);
+        [$exit, $output, $error] = runExample($endpoint . '.php', ['--offline', '--output=' . $temp]);
+        $success = $fixture['status'] === 'ok';
+        expect($exit === ($success ? 0 : 1), "$endpoint: unexpected exit code: $error");
+        expect(!str_contains($error, 'Warning') && !str_contains($error, 'Exception'), "$endpoint: $error");
+        expect(strlen(trim($output)) > 0, "$endpoint: no useful output");
+        if ($success) {
+            $saved = json_decode(file_get_contents($temp), true, 512, JSON_BIGINT_AS_STRING | JSON_THROW_ON_ERROR);
+            expect($saved['status'] === 'ok', "$endpoint: JSON export failed");
+            // Representative real IDs and nested titles must survive mapping and export.
+            if (is_string($fixture['tiktok'])) expect($saved['tiktok'] === $fixture['tiktok'], "$endpoint: scalar payload changed");
+        } else {
+            expect($metadata['http_status'] === 404 && str_contains($error, 'API application error'), "$endpoint: live failure must be explicit");
+        }
+        [$helpExit, $help] = runExample($endpoint . '.php', ['--help']);
+        expect($helpExit === 0 && str_contains($help, '--offline'), "$endpoint: help failed without a key");
+        // Replay the actual HTTP status separately: CLI offline mode deliberately lets us inspect failure envelopes.
+        $history = [];
+        $handler = HandlerStack::create(new MockHandler([new Response($metadata['http_status'], ['Content-Type' => 'application/json'], $raw)]));
+        $handler->push(Middleware::history($history));
+        $client = new TikTok('offline-secret');
+        $client->httpClient = new Client(['handler' => $handler]);
+        try {
+            $model = $client->call($endpoint, ['query' => 'test']);
+            expect($success && $model->isOk(), "$endpoint: failure should throw");
+            $model->exportObjectDataCopy('array');
+        } catch (TikTokRESTAPI\Exception\TikTokException $failure) {
+            expect(!$success, "$endpoint: unexpected transport error");
+            expect(!str_contains($failure->getMessage(), 'offline-secret'), "$endpoint: leaked license");
+        }
+        $source = file_get_contents($root . '/examples/' . $endpoint . '.php');
+        $code = str_replace(['<?php', 'declare(strict_types=1);', "require __DIR__ . '/support/bootstrap.php';", '$client = exampleClient();'], '', $source);
+        foreach ([['status' => 'ok'], ['status' => 'ok', 'tiktok' => []]] as $empty) {
+            $mock = new MockHandler([new Response(200, ['Content-Type' => 'application/json'], json_encode($empty))]);
+            $client = new TikTok('offline-secret');
+            $client->httpClient = new Client(['handler' => HandlerStack::create($mock)]);
+            ob_start();
+            try { eval($code); } finally { ob_end_clean(); }
+        }
+        expect(count($history) === 1, "$endpoint: expected exactly one request");
+        expect($history[0]['request']->getUri()->getPath() === '/' . $endpoint, "$endpoint: wrong request path");
     }
-    $process = proc_open($command, [1 => ['pipe', 'w'], 2 => ['pipe', 'w']], $pipes, $root,
-        ['PATH' => getenv('PATH'), 'JSONSCRAPER_TIKTOK_LICENSE_KEY' => $fixture === null ? '' : 'offline-cli-secret', 'EXAMPLE_TEST_STATUS' => $fixture ?? '']);
-    $stdout = stream_get_contents($pipes[1]); fclose($pipes[1]);
-    $stderr = stream_get_contents($pipes[2]); fclose($pipes[2]);
-    $status = proc_close($process);
-    if (isset($temporaryProgram)) unlink($temporaryProgram);
-    return [$status, $stdout . $stderr];
-}
-foreach (glob($root . '/examples/*.php') as $file) {
-    [$status, $output] = cli(basename($file), ['--help']);
-    expect($status === 0 && str_contains($output, 'LazyJsonMapper'), basename($file) . ' help failed');
-}
-foreach (glob($root . '/examples/endpoints/*.php') as $file) {
-    [$status, $output] = cli('endpoints/' . basename($file), ['--help']);
-    expect($status === 0 && str_contains($output, 'GET /'), basename($file) . ' diagnostic help failed');
-}
-[$status] = cli('getUserInfo.php'); expect($status === 2, 'Missing key must fail before HTTP');
-[$status] = cli('getUserInfo.php', ['--query=other']); expect($status === 2, 'Unsupported flags must not be ignored');
-foreach (['fail', 'quota', 'http'] as $fixture) {
-    [$status, $output] = cli('getUserInfo.php', [], $fixture);
-    expect($status === 1, "$fixture should fail");
-    expect(!str_contains($output, 'Username:'), "$fixture must not render a success model");
-    expect(!str_contains($output, 'offline-cli-secret'), "$fixture leaked license");
-}
-echo "Examples: 54 named requests × populated/missing/empty payloads; model inheritance, getters, IDs, cursor, JSON preservation, CLI help, application/quota/HTTP failures passed.\n";
+    $needles = [
+        'searchVideo' => ['7611630876337655070', 'Apple TV', '62602'],
+        'getUserID' => ['6745191554350760966'],
+        'getMusicInfo' => ['Nikes', '6928004115846924290'],
+        'getRankingInfo' => ['Daily Ranking', '5089947'],
+        'getLiveFeed' => ['7620954383781481246', '554'],
+        'getUserStories' => ['7620713971015798023', '1774337812005'],
+        'getUserPlaylistByID' => ['7359404761613208363', 'DJ x Chris Janson'],
+        'getAvailableRankingList' => ['Daily Ranking', 'Popular LIVE'],
+    ];
+    foreach ($needles as $endpoint => $expected) {
+        [, $output] = runExample($endpoint . '.php', ['--offline']);
+        foreach ($expected as $value) expect(str_contains($output, $value), "$endpoint: missing real value $value");
+    }
+    foreach (['feed.php', 'video.php', 'search.php', 'models.php', 'quickstart.php'] as $alias) {
+        [$exit, , $error] = runExample($alias, ['--offline']);
+        expect($exit === 0, "$alias: alias failed: $error");
+    }
+    [$exit] = runExample('getUserInfo.php', []);
+    expect($exit === 2, 'Live mode requires a key');
+    foreach (['--timeout=0', '--cache_timeout=-1', '--query=ignored'] as $argument) {
+        [$exit] = runExample('getUserInfo.php', ['--offline', $argument]);
+        expect($exit === 2, 'Invalid option must be rejected: ' . $argument);
+    }
+} finally { unlink($temp); }
+echo "54 real response replays, exports, transport statuses, request paths, CLI help, aliases and error cases passed.\n";

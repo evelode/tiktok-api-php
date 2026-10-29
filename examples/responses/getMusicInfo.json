@@ -1,0 +1,287 @@
+{
+  "status": "ok",
+  "tiktok": {
+    "ai_recommend_music": null,
+    "ai_recommend_video": null,
+    "behind_the_song_exist": false,
+    "extra": {
+      "fatal_item_ids": [],
+      "logid": "2026030415383229AE352C229990ECDDA7",
+      "now": 1772638712000
+    },
+    "log_pb": {
+      "impr_id": "2026030415383229AE352C229990ECDDA7"
+    },
+    "msg": "success",
+    "music_chart_rank": {
+      "chart_music_info": "{\"currentTabId\":0,\"tabList\":[{\"tabId\":0,\"tabNameKey\":\"music_chart_top_50_title\",\"tabName\":\"music_chart_top_50_title\",\"currentMusicId\":\"\"},{\"tabId\":1,\"tabNameKey\":\"music_chart_viral_50_title\",\"tabName\":\"music_chart_viral_50_title\",\"currentMusicId\":\"\"}]}",
+      "desc": "Music Charts",
+      "link_style": {
+        "bg_end_color": 12881901,
+        "bg_start_color": 9405693
+      }
+    },
+    "music_info": {
+      "album": "Nikes",
+      "allow_offline_music_to_detail_page": false,
+      "artists": [
+        {
+          "avatar": {
+            "uri": "tos-maliva-avt-0068/2e52b81b8594fd6768191007132111fe",
+            "url_list": [
+              "https://p16-common-sign.tiktokcdn-eu.com/tos-maliva-avt-0068/2e52b81b8594fd6768191007132111fe~tplv-tiktokx-cropcenter:168:168.webp?dr=10397&refresh_token=c94ae0d1&x-expires=1772722800&x-signature=FX35zg6pT3opqn5%2Bon6NhzVyLF0%3D&t=4d5b0474&ps=13740610&shp=544a444f&shcp=f6441914&idc=no1a",
+              "https://p19-common-sign.tiktokcdn-eu.com/tos-maliva-avt-0068/2e52b81b8594fd6768191007132111fe~tplv-tiktokx-cropcenter:168:168.webp?dr=10397&refresh_token=da4561a9&x-expires=1772722800&x-signature=Rce3KHgsS48%2BzfGUguPLtrQSWY8%3D&t=4d5b0474&ps=13740610&shp=544a444f&shcp=f6441914&idc=no1a"
+            ],
+            "url_prefix": null
+          },
+          "enter_type": 2,
+          "follow_status": 0,
+          "follower_status": 0,
+          "handle": "nimstarrr",
+          "is_block": false,
+          "is_blocked": false,
+          "is_private_account": false,
+          "is_verified": false,
+          "is_visible": false,
+          "nick_name": "Nimstarr",
+          "sec_uid": "MS4wLjABAAAAPVzATqmW37ERaXZZv3yDA2Xo0mOMxQdhPqE471wtFgUdPh0uKzfz2d0Vj21DCyk3",
+          "status": 1,
+          "uid": "6809444586009003014"
+        }
+      ],
+      "audition_duration": 60,
+      "author": "Nimstarr & kid toni",
+      "author_deleted": false,
+      "author_position": null,
+      "avatar_medium": {
+        "height": 720,
+        "uri": "musically-maliva-obj/1594805258216454",
+        "url_list": [
+          "https://p16-common-sign.tiktokcdn-eu.com/musically-maliva-obj/1594805258216454~tplv-tiktokx-cropcenter:720:720.webp?dr=10399&refresh_token=cfeb8c7d&x-expires=1772722800&x-signature=dIEMkswi6upHsIhN1HCL9rSSHLY%3D&t=4d5b0474&ps=13740610&shp=544a444f&shcp=f6441914&idc=no1a",
+          "https://p19-common-sign.tiktokcdn-eu.com/musically-maliva-obj/1594805258216454~tplv-tiktokx-cropcenter:720:720.webp?dr=10399&refresh_token=7aa0ea43&x-expires=1772722800&x-signature=PmIp0G4zPAaKYpw9FRKyDXLTjrc%3D&t=4d5b0474&ps=13740610&shp=544a444f&shcp=f6441914&idc=no1a"
+        ],
+        "url_prefix": null,
+        "width": 720
+      },
+      "avatar_thumb": {
+        "height": 720,
+        "uri": "musically-maliva-obj/1594805258216454",
+        "url_list": [
+          "https://p16-common-sign.tiktokcdn-eu.com/musically-maliva-obj/1594805258216454~tplv-tiktokx-cropcenter:100:100.webp?dr=10399&refresh_token=3b61a923&x-expires=1772722800&x-signature=T2lF36U7%2BhtAmKVQzxayIZvPKYA%3D&t=4d5b0474&ps=13740610&shp=544a444f&shcp=f6441914&idc=no1a",
+          "https://p19-common-sign.tiktokcdn-eu.com/musically-maliva-obj/1594805258216454~tplv-tiktokx-cropcenter:100:100.webp?dr=10399&refresh_token=a17dbc78&x-expires=1772722800&x-signature=crf4b1Aiy00XBbHnkqTUNY1NQyU%3D&t=4d5b0474&ps=13740610&shp=544a444f&shcp=f6441914&idc=no1a"
+        ],
+        "url_prefix": null,
+        "width": 720
+      },
+      "binded_challenge_id": 0,
+      "can_be_stitched": false,
+      "can_not_reuse": false,
+      "collect_stat": 0,
+      "commercial_right_type": 1,
+      "cover_large": {
+        "height": 720,
+        "uri": "tos-alisg-v-2774/ddced95b3b79404abab94c605af4cc1d",
+        "url_list": [
+          "https://p16-sg.tiktokcdn.com/aweme/720x720/tos-alisg-v-2774/ddced95b3b79404abab94c605af4cc1d.jpeg"
+        ],
+        "url_prefix": null,
+        "width": 720
+      },
+      "cover_medium": {
+        "height": 720,
+        "uri": "tos-alisg-v-2774/ddced95b3b79404abab94c605af4cc1d",
+        "url_list": [
+          "https://p16-sg.tiktokcdn.com/aweme/200x200/tos-alisg-v-2774/ddced95b3b79404abab94c605af4cc1d.jpeg"
+        ],
+        "url_prefix": null,
+        "width": 720
+      },
+      "cover_thumb": {
+        "height": 720,
+        "uri": "tos-alisg-v-2774/ddced95b3b79404abab94c605af4cc1d",
+        "url_list": [
+          "https://p16-sg.tiktokcdn.com/aweme/100x100/tos-alisg-v-2774/ddced95b3b79404abab94c605af4cc1d.jpeg"
+        ],
+        "url_prefix": null,
+        "width": 720
+      },
+      "create_time": 1613051663,
+      "dmv_auto_show": false,
+      "duration": 60,
+      "duration_high_precision": {
+        "audition_duration_precision": 60,
+        "duration_precision": 60,
+        "shoot_duration_precision": 60,
+        "video_duration_precision": 60
+      },
+      "external_song_info": [],
+      "extra": "{\"aed_music_dur\":58.33,\"amplitude_peak\":1.1030183,\"apple_song_id\":1553223211,\"beats\":{\"audio_effect_onset\":\"https://sf77-ies-music-sg.tiktokcdn.com/obj/tos-alisg-v-2774/9874ccf0d6534651aef2099ae8098e2a\",\"beats_tracker\":\"https://sf16-ies-music-sg.tiktokcdn.com/obj/tos-alisg-v-2774/a836add63817405fa509a419e5ff70dc\",\"energy_trace\":\"https://sf77-ies-music-sg.tiktokcdn.com/obj/tos-alisg-v-2774/61338bd0c87f4c2dab79cd6787bcebfa\",\"merged_beats\":\"https://sf77-ies-music-sg.tiktokcdn.com/obj/tos-alisg-v-2774/f6b517e10a2d43e1b7ed56a189873446\"},\"can_read\":true,\"can_reuse\":true,\"erase_type\":0,\"erase_uid\":0,\"from_user_id\":7561759161576195094,\"full_song_beat_info\":{},\"full_song_beats\":{},\"has_edited\":0,\"is_batch_take_down_music\":false,\"is_ugc_mapping\":false,\"is_used\":0,\"loudness_lufs\":-11.986184,\"music_vid\":\"v10ad6g50000d49ip5fog65ou22j3gng\",\"owner_id\":0,\"resource_status\":0,\"review_unshelve_reason\":0,\"reviewed\":1,\"schedule_search_time\":0}",
+      "has_commerce_right": false,
+      "has_commerce_right_strict": false,
+      "id": 6928004115846924290,
+      "id_str": "6928004115846924290",
+      "is_audio_url_with_cookie": false,
+      "is_author_artist": true,
+      "is_commerce_music": false,
+      "is_commerce_music_strict": false,
+      "is_matched_metadata": false,
+      "is_original": false,
+      "is_original_sound": false,
+      "is_pgc": true,
+      "is_shooting_allow": true,
+      "log_extra": "{\"meta_song_matched_type\":\"pgc\",\"ttm_matched_type\":\"\",\"ttm_track_id\":\"\",\"matched_meta_song_id\":\"\",\"vid\":\"\",\"owner_id\":\"\"}",
+      "lyric_short_position": null,
+      "matched_song": {
+        "author": "Nimstarr & kid toni",
+        "chorus_info": {
+          "duration_ms": 30720,
+          "start_ms": 8448
+        },
+        "cover_medium": {
+          "height": 720,
+          "uri": "tos-alisg-v-2774/ddced95b3b79404abab94c605af4cc1d",
+          "url_list": [
+            "https://p16-sg.tiktokcdn.com/aweme/200x200/tos-alisg-v-2774/ddced95b3b79404abab94c605af4cc1d.jpeg"
+          ],
+          "url_prefix": null,
+          "width": 720
+        },
+        "full_duration": 139921,
+        "h5_url": "",
+        "id": "6928004113938532354",
+        "performers": null,
+        "title": "Nikes"
+      },
+      "meme_song_info": {},
+      "mid": "6928004115846924290",
+      "multi_bit_rate_play_info": [
+        {
+          "bit_rate": 257675,
+          "dub_infos": null,
+          "gear_name": "highest",
+          "play_addr": {
+            "url_list": [
+              "https://v77.tiktokcdn-eu.com/1cc6c99da881ce7bddb278ace337eb14/69a9a3b4/video/tos/alisg/tos-alisg-ve-2774/oAvZQQoB0AL4whxiiB1ZzBI8WAUTfiawIsMJ8K/?a=1233&bti=OnYpenFxQGo4NDZAOm1rbGhyYCMvNTNg&ch=0&cr=0&dr=0&er=0&cd=0%7C0%7C0%7C0&br=502&bt=251&ft=.NpOcInz7ThwYwtPXq8Zmo&mime_type=audio_mp4&qs=7&rc=M2c8M2VmOTo4OWQ2ODxlZEBpamptNXI5cjhsNzMzODlkNEBgMGBfLjIwNjAxNDVhLzJgYSNrMC9yMmRjbTZhLS1kYS1zcw%3D%3D&vvpl=1&l=2026030415383229AE352C229990ECDDA7&btag=e00090000",
+              "https://v15m.tiktokcdn-eu.com/5dd14edba47fbd6e3a31a0510c9875e3/69a9a3b4/video/tos/alisg/tos-alisg-ve-2774/oAvZQQoB0AL4whxiiB1ZzBI8WAUTfiawIsMJ8K/?a=1233&bti=OnYpenFxQGo4NDZAOm1rbGhyYCMvNTNg&ch=0&cr=0&dr=0&er=0&cd=0%7C0%7C0%7C0&br=502&bt=251&ft=.NpOcInz7ThwYwtPXq8Zmo&mime_type=audio_mp4&qs=7&rc=M2c8M2VmOTo4OWQ2ODxlZEBpamptNXI5cjhsNzMzODlkNEBgMGBfLjIwNjAxNDVhLzJgYSNrMC9yMmRjbTZhLS1kYS1zcw%3D%3D&vvpl=1&l=2026030415383229AE352C229990ECDDA7&btag=e00090000"
+            ],
+            "url_prefix": null
+          },
+          "quality_type": 7
+        },
+        {
+          "bit_rate": 129600,
+          "dub_infos": null,
+          "gear_name": "higher",
+          "play_addr": {
+            "url_list": [
+              "https://v77.tiktokcdn-eu.com/e7b065e50687be717acdb62177525411/69a9a3b4/video/tos/alisg/tos-alisg-ve-2774/oAFOwAfiDwiJ0Kvo8MAZsxBG1IIZiUWPB4MZLT/?a=1233&bti=OnYpenFxQGo4NDZAOm1rbGhyYCMvNTNg&ch=0&cr=0&dr=0&er=0&cd=0%7C0%7C0%7C0&br=252&bt=126&ft=.NpOcInz7ThwYwtPXq8Zmo&mime_type=audio_mp4&qs=6&rc=NWg4NWg5ZWloNzY6Ozw8O0BpamptNXI5cjhsNzMzODlkNEBjYjU2NF4xNi8xYWE2LmMxYSNrMC9yMmRjbTZhLS1kYS1zcw%3D%3D&vvpl=1&l=2026030415383229AE352C229990ECDDA7&btag=e00090000",
+              "https://v15m.tiktokcdn-eu.com/5522a2e87232bcf33a62774279cc7cc2/69a9a3b4/video/tos/alisg/tos-alisg-ve-2774/oAFOwAfiDwiJ0Kvo8MAZsxBG1IIZiUWPB4MZLT/?a=1233&bti=OnYpenFxQGo4NDZAOm1rbGhyYCMvNTNg&ch=0&cr=0&dr=0&er=0&cd=0%7C0%7C0%7C0&br=252&bt=126&ft=.NpOcInz7ThwYwtPXq8Zmo&mime_type=audio_mp4&qs=6&rc=NWg4NWg5ZWloNzY6Ozw8O0BpamptNXI5cjhsNzMzODlkNEBjYjU2NF4xNi8xYWE2LmMxYSNrMC9yMmRjbTZhLS1kYS1zcw%3D%3D&vvpl=1&l=2026030415383229AE352C229990ECDDA7&btag=e00090000"
+            ],
+            "url_prefix": null
+          },
+          "quality_type": 6
+        }
+      ],
+      "music_release_info": {
+        "group_release_date": 1613088000,
+        "is_new_release_song": false
+      },
+      "mute_share": false,
+      "offline_desc": "",
+      "owner_handle": "",
+      "owner_nickname": "",
+      "play_url": {
+        "data_size": 492248,
+        "file_hash": "3cf7fc073844c32733e57ace37c8ca97",
+        "height": 720,
+        "uri": "https://sf16-ies-music-sg.tiktokcdn.com/obj/tos-alisg-ve-2774/oAFOwAfiDwiJ0Kvo8MAZsxBG1IIZiUWPB4MZLT",
+        "url_list": [
+          "https://sf16-ies-music-sg.tiktokcdn.com/obj/tos-alisg-ve-2774/oAFOwAfiDwiJ0Kvo8MAZsxBG1IIZiUWPB4MZLT"
+        ],
+        "url_prefix": null,
+        "width": 720
+      },
+      "position": null,
+      "prevent_download": false,
+      "preview_end_time": 0,
+      "preview_start_time": 6,
+      "recommend_status": 100,
+      "same_group_id_v3": 6928004630341224448,
+      "share_info": {
+        "bool_persist": 0,
+        "now_invitation_card_image_urls": null,
+        "share_desc": "Check out this song! Nikes #TikTok",
+        "share_desc_info": "Users all over the world are having fun making their own versions of the song Nikes on TikTok! Tap here >>",
+        "share_quote": "",
+        "share_signature_desc": "",
+        "share_signature_url": "",
+        "share_title": "Amazing! I just found a bunch of funny videos! #TikTok > Nikes",
+        "share_title_myself": "",
+        "share_title_other": "",
+        "share_url": "https://www.tiktok.com/music/Nikes-6928004115846924290?_r=1&sharer_language=en&source=h5_m&u_code=f0166jk56e6437&_d=f29ab7ddib4g2j&share_music_id=6928004115846924290"
+      },
+      "shoot_duration": 60,
+      "sim_group_id_v3": 53265253122,
+      "source_platform": 10033,
+      "status": 1,
+      "strong_beat_url": {
+        "height": 720,
+        "uri": "https://sf77-ies-music-sg.tiktokcdn.com/obj/tos-alisg-v-2774/a07a933c327c436b9f488f8bb416ae4e",
+        "url_list": [
+          "https://sf77-ies-music-sg.tiktokcdn.com/obj/tos-alisg-v-2774/a07a933c327c436b9f488f8bb416ae4e"
+        ],
+        "url_prefix": null,
+        "width": 720
+      },
+      "suggest_words": {
+        "suggest_words": [
+          {
+            "scene": "search_hint",
+            "words": [
+              {
+                "word": "Nikes",
+                "word_id": "8135909805128194412"
+              }
+            ]
+          }
+        ]
+      },
+      "tag_list": null,
+      "theme_tags": [
+        "Summer"
+      ],
+      "title": "Nikes",
+      "tt_to_dsp_song_infos": [
+        {
+          "button_type": 2,
+          "platform": 1,
+          "song_id": "1553223211",
+          "token": {
+            "apple_music_token": {
+              "developer_token": "eyJhbGciOiJFUzI1NiIsImtpZCI6Ikc2Q0dLMjdWQzMifQ.eyJleHAiOjE3NzMyMTI4NDgsImlhdCI6MTc3MjYwODA0OCwiaXNzIjoiTUo3OTdEOFU2RiJ9.CBJg7sQMmYFYeKAbbWtpWOx5hgiw0M8pG8wf6gpgHPUHhou7NNAqsk7mvrmXRmMkcF_ydMyD4za-1TbO_O5TJQ"
+            }
+          }
+        },
+        {
+          "button_type": 2,
+          "platform": 2,
+          "song_id": "B094PD4237"
+        }
+      ],
+      "uncert_artists": [
+        {
+          "name": "kid toni"
+        }
+      ],
+      "user_count": 4023,
+      "vid_volume_info": "{\"Loudness\":-12,\"Peak\":0.91201}",
+      "video_duration": 60
+    },
+    "rec_list": [],
+    "similar_music": [],
+    "similar_music_ids": null,
+    "status_code": 0,
+    "status_msg": ""
+  },
+  "timestamp": 1772638713
+}

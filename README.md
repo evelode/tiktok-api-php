@@ -74,7 +74,7 @@ The API payload is in `tiktok`. Live calls require a valid API license and may c
 - [List profile videos](examples/getUserFeed.php).
 - [Video, author, statistics and playback URL models](examples/models.php).
 
-The main examples use named SDK methods and read LazyJsonMapper models directly. Shared setup handles the API key, timeouts, errors and optional `--output` JSON export. Run `--help` first; this makes no API request. For all query-parameter flags, use the preserved [diagnostic CLI programs](examples/endpoints/).
+The main examples use named SDK methods and read LazyJsonMapper models directly. Shared setup handles the API key, timeouts, errors, `--offline` replay and optional `--output` JSON export. Every endpoint has a walkthrough, real response excerpt and captured output. Run `--help` first; this makes no API request. For all query-parameter flags, use the preserved [diagnostic CLI programs](examples/endpoints/).
 
 **[Browse all 54 complete examples](examples/README.md)** · **[Full method and parameter reference](docs/endpoints.md)**
 

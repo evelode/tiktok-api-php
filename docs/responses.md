@@ -1,18 +1,9 @@
-# TikTok responses
+# Response models and real examples
 
-Live profile responses were checked on 2026-10-25. The profile payload is in `tiktok`. This shortened sample illustrates the envelope; it is not an exhaustive response contract:
+See the [example catalogue](../examples/README.md) and [response-source manifest](../examples/responses/manifest.json) for all 54 endpoints. Each walkthrough links to its captured JSON, request code, getter chains and verified console output.
 
-```json
-{
-  "status": "ok",
-  "tiktok": {
-    "user": {
-      "unique_id": "therock"
-    }
-  }
-}
-```
+The default `APIResponse` maps `tiktok` to `Model\TikTok`. `ScalarResponse` retains scalar account identifiers. `RankingResponse`, `LiveResponse` and `StoryResponse` select the payload schema for object-valued `data` and directly wrapped story details. These classes extend `APIResponse`, so the existing public return type remains valid.
 
-Fields can be absent or null. Successful HTTP 200 responses can carry API/application failures; check `status`, `rate_limit_reached` when present, and product-specific metadata. Cached replies may omit quota fields. Unknown upstream fields are preserved.
+`searchVideo` results live in `search_item_list[].aweme_info`; an empty `aweme_list` does not mean the search returned no results. Followers and following use different collections (`followers` and `followings`). Music detail is in `music_info`; music charts use `music_list[].music_info`. Playlist detail is in `mix`, lists in `mix_list`, and playlist videos in `videos`. Story collections are under `user_story.stories`.
 
-IDs should remain strings in application code. Never turn a large platform ID into a floating-point number. API response bodies are not logged by the SDK.
+Always check the outer status, rate limit and upstream status_code when present. Unknown fields are retained, missing values may be null, and cached responses can omit quota fields. IDs and cursor tokens should remain strings where declared. The three social-link probes captured only failures; their success payloads remain intentionally untyped.

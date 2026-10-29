@@ -1,0 +1,136 @@
+{
+  "status": "ok",
+  "tiktok": {
+    "user": {
+      "account_type": 1,
+      "ad_virtual": false,
+      "avatar_168x168": {
+        "uri": "tos-maliva-avt-0068/7310325298631802885",
+        "url_list": [
+          "https://p16-common-sign.tiktokcdn-eu.com/tos-maliva-avt-0068/7310325298631802885~tplv-tiktokx-cropcenter:168:168.webp?dr=10397&refresh_token=80b656a3&x-expires=1772809200&x-signature=cpshqCyxbTrKT6ZAa1z6XRNOLl4%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=a1d2006b&idc=no1a",
+          "https://p19-common-sign.tiktokcdn-eu.com/tos-maliva-avt-0068/7310325298631802885~tplv-tiktokx-cropcenter:168:168.webp?dr=10397&refresh_token=9594ac2b&x-expires=1772809200&x-signature=ljp0OqvAkcB99zsH%2FHvZ53AWk7Y%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=a1d2006b&idc=no1a"
+        ],
+        "url_prefix": null
+      },
+      "avatar_300x300": {
+        "uri": "tos-maliva-avt-0068/7310325298631802885",
+        "url_list": [
+          "https://p16-common-sign.tiktokcdn-eu.com/tos-maliva-avt-0068/7310325298631802885~tplv-tiktokx-cropcenter:300:300.webp?dr=10397&refresh_token=61061bb8&x-expires=1772809200&x-signature=VFHvnINO2FcCvZvVOkHI4BTYHXs%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=2472a6c6&idc=no1a",
+          "https://p19-common-sign.tiktokcdn-eu.com/tos-maliva-avt-0068/7310325298631802885~tplv-tiktokx-cropcenter:300:300.webp?dr=10397&refresh_token=58c0cd15&x-expires=1772809200&x-signature=Zy6uk257bw8BTiYWfKGb%2FhdExDg%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=2472a6c6&idc=no1a"
+        ],
+        "url_prefix": null
+      },
+      "avatar_larger": {
+        "uri": "tos-maliva-avt-0068/7310325298631802885",
+        "url_list": [
+          "https://p19-common-sign.tiktokcdn-eu.com/tos-maliva-avt-0068/7310325298631802885~tplv-tiktokx-cropcenter:1080:1080.webp?dr=10399&refresh_token=559ef42e&x-expires=1772809200&x-signature=5tgoOeOrR%2FJLQb%2FLLZHn78Hw5ZY%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=2472a6c6&idc=no1a",
+          "https://p16-common-sign.tiktokcdn-eu.com/tos-maliva-avt-0068/7310325298631802885~tplv-tiktokx-cropcenter:1080:1080.webp?dr=10399&refresh_token=6918110f&x-expires=1772809200&x-signature=eDkxr27DSyi48OKjsRXpZoAvOMI%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=2472a6c6&idc=no1a"
+        ],
+        "url_prefix": null
+      },
+      "avatar_medium": {
+        "uri": "tos-maliva-avt-0068/7310325298631802885",
+        "url_list": [
+          "https://p19-common-sign.tiktokcdn-eu.com/tos-maliva-avt-0068/7310325298631802885~tplv-tiktokx-cropcenter:720:720.webp?dr=10399&refresh_token=7a3f0a4b&x-expires=1772809200&x-signature=krqn7NJy%2FOJUOThwCgXNmcFaPIA%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=a1d2006b&idc=no1a",
+          "https://p16-common-sign.tiktokcdn-eu.com/tos-maliva-avt-0068/7310325298631802885~tplv-tiktokx-cropcenter:720:720.webp?dr=10399&refresh_token=a7b8e44b&x-expires=1772809200&x-signature=oVMhzOvSF5hWnzU88Je6BZ0Smig%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=a1d2006b&idc=no1a"
+        ],
+        "url_prefix": null
+      },
+      "avatar_thumb": {
+        "uri": "tos-maliva-avt-0068/7310325298631802885",
+        "url_list": [
+          "https://p16-common-sign.tiktokcdn-eu.com/tos-maliva-avt-0068/7310325298631802885~tplv-tiktokx-cropcenter:100:100.webp?dr=10399&refresh_token=57bf298e&x-expires=1772809200&x-signature=TENytxmldjnfRvNYz6OojuWZ%2FCc%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=2472a6c6&idc=no1a",
+          "https://p19-common-sign.tiktokcdn-eu.com/tos-maliva-avt-0068/7310325298631802885~tplv-tiktokx-cropcenter:100:100.webp?dr=10399&refresh_token=330de5cc&x-expires=1772809200&x-signature=TOCvhcou%2F5MFgZGzVg4rg0M300A%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=2472a6c6&idc=no1a"
+        ],
+        "url_prefix": null
+      },
+      "aweme_count": 485,
+      "bio_secure_url": "https://www.tiktoklinksafety.eu/link/v2?aid=1233&lang=en&scene=bio_url&target=therock.komi.io",
+      "bio_url": "therock.komi.io",
+      "can_message_follow_status_list": [
+        0,
+        1
+      ],
+      "category": "Public Figure",
+      "commerce_user_info": {
+        "ad_revenue_rits": null
+      },
+      "commerce_user_level": 0,
+      "custom_verify": "verified account",
+      "enterprise_verify_reason": "",
+      "favoriting_count": 0,
+      "follow_status": 0,
+      "follower_count": 79633176,
+      "follower_status": 0,
+      "following_count": 0,
+      "forward_count": 0,
+      "has_open_favorite": false,
+      "ins_id": "",
+      "is_acquaintance": false,
+      "is_block": false,
+      "is_blocked": false,
+      "is_effect_artist": false,
+      "is_star": false,
+      "live_commerce": false,
+      "live_push_notification_status": 2,
+      "message_chat_entry": true,
+      "mplatform_followers_count": 0,
+      "music_tab_info": {
+        "show_artist_pick_videos": true
+      },
+      "nickname": "The Rock",
+      "original_musician": {
+        "digg_count": 0,
+        "music_count": 0,
+        "music_used_count": 0,
+        "new_release_clip_ids": null
+      },
+      "post_push_notification_status": 2,
+      "privacy_setting": {
+        "following_visibility": 1
+      },
+      "profile_tab_type": 0,
+      "recommend_reason_relation": "",
+      "room_id": 0,
+      "sec_uid": "MS4wLjABAAAAM3R2BtjzVT-uAtstkl2iugMzC6AtnpkojJbjiOdDDrdsTiTR75-8lyWJCY5VvDrZ",
+      "secret": 0,
+      "share_info": {
+        "now_invitation_card_image_urls": null,
+        "share_desc": "Check out The Rock! #TikTok",
+        "share_title": "Join TikTok and see what I’ve been up to!",
+        "share_url": "https://www.tiktok.com/@therock?_r=1&_d=f29ab6f173kc56&sec_uid=MS4wLjABAAAAM3R2BtjzVT-uAtstkl2iugMzC6AtnpkojJbjiOdDDrdsTiTR75-8lyWJCY5VvDrZ&share_author_id=6745191554350760966&sharer_language=en&source=h5_m&u_code=f1599gb64kddfd"
+      },
+      "short_id": "0",
+      "show_favorite_list": false,
+      "show_messaging_entrance_on_profile": true,
+      "signature": "CEO of #RockTok\nLife's so much sweeter when you're not an asshole",
+      "signature_language": "un",
+      "story_status": 0,
+      "supporting_ngo": {},
+      "tab_settings": {
+        "private_tab": {
+          "private_tab_style": 1,
+          "show_private_tab": false
+        },
+        "repost_tab": {
+          "repost_tab_all_visible": true,
+          "show_repost_tab_other": 1
+        }
+      },
+      "total_favorited": 657610957,
+      "twitter_id": "",
+      "twitter_name": "",
+      "uid": "6745191554350760966",
+      "unique_id": "therock",
+      "verification_type": 1,
+      "visible_videos_count": 485,
+      "watch_status": false,
+      "with_commerce_enterprise_tab_entry": false,
+      "with_commerce_entry": false,
+      "with_new_goods": false,
+      "youtube_channel_id": "",
+      "youtube_channel_title": ""
+    }
+  },
+  "timestamp": 1772638199
+}

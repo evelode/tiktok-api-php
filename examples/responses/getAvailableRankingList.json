@@ -1,0 +1,203 @@
+{
+  "status": "ok",
+  "license_cached": true,
+  "license_status": "valid",
+  "rate_limit_reached": false,
+  "tiktok": {
+    "data": [
+      {
+        "Priority": 10,
+        "animation_loop_for_off": false,
+        "data": {
+          "entrances": [
+            {
+              "affiliated_content": {
+                "gap_desc": {
+                  "default_format": {
+                    "bold": false,
+                    "color": "#ffffffff",
+                    "font_size": 0,
+                    "italic": false,
+                    "italic_angle": 0,
+                    "use_heigh_light_color": false,
+                    "use_remote_clor": false,
+                    "weight": 400
+                  },
+                  "default_pattern": "{0:string} to reach No. 99",
+                  "key": "ttlive_ranking_rankingUpdateLabel_behindNo99",
+                  "pieces": [
+                    {
+                      "string_value": "302884",
+                      "type": 1
+                    }
+                  ]
+                },
+                "midday_peak_time_stamp": 1774465200,
+                "sticker_gap_desc": {
+                  "default_format": {
+                    "bold": false,
+                    "color": "#ffffffff",
+                    "font_size": 0,
+                    "italic": false,
+                    "italic_angle": 0,
+                    "use_heigh_light_color": false,
+                    "use_remote_clor": false,
+                    "weight": 400
+                  },
+                  "default_pattern": "{0:string} TO REACH NO.99",
+                  "key": "ttlive_rankingStickers_stickerText_pointsToReach99",
+                  "pieces": [
+                    {
+                      "string_value": "302884",
+                      "type": 1
+                    }
+                  ]
+                },
+                "sticker_settle_show_duration": 10,
+                "sticker_show_scene": 0,
+                "sticker_track_param": {
+                  "comparison_rank": "99",
+                  "score_diff": "302884"
+                }
+              },
+              "block_message": false,
+              "countdown": 19235,
+              "current_score": 451,
+              "default_content": {
+                "default_format": {
+                  "bold": false,
+                  "color": "#ffffffff",
+                  "font_size": 0,
+                  "italic": false,
+                  "italic_angle": 0,
+                  "use_heigh_light_color": false,
+                  "use_remote_clor": false,
+                  "weight": 400
+                },
+                "default_pattern": "Daily Ranking",
+                "key": "pm_mt_daily_entrance",
+                "pieces": []
+              },
+              "list_schema": "",
+              "owner_on_rank": false,
+              "owner_rank_idx": 0,
+              "rank_type": 8,
+              "related_tab_rank_type": 8,
+              "request_first_show_type": 8,
+              "reset_time": 1774411200,
+              "roll_config": {
+                "duration": 0,
+                "weight": 0
+              },
+              "window_size": 86400
+            },
+            {
+              "affiliated_content": {
+                "midday_peak_time_stamp": 0,
+                "sticker_settle_show_duration": 0,
+                "sticker_show_scene": 0,
+                "sticker_track_param": {},
+                "team_rank_bonus_time": {
+                  "bonus_rate": 2,
+                  "bonus_time_gift_id": 13651,
+                  "end_timestamp": 1774400400,
+                  "show_animation": false,
+                  "start_timestamp": 1774396800,
+                  "switch": true
+                }
+              },
+              "block_message": false,
+              "countdown": 19235,
+              "current_score": 0,
+              "default_content": {
+                "default_format": {
+                  "bold": false,
+                  "color": "#ffffffff",
+                  "font_size": 0,
+                  "italic": false,
+                  "italic_angle": 0,
+                  "use_heigh_light_color": false,
+                  "use_remote_clor": false,
+                  "weight": 400
+                },
+                "default_pattern": "Popular LIVE",
+                "key": "pm_mt_trending_goLIVE_trending_tag",
+                "pieces": []
+              },
+              "list_schema": "",
+              "owner_on_rank": false,
+              "owner_rank_idx": 0,
+              "rank_type": 15,
+              "related_tab_rank_type": 15,
+              "request_first_show_type": 15,
+              "reset_time": 1774411200,
+              "roll_config": {
+                "duration": 0,
+                "weight": 0
+              },
+              "window_size": 86400
+            }
+          ],
+          "tabs": [
+            {
+              "list_lynx_type": 0,
+              "rank_type": 8,
+              "title": "Daily Ranking",
+              "title_text": {
+                "default_format": {
+                  "bold": false,
+                  "color": "#ffffffff",
+                  "font_size": 0,
+                  "italic": false,
+                  "italic_angle": 0,
+                  "use_heigh_light_color": false,
+                  "use_remote_clor": false,
+                  "weight": 400
+                },
+                "default_pattern": "Daily Ranking",
+                "key": "pm_mt_daily_entrance",
+                "pieces": []
+              }
+            },
+            {
+              "list_lynx_type": 0,
+              "rank_type": 15,
+              "title": "Popular LIVE",
+              "title_text": {
+                "default_format": {
+                  "bold": false,
+                  "color": "#ffffffff",
+                  "font_size": 0,
+                  "italic": false,
+                  "italic_angle": 0,
+                  "use_heigh_light_color": false,
+                  "use_remote_clor": false,
+                  "weight": 400
+                },
+                "default_pattern": "Popular LIVE",
+                "key": "pm_mt_trending_goLIVE_trending_tag",
+                "pieces": []
+              }
+            }
+          ]
+        },
+        "group_type": 1,
+        "is_animation_loop_play": false,
+        "union_animation": {
+          "rank_type_array": [
+            8,
+            15
+          ],
+          "supported_version": 0,
+          "union_type": 1
+        }
+      }
+    ],
+    "extra": {
+      "now": 1774391965705
+    },
+    "status_code": 0
+  },
+  "req_time": 1,
+  "timestamp": 1774391965
+}

@@ -1,7 +1,7 @@
 <?php
 /**
  * Get comments list by video URL.
- * One request; edit the sample inputs below. LazyJsonMapper supplies the getters.
+ * Run with --offline to inspect a real saved response, or edit inputs for one live request. LazyJsonMapper supplies the getters.
  * Full query-parameter CLI: endpoints/get_comments_by_url.php
  */
 declare(strict_types=1);
@@ -15,6 +15,7 @@ exampleCheck($response);
 
 $page = $response->getTiktok();
 foreach ($page?->getComments() ?? [] as $comment) { // Comment models.
+    echo 'Comment ID: ', $comment->getCid(), PHP_EOL;
     echo $comment->getUser()?->getNickname() ?? 'unknown', ': ', $comment->getText(), PHP_EOL;
 }
 echo 'Next cursor: ', $page?->getCursor() ?? 'not supplied', PHP_EOL;

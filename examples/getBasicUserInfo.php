@@ -1,7 +1,7 @@
 <?php
 /**
  * Get user info by username.
- * One request; edit the sample inputs below. LazyJsonMapper supplies the getters.
+ * Run with --offline to inspect a real saved response, or edit inputs for one live request. LazyJsonMapper supplies the getters.
  * Full query-parameter CLI: endpoints/get_basic_user_info.php
  */
 declare(strict_types=1);

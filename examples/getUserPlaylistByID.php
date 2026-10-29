@@ -1,7 +1,7 @@
 <?php
 /**
  * Get user playlist by ID.
- * One request; edit the sample inputs below. LazyJsonMapper supplies the getters.
+ * Run with --offline to inspect a real saved response, or edit inputs for one live request. LazyJsonMapper supplies the getters.
  * Full query-parameter CLI: endpoints/get_user_playlist_by_id.php
  */
 declare(strict_types=1);
@@ -16,11 +16,10 @@ $response = $client->getUserPlaylistByID([
 ]);
 exampleCheck($response);
 
-$payload = $response->getTiktok(); // TikTok model extends LazyJsonMapper.
-echo 'API status: ', $response->getStatus(), PHP_EOL;
-echo 'TikTok status: ', $payload?->getStatusCode() ?? 'not supplied', PHP_EOL;
-// This endpoint has no dedicated nested schema in the SDK yet.
-// Export its payload explicitly instead of guessing getters or model types.
-exampleJson($payload);
+$playlist = $response->getTiktok()?->getMix();
+echo 'Playlist: ', $playlist?->getName(), ' (', $playlist?->getMixId(), ')', PHP_EOL;
+echo 'Creator: ', $playlist?->getCreatorName(), PHP_EOL;
+echo 'Videos: ', $playlist?->getStatistic()?->getTotal() ?? 0, PHP_EOL;
+echo 'Views: ', $playlist?->getStatistic()?->getTotalPlayCount() ?? 0, PHP_EOL;
 
 exampleOutput($response); // Optional full JSON: --output=response.json

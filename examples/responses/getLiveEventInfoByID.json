@@ -1,0 +1,156 @@
+{
+  "status": "ok",
+  "tiktok": {
+    "status_code": 0,
+    "status_msg": "",
+    "event": {
+      "id": "7611130821763661845",
+      "start_time": 1774582200,
+      "duration": 25200,
+      "title": "Săn Deal Không Giới Hạn",
+      "desc": "🚀 Deal khủng – quà tặng không giới hạn\n💸 Skincare & makeup giá rẻ chạm đáy\n✨ Hàng chuẩn – giá ngon – số lượng ít\n👉 Tham gia live ngay để chốt đơn liền tay!\n",
+      "status": 4,
+      "host": {
+        "uid": "6577546061139935234",
+        "short_id": "0",
+        "nickname": "Tun Phạm Official",
+        "signature": "SĂN SALE CHÍNH HÃNG MALL\nLIVE: 24,27,30.03\n\n\nFor work: 📬 phamduchuy181197@gmail.com",
+        "avatar_larger": {
+          "uri": "tos-alisg-avt-0068/c43f4099b8714222530a628a8e566d88",
+          "url_list": [
+            "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-avt-0068/c43f4099b8714222530a628a8e566d88~tplv-tiktokx-cropcenter-q:1080:1080:q70.heic?dr=9608&idc=no1a&ps=87d6e48a&refresh_token=7adc70ad&s=COMMON_RELATION_LIST&sc=avatar&shcp=6419be8b&shp=30310797&t=223449c4&x-expires=1774476000&x-signature=96tfmOBnCmCBv4RrPRfBH6E0CyI%3D",
+            "https://p19-common-sign.tiktokcdn-eu.com/tos-alisg-avt-0068/c43f4099b8714222530a628a8e566d88~tplv-tiktokx-cropcenter-q:1080:1080:q70.heic?dr=9608&idc=no1a&ps=87d6e48a&refresh_token=f6042f16&s=COMMON_RELATION_LIST&sc=avatar&shcp=6419be8b&shp=30310797&t=223449c4&x-expires=1774476000&x-signature=t58VQxHV8%2FSIuQMG1WGC0RzWzm0%3D"
+          ],
+          "width": 720,
+          "height": 720,
+          "url_prefix": null
+        },
+        "avatar_thumb": {
+          "uri": "tos-alisg-avt-0068/c43f4099b8714222530a628a8e566d88",
+          "url_list": [
+            "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-avt-0068/c43f4099b8714222530a628a8e566d88~tplv-tiktokx-cropcenter-q:100:100:q70.heic?dr=9606&idc=no1a&ps=87d6e48a&refresh_token=09b2e0be&s=COMMON_RELATION_LIST&sc=avatar&shcp=6419be8b&shp=30310797&t=223449c4&x-expires=1774476000&x-signature=1ubY%2FaR6I2t2qgkNSvBfJYKVy%2BQ%3D",
+            "https://p19-common-sign.tiktokcdn-eu.com/tos-alisg-avt-0068/c43f4099b8714222530a628a8e566d88~tplv-tiktokx-cropcenter-q:100:100:q70.heic?dr=9606&idc=no1a&ps=87d6e48a&refresh_token=766f603e&s=COMMON_RELATION_LIST&sc=avatar&shcp=6419be8b&shp=30310797&t=223449c4&x-expires=1774476000&x-signature=dV59rP7AC8ICYR6lhtbGbxhChM0%3D"
+          ],
+          "width": 720,
+          "height": 720,
+          "url_prefix": null
+        },
+        "avatar_medium": {
+          "uri": "tos-alisg-avt-0068/c43f4099b8714222530a628a8e566d88",
+          "url_list": [
+            "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-avt-0068/c43f4099b8714222530a628a8e566d88~tplv-tiktokx-cropcenter-q:720:720:q70.heic?dr=9607&idc=no1a&ps=87d6e48a&refresh_token=387bf050&s=COMMON_RELATION_LIST&sc=avatar&shcp=6419be8b&shp=30310797&t=223449c4&x-expires=1774476000&x-signature=xhOZM2qh9ohUljEVWWAs1UE7%2FQ0%3D",
+            "https://p19-common-sign.tiktokcdn-eu.com/tos-alisg-avt-0068/c43f4099b8714222530a628a8e566d88~tplv-tiktokx-cropcenter-q:720:720:q70.heic?dr=9607&idc=no1a&ps=87d6e48a&refresh_token=32607b4f&s=COMMON_RELATION_LIST&sc=avatar&shcp=6419be8b&shp=30310797&t=223449c4&x-expires=1774476000&x-signature=o3fPCzZej9Xz%2BbvF%2FnrU5mBL2ao%3D"
+          ],
+          "width": 720,
+          "height": 720,
+          "url_prefix": null
+        },
+        "follow_status": 0,
+        "is_block": false,
+        "custom_verify": "Popular creator",
+        "unique_id": "tunpham97",
+        "room_id": 0,
+        "authority_status": 0,
+        "verify_info": "",
+        "with_commerce_entry": false,
+        "verification_type": 1,
+        "enterprise_verify_reason": "",
+        "is_ad_fake": false,
+        "followers_detail": null,
+        "region": "VN",
+        "commerce_user_level": 0,
+        "is_discipline_member": false,
+        "secret": 0,
+        "video_icon": {
+          "uri": "",
+          "url_list": [],
+          "width": 720,
+          "height": 720,
+          "url_prefix": null
+        },
+        "follower_status": 0,
+        "cover_url": [
+          {
+            "uri": "tiktok-obj/1657685022030849",
+            "url_list": [
+              "https://p16-common.tiktokcdn-eu.com/tiktok-obj/1657685022030849~tplv-tiktokx-origin.image?dr=10423&t=4d5b0474&ps=933b5bde&shp=30310797&shcp=6419be8b&idc=no1a",
+              "https://p19-common.tiktokcdn-eu.com/tiktok-obj/1657685022030849~tplv-tiktokx-origin.image?dr=10423&t=4d5b0474&ps=933b5bde&shp=30310797&shcp=6419be8b&idc=no1a"
+            ],
+            "width": 720,
+            "height": 720,
+            "url_prefix": null
+          }
+        ],
+        "language": "vi",
+        "is_star": false,
+        "ad_cover_url": null,
+        "avatar_168x168": {
+          "uri": "tos-alisg-avt-0068/c43f4099b8714222530a628a8e566d88",
+          "url_list": [
+            "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-avt-0068/c43f4099b8714222530a628a8e566d88~tplv-tiktokx-cropcenter-q:168:168:q70.heic?dr=9604&idc=no1a&ps=87d6e48a&refresh_token=20dbc2a3&s=COMMON_RELATION_LIST&sc=avatar&shcp=6419be8b&shp=30310797&t=223449c4&x-expires=1774476000&x-signature=%2FFlNQPXnBXdtgZmWls1vBfuNmJQ%3D",
+            "https://p19-common-sign.tiktokcdn-eu.com/tos-alisg-avt-0068/c43f4099b8714222530a628a8e566d88~tplv-tiktokx-cropcenter-q:168:168:q70.heic?dr=9604&idc=no1a&ps=87d6e48a&refresh_token=5142010d&s=COMMON_RELATION_LIST&sc=avatar&shcp=6419be8b&shp=30310797&t=223449c4&x-expires=1774476000&x-signature=aoabtEQN5%2FnJIf5mZSZ2Uxtq%2Bv8%3D"
+          ],
+          "width": 720,
+          "height": 720,
+          "url_prefix": null
+        },
+        "avatar_300x300": {
+          "uri": "tos-alisg-avt-0068/c43f4099b8714222530a628a8e566d88",
+          "url_list": [
+            "https://p16-common-sign.tiktokcdn-eu.com/tos-alisg-avt-0068/c43f4099b8714222530a628a8e566d88~tplv-tiktokx-cropcenter-q:300:300:q70.heic?dr=9605&idc=no1a&ps=87d6e48a&refresh_token=5e0d5a4c&s=COMMON_RELATION_LIST&sc=avatar&shcp=6419be8b&shp=30310797&t=223449c4&x-expires=1774476000&x-signature=teGDrZDNmSf%2FZ8ITQVD4%2F0Dm6YE%3D",
+            "https://p19-common-sign.tiktokcdn-eu.com/tos-alisg-avt-0068/c43f4099b8714222530a628a8e566d88~tplv-tiktokx-cropcenter-q:300:300:q70.heic?dr=9605&idc=no1a&ps=87d6e48a&refresh_token=e19499ec&s=COMMON_RELATION_LIST&sc=avatar&shcp=6419be8b&shp=30310797&t=223449c4&x-expires=1774476000&x-signature=d4MauC9XE%2BfS1Perklyd5aWoZbI%3D"
+          ],
+          "width": 720,
+          "height": 720,
+          "url_prefix": null
+        },
+        "relative_users": null,
+        "cha_list": null,
+        "sec_uid": "MS4wLjABAAAAtssXV0-ZCheCmFK8sORAaSpMiKEXFVYAVGr7YWltNkMP3Z8SWnhpJUnSCyztM9Z9",
+        "prevent_download": false,
+        "comment_setting": 0,
+        "duet_setting": 0,
+        "download_setting": 0,
+        "comment_filter_status": 1,
+        "stitch_setting": 0,
+        "friends_status": 0,
+        "enabled_filter_all_comments": false
+      },
+      "subscriber_count": 0,
+      "type": 1,
+      "enable_update": false,
+      "has_subscribed": false,
+      "under_review_desc": "",
+      "is_paid_event": false,
+      "ticket_amount": 0,
+      "promotion_enable": true,
+      "is_promoting": true,
+      "wallet_type": 1,
+      "pay_method": 2,
+      "write_acl": {
+        "update_block": 0,
+        "delete_block": 0
+      },
+      "labels": null,
+      "appeal_status": 0,
+      "sticker_item_ids": [
+        7619737801596144917
+      ],
+      "is_default_title": false,
+      "allow_preview_paid_event": true,
+      "guest_registration": 0,
+      "guest_count": 0,
+      "periodic_settings": "",
+      "shoppable": 1
+    },
+    "promotion_exp_group": 1,
+    "use_new_mp": false,
+    "guest_list_red_number": 0,
+    "story_message": {
+      "show_story_entrance": false
+    },
+    "should_show_checkbox": "1",
+    "notice": "You can request a refund up until the event starts."
+  },
+  "timestamp": 1774391871
+}

@@ -1,7 +1,7 @@
 <?php
 /**
  * Get music info by URL or ID.
- * One request; edit the sample inputs below. LazyJsonMapper supplies the getters.
+ * Run with --offline to inspect a real saved response, or edit inputs for one live request. LazyJsonMapper supplies the getters.
  * Full query-parameter CLI: endpoints/get_music_info.php
  */
 declare(strict_types=1);
@@ -15,11 +15,10 @@ $response = $client->getMusicInfo([
 ]);
 exampleCheck($response);
 
-$payload = $response->getTiktok(); // TikTok model extends LazyJsonMapper.
-echo 'API status: ', $response->getStatus(), PHP_EOL;
-echo 'TikTok status: ', $payload?->getStatusCode() ?? 'not supplied', PHP_EOL;
-// This endpoint has no dedicated nested schema in the SDK yet.
-// Export its payload explicitly instead of guessing getters or model types.
-exampleJson($payload);
+$music = $response->getTiktok()?->getMusicInfo();
+echo 'Music ID: ', $music?->getIdStr(), PHP_EOL;
+echo 'Track: ', $music?->getTitle(), ' — ', $music?->getAuthor(), PHP_EOL;
+echo 'Duration (seconds): ', $music?->getDuration() ?? 0, PHP_EOL;
+foreach ($music?->getPlayUrl()?->getUrlList() ?? [] as $url) echo 'Preview: ', $url, PHP_EOL;
 
 exampleOutput($response); // Optional full JSON: --output=response.json

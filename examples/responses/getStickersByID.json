@@ -1,0 +1,80 @@
+{
+  "status": "ok",
+  "tiktok": {
+    "extra": {
+      "fatal_item_ids": [],
+      "logid": "2026030415404327A5C39C1881CAF72F65",
+      "now": 1772638843000
+    },
+    "log_pb": {
+      "impr_id": "2026030415404327A5C39C1881CAF72F65"
+    },
+    "status_code": 0,
+    "status_msg": "",
+    "sticker_infos": [
+      {
+        "attributions": null,
+        "avatar_large": {
+          "uri": "tiktok-obj/effect_ops_avatar.png",
+          "url_list": [
+            "https://p16-common.tiktokcdn-eu.com/tiktok-obj/effect_ops_avatar.png~tplv-tiktokx-origin.image?dr=10423&t=4d5b0474&ps=933b5bde&shp=8b85b4fa&shcp=9b759fb9&idc=no1a",
+            "https://p19-common.tiktokcdn-eu.com/tiktok-obj/effect_ops_avatar.png~tplv-tiktokx-origin.image?dr=10423&t=4d5b0474&ps=933b5bde&shp=8b85b4fa&shcp=9b759fb9&idc=no1a"
+          ],
+          "url_prefix": null
+        },
+        "avatar_medium": {
+          "uri": "tiktok-obj/effect_ops_avatar.png",
+          "url_list": [
+            "https://p16-common.tiktokcdn-eu.com/tiktok-obj/effect_ops_avatar.png~tplv-tiktokx-origin.image?dr=10423&t=4d5b0474&ps=933b5bde&shp=8b85b4fa&shcp=9b759fb9&idc=no1a",
+            "https://p19-common.tiktokcdn-eu.com/tiktok-obj/effect_ops_avatar.png~tplv-tiktokx-origin.image?dr=10423&t=4d5b0474&ps=933b5bde&shp=8b85b4fa&shcp=9b759fb9&idc=no1a"
+          ],
+          "url_prefix": null
+        },
+        "avatar_thumb": {
+          "uri": "tiktok-obj/effect_ops_avatar.png",
+          "url_list": [
+            "https://p16-common.tiktokcdn-eu.com/tiktok-obj/effect_ops_avatar.png~tplv-tiktokx-origin.image?dr=10423&t=4d5b0474&ps=933b5bde&shp=8b85b4fa&shcp=9b759fb9&idc=no1a",
+            "https://p19-common.tiktokcdn-eu.com/tiktok-obj/effect_ops_avatar.png~tplv-tiktokx-origin.image?dr=10423&t=4d5b0474&ps=933b5bde&shp=8b85b4fa&shcp=9b759fb9&idc=no1a"
+          ],
+          "url_prefix": null
+        },
+        "children": [],
+        "desc": "",
+        "effect_creator_type": 1,
+        "effect_id": "1108584",
+        "effect_source": 0,
+        "extra": "",
+        "icon_url": {
+          "uri": "acf2eb0c12e95ebefda328663c385a9d",
+          "url_list": [
+            "https://lf16-effectcdn-sg.tiktokcdn.com/obj/ies.fe.effect.alisg/acf2eb0c12e95ebefda328663c385a9d",
+            "https://lf19-effectcdn-sg.tiktokcdn.com/obj/ies.fe.effect.alisg/acf2eb0c12e95ebefda328663c385a9d"
+          ],
+          "url_prefix": null
+        },
+        "id": "1108584",
+        "is_favorite": false,
+        "is_top_effect": false,
+        "is_top_effect_designer": false,
+        "linked_anchors": null,
+        "name": "Зернистость",
+        "owner_id": "",
+        "owner_nickname": "TikTok",
+        "owner_verified_type": 0,
+        "publish_time": 1629276427000,
+        "sec_uid": "",
+        "share_info": {
+          "now_invitation_card_image_urls": null,
+          "share_desc": "Check out this sticker! #TikTok",
+          "share_url": "https://www.tiktok.com/sticker/%D0%97%D0%B5%D1%80%D0%BD%D0%B8%D1%81%D1%82%D0%BE%D1%81%D1%82%D1%8C-1108584?_r=1&_d=f295g5kedcjkia&share_sticker_id=1108584&source=h5_m&u_code=f0j0fm528bh6b7"
+        },
+        "tags": [
+          "new"
+        ],
+        "user_count": 15700884,
+        "vv_count": 11681818653
+      }
+    ]
+  },
+  "timestamp": 1772638844
+}

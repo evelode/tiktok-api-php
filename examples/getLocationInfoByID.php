@@ -1,7 +1,7 @@
 <?php
 /**
  * Get location info by ID.
- * One request; edit the sample inputs below. LazyJsonMapper supplies the getters.
+ * Run with --offline to inspect a real saved response, or edit inputs for one live request. LazyJsonMapper supplies the getters.
  * Full query-parameter CLI: endpoints/get_location_info_by_id.php
  */
 declare(strict_types=1);
@@ -15,11 +15,9 @@ $response = $client->getLocationInfoByID([
 ]);
 exampleCheck($response);
 
-$payload = $response->getTiktok(); // TikTok model extends LazyJsonMapper.
-echo 'API status: ', $response->getStatus(), PHP_EOL;
-echo 'TikTok status: ', $payload?->getStatusCode() ?? 'not supplied', PHP_EOL;
-// This endpoint has no dedicated nested schema in the SDK yet.
-// Export its payload explicitly instead of guessing getters or model types.
-exampleJson($payload);
+$place = $response->getTiktok();
+echo 'Place: ', $place?->getPoiName(), PHP_EOL;
+echo 'Address: ', $place?->getFormattedAddress(), PHP_EOL;
+echo 'Videos: ', $place?->getVideoCount() ?? 0, PHP_EOL;
 
 exampleOutput($response); // Optional full JSON: --output=response.json

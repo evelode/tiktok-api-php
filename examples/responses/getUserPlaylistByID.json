@@ -1,0 +1,88 @@
+{
+  "status": "ok",
+  "tiktok": {
+    "extra": {
+      "fatal_item_ids": [],
+      "logid": "202603242238183CF6D743ED5BF2B00A8D",
+      "now": 1774391898000
+    },
+    "is_collect": false,
+    "log_pb": {
+      "impr_id": "202603242238183CF6D743ED5BF2B00A8D"
+    },
+    "mix": {
+      "author": {
+        "account_labels": null,
+        "ad_cover_url": null,
+        "advance_feature_item_order": null,
+        "advanced_feature_info": null,
+        "avatar_larger": {
+          "uri": "1080x1080/tos-maliva-avt-0068/7310325298631802885",
+          "url_list": [
+            "https://p16-common-sign.tiktokcdn-eu.com/tos-maliva-avt-0068/7310325298631802885~tplv-tiktokx-cropcenter:1080:1080.webp?dr=10399&refresh_token=74ef1533&x-expires=1774562400&x-signature=TAuRa4VidFSu4A%2F7IyhP1yAgZVc%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=1d1a97fc&idc=no1a"
+          ],
+          "url_prefix": null
+        },
+        "avatar_medium": {
+          "uri": "720x720/tos-maliva-avt-0068/7310325298631802885",
+          "url_list": [
+            "https://p16-common-sign.tiktokcdn-eu.com/tos-maliva-avt-0068/7310325298631802885~tplv-tiktokx-cropcenter:720:720.webp?dr=10399&refresh_token=b71544c5&x-expires=1774562400&x-signature=hhZBw8lVuRrD%2FHWOWyiwT%2F%2Buk0M%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=1d1a97fc&idc=no1a"
+          ],
+          "url_prefix": null
+        },
+        "avatar_thumb": {
+          "uri": "100x100/tos-maliva-avt-0068/7310325298631802885",
+          "url_list": [
+            "https://p16-common-sign.tiktokcdn-eu.com/tos-maliva-avt-0068/7310325298631802885~tplv-tiktokx-cropcenter:100:100.webp?dr=10399&refresh_token=d7545465&x-expires=1774562400&x-signature=480QHLFWy6tqMRg0%2Fr7ky0jddOg%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=1d1a97fc&idc=no1a"
+          ],
+          "url_prefix": null
+        },
+        "bold_fields": null,
+        "can_message_follow_status_list": null,
+        "can_set_geofencing": null,
+        "cha_list": null,
+        "cover_url": null,
+        "events": null,
+        "followers_detail": null,
+        "geofencing": null,
+        "homepage_bottom_toast": null,
+        "item_list": null,
+        "mutual_relation_avatars": null,
+        "need_points": null,
+        "nickname": "The Rock",
+        "platform_sync_info": null,
+        "relative_users": null,
+        "search_highlight": null,
+        "sec_uid": "MS4wLjABAAAAM3R2BtjzVT-uAtstkl2iugMzC6AtnpkojJbjiOdDDrdsTiTR75-8lyWJCY5VvDrZ",
+        "shield_edit_field_info": null,
+        "type_label": null,
+        "uid": "6745191554350760966",
+        "unique_id": "therock",
+        "user_profile_guide": null,
+        "user_tags": null,
+        "white_cover_url": null
+      },
+      "creator_name": "therock",
+      "mix_id": "7359404761613208363",
+      "mix_type": 1,
+      "name": "DJ x Chris Janson",
+      "share_info": {
+        "now_invitation_card_image_urls": null,
+        "share_desc": "Check out the playlist DJ x Chris Janson created by therock",
+        "share_desc_info": "Playlist DJ x Chris Janson created by therock",
+        "share_title": "DJ x Chris Janson on TikTok",
+        "share_url": "https://www.tiktok.com/@smerti_z857/playlist/DJ-x-Chris-Janson-7359404761613208363?_r=1&_d=f2h8ljjhkm3405&language=en&u_code=f0fh6b1cjaaaj7"
+      },
+      "statistic": {
+        "total": 4,
+        "total_play_count": 0
+      },
+      "status": {
+        "status": 1
+      }
+    },
+    "status_code": 0,
+    "status_msg": ""
+  },
+  "timestamp": 1774391898
+}

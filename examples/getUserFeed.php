@@ -1,7 +1,7 @@
 <?php
 /**
  * Get user feed by profile URL or nickname.
- * One request; edit the sample inputs below. LazyJsonMapper supplies the getters.
+ * Run with --offline to inspect a real saved response, or edit inputs for one live request. LazyJsonMapper supplies the getters.
  * Full query-parameter CLI: endpoints/get_user_feed.php
  */
 declare(strict_types=1);
@@ -16,11 +16,12 @@ $response = $client->getUserFeed([
 exampleCheck($response);
 
 $page = $response->getTiktok();
-foreach ($page?->getAwemeList() ?? [] as $video) { // AwemeListItem models.
-    echo $video->getAwemeId(), ' | ', $video->getAuthor()?->getNickname() ?? 'unknown',
-        ' | views: ', $video->getStatistics()?->getPlayCount() ?? 'not supplied', PHP_EOL;
+foreach ($page?->getAwemeList() ?? [] as $video) {
+    echo $video->getAwemeId(), ' — ', $video->getDesc(), PHP_EOL;
+    echo 'Author: ', $video->getAuthor()?->getNickname(), '; views: ', $video->getStatistics()?->getPlayCount() ?? 0, PHP_EOL;
 }
-echo 'More videos: ', $page?->getHasMore() ?? 'not supplied', PHP_EOL;
-echo 'Next cursor: ', $page?->getMaxCursor() ?? 'not supplied', PHP_EOL;
+echo 'More: ', $page?->getHasMore() ?? 0, PHP_EOL;
+echo 'Next cursor: ', $page?->getCursor() ?? $page?->getMaxCursor() ?? 'none', PHP_EOL;
+// Pass max_cursor unchanged on the next request.
 
 exampleOutput($response); // Optional full JSON: --output=response.json

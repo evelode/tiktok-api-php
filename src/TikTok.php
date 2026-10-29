@@ -35,7 +35,14 @@ class TikTok
     {
         $request=$this->request($endpoint);
         foreach($parameters as $name=>$value)if($name!=='license_key' && $value!==null)$request->addParam($name,$value);
-        return new Response\APIResponse($request->getResponse());
+        $data = $request->getResponse();
+        return match ($endpoint) {
+            'getUserID', 'getUsernameByID', 'getTwitterUsername', 'getInstagramUsername', 'getYoutubeChannel' => new Response\ScalarResponse($data),
+            'getStoryInfoByID' => new Response\StoryResponse($data),
+            'getRankingInfo' => new Response\RankingResponse($data),
+            'getLiveInfo' => new Response\LiveResponse($data),
+            default => new Response\APIResponse($data),
+        };
     }
 
     /**

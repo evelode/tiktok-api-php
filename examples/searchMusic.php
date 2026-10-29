@@ -1,7 +1,7 @@
 <?php
 /**
  * Search for music by keyword.
- * One request; edit the sample inputs below. LazyJsonMapper supplies the getters.
+ * Run with --offline to inspect a real saved response, or edit inputs for one live request. LazyJsonMapper supplies the getters.
  * Full query-parameter CLI: endpoints/search_music.php
  */
 declare(strict_types=1);
@@ -13,8 +13,11 @@ $client = exampleClient();
 $response = $client->searchMusic('apple', '', 10);
 exampleCheck($response);
 
-foreach ($response->getTiktok()?->getMusic() ?? [] as $music) { // MusicSearchItem models.
-    echo $music->getTitle() ?? 'not supplied', ' | ', $music->getOwnerNickname() ?? 'not supplied', PHP_EOL;
+$page = $response->getTiktok();
+foreach ($page?->getMusic() ?? [] as $music) { // MusicSearchItem models.
+    echo $music->getIdStr(), ' — ', $music->getTitle(), ' / ', $music->getAuthor(), PHP_EOL;
+    echo 'Duration (seconds): ', $music->getDuration() ?? 0, PHP_EOL;
 }
+echo 'Next cursor: ', $page?->getCursor() ?? 0, PHP_EOL;
 
 exampleOutput($response); // Optional full JSON: --output=response.json

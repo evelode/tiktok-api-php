@@ -5,6 +5,40 @@ namespace TikTokRESTAPI\Response\Model;
 use TikTokRESTAPI\AutoPropertyMapper;
 
 /**
+ * @method SearchVideoItem[] getSearchItemList()
+ * @method PoiResults getPoiInfo()
+ * @method Inspiration[] getInspirationList()
+ * @method Suggestion[] getSugList()
+ * @method User[] getFollowers()
+ * @method User[] getFollowings()
+ * @method string getNextPageToken()
+ * @method string getMinTime()
+ * @method string getMaxTime()
+ * @method LiveEvent getEvent()
+ * @method string getChaName()
+ * @method string getCid()
+ * @method int getUseCount()
+ * @method int getViewCount()
+ * @method string getPoiName()
+ * @method string getFormattedAddress()
+ * @method int getVideoCount()
+ * @method Music getMusicInfo()
+ * @method MusicChartItem[] getMusicList()
+ * @method TrendingCategory[] getCategoryList()
+ * @method StickerDetail[] getStickerInfos()
+ * @method UserStory getUserStory()
+ * @method Playlist[] getMixList()
+ * @method Playlist getMix()
+ * @method AwemeDetail[] getVideos()
+ * @method string getAwemeId()
+ * @method string getDesc()
+ * @method Author getAuthor()
+ * @method Statistics getStatistics()
+ * @method string getStatusMsg()
+ * @method Extra getExtra()
+ * @method string getMaxCursor()
+ * @method string getMinCursor()
+ * @method int getHasFilteredComments()
  * TikTok.
  *
  * @method string               getId()
@@ -71,6 +105,36 @@ use TikTokRESTAPI\AutoPropertyMapper;
 class TikTok extends AutoPropertyMapper
 {
     const JSON_PROPERTY_MAP = [
+        'search_item_list' => 'SearchVideoItem[]',
+        'poi_info' => 'PoiResults',
+        'inspiration_list' => 'Inspiration[]',
+        'sug_list' => 'Suggestion[]',
+        'followers' => 'User[]',
+        'followings' => 'User[]',
+        'next_page_token' => 'string',
+        'min_time' => 'string',
+        'max_time' => 'string',
+        'event' => 'LiveEvent',
+        'cha_name' => 'string',
+        'cid' => 'string',
+        'use_count' => 'int',
+        'view_count' => 'int',
+        'poi_name' => 'string',
+        'formatted_address' => 'string',
+        'video_count' => 'int',
+        'music_info' => 'Music',
+        'music_list' => 'MusicChartItem[]',
+        'category_list' => 'TrendingCategory[]',
+        'sticker_infos' => 'StickerDetail[]',
+        'user_story' => 'UserStory',
+        'mix_list' => 'Playlist[]',
+        'mix' => 'Playlist',
+        'videos' => 'AwemeDetail[]',
+        'aweme_id' => 'string',
+        'desc' => 'string',
+        'author' => 'Author',
+        'statistics' => 'Statistics',
+
         'id'                    => 'string',
         'status_msg' => 'string',
         'extra' => 'Extra',

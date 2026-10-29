@@ -5,6 +5,7 @@ namespace TikTokRESTAPI\Response\Model;
 use TikTokRESTAPI\AutoPropertyMapper;
 
 /**
+ * @method Media getAvatar168x168()
  * Author.
  * 
  * @method string   getRegion()

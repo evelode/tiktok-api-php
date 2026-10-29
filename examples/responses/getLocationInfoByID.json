@@ -1,0 +1,63 @@
+{
+  "status": "ok",
+  "tiktok": {
+    "city_code": "2976007",
+    "claim_store_status": false,
+    "collect_info": "{\"has_price\":0,\"has_price_class\":0,\"has_product\":0,\"has_service\":0,\"is_bad_case\":0,\"is_product_visible\":0,\"is_service_visible\":0,\"is_shop_url_visible\":0,\"is_tt_key_category\":0,\"local_service_key_category\":\"Others\",\"poi_bizline\":\"\",\"poi_city\":\"2976007\",\"poi_class_name\":\"Region\",\"poi_detail_type\":\"regional\",\"poi_region_code\":\"3017382\",\"tt_poi_type_name_level0\":\"Other\",\"tt_poi_type_name_level1\":\"Place and Address\",\"tt_type_code\":\"19a3a6\"}",
+    "cover": {
+      "height": 720,
+      "uri": "tiktok-obj/poi_detail_cover_3x.png",
+      "url_list": [
+        "https://p19-common.tiktokcdn-eu.com/tiktok-obj/poi_detail_cover_3x.png~tplv-tiktokx-origin.image?dr=10423&t=4d5b0474&ps=933b5bde&shp=d1a1690b&shcp=9b759fb9&idc=no1a",
+        "https://p16-common.tiktokcdn-eu.com/tiktok-obj/poi_detail_cover_3x.png~tplv-tiktokx-origin.image?dr=10423&t=4d5b0474&ps=933b5bde&shp=d1a1690b&shcp=9b759fb9&idc=no1a"
+      ],
+      "url_prefix": null,
+      "width": 720
+    },
+    "cover_dark_mode": {
+      "height": 720,
+      "uri": "tiktok-obj/poi_dark_detail_cover_3x.png",
+      "url_list": [
+        "https://p16-common.tiktokcdn-eu.com/tiktok-obj/poi_dark_detail_cover_3x.png~tplv-tiktokx-origin.image?dr=10423&t=4d5b0474&ps=933b5bde&shp=d1a1690b&shcp=9b759fb9&idc=no1a",
+        "https://p19-common.tiktokcdn-eu.com/tiktok-obj/poi_dark_detail_cover_3x.png~tplv-tiktokx-origin.image?dr=10423&t=4d5b0474&ps=933b5bde&shp=d1a1690b&shcp=9b759fb9&idc=no1a"
+      ],
+      "url_prefix": null,
+      "width": 720
+    },
+    "dynamic_map_params": {
+      "default_zoom_level": 16,
+      "enable_dynamic_map": true
+    },
+    "edit_poi_status": false,
+    "extra": {
+      "fatal_item_ids": [],
+      "logid": "20260304153721BEC0ACC2A17A89F2BFEF",
+      "now": 1772638642000
+    },
+    "formatted_address": "New Aquitaine, France",
+    "have_product_shelf": false,
+    "is_ba_account": false,
+    "is_collected": false,
+    "location": {
+      "geohash": "u00b5w5e98v1",
+      "lat": "45.033564",
+      "lng": "1.213374"
+    },
+    "log_pb": {
+      "impr_id": "20260304153721BEC0ACC2A17A89F2BFEF"
+    },
+    "poi_mapkit_collect": false,
+    "poi_name": "Lol",
+    "real_time_fav_cnt": 73,
+    "region_code": "3017382",
+    "share_info": {
+      "share_desc": "Lol\nNew Aquitaine, France",
+      "share_url": "https://www.tiktok.com/place/Lol-22535796485353377?_d=f297i3775mmc81&_r=1&language=en&local_service_key_category=Others&share_poi_id=22535796485353377&u_code=f014kj3832a94k"
+    },
+    "status_code": 0,
+    "status_msg": "",
+    "type_level": "1",
+    "video_count": 0
+  },
+  "timestamp": 1772638642
+}

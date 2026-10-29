@@ -1,0 +1,43 @@
+{
+  "status": "ok",
+  "tiktok": {
+    "cursor": 3,
+    "extra": {
+      "fatal_item_ids": [],
+      "logid": "202603242153022E9369D49B4629A65F55",
+      "now": 1774389182000
+    },
+    "has_more": false,
+    "log_pb": {
+      "impr_id": "202603242153022E9369D49B4629A65F55"
+    },
+    "mix_list": [
+      {
+        "mix_id": "7359404761613208363",
+        "mix_type": 1,
+        "name": "DJ x Chris Janson",
+        "statistic": {
+          "total": 4
+        },
+        "status": {
+          "status": 1
+        }
+      },
+      {
+        "mix_id": "7356431522917845803",
+        "mix_type": 1,
+        "name": "Uncut Leg Day",
+        "statistic": {
+          "total": 4
+        },
+        "status": {
+          "status": 1
+        }
+      }
+    ],
+    "status_code": 0,
+    "status_msg": "",
+    "total": 0
+  },
+  "timestamp": 1774389182
+}

@@ -1,0 +1,980 @@
+{
+  "status": "ok",
+  "tiktok": {
+    "status_code": 0,
+    "music": [
+      {
+        "id": 7377196584867760145,
+        "id_str": "7377196584867760145",
+        "title": "Apple",
+        "author": "Charli xcx",
+        "album": "BRAT",
+        "cover_large": {
+          "uri": "tos-alisg-v-2774/oIEAIgwff7DIh1azze1QUAFu4AIDyDADFMvPXC",
+          "url_list": [
+            "https://p16-common.tiktokcdn-us.com/tos-alisg-v-2774/oIEAIgwff7DIh1azze1QUAFu4AIDyDADFMvPXC~tplv-tiktokx-cropcenter:720:720.jpeg?dr=9584&t=4d5b0474&ps=933b5bde&shp=08d74b56&shcp=544a444f&idc=useast8"
+          ],
+          "width": 720,
+          "height": 720,
+          "url_prefix": null
+        },
+        "cover_medium": {
+          "uri": "tos-alisg-v-2774/oIEAIgwff7DIh1azze1QUAFu4AIDyDADFMvPXC",
+          "url_list": [
+            "https://p16-common.tiktokcdn-us.com/tos-alisg-v-2774/oIEAIgwff7DIh1azze1QUAFu4AIDyDADFMvPXC~tplv-tiktokx-cropcenter:100:100.jpeg?biz_tag=musically_music.music_cover&dr=9584&idc=useast8&ps=933b5bde&shcp=544a444f&shp=08d74b56&t=4d5b0474"
+          ],
+          "width": 720,
+          "height": 720,
+          "url_prefix": null
+        },
+        "cover_thumb": {
+          "uri": "tos-alisg-v-2774/oIEAIgwff7DIh1azze1QUAFu4AIDyDADFMvPXC",
+          "url_list": [
+            "https://p16-common.tiktokcdn-us.com/tos-alisg-v-2774/oIEAIgwff7DIh1azze1QUAFu4AIDyDADFMvPXC~tplv-tiktokx-cropcenter:100:100.jpeg?biz_tag=musically_music.music_cover&dr=9584&idc=useast8&ps=933b5bde&shcp=544a444f&shp=08d74b56&t=4d5b0474"
+          ],
+          "width": 720,
+          "height": 720,
+          "url_prefix": null
+        },
+        "play_url": {
+          "uri": "https://sf16.tiktokcdn-us.com/obj/tos-alisg-ve-2774/oYiDTDaIo1FgB3oftgoifQmqBFZoYCoOEMmBOv",
+          "url_list": [
+            "https://sf16.tiktokcdn-us.com/obj/tos-alisg-ve-2774/oYiDTDaIo1FgB3oftgoifQmqBFZoYCoOEMmBOv"
+          ],
+          "width": 720,
+          "height": 720,
+          "url_prefix": null
+        },
+        "source_platform": 10033,
+        "duration": 60,
+        "extra": "{\"amplitude_peak\":1.1850747,\"beats\":{\"audio_effect_onset\":\"https://sf19.tiktokcdn-us.com/obj/tos-alisg-v-2774/ogxzeyEBzAzjZlETaxU255AEDfFRFBAzwCAMeE\",\"beats_tracker\":\"https://sf16.tiktokcdn-us.com/obj/tos-alisg-v-2774/oMAAeEA2leMFUBb5WqElCFyazBTDqAUGJEfB0c\",\"energy_trace\":\"https://sf19.tiktokcdn-us.com/obj/tos-alisg-v-2774/oUDyEI2IDLfUeCynAEfmF0AAaF8xAMBajzCzEL\",\"merged_beats\":\"https://sf16.tiktokcdn-us.com/obj/tos-alisg-v-2774/okZur2mXWrN2ImAEcAvwl56T8ilAYiABBxQEt\"},\"can_read\":true,\"can_reuse\":true,\"erase_type\":0,\"erase_uid\":0,\"from_user_id\":7286993060096754734,\"full_song_beat_info\":{},\"full_song_beats\":{},\"has_edited\":0,\"is_batch_take_down_music\":false,\"is_ugc_mapping\":false,\"is_used\":0,\"loudness_lufs\":-7.112558,\"music_vid\":\"v10ad6g50000cph0da7og65k0vsqh2k0\",\"owner_id\":0,\"resource_status\":0,\"review_unshelve_reason\":0,\"reviewed\":1,\"schedule_search_time\":0}",
+        "user_count": 1444601,
+        "position": null,
+        "collect_stat": 0,
+        "status": 1,
+        "offline_desc": "",
+        "owner_nickname": "",
+        "is_original": false,
+        "mid": "7377196584867760145",
+        "binded_challenge_id": 0,
+        "author_deleted": false,
+        "owner_handle": "",
+        "author_position": null,
+        "prevent_download": false,
+        "strong_beat_url": {
+          "uri": "https://sf16.tiktokcdn-us.com/obj/tos-alisg-v-2774/ooIQPuLEwnZiAiZzWYtdSAaDiAxdmGATBEaAr",
+          "url_list": [
+            "https://sf16.tiktokcdn-us.com/obj/tos-alisg-v-2774/ooIQPuLEwnZiAiZzWYtdSAaDiAxdmGATBEaAr"
+          ],
+          "width": 720,
+          "height": 720,
+          "url_prefix": null
+        },
+        "external_song_info": [],
+        "avatar_thumb": {
+          "uri": "tos-maliva-avt-0068/f43a062200c40cd80f3509a62a06685b",
+          "url_list": [
+            "https://p19-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/f43a062200c40cd80f3509a62a06685b~tplv-tiktokx-cropcenter:100:100.webp?dr=9640&refresh_token=9089375e&x-expires=1772722800&x-signature=If4NW8FKGxIXdQkLqen3Qs%2BrWPw%3D&t=4d5b0474&ps=13740610&shp=544a444f&shcp=c1333099&idc=useast8",
+            "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/f43a062200c40cd80f3509a62a06685b~tplv-tiktokx-cropcenter:100:100.webp?dr=9640&refresh_token=13d659b0&x-expires=1772722800&x-signature=KsMprp1oszhpTNZ3PDoVCF7gKHQ%3D&t=4d5b0474&ps=13740610&shp=544a444f&shcp=c1333099&idc=useast8"
+          ],
+          "width": 720,
+          "height": 720,
+          "url_prefix": null
+        },
+        "avatar_medium": {
+          "uri": "tos-maliva-avt-0068/f43a062200c40cd80f3509a62a06685b",
+          "url_list": [
+            "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/f43a062200c40cd80f3509a62a06685b~tplv-tiktokx-cropcenter:720:720.webp?dr=9640&refresh_token=0d49d9e5&x-expires=1772722800&x-signature=yz3ekRFRibFJSE9%2FRoLUwJxvduw%3D&t=4d5b0474&ps=13740610&shp=544a444f&shcp=c1333099&idc=useast8",
+            "https://p19-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/f43a062200c40cd80f3509a62a06685b~tplv-tiktokx-cropcenter:720:720.webp?dr=9640&refresh_token=dcd80a2a&x-expires=1772722800&x-signature=h8QQzwGq43crvO%2Baue9KLsNoGck%3D&t=4d5b0474&ps=13740610&shp=544a444f&shcp=c1333099&idc=useast8"
+          ],
+          "width": 720,
+          "height": 720,
+          "url_prefix": null
+        },
+        "preview_start_time": 62,
+        "preview_end_time": 0,
+        "is_commerce_music": true,
+        "is_original_sound": false,
+        "audition_duration": 60,
+        "shoot_duration": 60,
+        "artists": [
+          {
+            "uid": "165180947447840768",
+            "sec_uid": "MS4wLjABAAAAok8FiOPFZg5o8vKv-oxSwYuM-gbhKldv_1_nnPAZQ1XdqeTJkUcuoz6SAjSdzcmr",
+            "nick_name": "Charli XCX",
+            "handle": "charlixcx",
+            "avatar": {
+              "uri": "tos-maliva-avt-0068/f43a062200c40cd80f3509a62a06685b",
+              "url_list": [
+                "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/f43a062200c40cd80f3509a62a06685b~tplv-tiktokx-cropcenter:168:168.webp?dr=9638&refresh_token=77880d76&x-expires=1772722800&x-signature=ZR9UWIVrob3C%2FJVLUM19EVuuoRY%3D&t=4d5b0474&ps=13740610&shp=544a444f&shcp=c1333099&idc=useast8",
+                "https://p19-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/f43a062200c40cd80f3509a62a06685b~tplv-tiktokx-cropcenter:168:168.webp?dr=9638&refresh_token=ee08641d&x-expires=1772722800&x-signature=f4wZPZshtI7l4BErpbgObkxqMCI%3D&t=4d5b0474&ps=13740610&shp=544a444f&shcp=c1333099&idc=useast8"
+              ],
+              "url_prefix": null
+            },
+            "is_verified": true,
+            "enter_type": 2,
+            "follow_status": 0,
+            "is_visible": false,
+            "follower_status": 0,
+            "is_private_account": false,
+            "is_block": false,
+            "is_blocked": false,
+            "status": 1
+          }
+        ],
+        "lyric_short_position": null,
+        "mute_share": false,
+        "tag_list": [
+          {
+            "tag_title": "Popular",
+            "tag_title_color": "#FF3B5C",
+            "tag_color": "#FFF2F5",
+            "tag_title_dark_color": "#FF3B5C",
+            "tag_dark_color": "#621B29"
+          }
+        ],
+        "dmv_auto_show": false,
+        "is_author_artist": true,
+        "is_pgc": true,
+        "is_matched_metadata": false,
+        "is_audio_url_with_cookie": false,
+        "matched_song": {
+          "id": "7377190934843394049",
+          "author": "Charli xcx",
+          "title": "Apple",
+          "h5_url": "",
+          "cover_medium": {
+            "uri": "tos-alisg-v-2774/oIEAIgwff7DIh1azze1QUAFu4AIDyDADFMvPXC",
+            "url_list": [
+              "https://p16-common.tiktokcdn-us.com/tos-alisg-v-2774/oIEAIgwff7DIh1azze1QUAFu4AIDyDADFMvPXC~tplv-tiktokx-cropcenter:200:200.jpeg?dr=9584&t=4d5b0474&ps=933b5bde&shp=08d74b56&shcp=544a444f&idc=useast8",
+              "https://p19-common.tiktokcdn-us.com/tos-alisg-v-2774/oIEAIgwff7DIh1azze1QUAFu4AIDyDADFMvPXC~tplv-tiktokx-cropcenter:200:200.jpeg?dr=9584&t=4d5b0474&ps=933b5bde&shp=08d74b56&shcp=544a444f&idc=useast8"
+            ],
+            "width": 720,
+            "height": 720,
+            "url_prefix": null
+          },
+          "performers": null,
+          "chorus_info": {
+            "start_ms": 89472,
+            "duration_ms": 25536
+          },
+          "full_duration": 151740
+        },
+        "video_duration": 60,
+        "search_music_name": "Apple",
+        "search_music_desc": "Charli xcx",
+        "search_highlight": null,
+        "multi_bit_rate_play_info": null,
+        "duration_high_precision": {
+          "duration_precision": 60,
+          "shoot_duration_precision": 60,
+          "audition_duration_precision": 60,
+          "video_duration_precision": 60
+        },
+        "can_not_reuse": false,
+        "is_play_music": false,
+        "commercial_right_type": 3,
+        "music_release_info": {
+          "is_new_release_song": false,
+          "group_release_date": 1717689600
+        },
+        "tt_to_dsp_song_infos": [
+          {
+            "platform": 1,
+            "song_id": "1739080645",
+            "token": {
+              "apple_music_token": {
+                "developer_token": "eyJhbGciOiJFUzI1NiIsImtpZCI6Ikc2Q0dLMjdWQzMifQ.eyJleHAiOjE3NzMyMDQwMzMsImlhdCI6MTc3MjU5OTIzMywiaXNzIjoiTUo3OTdEOFU2RiJ9.B6OjSAFm6w9yo_DJGXXlfVjUt8pJleIf0RiQkwikFkBObwfen4osLrwDDoKDE6muh9tV8sTzywM7bqA7W6eULA"
+              }
+            },
+            "button_type": 2
+          },
+          {
+            "platform": 2,
+            "song_id": "B0D6HR38QQ",
+            "button_type": 2
+          }
+        ],
+        "log_extra": "{\"meta_song_matched_type\":\"pgc\",\"ttm_matched_type\":\"\",\"ttm_track_id\":\"\",\"matched_meta_song_id\":\"\",\"vid\":\"\",\"owner_id\":\"\"}",
+        "is_shooting_allow": true,
+        "recommend_status": 100,
+        "vid_volume_info": "{\"Peak\":1,\"Loudness\":-7.1,\"LoudnessRangeEnd\":-6,\"LoudnessRange\":3.9,\"Metrics\":{\"Loudness\":{\"Integrated\":-7.086},\"Phase\":{\"RMSDownmixDiff\":-0.347},\"RMSStats\":{\"LRDiff\":0.097,\"Peak\":0.721,\"LTotal\":-8.439,\"RTotal\":-8.537},\"Version\":\"1.4.2\"},\"MaximumMomentaryLoudness\":-4.8,\"MaximumShortTermLoudness\":-5.5,\"LoudnessRangeStart\":-9.9,\"Version\":2}",
+        "has_commerce_right": false,
+        "meme_song_info": {},
+        "related_query": "apple",
+        "is_sami_recommend": false,
+        "uncert_artists": null,
+        "style_value": [
+          150
+        ],
+        "theme_value": [
+          1
+        ],
+        "language": "English",
+        "allow_offline_music_to_detail_page": false,
+        "create_time": 1717637515,
+        "can_be_stitched": false,
+        "theme_tags": [
+          "Dance"
+        ],
+        "music_group_use_count": 0,
+        "music_group_v3_ids": [
+          7377197391998355475
+        ],
+        "has_human_voice": false,
+        "same_group_id_v3": 7377197391998355475,
+        "sim_group_id_v3": 26763284226,
+        "music_ugid": 7377196584867760145,
+        "music_ugid_use_count": 0,
+        "has_commerce_right_strict": false,
+        "is_commerce_music_strict": true
+      },
+      {
+        "id": 7388859369162541825,
+        "id_str": "7388859369162541825",
+        "title": "apple by charliiiii",
+        "author": "babyloncowboy 🍉",
+        "album": "",
+        "cover_large": {
+          "uri": "tos-alisg-avt-0068/7b0b4371ecab558d873e8f5da9be3aa5",
+          "url_list": [
+            "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/7b0b4371ecab558d873e8f5da9be3aa5~tplv-tiktokx-cropcenter:1080:1080.webp?dr=9640&refresh_token=2919e875&x-expires=1772722800&x-signature=%2FUT95MhnqpKBVww%2FV1z6Zje38jo%3D&t=4d5b0474&ps=13740610&shp=544a444f&shcp=c1333099&idc=useast8",
+            "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/7b0b4371ecab558d873e8f5da9be3aa5~tplv-tiktokx-cropcenter:1080:1080.webp?dr=9640&refresh_token=b99c5884&x-expires=1772722800&x-signature=CXczXz%2BRnCiMQonNMsWacKHVkGg%3D&t=4d5b0474&ps=13740610&shp=544a444f&shcp=c1333099&idc=useast8"
+          ],
+          "width": 720,
+          "height": 720,
+          "url_prefix": null
+        },
+        "cover_medium": {
+          "uri": "tos-alisg-avt-0068/7b0b4371ecab558d873e8f5da9be3aa5",
+          "url_list": [
+            "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/7b0b4371ecab558d873e8f5da9be3aa5~tplv-tiktokx-cropcenter:100:100.webp?biz_tag=musically_music.music_cover&dr=9640&idc=useast8&ps=13740610&refresh_token=25d5aea8&shcp=c1333099&shp=544a444f&t=4d5b0474&x-expires=1772722800&x-signature=HW9v6b6KwVWnYmd5VHmRNGoTr%2Bs%3D",
+            "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/7b0b4371ecab558d873e8f5da9be3aa5~tplv-tiktokx-cropcenter:100:100.webp?biz_tag=musically_music.music_cover&dr=9640&idc=useast8&ps=13740610&refresh_token=f59aaa5f&shcp=c1333099&shp=544a444f&t=4d5b0474&x-expires=1772722800&x-signature=uEuRY3EbWiXuzo4ogllmPsebdbg%3D"
+          ],
+          "width": 720,
+          "height": 720,
+          "url_prefix": null
+        },
+        "cover_thumb": {
+          "uri": "tos-alisg-avt-0068/7b0b4371ecab558d873e8f5da9be3aa5",
+          "url_list": [
+            "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/7b0b4371ecab558d873e8f5da9be3aa5~tplv-tiktokx-cropcenter:100:100.webp?biz_tag=musically_music.music_cover&dr=9640&idc=useast8&ps=13740610&refresh_token=25d5aea8&shcp=c1333099&shp=544a444f&t=4d5b0474&x-expires=1772722800&x-signature=HW9v6b6KwVWnYmd5VHmRNGoTr%2Bs%3D",
+            "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/7b0b4371ecab558d873e8f5da9be3aa5~tplv-tiktokx-cropcenter:100:100.webp?biz_tag=musically_music.music_cover&dr=9640&idc=useast8&ps=13740610&refresh_token=f59aaa5f&shcp=c1333099&shp=544a444f&t=4d5b0474&x-expires=1772722800&x-signature=uEuRY3EbWiXuzo4ogllmPsebdbg%3D"
+          ],
+          "width": 720,
+          "height": 720,
+          "url_prefix": null
+        },
+        "play_url": {
+          "uri": "https://sf16.tiktokcdn-us.com/obj/tiktok-obj/7388859354000198401.mp3",
+          "url_list": [
+            "https://sf16.tiktokcdn-us.com/obj/tiktok-obj/7388859354000198401.mp3"
+          ],
+          "width": 720,
+          "height": 720,
+          "url_prefix": null
+        },
+        "source_platform": 72,
+        "duration": 18,
+        "extra": "{\"aed_music_dur\":18.075,\"amplitude_peak\":0,\"beats\":{},\"can_read\":true,\"can_reuse\":true,\"erase_type\":0,\"erase_uid\":0,\"extract_item_id\":7388859334148590866,\"from_user_id\":7286993060096754734,\"full_song_beat_info\":{},\"full_song_beats\":{},\"has_edited\":1,\"is_batch_take_down_music\":false,\"is_ugc_mapping\":true,\"is_used\":1,\"loudness_lufs\":0,\"music_vid\":\"v10942g50000cq580snog65o4sg96hl0\",\"owner_id\":7338703245348733953,\"resource_status\":0,\"review_unshelve_reason\":0,\"reviewed\":1,\"schedule_search_time\":0}",
+        "user_count": 241903,
+        "position": null,
+        "collect_stat": 0,
+        "status": 1,
+        "offline_desc": "",
+        "owner_id": "7338703245348733953",
+        "owner_nickname": "babyloncowboy 🍉",
+        "is_original": false,
+        "mid": "7388859369162541825",
+        "binded_challenge_id": 0,
+        "author_deleted": false,
+        "owner_handle": "babyloncowboy",
+        "author_position": null,
+        "prevent_download": false,
+        "strong_beat_url": {
+          "uri": "https://sf19.tiktokcdn-us.com/obj/tiktok-obj/pattern/d71702989c753213c166d2e1c27bf65c.json",
+          "url_list": [
+            "https://sf19.tiktokcdn-us.com/obj/tiktok-obj/pattern/d71702989c753213c166d2e1c27bf65c.json"
+          ],
+          "width": 720,
+          "height": 720,
+          "url_prefix": null
+        },
+        "external_song_info": [],
+        "sec_uid": "MS4wLjABAAAAOzudj_d9pp-e07fWV9oi9tc6zgDpf3D2AIgD9JFO2zZ3uA-aRR2utLkT-0T0SIcb",
+        "avatar_thumb": {
+          "uri": "tos-alisg-avt-0068/7b0b4371ecab558d873e8f5da9be3aa5",
+          "url_list": [
+            "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/7b0b4371ecab558d873e8f5da9be3aa5~tplv-tiktokx-cropcenter:100:100.webp?dr=9640&refresh_token=25d5aea8&x-expires=1772722800&x-signature=HW9v6b6KwVWnYmd5VHmRNGoTr%2Bs%3D&t=4d5b0474&ps=13740610&shp=544a444f&shcp=c1333099&idc=useast8",
+            "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/7b0b4371ecab558d873e8f5da9be3aa5~tplv-tiktokx-cropcenter:100:100.webp?dr=9640&refresh_token=f59aaa5f&x-expires=1772722800&x-signature=uEuRY3EbWiXuzo4ogllmPsebdbg%3D&t=4d5b0474&ps=13740610&shp=544a444f&shcp=c1333099&idc=useast8"
+          ],
+          "width": 720,
+          "height": 720,
+          "url_prefix": null
+        },
+        "avatar_medium": {
+          "uri": "tos-alisg-avt-0068/7b0b4371ecab558d873e8f5da9be3aa5",
+          "url_list": [
+            "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/7b0b4371ecab558d873e8f5da9be3aa5~tplv-tiktokx-cropcenter:720:720.webp?dr=9640&refresh_token=25ee2a5a&x-expires=1772722800&x-signature=6n%2FK%2BD7DLbOJnlhDlnXBWtXmUnc%3D&t=4d5b0474&ps=13740610&shp=544a444f&shcp=c1333099&idc=useast8",
+            "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/7b0b4371ecab558d873e8f5da9be3aa5~tplv-tiktokx-cropcenter:720:720.webp?dr=9640&refresh_token=5be66ccd&x-expires=1772722800&x-signature=t6TaCmHJIy1wPpoo%2BxyHmHoXnXc%3D&t=4d5b0474&ps=13740610&shp=544a444f&shcp=c1333099&idc=useast8"
+          ],
+          "width": 720,
+          "height": 720,
+          "url_prefix": null
+        },
+        "preview_start_time": 0,
+        "preview_end_time": 0,
+        "is_commerce_music": true,
+        "is_original_sound": true,
+        "audition_duration": 18,
+        "shoot_duration": 18,
+        "artists": [],
+        "lyric_short_position": null,
+        "mute_share": false,
+        "tag_list": null,
+        "dmv_auto_show": false,
+        "is_author_artist": false,
+        "is_pgc": false,
+        "is_matched_metadata": false,
+        "is_audio_url_with_cookie": false,
+        "matched_pgc_sound": {
+          "author": "Charli xcx",
+          "title": "Apple",
+          "mixed_title": "apple by charliiiii (Contains music from: Apple - Charli xcx)",
+          "mixed_author": "Contains music from: \"Apple\"",
+          "music_release_info": {
+            "is_new_release_song": false,
+            "group_release_date": 1717689600
+          },
+          "artist_infos": [
+            {
+              "uid": "165180947447840768",
+              "sec_uid": "MS4wLjABAAAAok8FiOPFZg5o8vKv-oxSwYuM-gbhKldv_1_nnPAZQ1XdqeTJkUcuoz6SAjSdzcmr",
+              "nick_name": "Charli XCX",
+              "handle": "charlixcx",
+              "avatar": {
+                "uri": "tos-maliva-avt-0068/f43a062200c40cd80f3509a62a06685b",
+                "url_list": [
+                  "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/f43a062200c40cd80f3509a62a06685b~tplv-tiktokx-cropcenter:168:168.webp?dr=9638&refresh_token=77880d76&x-expires=1772722800&x-signature=ZR9UWIVrob3C%2FJVLUM19EVuuoRY%3D&t=4d5b0474&ps=13740610&shp=544a444f&shcp=c1333099&idc=useast8",
+                  "https://p19-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/f43a062200c40cd80f3509a62a06685b~tplv-tiktokx-cropcenter:168:168.webp?dr=9638&refresh_token=ee08641d&x-expires=1772722800&x-signature=f4wZPZshtI7l4BErpbgObkxqMCI%3D&t=4d5b0474&ps=13740610&shp=544a444f&shcp=c1333099&idc=useast8"
+                ],
+                "url_prefix": null
+              },
+              "is_verified": true,
+              "enter_type": 2,
+              "follow_status": 0,
+              "is_visible": false,
+              "follower_status": 0,
+              "is_private_account": false,
+              "is_block": false,
+              "is_blocked": false,
+              "status": 1
+            }
+          ],
+          "uncert_artists": null,
+          "cover_medium": {
+            "uri": "tos-alisg-v-2774/oIEAIgwff7DIh1azze1QUAFu4AIDyDADFMvPXC",
+            "url_list": [
+              "https://p16-common.tiktokcdn-us.com/tos-alisg-v-2774/oIEAIgwff7DIh1azze1QUAFu4AIDyDADFMvPXC~tplv-tiktokx-cropcenter:200:200.jpeg?dr=9584&t=4d5b0474&ps=933b5bde&shp=08d74b56&shcp=544a444f&idc=useast8",
+              "https://p19-common.tiktokcdn-us.com/tos-alisg-v-2774/oIEAIgwff7DIh1azze1QUAFu4AIDyDADFMvPXC~tplv-tiktokx-cropcenter:200:200.jpeg?dr=9584&t=4d5b0474&ps=933b5bde&shp=08d74b56&shcp=544a444f&idc=useast8"
+            ],
+            "width": 720,
+            "height": 720,
+            "url_prefix": null
+          }
+        },
+        "matched_song": {
+          "id": "7377190934843394049",
+          "author": "Charli xcx",
+          "title": "Apple",
+          "h5_url": "",
+          "cover_medium": {
+            "uri": "tos-alisg-v-2774/oIEAIgwff7DIh1azze1QUAFu4AIDyDADFMvPXC",
+            "url_list": [
+              "https://p16-common.tiktokcdn-us.com/tos-alisg-v-2774/oIEAIgwff7DIh1azze1QUAFu4AIDyDADFMvPXC~tplv-tiktokx-cropcenter:200:200.jpeg?dr=9584&t=4d5b0474&ps=933b5bde&shp=08d74b56&shcp=544a444f&idc=useast8",
+              "https://p19-common.tiktokcdn-us.com/tos-alisg-v-2774/oIEAIgwff7DIh1azze1QUAFu4AIDyDADFMvPXC~tplv-tiktokx-cropcenter:200:200.jpeg?dr=9584&t=4d5b0474&ps=933b5bde&shp=08d74b56&shcp=544a444f&idc=useast8"
+            ],
+            "width": 720,
+            "height": 720,
+            "url_prefix": null
+          },
+          "performers": null,
+          "chorus_info": {
+            "start_ms": 89472,
+            "duration_ms": 25536
+          },
+          "full_duration": 151740
+        },
+        "video_duration": 18,
+        "search_music_name": "apple by charliiiii",
+        "search_music_desc": "Apple",
+        "search_highlight": null,
+        "multi_bit_rate_play_info": null,
+        "duration_high_precision": {
+          "duration_precision": 18.050564,
+          "shoot_duration_precision": 18.050564,
+          "audition_duration_precision": 18.050564,
+          "video_duration_precision": 18.050564
+        },
+        "can_not_reuse": false,
+        "is_play_music": false,
+        "commercial_right_type": 2,
+        "tt_to_dsp_song_infos": [
+          {
+            "platform": 1,
+            "song_id": "1739080645",
+            "token": {
+              "apple_music_token": {
+                "developer_token": "eyJhbGciOiJFUzI1NiIsImtpZCI6Ikc2Q0dLMjdWQzMifQ.eyJleHAiOjE3NzMyMDQwMzMsImlhdCI6MTc3MjU5OTIzMywiaXNzIjoiTUo3OTdEOFU2RiJ9.B6OjSAFm6w9yo_DJGXXlfVjUt8pJleIf0RiQkwikFkBObwfen4osLrwDDoKDE6muh9tV8sTzywM7bqA7W6eULA"
+              }
+            },
+            "button_type": 2
+          },
+          {
+            "platform": 2,
+            "song_id": "B0CZMCWW7K",
+            "button_type": 2
+          }
+        ],
+        "log_extra": "{\"meta_song_matched_type\":\"group3\",\"ttm_matched_type\":\"\",\"ttm_track_id\":\"\",\"matched_meta_song_id\":\"\",\"vid\":\"\",\"owner_id\":\"\"}",
+        "is_shooting_allow": true,
+        "recommend_status": 100,
+        "vid_volume_info": "{\"Loudness\":-8.2,\"LoudnessRangeStart\":-9.4,\"MaximumMomentaryLoudness\":-6.8,\"LoudnessRange\":1.8,\"LoudnessRangeEnd\":-7.6,\"MaximumShortTermLoudness\":-7.4,\"Peak\":1,\"Version\":1}",
+        "has_commerce_right": true,
+        "meme_song_info": {},
+        "related_query": "apple",
+        "is_sami_recommend": false,
+        "uncert_artists": null,
+        "allow_offline_music_to_detail_page": false,
+        "create_time": 1720352884,
+        "can_be_stitched": false,
+        "music_group_use_count": 0,
+        "music_group_v3_ids": [
+          7377197391998355475
+        ],
+        "has_human_voice": false,
+        "same_group_id_v3": 7377197391998355475,
+        "sim_group_id_v3": 26763284226,
+        "music_ugid": 7456577396821527318,
+        "music_ugid_use_count": 0,
+        "has_commerce_right_strict": false,
+        "is_commerce_music_strict": false
+      }
+    ],
+    "has_more": 1,
+    "cursor": 10,
+    "qc": "",
+    "ad_info": {},
+    "music_info_list": [
+      {
+        "card_type": 1,
+        "music": {
+          "id": 7377196584867760145,
+          "id_str": "7377196584867760145",
+          "title": "Apple",
+          "author": "Charli xcx",
+          "album": "BRAT",
+          "cover_large": {
+            "uri": "tos-alisg-v-2774/oIEAIgwff7DIh1azze1QUAFu4AIDyDADFMvPXC",
+            "url_list": [
+              "https://p16-common.tiktokcdn-us.com/tos-alisg-v-2774/oIEAIgwff7DIh1azze1QUAFu4AIDyDADFMvPXC~tplv-tiktokx-cropcenter:720:720.jpeg?dr=9584&t=4d5b0474&ps=933b5bde&shp=08d74b56&shcp=544a444f&idc=useast8"
+            ],
+            "width": 720,
+            "height": 720,
+            "url_prefix": null
+          },
+          "cover_medium": {
+            "uri": "tos-alisg-v-2774/oIEAIgwff7DIh1azze1QUAFu4AIDyDADFMvPXC",
+            "url_list": [
+              "https://p16-common.tiktokcdn-us.com/tos-alisg-v-2774/oIEAIgwff7DIh1azze1QUAFu4AIDyDADFMvPXC~tplv-tiktokx-cropcenter:100:100.jpeg?biz_tag=musically_music.music_cover&dr=9584&idc=useast8&ps=933b5bde&shcp=544a444f&shp=08d74b56&t=4d5b0474"
+            ],
+            "width": 720,
+            "height": 720,
+            "url_prefix": null
+          },
+          "cover_thumb": {
+            "uri": "tos-alisg-v-2774/oIEAIgwff7DIh1azze1QUAFu4AIDyDADFMvPXC",
+            "url_list": [
+              "https://p16-common.tiktokcdn-us.com/tos-alisg-v-2774/oIEAIgwff7DIh1azze1QUAFu4AIDyDADFMvPXC~tplv-tiktokx-cropcenter:100:100.jpeg?biz_tag=musically_music.music_cover&dr=9584&idc=useast8&ps=933b5bde&shcp=544a444f&shp=08d74b56&t=4d5b0474"
+            ],
+            "width": 720,
+            "height": 720,
+            "url_prefix": null
+          },
+          "play_url": {
+            "uri": "https://sf16.tiktokcdn-us.com/obj/tos-alisg-ve-2774/oYiDTDaIo1FgB3oftgoifQmqBFZoYCoOEMmBOv",
+            "url_list": [
+              "https://sf16.tiktokcdn-us.com/obj/tos-alisg-ve-2774/oYiDTDaIo1FgB3oftgoifQmqBFZoYCoOEMmBOv"
+            ],
+            "width": 720,
+            "height": 720,
+            "url_prefix": null
+          },
+          "source_platform": 10033,
+          "duration": 60,
+          "extra": "{\"amplitude_peak\":1.1850747,\"beats\":{\"audio_effect_onset\":\"https://sf19.tiktokcdn-us.com/obj/tos-alisg-v-2774/ogxzeyEBzAzjZlETaxU255AEDfFRFBAzwCAMeE\",\"beats_tracker\":\"https://sf16.tiktokcdn-us.com/obj/tos-alisg-v-2774/oMAAeEA2leMFUBb5WqElCFyazBTDqAUGJEfB0c\",\"energy_trace\":\"https://sf19.tiktokcdn-us.com/obj/tos-alisg-v-2774/oUDyEI2IDLfUeCynAEfmF0AAaF8xAMBajzCzEL\",\"merged_beats\":\"https://sf16.tiktokcdn-us.com/obj/tos-alisg-v-2774/okZur2mXWrN2ImAEcAvwl56T8ilAYiABBxQEt\"},\"can_read\":true,\"can_reuse\":true,\"erase_type\":0,\"erase_uid\":0,\"from_user_id\":7286993060096754734,\"full_song_beat_info\":{},\"full_song_beats\":{},\"has_edited\":0,\"is_batch_take_down_music\":false,\"is_ugc_mapping\":false,\"is_used\":0,\"loudness_lufs\":-7.112558,\"music_vid\":\"v10ad6g50000cph0da7og65k0vsqh2k0\",\"owner_id\":0,\"resource_status\":0,\"review_unshelve_reason\":0,\"reviewed\":1,\"schedule_search_time\":0}",
+          "user_count": 1444601,
+          "position": null,
+          "collect_stat": 0,
+          "status": 1,
+          "offline_desc": "",
+          "owner_nickname": "",
+          "is_original": false,
+          "mid": "7377196584867760145",
+          "binded_challenge_id": 0,
+          "author_deleted": false,
+          "owner_handle": "",
+          "author_position": null,
+          "prevent_download": false,
+          "strong_beat_url": {
+            "uri": "https://sf16.tiktokcdn-us.com/obj/tos-alisg-v-2774/ooIQPuLEwnZiAiZzWYtdSAaDiAxdmGATBEaAr",
+            "url_list": [
+              "https://sf16.tiktokcdn-us.com/obj/tos-alisg-v-2774/ooIQPuLEwnZiAiZzWYtdSAaDiAxdmGATBEaAr"
+            ],
+            "width": 720,
+            "height": 720,
+            "url_prefix": null
+          },
+          "external_song_info": [],
+          "avatar_thumb": {
+            "uri": "tos-maliva-avt-0068/f43a062200c40cd80f3509a62a06685b",
+            "url_list": [
+              "https://p19-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/f43a062200c40cd80f3509a62a06685b~tplv-tiktokx-cropcenter:100:100.webp?dr=9640&refresh_token=9089375e&x-expires=1772722800&x-signature=If4NW8FKGxIXdQkLqen3Qs%2BrWPw%3D&t=4d5b0474&ps=13740610&shp=544a444f&shcp=c1333099&idc=useast8",
+              "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/f43a062200c40cd80f3509a62a06685b~tplv-tiktokx-cropcenter:100:100.webp?dr=9640&refresh_token=13d659b0&x-expires=1772722800&x-signature=KsMprp1oszhpTNZ3PDoVCF7gKHQ%3D&t=4d5b0474&ps=13740610&shp=544a444f&shcp=c1333099&idc=useast8"
+            ],
+            "width": 720,
+            "height": 720,
+            "url_prefix": null
+          },
+          "avatar_medium": {
+            "uri": "tos-maliva-avt-0068/f43a062200c40cd80f3509a62a06685b",
+            "url_list": [
+              "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/f43a062200c40cd80f3509a62a06685b~tplv-tiktokx-cropcenter:720:720.webp?dr=9640&refresh_token=0d49d9e5&x-expires=1772722800&x-signature=yz3ekRFRibFJSE9%2FRoLUwJxvduw%3D&t=4d5b0474&ps=13740610&shp=544a444f&shcp=c1333099&idc=useast8",
+              "https://p19-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/f43a062200c40cd80f3509a62a06685b~tplv-tiktokx-cropcenter:720:720.webp?dr=9640&refresh_token=dcd80a2a&x-expires=1772722800&x-signature=h8QQzwGq43crvO%2Baue9KLsNoGck%3D&t=4d5b0474&ps=13740610&shp=544a444f&shcp=c1333099&idc=useast8"
+            ],
+            "width": 720,
+            "height": 720,
+            "url_prefix": null
+          },
+          "preview_start_time": 62,
+          "preview_end_time": 0,
+          "is_commerce_music": true,
+          "is_original_sound": false,
+          "audition_duration": 60,
+          "shoot_duration": 60,
+          "artists": [
+            {
+              "uid": "165180947447840768",
+              "sec_uid": "MS4wLjABAAAAok8FiOPFZg5o8vKv-oxSwYuM-gbhKldv_1_nnPAZQ1XdqeTJkUcuoz6SAjSdzcmr",
+              "nick_name": "Charli XCX",
+              "handle": "charlixcx",
+              "avatar": {
+                "uri": "tos-maliva-avt-0068/f43a062200c40cd80f3509a62a06685b",
+                "url_list": [
+                  "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/f43a062200c40cd80f3509a62a06685b~tplv-tiktokx-cropcenter:168:168.webp?dr=9638&refresh_token=77880d76&x-expires=1772722800&x-signature=ZR9UWIVrob3C%2FJVLUM19EVuuoRY%3D&t=4d5b0474&ps=13740610&shp=544a444f&shcp=c1333099&idc=useast8",
+                  "https://p19-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/f43a062200c40cd80f3509a62a06685b~tplv-tiktokx-cropcenter:168:168.webp?dr=9638&refresh_token=ee08641d&x-expires=1772722800&x-signature=f4wZPZshtI7l4BErpbgObkxqMCI%3D&t=4d5b0474&ps=13740610&shp=544a444f&shcp=c1333099&idc=useast8"
+                ],
+                "url_prefix": null
+              },
+              "is_verified": true,
+              "enter_type": 2,
+              "follow_status": 0,
+              "is_visible": false,
+              "follower_status": 0,
+              "is_private_account": false,
+              "is_block": false,
+              "is_blocked": false,
+              "status": 1
+            }
+          ],
+          "lyric_short_position": null,
+          "mute_share": false,
+          "tag_list": [
+            {
+              "tag_title": "Popular",
+              "tag_title_color": "#FF3B5C",
+              "tag_color": "#FFF2F5",
+              "tag_title_dark_color": "#FF3B5C",
+              "tag_dark_color": "#621B29"
+            }
+          ],
+          "dmv_auto_show": false,
+          "is_author_artist": true,
+          "is_pgc": true,
+          "is_matched_metadata": false,
+          "is_audio_url_with_cookie": false,
+          "matched_song": {
+            "id": "7377190934843394049",
+            "author": "Charli xcx",
+            "title": "Apple",
+            "h5_url": "",
+            "cover_medium": {
+              "uri": "tos-alisg-v-2774/oIEAIgwff7DIh1azze1QUAFu4AIDyDADFMvPXC",
+              "url_list": [
+                "https://p16-common.tiktokcdn-us.com/tos-alisg-v-2774/oIEAIgwff7DIh1azze1QUAFu4AIDyDADFMvPXC~tplv-tiktokx-cropcenter:200:200.jpeg?dr=9584&t=4d5b0474&ps=933b5bde&shp=08d74b56&shcp=544a444f&idc=useast8",
+                "https://p19-common.tiktokcdn-us.com/tos-alisg-v-2774/oIEAIgwff7DIh1azze1QUAFu4AIDyDADFMvPXC~tplv-tiktokx-cropcenter:200:200.jpeg?dr=9584&t=4d5b0474&ps=933b5bde&shp=08d74b56&shcp=544a444f&idc=useast8"
+              ],
+              "width": 720,
+              "height": 720,
+              "url_prefix": null
+            },
+            "performers": null,
+            "chorus_info": {
+              "start_ms": 89472,
+              "duration_ms": 25536
+            },
+            "full_duration": 151740
+          },
+          "video_duration": 60,
+          "search_music_name": "Apple",
+          "search_music_desc": "Charli xcx",
+          "search_highlight": null,
+          "multi_bit_rate_play_info": null,
+          "duration_high_precision": {
+            "duration_precision": 60,
+            "shoot_duration_precision": 60,
+            "audition_duration_precision": 60,
+            "video_duration_precision": 60
+          },
+          "can_not_reuse": false,
+          "is_play_music": false,
+          "commercial_right_type": 3,
+          "music_release_info": {
+            "is_new_release_song": false,
+            "group_release_date": 1717689600
+          },
+          "tt_to_dsp_song_infos": [
+            {
+              "platform": 1,
+              "song_id": "1739080645",
+              "token": {
+                "apple_music_token": {
+                  "developer_token": "eyJhbGciOiJFUzI1NiIsImtpZCI6Ikc2Q0dLMjdWQzMifQ.eyJleHAiOjE3NzMyMDQwMzMsImlhdCI6MTc3MjU5OTIzMywiaXNzIjoiTUo3OTdEOFU2RiJ9.B6OjSAFm6w9yo_DJGXXlfVjUt8pJleIf0RiQkwikFkBObwfen4osLrwDDoKDE6muh9tV8sTzywM7bqA7W6eULA"
+                }
+              },
+              "button_type": 2
+            },
+            {
+              "platform": 2,
+              "song_id": "B0D6HR38QQ",
+              "button_type": 2
+            }
+          ],
+          "log_extra": "{\"meta_song_matched_type\":\"pgc\",\"ttm_matched_type\":\"\",\"ttm_track_id\":\"\",\"matched_meta_song_id\":\"\",\"vid\":\"\",\"owner_id\":\"\"}",
+          "is_shooting_allow": true,
+          "recommend_status": 100,
+          "vid_volume_info": "{\"Peak\":1,\"Loudness\":-7.1,\"LoudnessRangeEnd\":-6,\"LoudnessRange\":3.9,\"Metrics\":{\"Loudness\":{\"Integrated\":-7.086},\"Phase\":{\"RMSDownmixDiff\":-0.347},\"RMSStats\":{\"LRDiff\":0.097,\"Peak\":0.721,\"LTotal\":-8.439,\"RTotal\":-8.537},\"Version\":\"1.4.2\"},\"MaximumMomentaryLoudness\":-4.8,\"MaximumShortTermLoudness\":-5.5,\"LoudnessRangeStart\":-9.9,\"Version\":2}",
+          "has_commerce_right": false,
+          "meme_song_info": {},
+          "related_query": "apple",
+          "is_sami_recommend": false,
+          "uncert_artists": null,
+          "style_value": [
+            150
+          ],
+          "theme_value": [
+            1
+          ],
+          "language": "English",
+          "allow_offline_music_to_detail_page": false,
+          "create_time": 1717637515,
+          "can_be_stitched": false,
+          "theme_tags": [
+            "Dance"
+          ],
+          "music_group_use_count": 0,
+          "music_group_v3_ids": [
+            7377197391998355475
+          ],
+          "has_human_voice": false,
+          "same_group_id_v3": 7377197391998355475,
+          "sim_group_id_v3": 26763284226,
+          "music_ugid": 7377196584867760145,
+          "music_ugid_use_count": 0,
+          "has_commerce_right_strict": false,
+          "is_commerce_music_strict": true
+        },
+        "musics": null,
+        "aweme_list": null
+      },
+      {
+        "card_type": 1,
+        "music": {
+          "id": 7388859369162541825,
+          "id_str": "7388859369162541825",
+          "title": "apple by charliiiii",
+          "author": "babyloncowboy 🍉",
+          "album": "",
+          "cover_large": {
+            "uri": "tos-alisg-avt-0068/7b0b4371ecab558d873e8f5da9be3aa5",
+            "url_list": [
+              "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/7b0b4371ecab558d873e8f5da9be3aa5~tplv-tiktokx-cropcenter:1080:1080.webp?dr=9640&refresh_token=2919e875&x-expires=1772722800&x-signature=%2FUT95MhnqpKBVww%2FV1z6Zje38jo%3D&t=4d5b0474&ps=13740610&shp=544a444f&shcp=c1333099&idc=useast8",
+              "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/7b0b4371ecab558d873e8f5da9be3aa5~tplv-tiktokx-cropcenter:1080:1080.webp?dr=9640&refresh_token=b99c5884&x-expires=1772722800&x-signature=CXczXz%2BRnCiMQonNMsWacKHVkGg%3D&t=4d5b0474&ps=13740610&shp=544a444f&shcp=c1333099&idc=useast8"
+            ],
+            "width": 720,
+            "height": 720,
+            "url_prefix": null
+          },
+          "cover_medium": {
+            "uri": "tos-alisg-avt-0068/7b0b4371ecab558d873e8f5da9be3aa5",
+            "url_list": [
+              "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/7b0b4371ecab558d873e8f5da9be3aa5~tplv-tiktokx-cropcenter:100:100.webp?biz_tag=musically_music.music_cover&dr=9640&idc=useast8&ps=13740610&refresh_token=25d5aea8&shcp=c1333099&shp=544a444f&t=4d5b0474&x-expires=1772722800&x-signature=HW9v6b6KwVWnYmd5VHmRNGoTr%2Bs%3D",
+              "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/7b0b4371ecab558d873e8f5da9be3aa5~tplv-tiktokx-cropcenter:100:100.webp?biz_tag=musically_music.music_cover&dr=9640&idc=useast8&ps=13740610&refresh_token=f59aaa5f&shcp=c1333099&shp=544a444f&t=4d5b0474&x-expires=1772722800&x-signature=uEuRY3EbWiXuzo4ogllmPsebdbg%3D"
+            ],
+            "width": 720,
+            "height": 720,
+            "url_prefix": null
+          },
+          "cover_thumb": {
+            "uri": "tos-alisg-avt-0068/7b0b4371ecab558d873e8f5da9be3aa5",
+            "url_list": [
+              "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/7b0b4371ecab558d873e8f5da9be3aa5~tplv-tiktokx-cropcenter:100:100.webp?biz_tag=musically_music.music_cover&dr=9640&idc=useast8&ps=13740610&refresh_token=25d5aea8&shcp=c1333099&shp=544a444f&t=4d5b0474&x-expires=1772722800&x-signature=HW9v6b6KwVWnYmd5VHmRNGoTr%2Bs%3D",
+              "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/7b0b4371ecab558d873e8f5da9be3aa5~tplv-tiktokx-cropcenter:100:100.webp?biz_tag=musically_music.music_cover&dr=9640&idc=useast8&ps=13740610&refresh_token=f59aaa5f&shcp=c1333099&shp=544a444f&t=4d5b0474&x-expires=1772722800&x-signature=uEuRY3EbWiXuzo4ogllmPsebdbg%3D"
+            ],
+            "width": 720,
+            "height": 720,
+            "url_prefix": null
+          },
+          "play_url": {
+            "uri": "https://sf16.tiktokcdn-us.com/obj/tiktok-obj/7388859354000198401.mp3",
+            "url_list": [
+              "https://sf16.tiktokcdn-us.com/obj/tiktok-obj/7388859354000198401.mp3"
+            ],
+            "width": 720,
+            "height": 720,
+            "url_prefix": null
+          },
+          "source_platform": 72,
+          "duration": 18,
+          "extra": "{\"aed_music_dur\":18.075,\"amplitude_peak\":0,\"beats\":{},\"can_read\":true,\"can_reuse\":true,\"erase_type\":0,\"erase_uid\":0,\"extract_item_id\":7388859334148590866,\"from_user_id\":7286993060096754734,\"full_song_beat_info\":{},\"full_song_beats\":{},\"has_edited\":1,\"is_batch_take_down_music\":false,\"is_ugc_mapping\":true,\"is_used\":1,\"loudness_lufs\":0,\"music_vid\":\"v10942g50000cq580snog65o4sg96hl0\",\"owner_id\":7338703245348733953,\"resource_status\":0,\"review_unshelve_reason\":0,\"reviewed\":1,\"schedule_search_time\":0}",
+          "user_count": 241903,
+          "position": null,
+          "collect_stat": 0,
+          "status": 1,
+          "offline_desc": "",
+          "owner_id": "7338703245348733953",
+          "owner_nickname": "babyloncowboy 🍉",
+          "is_original": false,
+          "mid": "7388859369162541825",
+          "binded_challenge_id": 0,
+          "author_deleted": false,
+          "owner_handle": "babyloncowboy",
+          "author_position": null,
+          "prevent_download": false,
+          "strong_beat_url": {
+            "uri": "https://sf19.tiktokcdn-us.com/obj/tiktok-obj/pattern/d71702989c753213c166d2e1c27bf65c.json",
+            "url_list": [
+              "https://sf19.tiktokcdn-us.com/obj/tiktok-obj/pattern/d71702989c753213c166d2e1c27bf65c.json"
+            ],
+            "width": 720,
+            "height": 720,
+            "url_prefix": null
+          },
+          "external_song_info": [],
+          "sec_uid": "MS4wLjABAAAAOzudj_d9pp-e07fWV9oi9tc6zgDpf3D2AIgD9JFO2zZ3uA-aRR2utLkT-0T0SIcb",
+          "avatar_thumb": {
+            "uri": "tos-alisg-avt-0068/7b0b4371ecab558d873e8f5da9be3aa5",
+            "url_list": [
+              "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/7b0b4371ecab558d873e8f5da9be3aa5~tplv-tiktokx-cropcenter:100:100.webp?dr=9640&refresh_token=25d5aea8&x-expires=1772722800&x-signature=HW9v6b6KwVWnYmd5VHmRNGoTr%2Bs%3D&t=4d5b0474&ps=13740610&shp=544a444f&shcp=c1333099&idc=useast8",
+              "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/7b0b4371ecab558d873e8f5da9be3aa5~tplv-tiktokx-cropcenter:100:100.webp?dr=9640&refresh_token=f59aaa5f&x-expires=1772722800&x-signature=uEuRY3EbWiXuzo4ogllmPsebdbg%3D&t=4d5b0474&ps=13740610&shp=544a444f&shcp=c1333099&idc=useast8"
+            ],
+            "width": 720,
+            "height": 720,
+            "url_prefix": null
+          },
+          "avatar_medium": {
+            "uri": "tos-alisg-avt-0068/7b0b4371ecab558d873e8f5da9be3aa5",
+            "url_list": [
+              "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/7b0b4371ecab558d873e8f5da9be3aa5~tplv-tiktokx-cropcenter:720:720.webp?dr=9640&refresh_token=25ee2a5a&x-expires=1772722800&x-signature=6n%2FK%2BD7DLbOJnlhDlnXBWtXmUnc%3D&t=4d5b0474&ps=13740610&shp=544a444f&shcp=c1333099&idc=useast8",
+              "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-avt-0068/7b0b4371ecab558d873e8f5da9be3aa5~tplv-tiktokx-cropcenter:720:720.webp?dr=9640&refresh_token=5be66ccd&x-expires=1772722800&x-signature=t6TaCmHJIy1wPpoo%2BxyHmHoXnXc%3D&t=4d5b0474&ps=13740610&shp=544a444f&shcp=c1333099&idc=useast8"
+            ],
+            "width": 720,
+            "height": 720,
+            "url_prefix": null
+          },
+          "preview_start_time": 0,
+          "preview_end_time": 0,
+          "is_commerce_music": true,
+          "is_original_sound": true,
+          "audition_duration": 18,
+          "shoot_duration": 18,
+          "artists": [],
+          "lyric_short_position": null,
+          "mute_share": false,
+          "tag_list": null,
+          "dmv_auto_show": false,
+          "is_author_artist": false,
+          "is_pgc": false,
+          "is_matched_metadata": false,
+          "is_audio_url_with_cookie": false,
+          "matched_pgc_sound": {
+            "author": "Charli xcx",
+            "title": "Apple",
+            "mixed_title": "apple by charliiiii (Contains music from: Apple - Charli xcx)",
+            "mixed_author": "Contains music from: \"Apple\"",
+            "music_release_info": {
+              "is_new_release_song": false,
+              "group_release_date": 1717689600
+            },
+            "artist_infos": [
+              {
+                "uid": "165180947447840768",
+                "sec_uid": "MS4wLjABAAAAok8FiOPFZg5o8vKv-oxSwYuM-gbhKldv_1_nnPAZQ1XdqeTJkUcuoz6SAjSdzcmr",
+                "nick_name": "Charli XCX",
+                "handle": "charlixcx",
+                "avatar": {
+                  "uri": "tos-maliva-avt-0068/f43a062200c40cd80f3509a62a06685b",
+                  "url_list": [
+                    "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/f43a062200c40cd80f3509a62a06685b~tplv-tiktokx-cropcenter:168:168.webp?dr=9638&refresh_token=77880d76&x-expires=1772722800&x-signature=ZR9UWIVrob3C%2FJVLUM19EVuuoRY%3D&t=4d5b0474&ps=13740610&shp=544a444f&shcp=c1333099&idc=useast8",
+                    "https://p19-common-sign.tiktokcdn-us.com/tos-maliva-avt-0068/f43a062200c40cd80f3509a62a06685b~tplv-tiktokx-cropcenter:168:168.webp?dr=9638&refresh_token=ee08641d&x-expires=1772722800&x-signature=f4wZPZshtI7l4BErpbgObkxqMCI%3D&t=4d5b0474&ps=13740610&shp=544a444f&shcp=c1333099&idc=useast8"
+                  ],
+                  "url_prefix": null
+                },
+                "is_verified": true,
+                "enter_type": 2,
+                "follow_status": 0,
+                "is_visible": false,
+                "follower_status": 0,
+                "is_private_account": false,
+                "is_block": false,
+                "is_blocked": false,
+                "status": 1
+              }
+            ],
+            "uncert_artists": null,
+            "cover_medium": {
+              "uri": "tos-alisg-v-2774/oIEAIgwff7DIh1azze1QUAFu4AIDyDADFMvPXC",
+              "url_list": [
+                "https://p16-common.tiktokcdn-us.com/tos-alisg-v-2774/oIEAIgwff7DIh1azze1QUAFu4AIDyDADFMvPXC~tplv-tiktokx-cropcenter:200:200.jpeg?dr=9584&t=4d5b0474&ps=933b5bde&shp=08d74b56&shcp=544a444f&idc=useast8",
+                "https://p19-common.tiktokcdn-us.com/tos-alisg-v-2774/oIEAIgwff7DIh1azze1QUAFu4AIDyDADFMvPXC~tplv-tiktokx-cropcenter:200:200.jpeg?dr=9584&t=4d5b0474&ps=933b5bde&shp=08d74b56&shcp=544a444f&idc=useast8"
+              ],
+              "width": 720,
+              "height": 720,
+              "url_prefix": null
+            }
+          },
+          "matched_song": {
+            "id": "7377190934843394049",
+            "author": "Charli xcx",
+            "title": "Apple",
+            "h5_url": "",
+            "cover_medium": {
+              "uri": "tos-alisg-v-2774/oIEAIgwff7DIh1azze1QUAFu4AIDyDADFMvPXC",
+              "url_list": [
+                "https://p16-common.tiktokcdn-us.com/tos-alisg-v-2774/oIEAIgwff7DIh1azze1QUAFu4AIDyDADFMvPXC~tplv-tiktokx-cropcenter:200:200.jpeg?dr=9584&t=4d5b0474&ps=933b5bde&shp=08d74b56&shcp=544a444f&idc=useast8",
+                "https://p19-common.tiktokcdn-us.com/tos-alisg-v-2774/oIEAIgwff7DIh1azze1QUAFu4AIDyDADFMvPXC~tplv-tiktokx-cropcenter:200:200.jpeg?dr=9584&t=4d5b0474&ps=933b5bde&shp=08d74b56&shcp=544a444f&idc=useast8"
+              ],
+              "width": 720,
+              "height": 720,
+              "url_prefix": null
+            },
+            "performers": null,
+            "chorus_info": {
+              "start_ms": 89472,
+              "duration_ms": 25536
+            },
+            "full_duration": 151740
+          },
+          "video_duration": 18,
+          "search_music_name": "apple by charliiiii",
+          "search_music_desc": "Apple",
+          "search_highlight": null,
+          "multi_bit_rate_play_info": null,
+          "duration_high_precision": {
+            "duration_precision": 18.050564,
+            "shoot_duration_precision": 18.050564,
+            "audition_duration_precision": 18.050564,
+            "video_duration_precision": 18.050564
+          },
+          "can_not_reuse": false,
+          "is_play_music": false,
+          "commercial_right_type": 2,
+          "tt_to_dsp_song_infos": [
+            {
+              "platform": 1,
+              "song_id": "1739080645",
+              "token": {
+                "apple_music_token": {
+                  "developer_token": "eyJhbGciOiJFUzI1NiIsImtpZCI6Ikc2Q0dLMjdWQzMifQ.eyJleHAiOjE3NzMyMDQwMzMsImlhdCI6MTc3MjU5OTIzMywiaXNzIjoiTUo3OTdEOFU2RiJ9.B6OjSAFm6w9yo_DJGXXlfVjUt8pJleIf0RiQkwikFkBObwfen4osLrwDDoKDE6muh9tV8sTzywM7bqA7W6eULA"
+                }
+              },
+              "button_type": 2
+            },
+            {
+              "platform": 2,
+              "song_id": "B0CZMCWW7K",
+              "button_type": 2
+            }
+          ],
+          "log_extra": "{\"meta_song_matched_type\":\"group3\",\"ttm_matched_type\":\"\",\"ttm_track_id\":\"\",\"matched_meta_song_id\":\"\",\"vid\":\"\",\"owner_id\":\"\"}",
+          "is_shooting_allow": true,
+          "recommend_status": 100,
+          "vid_volume_info": "{\"Loudness\":-8.2,\"LoudnessRangeStart\":-9.4,\"MaximumMomentaryLoudness\":-6.8,\"LoudnessRange\":1.8,\"LoudnessRangeEnd\":-7.6,\"MaximumShortTermLoudness\":-7.4,\"Peak\":1,\"Version\":1}",
+          "has_commerce_right": true,
+          "meme_song_info": {},
+          "related_query": "apple",
+          "is_sami_recommend": false,
+          "uncert_artists": null,
+          "allow_offline_music_to_detail_page": false,
+          "create_time": 1720352884,
+          "can_be_stitched": false,
+          "music_group_use_count": 0,
+          "music_group_v3_ids": [
+            7377197391998355475
+          ],
+          "has_human_voice": false,
+          "same_group_id_v3": 7377197391998355475,
+          "sim_group_id_v3": 26763284226,
+          "music_ugid": 7456577396821527318,
+          "music_ugid_use_count": 0,
+          "has_commerce_right_strict": false,
+          "is_commerce_music_strict": false
+        },
+        "musics": null,
+        "aweme_list": null
+      }
+    ],
+    "extra": {
+      "now": 1772637972000,
+      "logid": "202603041526127F8A7D9A17E5850DA909",
+      "fatal_item_ids": [],
+      "search_request_id": "",
+      "server_stream_time": 474,
+      "api_debug_info": null
+    },
+    "log_pb": {
+      "impr_id": "202603041526127F8A7D9A17E5850DA909"
+    },
+    "global_doodle_config": {
+      "keyword": "apple",
+      "display_filter_bar": 1,
+      "new_source": "normal_search",
+      "search_channel": "musically_music",
+      "tns_search_result": "Pass",
+      "hide_results": false,
+      "enable_music_mix_rank": 1,
+      "feedback_survey": [
+        {
+          "feedback_type": "music",
+          "multiple_choices": [
+            {
+              "key": "Dislike",
+              "value": "Dislike"
+            },
+            {
+              "key": "Unrelated result",
+              "value": "Unrelated result"
+            }
+          ],
+          "long_stress_info": null,
+          "send_us_multiple_choices": null
+        }
+      ],
+      "hit_shark": true,
+      "hit_dolphin": false
+    },
+    "feedback_type": "music",
+    "total": 334
+  },
+  "timestamp": 1772637973
+}

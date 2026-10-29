@@ -1,0 +1,592 @@
+{
+  "status": "ok",
+  "tiktok": {
+    "status_code": 0,
+    "extra": {
+      "log_pb": {
+        "impr_id": "20260324225923EEF26AC980C168149849"
+      },
+      "has_more": true,
+      "cost": 803,
+      "max_time": 1774393164412,
+      "total": 6,
+      "banner": {},
+      "unread_extra": "{\"channel_id\":21,\"req_from\":\"foru_feed_draw_loadmore\",\"gen_time\":1774393163,\"is_backup\":0}",
+      "style": 3,
+      "now": 1774393164413
+    },
+    "data": [
+      {
+        "type": 1,
+        "rid": "20260324225923EEF26AC980C168149849",
+        "data": {
+          "id": 7620954383781481246,
+          "id_str": "7620954383781481246",
+          "status": 2,
+          "owner_user_id": 6903295571928777734,
+          "title": "MYSTERY BOX MAYHEM W/ Homi",
+          "user_count": 554,
+          "client_version": 11909,
+          "cover": {
+            "url_list": [
+              "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-avt-0068-tx/9f1d52e65e1543c0cb3c77c0b2d4757b~tplv-tiktokx-cropcenter:720:720.webp?dr=9640&refresh_token=29617038&x-expires=1774562400&x-signature=STe8f%2B%2FTaUWEqJNEyoLWScxGJfU%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=fdd36af4&idc=useast5",
+              "https://p19-common-sign.tiktokcdn-us.com/tos-useast5-avt-0068-tx/9f1d52e65e1543c0cb3c77c0b2d4757b~tplv-tiktokx-cropcenter:720:720.webp?dr=9640&refresh_token=3efc691c&x-expires=1774562400&x-signature=qwXIPbAgHVU7Q8k5alX4ucVwPZc%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=fdd36af4&idc=useast5"
+            ],
+            "uri": "720x720/tos-useast5-avt-0068-tx/9f1d52e65e1543c0cb3c77c0b2d4757b"
+          },
+          "stream_url": {
+            "extra": {},
+            "live_core_sdk_data": {
+              "pull_data": {
+                "stream_data": "{\"common\":{\"session_id\":\"173-20260324225923EEF26AC980C168149849\",\"room_id\":7620954383781481246,\"rule_ids\":\"{\\\"ab_version_trace\\\":{\\\"10477\\\":[1749441195252],\\\"10550\\\":[1732596454849],\\\"10554\\\":[1732592346481],\\\"10765\\\":[1721180488121],\\\"10866\\\":[1747815361514],\\\"10942\\\":[1745816957429],\\\"11806\\\":[1754317833098,1752669348572],\\\"12958\\\":[1756797916494],\\\"1418\\\":[1673250146919,1666010142457],\\\"2138\\\":[1690519087933,1690525345742],\\\"2598\\\":[1715159344978],\\\"3054\\\":[1704722391811,1701746596108],\\\"4097\\\":[1721628097371,1725933627058],\\\"4238\\\":[1721648325234],\\\"5786\\\":[1732592346479,1732592346479],\\\"5793\\\":[1732596454687],\\\"7426\\\":[1740725804738],\\\"7926\\\":[1727578638973,1729343190172],\\\"8993\\\":[1741184324527],\\\"9193\\\":[1745735167278]},\\\"sched\\\":\\\"{\\\\\\\"ids\\\\\\\":[\\\\\\\"ex_83498(Weight:100)\\\\\\\"],\\\\\\\"result\\\\\\\":{\\\\\\\"hit\\\\\\\":\\\\\\\"exclusive\\\\\\\",\\\\\\\"cdn\\\\\\\":2317}}\\\"}\",\"query\":{\"game_abr_pitaya_pid\":\"v3\",\"infos\":\"34347875aefe4a83a6dfa6cc263b3d00bb9336ddc002425a82f63ae6a92a\",\"node_opt\":\"v3\",\"71173436\":\"v1\",\"71395589\":\"v5\",\"apool\":\"v2\",\"fast_response\":\"1\",\"rtm_expr_tag\":\"mio_live_us_r1_v2\",\"audio_balance\":\"v3\",\"audio_compressor\":\"ac_v1\",\"group_version\":\"71492945_v4\",\"pts_align_threshold\":\"1000\"},\"auto\":{\"strategy\":\"abr_bb_4live\",\"enable\":1,\"default\":\"hd\",\"list\":[\"uhd\",\"hd\",\"sd\",\"ld\"],\"enable_origin_resolution\":1},\"rtmp_ports\":{\"main\":{\"h2q\":443}},\"http_ports\":{\"main\":{\"h2q\":443}},\"user_count\":552,\"peer_anchor_level\":35,\"common_sdk_params\":{\"main\":\"{\\\"LiveIOConfig\\\":{\\\"EnableH2QPreconn\\\":1,\\\"EnableLiveIOUseJavaThread\\\":0,\\\"EnableLiveIOUseNewInterface\\\":1,\\\"EnableABR\\\":1,\\\"EnableLiveIO\\\":1,\\\"EnableQuic\\\":1,\\\"ConfigParams\\\":{\\\"Common\\\":{\\\"EnableRaceDefaultConfig\\\":1,\\\"EnableTaskListenerTransfer\\\":1,\\\"ff_live_cond_timeout\\\":50,\\\"EnableRaceFailFix\\\":1,\\\"NetworkStatsUpdatePeriod\\\":0,\\\"EnableRaceRedirectly\\\":true,\\\"http_is_enable_prepare\\\":1},\\\"H2Q\\\":{\\\"HttpConfigJson\\\":{\\\"LiveIOEnableRejAsSchlo\\\":0,\\\"EnableGetCCTK\\\":1,\\\"SCFGSaveIntvS\\\":1,\\\"CCTKVersion\\\":2,\\\"ICSL\\\":5,\\\"NetworkSeriesLen\\\":120,\\\"PING\\\":1,\\\"AddNetworkSeries\\\":1,\\\"SendPeriodOfCCTK\\\":1000,\\\"ProcessWrite\\\":0,\\\"EnableUseNewCCTKPath\\\":1,\\\"NewLog\\\":1,\\\"NetworkStatsContent\\\":10000,\\\"ConnCheckTimeout\\\":120,\\\"NetworkStatsStringifyType\\\":1,\\\"EnableExtendHSK\\\":1},\\\"LSEngineParamJson\\\":{\\\"CloseOnNetChange\\\":1,\\\"EnableGetLocalAddr\\\":1,\\\"FastReSend\\\":1,\\\"FixCloseWithATTQ\\\":1}}}},\\\"DurationOfCctkBwCollector\\\":5000,\\\"AbrStallDegradeImmediately\\\":0,\\\"TargetOriginBitRate\\\":2000000,\\\"httpx\\\":{\\\"NetworkStatsUpdatePeriod\\\":0,\\\"HttpVersion\\\":2,\\\"HttpConfigJson\\\":{\\\"EnableGetCCTK\\\":1,\\\"Pacing\\\":1,\\\"ICSL\\\":30,\\\"NewLog\\\":1,\\\"WriteDelayFor0RTT\\\":0,\\\"AckPacketsThreshold\\\":2,\\\"MaxProcTimeMs\\\":0,\\\"SendPeriodOfCctk\\\":1000,\\\"JointCCOpti\\\":0,\\\"EnableExtendHSK\\\":1,\\\"PING\\\":5,\\\"RWOnce\\\":1,\\\"NetworkSeriesLen\\\":120,\\\"MaxSFCW\\\":0,\\\"ConnCheckPeriod\\\":5,\\\"MinHandshakeTimeoutMs\\\":10,\\\"SCFGSaveIntvS\\\":1,\\\"ConnCheckTimeout\\\":60,\\\"NetworkStatsStringifyType\\\":1,\\\"BlockRead\\\":1,\\\"CCTKVersion\\\":2,\\\"SendPeriodOfCCTK\\\":1000,\\\"UAID\\\":\\\"ttplayer-live\\\",\\\"MIDS\\\":100,\\\"CFCW\\\":33554432,\\\"SCLS\\\":0,\\\"AddNetworkSeries\\\":1,\\\"SFCW\\\":16777216,\\\"LogLevel\\\":\\\"error\\\",\\\"EnableUseNewCCTKPath\\\":1,\\\"MaxCFCW\\\":0,\\\"NetworkStatsContent\\\":10000,\\\"HSTimeoutUs\\\":4000000},\\\"HttpQuicVersion\\\":43,\\\"HttpEnableHttpRace\\\":1,\\\"HttpMainJobDelay\\\":100,\\\"UseLSQUIC\\\":1,\\\"HttpEnableCertVerify\\\":1,\\\"LSEngineParamJson\\\":{\\\"FIFOPoolLenLimit\\\":3,\\\"CloseOnNetChange\\\":1,\\\"EnableGetLocalAddr\\\":1,\\\"FixCloseWithATTQ\\\":1,\\\"FIFOPoolLenInit\\\":1,\\\"FIFOSize\\\":1048576,\\\"FastReSend\\\":1},\\\"HttpUseQuicCrypto\\\":1,\\\"HttpPreStart\\\":0,\\\"HttpMaxRetryAttempts\\\":0,\\\"HttpExecCreateRetryTimes\\\":2,\\\"HttpPingTimeout\\\":5000,\\\"HttpPingInterval\\\":10000,\\\"HttpExecCreateRetryInt\\\":5,\\\"HttpPingForHeaderFrame\\\":1},\\\"ABRMethod\\\":3,\\\"DisableDirectSetCodecId\\\":1,\\\"ProtocolRetryTimes\\\":1,\\\"ABRSwitchDownBufferThreshold\\\":1000,\\\"EnableBinControl\\\":1,\\\"NetworkAdapt\\\":{\\\"Enabled\\\":1,\\\"EnableFixPtsShift\\\":1,\\\"SlowTime\\\":666,\\\"SlowSpeed\\\":1,\\\"SlowMillisecond\\\":666,\\\"HurryType\\\":0,\\\"HurryTime\\\":3500,\\\"HurryMillisecond\\\":3500,\\\"HurrySpeed\\\":1.1},\\\"ABROptimumStartupBiterateEnabled\\\":0,\\\"ResetCalibPtsRollback\\\":1,\\\"VCodec\\\":\\\"bytevc1\\\",\\\"FixMcAsyncCrash\\\":1,\\\"GetNetworkStats\\\":1,\\\"EnableBackupOriginInDecodeError\\\":1,\\\"AudioWatermark\\\":{\\\"Enabled\\\":1,\\\"EnablePrivateRoom\\\":0,\\\"Density\\\":10},\\\"EnableUseNewSeiTypeInLoudness\\\":1,\\\"EnableMediaCodecAsync\\\":1,\\\"EnableAudioGraphRefactor\\\":1,\\\"ABRCheckInterval\\\":1000,\\\"MediaCodecFrames\\\":7,\\\"StartupResList\\\":[\\\"uhd\\\",\\\"hd\\\"],\\\"EnableSeiParserInCodec\\\":1,\\\"LoudnessStrategy\\\":{\\\"EffectType\\\":10,\\\"Enable\\\":1,\\\"LibraParamsStr\\\":\\\"{     \\\\\\\"max_block_size\\\\\\\": 1024,     \\\\\\\"Version\\\\\\\": 0,     \\\\\\\"used_in_live\\\\\\\": 1,     \\\\\\\"live_target_lu\\\\\\\": -8,     \\\\\\\"lower_limit_level\\\\\\\": -18,     \\\\\\\"loudness_lookahead_window\\\\\\\": 0.4,     \\\\\\\"noise_gate_compress_ratio\\\\\\\": 0.67,     \\\\\\\"lu_type\\\\\\\": 0,     \\\\\\\"use_no_mdsp_graph\\\\\\\": 1,     \\\\\\\"limiter_peak\\\\\\\": -1,     \\\\\\\"limiter_makeup_gain\\\\\\\": 1, \\\\\\\"is_fixed_drc_compressor_ratio\\\\\\\":1, \\\\\\\"drc_compressor_ratio\\\\\\\":2.5 }\\\"},\\\"EnableGetMpdUrlOpt\\\":1,\\\"EnableOnlyAudioInAoRes\\\":1,\\\"SuggestProtocol\\\":\\\"h2q\\\",\\\"ABRSwitchNumberThreshold\\\":1,\\\"EnableQueryWinSize\\\":1,\\\"EnableSortAbrResolutionList\\\":0,\\\"ABRDecisionReportLevel\\\":2,\\\"StrategyInLSS\\\":{\\\"StrategyList\\\":{\\\"live_stream_strategy_bandwidth_estimator\\\":{\\\"Enable\\\":1,\\\"Name\\\":\\\"live_stream_strategy_bandwidth_estimator\\\",\\\"StrategyInputParams\\\":{\\\"EnableSmartStrategyConfig\\\":0,\\\"InputFeatureList\\\":[\\\"PLAY-CCTKCongestionInfo\\\",\\\"NETWORK-RecommendBitrate\\\",\\\"PLAY-Bitrate\\\"],\\\"InputSettingsParam\\\":{\\\"MaxSessionSize\\\":10,\\\"NetworkMatchMode\\\":1,\\\"CalculateEWMAFactor\\\":0.5,\\\"MinPlayedDurationThresh\\\":0,\\\"LiveProtectedDuration\\\":30,\\\"MaxBwSampleSize\\\":10,\\\"CalculateSize\\\":10,\\\"CalculateFunc\\\":2,\\\"MinBwEstimatorBitrate\\\":0,\\\"RemoveSampleTimer\\\":1,\\\"OverallStrategy\\\":1,\\\"PriorityMap\\\":{\\\"cctkBw\\\":10000,\\\"vodBitrate\\\":100}},\\\"Enable\\\":1}},\\\"live_stream_strategy_startup_bitrate_predict\\\":{\\\"StrategyInputParams\\\":{\\\"InputSettingsParam\\\":{\\\"BweToBitrateParams\\\":{\\\"BweThreshold\\\":45000000,\\\"CurveParams\\\":{\\\"BweThreshold\\\":45000000,\\\"Default\\\":[0,0,0.75,0],\\\"SourceCCTK-NoPreview\\\":{\\\"default\\\":[0,-8.252379838022095e-13,0.1025190517948626,0]},\\\"SourceCCTK-Preview\\\":{\\\"default\\\":[0,-8.252379838022095e-13,0.1025190517948626,0]}},\\\"Mode\\\":\\\"curve\\\"},\\\"NetworkLevelResolutionLimitMap\\\":{\\\"2\\\":\\\"hd\\\",\\\"4\\\":\\\"hd\\\",\\\"1\\\":\\\"hd\\\",\\\"8\\\":\\\"uhd\\\",\\\"3\\\":\\\"hd\\\",\\\"5\\\":\\\"uhd\\\",\\\"7\\\":\\\"uhd\\\",\\\"6\\\":\\\"uhd\\\"}},\\\"Enable\\\":1,\\\"EnableSmartStrategyConfig\\\":0,\\\"InputFeatureList\\\":[\\\"PLAY-BitrateList\\\",\\\"NETWORK-RecommendBitrate\\\",\\\"PLAY-IsPreview\\\",\\\"PLAY-PushResolution\\\",\\\"PLAY-NeptuneName\\\",\\\"PLAY-ProbeStartupBandwidth\\\",\\\"NETWORK-NetworkLevel\\\"]},\\\"Time\\\":0,\\\"Enable\\\":1,\\\"Name\\\":\\\"live_stream_strategy_startup_bitrate_predict\\\",\\\"Repeat\\\":0},\\\"live_stream_strategy_abr_predict_bitrate\\\":{\\\"StrategyInputParams\\\":{\\\"Enable\\\":1,\\\"EnableSmartStrategyConfig\\\":1,\\\"InputFeatureList\\\":[\\\"PLAY-IoBitrate\\\",\\\"PLAY-BitrateList\\\",\\\"PLAY-StartTs\\\",\\\"PLAY-StallTime\\\",\\\"PLAY-StallTotalTime\\\",\\\"PLAY-EndTs\\\",\\\"PLAY-Duration\\\",\\\"PLAY-FirstFrameVideoBuffer\\\",\\\"PLAY-FirstFrameAudioBuffer\\\",\\\"PLAY-FirstFrameDownloadSpeed\\\",\\\"PLAY-FirstFrame\\\",\\\"PLAY-StallType\\\",\\\"PLAY-StallTotalCount\\\",\\\"PLAY-StallSeries\\\",\\\"PLAY-HistoryBandwidth\\\",\\\"PLAY-FirstStartTime\\\",\\\"PLAY-FirstStartTimeStamp\\\",\\\"PLAY-Bitrate\\\",\\\"PLAY-AudioBuffer\\\",\\\"PLAY-VideoBuffer\\\",\\\"PLAY-DownloadSpeed\\\",\\\"PLAY-StallState\\\",\\\"PLAY-IsPreview\\\",\\\"PLAY-NeptuneName\\\",\\\"PLAY-FastOpenDuration\\\",\\\"PLAY-CCTKCongestionInfo\\\",\\\"PLAY-StallStartSeries\\\",\\\"PLAY-StallDurationSeries\\\",\\\"PLAY-PsnrList\\\",\\\"PLAY-VideoTotalBuffer\\\",\\\"PLAY-VrtBitrateList\\\",\\\"PLAY-VrtBitrateTsList\\\"],\\\"InputSettingsParam\\\":{\\\"enable_downgrade_for_low_buffer\\\":1,\\\"enable_only_check_latest_stall\\\":1,\\\"flv_bw_multiplier\\\":1,\\\"min_up_buffer_length\\\":0.5,\\\"enable_tls_upgrade\\\":1,\\\"enable_new_calibrate_bitrate\\\":1,\\\"tls_penalty_switch_time_ms\\\":30000,\\\"tls_switch_interval_ms\\\":20000,\\\"tls_min_buffer_diff_ms\\\":180,\\\"reduce_buffer_threshold\\\":2,\\\"tls_buffer_watch_num\\\":9,\\\"enable_check_stall_series\\\":1,\\\"enable_use_total_buffer\\\":1,\\\"enable_upgrade_check_network\\\":1,\\\"enable_downgrade_check_network\\\":1,\\\"enable_buffer_slope\\\":1,\\\"min_down_buffer_length\\\":0,\\\"buffer_slope_threshold\\\":-0.5,\\\"pid_bw_multiplier\\\":0.75,\\\"enable_bandwidth_allocation\\\":1,\\\"switch_down_counter_threshold\\\":3,\\\"switch_up_counter_threshold\\\":6,\\\"tls_min_downloadspeed_ratio\\\":0.8,\\\"degrade_to_upgrade_interval_threshold\\\":20000},\\\"EnableLocalStrategyModel\\\":1},\\\"Time\\\":1000,\\\"Enable\\\":1,\\\"Name\\\":\\\"live_stream_strategy_abr_predict_bitrate\\\",\\\"Repeat\\\":1}}},\\\"disable_algorithum\\\":1,\\\"EnableUpateSessionIdInRetry\\\":1,\\\"EnableNTPByApp\\\":1,\\\"Auto\\\":{\\\"Demotion\\\":{\\\"StallCount\\\":4},\\\"Enable\\\":0},\\\"AudioSampleMap\\\":1,\\\"DurationOfGopSizeCollector\\\":20000,\\\"AudioCalibrationType\\\":1,\\\"EnableUseNewCCTKPath\\\":1,\\\"EnableCheckDropAudio\\\":1,\\\"EnableAsyncSetSurface\\\":1,\\\"EnableMcMonitor\\\":1,\\\"E2EDelayReportFix\\\":0,\\\"AudioGraphMaxCacheSize\\\":3,\\\"AudioGetLatencyFreq\\\":10000,\\\"FastOpenDuration\\\":-500,\\\"NotifyCompletedImmediately\\\":1,\\\"EnableAbrLogOnBitrateChange\\\":0,\\\"EnableCertVerify\\\":1,\\\"EnableOptimizeLivePtsRollback\\\":1,\\\"EnableUseLSS\\\":1,\\\"MainBackupSwitch\\\":{\\\"Enabled\\\":0},\\\"MediaCodecCheckInterval\\\":100,\\\"ABRSeriesInfo\\\":{\\\"MaxRecordCount\\\":50,\\\"Enable\\\":1},\\\"AudioDecodeMaxCacheSize\\\":8,\\\"PreprocessAudioEffectType\\\":1,\\\"QuicConfigOptimize\\\":1,\\\"ProtocolDowngrade\\\":1,\\\"disable_algorithm\\\":1,\\\"BufferDataMs\\\":500,\\\"llash\\\":{\\\"PreSwitchEnableWait\\\":1,\\\"EnableAbrSwitchLog\\\":1,\\\"EnablePredictGopLastFrame\\\":0,\\\"PreSwitchEnableDrop\\\":0,\\\"PreSwitchWaitThreshold\\\":100,\\\"RemoveTSWrap\\\":1,\\\"UseTotalBuffer\\\":1,\\\"PreSwitchCheckDuration\\\":50,\\\"EnableReadPacketV2\\\":1,\\\"FixPrevBufferLog\\\":1,\\\"EnablePreSwitch\\\":1},\\\"WaitSetSurfaceTimeout\\\":60,\\\"EnableABRCheckEnhance\\\":0,\\\"EnableSaveSCFG\\\":1,\\\"cdn_name\\\":\\\"cdn77\\\",\\\"EnableADecoderPlugin\\\":1,\\\"AudioEffectCompressor\\\":{\\\"Threshold\\\":-14,\\\"Type\\\":0,\\\"Enable\\\":1,\\\"Predelay\\\":0.007,\\\"Pregain\\\":0.25,\\\"Ratio\\\":8},\\\"AudioPrerollTimeout\\\":500,\\\"EnableStopCloseIO\\\":1,\\\"FixBinBuffering\\\":1,\\\"ABRSafeBuffer\\\":0.3,\\\"UdpRealSpeed\\\":1,\\\"EnablePlayerFR\\\":1,\\\"quic\\\":{\\\"QuicALogLevel\\\":2,\\\"QuicFifoRecvBufferLen\\\":8388608,\\\"QuicEarlyClose\\\":1},\\\"EnableUseRefactorStrategy\\\":1,\\\"SizeOfCctkBwCollector\\\":5,\\\"auto\\\":{\\\"enable_origin_resolution\\\":1,\\\"strategy\\\":\\\"abr_bb_4live\\\",\\\"list\\\":[\\\"uhd\\\",\\\"hd\\\",\\\"sd\\\",\\\"ld\\\"],\\\"default\\\":\\\"hd\\\",\\\"demotion\\\":{\\\"stall_count\\\":9999},\\\"enable\\\":1},\\\"VoicePool\\\":{\\\"MaxSameCount\\\":4,\\\"Size\\\":7,\\\"UseCount\\\":20,\\\"Enable\\\":1,\\\"ForbidSampleRate\\\":\\\"48000\\\"},\\\"SuggestFormat\\\":\\\"flv\\\",\\\"EnableAudioDirectBuffer\\\":1,\\\"AudioBalanceTargetLuft\\\":-8,\\\"EnableAudioBalanceBySei\\\":1,\\\"UseFastOpenDurationFromSetAPI\\\":1,\\\"StrategyInLss\\\":{\\\"StrategyList\\\":[{\\\"Name\\\":\\\"live_stream_strategy_abr_predict_bitrate\\\",\\\"Repeat\\\":1,\\\"Time\\\":1000,\\\"Enable\\\":1},{\\\"Repeat\\\":0,\\\"Time\\\":0,\\\"Enable\\\":1,\\\"Name\\\":\\\"live_stream_strategy_startup_bitrate_predict\\\"}]},\\\"EnableMcPipeline\\\":1,\\\"SizeOfGopSizeCollector\\\":3,\\\"EnableCreateDecoderEarly\\\":1,\\\"EnablePixelFormatFullRange\\\":1,\\\"EnableE2EDelayCalc\\\":1,\\\"MediaCodecDeadTimeThresh\\\":1000,\\\"EventReportConfig\\\":{\\\"EnableReportDecodeStall\\\":0,\\\"EnableReportRecvedSpspps\\\":0,\\\"EnableReportDemuxStall\\\":0}}\"}},\"data\":{\"hd\":{\"main\":{\"flv\":\"https://pull-flv-f77-tt02.tiktokcdn-us.com/game/stream-3866072306686100430_hd5s.flv?expire=1775602764&sign=6f49066a8537e83bc2bdad85f97ac947\",\"hls\":\"\",\"cmaf\":\"https://pull-flv-f77-tt02.tiktokcdn-us.com/game/stream-3866072306686100430_hd5s/index.mpd?expire=1775602764&sign=961fdb52841eac3cac8a8ed82dc8f9af\",\"dash\":\"\",\"lls\":\"\",\"tsl\":\"\",\"tile\":\"\",\"rtc\":\"\",\"sdk_params\":\"{\\\"stream_suffix\\\":\\\"hd5s\\\",\\\"v_rtbitrate_timestamp\\\":1774393162164,\\\"v_rtbitrate_std\\\":268630,\\\"v_rtbitrate\\\":1733320,\\\"resolution\\\":\\\"720x1280\\\",\\\"v_rtbitrate_vpaas_timestamp\\\":1774393164319,\\\"v_rtpsnr\\\":0,\\\"gop\\\":4,\\\"v_rtbitrate_pct\\\":1983130,\\\"vbitrate\\\":1600000}\"}},\"ao\":{\"main\":{\"flv\":\"https://pull-flv-f77-tt02.tiktokcdn-us.com/game/stream-3866072306686100430.flv?expire=1775602764&sign=2b5495fa46adcaeeec2a3b9c33e5ce12&only_audio=1\",\"hls\":\"\",\"cmaf\":\"https://pull-flv-f77-tt02.tiktokcdn-us.com/game/stream-3866072306686100430_ao/index.mpd?expire=1775602764&sign=0b675083fbd1c9eaf36e0c865637a155\",\"dash\":\"\",\"lls\":\"\",\"tsl\":\"\",\"tile\":\"\",\"rtc\":\"\",\"sdk_params\":\"{\\\"resolution\\\":\\\"\\\",\\\"vbitrate\\\":0,\\\"stream_suffix\\\":\\\"ao\\\",\\\"gop\\\":0}\"}},\"origin\":{\"main\":{\"flv\":\"https://pull-flv-f77-tt02.tiktokcdn-us.com/game/stream-3866072306686100430.flv?expire=1775602764&sign=2b5495fa46adcaeeec2a3b9c33e5ce12\",\"hls\":\"\",\"cmaf\":\"https://pull-flv-f77-tt02.tiktokcdn-us.com/game/stream-3866072306686100430/index.mpd?expire=1775602764&sign=ab53430abbd0bf21f99b661f84f503d1\",\"dash\":\"\",\"lls\":\"\",\"tsl\":\"\",\"tile\":\"\",\"rtc\":\"\",\"sdk_params\":\"{\\\"gop\\\":4,\\\"resolution\\\":\\\"1080x1920\\\",\\\"vbitrate\\\":4662000}\"}},\"sd\":{\"main\":{\"flv\":\"https://pull-flv-f77-tt02.tiktokcdn-us.com/game/stream-3866072306686100430_sd5.flv?expire=1775602764&sign=c44217776cd8dbf7114146b68b092bbd\",\"hls\":\"\",\"cmaf\":\"https://pull-flv-f77-tt02.tiktokcdn-us.com/game/stream-3866072306686100430_sd5/index.mpd?expire=1775602764&sign=20b73ae02508b02256225ad2edb62981\",\"dash\":\"\",\"lls\":\"\",\"tsl\":\"\",\"tile\":\"\",\"rtc\":\"\",\"sdk_params\":\"{\\\"vbitrate\\\":1000000,\\\"gop\\\":4,\\\"v_rtbitrate_timestamp\\\":1774393151633,\\\"v_rtbitrate\\\":960710,\\\"resolution\\\":\\\"540x960\\\",\\\"v_rtpsnr\\\":0,\\\"v_rtbitrate_vpaas_timestamp\\\":1774393164319,\\\"stream_suffix\\\":\\\"sd5\\\",\\\"v_rtbitrate_pct\\\":1099480,\\\"v_rtbitrate_std\\\":128039.99999999999}\"}},\"ld\":{\"main\":{\"flv\":\"https://pull-flv-f77-tt02.tiktokcdn-us.com/game/stream-3866072306686100430_ld5.flv?expire=1775602764&sign=e09efca2929888f9fd390eaac58ca68c\",\"hls\":\"\",\"cmaf\":\"https://pull-flv-f77-tt02.tiktokcdn-us.com/game/stream-3866072306686100430_ld5/index.mpd?expire=1775602764&sign=fe9916256a4ab093b1a968b85de6694b\",\"dash\":\"\",\"lls\":\"\",\"tsl\":\"\",\"tile\":\"\",\"rtc\":\"\",\"sdk_params\":\"{\\\"vbitrate\\\":600000,\\\"gop\\\":4,\\\"v_rtpsnr\\\":0,\\\"v_rtbitrate_vpaas_timestamp\\\":1774393164319,\\\"resolution\\\":\\\"360x640\\\",\\\"v_rtbitrate_timestamp\\\":1774393160503,\\\"v_rtbitrate_pct\\\":582080,\\\"v_rtbitrate\\\":554090,\\\"stream_suffix\\\":\\\"ld5\\\",\\\"v_rtbitrate_std\\\":23060}\"}},\"uhd\":{\"main\":{\"flv\":\"https://pull-flv-f77-tt02.tiktokcdn-us.com/game/stream-3866072306686100430_uhd5s.flv?expire=1775602764&sign=73a0da1abc4ab4ddb813e543daf2d896\",\"hls\":\"\",\"cmaf\":\"https://pull-flv-f77-tt02.tiktokcdn-us.com/game/stream-3866072306686100430_uhd5s/index.mpd?expire=1775602764&sign=883a0c4051b15b42b12bcab813571d0b\",\"dash\":\"\",\"lls\":\"\",\"tsl\":\"\",\"tile\":\"\",\"rtc\":\"\",\"sdk_params\":\"{\\\"gop\\\":4,\\\"v_rtbitrate_pct\\\":3664020,\\\"vbitrate\\\":2600000,\\\"resolution\\\":\\\"1080x1920\\\",\\\"v_rtbitrate_vpaas_timestamp\\\":1774393164319,\\\"v_rtbitrate\\\":3028920,\\\"v_rtbitrate_timestamp\\\":1774393159747,\\\"v_rtbitrate_std\\\":391970,\\\"v_rtpsnr\\\":0,\\\"stream_suffix\\\":\\\"uhd5s\\\"}\"}}}}",
+                "options": {
+                  "default_quality": {
+                    "name": "AUTO",
+                    "sdk_key": "auto"
+                  },
+                  "qualities": [
+                    {
+                      "name": "AUTO",
+                      "sdk_key": "auto",
+                      "level": 11,
+                      "icon_type": 5
+                    },
+                    {
+                      "name": "Original",
+                      "sdk_key": "origin",
+                      "level": 10,
+                      "icon_type": 6
+                    }
+                  ],
+                  "default_preview_quality": {}
+                }
+              },
+              "push_data": {}
+            },
+            "stream_size_width": 1080,
+            "stream_size_height": 1920
+          },
+          "link_mic": {
+            "channel_info": {},
+            "battle_settings": {}
+          },
+          "stats": {
+            "user_count_composition": {}
+          },
+          "feed_room_label": {
+            "url_list": [
+              "https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/2ea90002aca1159b5c67~tplv-obj.image",
+              "https://p19-webcast.tiktokcdn.com/img/alisg/webcast-sg/2ea90002aca1159b5c67~tplv-obj.image"
+            ],
+            "uri": "webcast-sg/2ea90002aca1159b5c67",
+            "avg_color": "#CCA3A3"
+          },
+          "living_room_attrs": {},
+          "owner": {
+            "id": 6903295571928777734,
+            "nickname": "Unvaulted Hype",
+            "bio_description": "The #1 Sneaker Mystery Box ⁉️\n100% Authentic Kicks.👟\nFire Drops.🔥\nHoly Grails.🙏",
+            "avatar_thumb": {
+              "url_list": [
+                "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-avt-0068-tx/9f1d52e65e1543c0cb3c77c0b2d4757b~tplv-tiktokx-cropcenter:100:100.webp?dr=9640&refresh_token=5d61fd0b&x-expires=1774562400&x-signature=GXshZuBb0mlwz7fRPjvPBrdxEZg%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=fdd36af4&idc=useast5",
+                "https://p19-common-sign.tiktokcdn-us.com/tos-useast5-avt-0068-tx/9f1d52e65e1543c0cb3c77c0b2d4757b~tplv-tiktokx-cropcenter:100:100.webp?dr=9640&refresh_token=c744c6fb&x-expires=1774562400&x-signature=gCr%2BanPTG96tIxc9i0Z9KNaQyzU%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=fdd36af4&idc=useast5"
+              ],
+              "uri": "100x100/tos-useast5-avt-0068-tx/9f1d52e65e1543c0cb3c77c0b2d4757b"
+            },
+            "avatar_medium": {
+              "url_list": [
+                "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-avt-0068-tx/9f1d52e65e1543c0cb3c77c0b2d4757b~tplv-tiktokx-cropcenter:720:720.webp?dr=9640&refresh_token=29617038&x-expires=1774562400&x-signature=STe8f%2B%2FTaUWEqJNEyoLWScxGJfU%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=fdd36af4&idc=useast5",
+                "https://p19-common-sign.tiktokcdn-us.com/tos-useast5-avt-0068-tx/9f1d52e65e1543c0cb3c77c0b2d4757b~tplv-tiktokx-cropcenter:720:720.webp?dr=9640&refresh_token=3efc691c&x-expires=1774562400&x-signature=qwXIPbAgHVU7Q8k5alX4ucVwPZc%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=fdd36af4&idc=useast5"
+              ],
+              "uri": "720x720/tos-useast5-avt-0068-tx/9f1d52e65e1543c0cb3c77c0b2d4757b"
+            },
+            "avatar_large": {
+              "url_list": [
+                "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-avt-0068-tx/9f1d52e65e1543c0cb3c77c0b2d4757b~tplv-tiktokx-cropcenter:1080:1080.webp?dr=9640&refresh_token=1f23735c&x-expires=1774562400&x-signature=Si3kk6IoBPdaX3dGI3PYWoKKf9E%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=fdd36af4&idc=useast5",
+                "https://p19-common-sign.tiktokcdn-us.com/tos-useast5-avt-0068-tx/9f1d52e65e1543c0cb3c77c0b2d4757b~tplv-tiktokx-cropcenter:1080:1080.webp?dr=9640&refresh_token=9588939e&x-expires=1774562400&x-signature=A%2BemKVSCMZkAvvaHq7J%2F4fnNLTY%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=fdd36af4&idc=useast5"
+              ],
+              "uri": "1080x1080/tos-useast5-avt-0068-tx/9f1d52e65e1543c0cb3c77c0b2d4757b"
+            },
+            "status": 1,
+            "modify_time": 1774379125,
+            "follow_info": {
+              "following_count": 36,
+              "follower_count": 357727
+            },
+            "pay_grade": {},
+            "user_attr": {},
+            "own_room": {
+              "room_ids": [
+                7620954383781481246
+              ],
+              "room_ids_str": [
+                "7620954383781481246"
+              ]
+            },
+            "display_id": "unvaultedhype",
+            "sec_uid": "MS4wLjABAAAA5u030cvRUjrakvmIllBMWfLJHCOtGWMrUwbj64UwkqhAJUsQdEmIKsaacjvpW-vV",
+            "mint_type_label": [
+              7047027142626691074,
+              7223390737516347398
+            ],
+            "id_str": "6903295571928777734",
+            "enigma_info": {}
+          },
+          "has_commerce_goods": true,
+          "live_type_third_party": true,
+          "room_auth": {
+            "Chat": true,
+            "Gift": true,
+            "LuckMoney": true,
+            "Digg": true,
+            "UserCard": true,
+            "Banner": 1,
+            "Landscape": 2,
+            "PublicScreen": 1,
+            "GiftAnchorMt": 1,
+            "DonationSticker": 1,
+            "InteractionQuestion": true,
+            "ChatL2": true,
+            "Viewers": true,
+            "Share": true,
+            "transaction_history": 1,
+            "UserCount": 1,
+            "Rank": 1,
+            "BroadcastMessage": 1,
+            "anchor_level_permission": {}
+          },
+          "like_count": 3184,
+          "anchor_tab_type": 7,
+          "commerce_info": {
+            "commerce_permission": 1,
+            "oec_live_enter_room_init_data": "{\"product_num\":3,\"server_time\":1774393164402,\"tt_version_code\":0,\"schema\":\"\",\"bag_index\":0,\"display_product_num\":3,\"pop_product_id\":\"1732269353316946501\",\"is_new_user\":true,\"assistant_switch\":false,\"is_new_user_fixed\":true,\"recommend_info\":\"{\\\"ecom_live_from_ecom_live_lane\\\":false,\\\"ecom_live_server_current_pid\\\":1732269353316946501}\",\"live_bag_and_pin_card_type\":4,\"pin_card_minimalism\":1,\"card_type\":1,\"enter_room_prompt\":{\"need_prompt\":false,\"prompt_text\":\"\",\"da_info\":\"\"},\"pop_card_id\":1732269353316946501,\"pin_card_config\":{\"display_duration_ms\":0,\"activity_finish_display_duration_ms\":0,\"real_card_type\":1,\"real_pop_card_id\":0}}"
+          },
+          "interaction_question_version": 1,
+          "hashtag": {
+            "id": 42,
+            "title": "Chat & Interview",
+            "image": {
+              "url_list": [
+                "https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/2Chat.png~tplv-obj.image",
+                "https://p19-webcast.tiktokcdn.com/img/alisg/webcast-sg/2Chat.png~tplv-obj.image"
+              ],
+              "uri": "webcast-sg/2Chat.png",
+              "avg_color": "#523749"
+            }
+          },
+          "live_room_mode": 6,
+          "stream_url_filtered_info": {},
+          "social_interaction": {},
+          "room_auth_message": {},
+          "existed_commerce_goods": true,
+          "age_restricted": {},
+          "blurred_cover": {
+            "url_list": [
+              "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-avt-0068-tx/9f1d52e65e1543c0cb3c77c0b2d4757b~tplv-tiktokx-crop-blur:100:200:3:q100.jpeg?dr=9616&refresh_token=7351d856&x-expires=1774411200&x-signature=VCzp9FSdvn1dygm7OOtxaEs4ZV8%3D&t=4d5b0474&ps=13740610&shp=97fb53a0&shcp=2de197d8&idc=useast5&ftpl=1",
+              "https://p19-common-sign.tiktokcdn-us.com/tos-useast5-avt-0068-tx/9f1d52e65e1543c0cb3c77c0b2d4757b~tplv-tiktokx-crop-blur:100:200:3:q100.jpeg?dr=9616&refresh_token=d7836146&x-expires=1774411200&x-signature=GRYQkFI1ysx6otK7S1RCTmk%2F9tk%3D&t=4d5b0474&ps=13740610&shp=97fb53a0&shcp=2de197d8&idc=useast5&ftpl=1"
+            ],
+            "uri": "tos-useast5-avt-0068-tx/9f1d52e65e1543c0cb3c77c0b2d4757b",
+            "height": 200,
+            "width": 100,
+            "avg_color": "#666666"
+          },
+          "multi_stream_url": {
+            "extra": {
+              "super_resolution": {}
+            },
+            "live_core_sdk_data": {
+              "pull_data": {
+                "options": {
+                  "default_quality": {},
+                  "default_preview_quality": {}
+                }
+              },
+              "push_data": {}
+            }
+          },
+          "cover_type": 1,
+          "taxonomy_tag_info": {
+            "level2_tag": "clothes_&_accessory"
+          },
+          "stream_snapshot": {
+            "uri": "tos-alisg-i-6sfwe43m1g-sg/972d2bac0af9494a89c3d4af416df816.jpeg",
+            "urls": [
+              "https://p16-common-sign.tiktokcdn-us.com/tos-alisg-i-6sfwe43m1g-sg/972d2bac0af9494a89c3d4af416df816.jpeg~tplv-tiktokx-origin.image?dr=9643&refresh_token=caad83e0&x-expires=1774411200&x-signature=tPM3o%2FNJhJlnEXEPFjHex77oy1Y%3D&t=4d5b0474&ps=13740610&shp=97fb53a0&shcp=2de197d8&idc=useast5",
+              "https://p19-common-sign.tiktokcdn-us.com/tos-alisg-i-6sfwe43m1g-sg/972d2bac0af9494a89c3d4af416df816.jpeg~tplv-tiktokx-origin.image?dr=9643&refresh_token=ce1898b0&x-expires=1774411200&x-signature=cMLEhXxI75Cq4pMS89RumeoWgik%3D&t=4d5b0474&ps=13740610&shp=97fb53a0&shcp=2de197d8&idc=useast5"
+            ],
+            "height": 1920,
+            "width": 1080,
+            "face_center_x": 436,
+            "face_center_y": 460
+          },
+          "log_id": "20260324225923EEF26AC980C168149849",
+          "enlarge_view_info": {
+            "enabler_enlarge_view": true
+          }
+        },
+        "live_reason": "rec",
+        "flare_info": {},
+        "sort_stats_tags": {
+          "for_app_log": [
+            {
+              "key": "is_coldstart",
+              "value": "0"
+            },
+            {
+              "key": "coldstart_thresh",
+              "value": "0"
+            }
+          ],
+          "for_client_func": [
+            {
+              "key": "ttlive_survey_show_map"
+            },
+            {
+              "key": "rec_info",
+              "value": "{\"cvr_60s\":0.014326090924441814,\"staytime\":0.5016292333602905,\"cvr_10s\":0.06571277976036072}"
+            }
+          ]
+        },
+        "room_event_tracking": "foru_feed_draw_loadmore:21:normal"
+      },
+      {
+        "type": 1,
+        "rid": "20260324225923EEF26AC980C168149849",
+        "data": {
+          "id": 7620959749021960991,
+          "id_str": "7620959749021960991",
+          "status": 2,
+          "owner_user_id": 6964119420864906245,
+          "title": "#HoldFast Chat!",
+          "user_count": 9,
+          "os_type": 1,
+          "client_version": 440300,
+          "cover": {
+            "url_list": [
+              "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-avt-0068-tx2/9938da800f5afba97fca0453ed9b7b72~tplv-tiktokx-cropcenter:720:720.webp?dr=9640&refresh_token=24a350f2&x-expires=1774562400&x-signature=klLmFf7i4Xhvd%2FGmfGfRx47Si1s%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=fdd36af4&idc=useast5",
+              "https://p19-common-sign.tiktokcdn-us.com/tos-useast8-avt-0068-tx2/9938da800f5afba97fca0453ed9b7b72~tplv-tiktokx-cropcenter:720:720.webp?dr=9640&refresh_token=bccd1ac6&x-expires=1774562400&x-signature=Yf6vTJG02dxhzoBmd1EILSIw1Mg%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=fdd36af4&idc=useast5"
+            ],
+            "uri": "720x720/tos-useast8-avt-0068-tx2/9938da800f5afba97fca0453ed9b7b72"
+          },
+          "stream_url": {
+            "extra": {},
+            "live_core_sdk_data": {
+              "pull_data": {
+                "stream_data": "{\"common\":{\"session_id\":\"173-20260324225923EEF26AC980C168149849\",\"room_id\":7620959749021960991,\"rule_ids\":\"{\\\"ab_version_trace\\\":{\\\"10477\\\":[1749441195252],\\\"10765\\\":[1721180488121],\\\"10810\\\":[1732625569945],\\\"10814\\\":[1732625570224],\\\"11882\\\":[1727414761058],\\\"12298\\\":[1755604894166],\\\"2138\\\":[1690519087933,1690525345742],\\\"2598\\\":[1715159344978],\\\"3054\\\":[1701746596108,1704722391811],\\\"3450\\\":[1696749716805,1705387313810],\\\"4097\\\":[1725933627058,1721628097371],\\\"4238\\\":[1721648325234],\\\"7426\\\":[1740725804738],\\\"8953\\\":[1745816868535],\\\"8957\\\":[1737372876846],\\\"8993\\\":[1741184324527],\\\"9193\\\":[1745735167278]},\\\"sched\\\":\\\"{\\\\\\\"ids\\\\\\\":[\\\\\\\"ex_83494(Weight:100)\\\\\\\"],\\\\\\\"result\\\\\\\":{\\\\\\\"hit\\\\\\\":\\\\\\\"exclusive\\\\\\\",\\\\\\\"cdn\\\\\\\":2221}}\\\"}\",\"query\":{\"group_version\":\"71350460_1080_v1\",\"node_opt\":\"v3\",\"max_push_res\":\"v3\",\"rtm_expr_tag\":\"mio_live_us_r1_v2\",\"start_startup_1080\":\"v2\",\"apool\":\"v2\",\"audio_balance\":\"v3\",\"audio_compressor\":\"ac_v1\",\"infos\":\"95ff3924a01294783d32d9f64fe07d4d3ce9d4a1a256efba3a7903f4ef65\"},\"auto\":{\"strategy\":\"abr_bb_4live\",\"enable\":1,\"default\":\"hd\",\"list\":[\"uhd\",\"hd\",\"sd\",\"ld\"],\"enable_origin_resolution\":1},\"rtmp_ports\":{\"main\":{\"h2q\":443}},\"http_ports\":{\"main\":{\"h2q\":443}},\"peer_anchor_level\":4,\"common_sdk_params\":{\"main\":\"{\\\"MediaCodecCheckInterval\\\":100,\\\"EnableAsyncSetSurface\\\":1,\\\"EnableOnlyAudioInAoRes\\\":1,\\\"llash\\\":{\\\"EnableAbrSwitchLog\\\":1,\\\"FixPrevBufferLog\\\":1,\\\"UseTotalBuffer\\\":1,\\\"PreSwitchEnableWait\\\":1,\\\"EnablePreSwitch\\\":1,\\\"PreSwitchWaitThreshold\\\":100,\\\"RemoveTSWrap\\\":1,\\\"PreSwitchCheckDuration\\\":50,\\\"PreSwitchEnableDrop\\\":0},\\\"StrategyInLss\\\":{\\\"StrategyList\\\":[{\\\"Name\\\":\\\"live_stream_strategy_startup_bitrate_predict\\\",\\\"Repeat\\\":0,\\\"Time\\\":0,\\\"Enable\\\":1}]},\\\"EnableABRCheckEnhance\\\":0,\\\"TargetOriginBitRate\\\":2000000,\\\"UdpRealSpeed\\\":1,\\\"AudioGraphMaxCacheSize\\\":3,\\\"GetNetworkStats\\\":1,\\\"VoicePool\\\":{\\\"Size\\\":7,\\\"UseCount\\\":20,\\\"Enable\\\":1,\\\"ForbidSampleRate\\\":\\\"48000\\\",\\\"MaxSameCount\\\":4},\\\"auto\\\":{\\\"default\\\":\\\"hd\\\",\\\"demotion\\\":{\\\"stall_count\\\":9999},\\\"enable\\\":1,\\\"enable_origin_resolution\\\":1,\\\"list\\\":[\\\"uhd\\\",\\\"hd\\\",\\\"sd\\\",\\\"ld\\\"],\\\"strategy\\\":\\\"abr_bb_4live\\\"},\\\"CmafSegmentSyncThreshold\\\":2000,\\\"EnableNTPByApp\\\":1,\\\"EnableUseLSS\\\":1,\\\"EnableMcMonitor\\\":1,\\\"NotifyCompletedImmediately\\\":1,\\\"AudioWatermark\\\":{\\\"EnablePrivateRoom\\\":0,\\\"Density\\\":10,\\\"Enabled\\\":1},\\\"DurationOfGopSizeCollector\\\":20000,\\\"EnableUseNewCCTKPath\\\":1,\\\"QuicConfigOptimize\\\":1,\\\"StrategyInLSS\\\":{\\\"StrategyList\\\":{\\\"live_stream_strategy_abr_predict_bitrate\\\":{\\\"StrategyInputParams\\\":{\\\"EnableSmartStrategyConfig\\\":1,\\\"InputFeatureList\\\":[\\\"PLAY-IoBitrate\\\",\\\"PLAY-BitrateList\\\",\\\"PLAY-StartTs\\\",\\\"PLAY-FirstFrameDownloadSpeed\\\",\\\"PLAY-FirstFrame\\\",\\\"PLAY-Bitrate\\\",\\\"PLAY-VideoBuffer\\\",\\\"PLAY-DownloadSpeed\\\",\\\"PLAY-StallState\\\",\\\"PLAY-IsPreview\\\",\\\"PLAY-NeptuneName\\\",\\\"PLAY-FastOpenDuration\\\",\\\"PLAY-CCTKCongestionInfo\\\",\\\"PLAY-StallStartSeries\\\",\\\"PLAY-StallDurationSeries\\\",\\\"PLAY-VideoTotalBuffer\\\",\\\"PLAY-VrtBitrateList\\\",\\\"PLAY-Protocol\\\"],\\\"InputSettingsParam\\\":{\\\"switch_down_to_up_max_penalty_time_ms\\\":60000,\\\"enable_tls_upgrade\\\":1,\\\"tls_min_downloadspeed_ratio\\\":0.8,\\\"min_up_buffer_length\\\":0.5,\\\"enable_downgrade_for_low_buffer\\\":1,\\\"enable_upgrade_check_network\\\":1,\\\"reduce_buffer_threshold\\\":2,\\\"enable_buffer_slope\\\":1,\\\"tls_min_buffer_diff_ms\\\":180,\\\"tls_switch_interval_ms\\\":20000,\\\"min_down_buffer_length\\\":0,\\\"enable_new_calibrate_bitrate\\\":1,\\\"tls_buffer_watch_num\\\":9,\\\"enable_game_selector\\\":1,\\\"pid_bw_multiplier\\\":0.75,\\\"switch_up_counter_threshold\\\":6,\\\"game_params\\\":{\\\"enable_cctk_bw_prediction\\\":0,\\\"game_preview_disable_abr\\\":1},\\\"tls_penalty_switch_time_ms\\\":30000,\\\"enable_bandwidth_allocation\\\":1,\\\"begin_quick_switch_time_ms\\\":20000,\\\"switch_down_to_up_penalty_time_ms\\\":20000,\\\"enable_only_check_latest_stall\\\":1,\\\"flv_bw_multiplier\\\":1,\\\"enable_check_stall_series\\\":1,\\\"switch_down_counter_threshold\\\":3,\\\"degrade_to_upgrade_interval_threshold\\\":20000,\\\"buffer_slope_threshold\\\":-0.5,\\\"begin_switch_up_counter_threshold\\\":2,\\\"enable_downgrade_check_network\\\":1,\\\"enable_use_total_buffer\\\":1},\\\"EnableLocalStrategyModel\\\":1,\\\"Enable\\\":1},\\\"Time\\\":1000,\\\"Enable\\\":1,\\\"Name\\\":\\\"live_stream_strategy_abr_predict_bitrate\\\",\\\"Repeat\\\":1},\\\"live_stream_strategy_bandwidth_estimator\\\":{\\\"Enable\\\":1,\\\"Name\\\":\\\"live_stream_strategy_bandwidth_estimator\\\",\\\"StrategyInputParams\\\":{\\\"InputSettingsParam\\\":{\\\"OverallStrategy\\\":1,\\\"MinPlayedDurationThresh\\\":0,\\\"RemoveSampleTimer\\\":1,\\\"MaxBwSampleSize\\\":10,\\\"MaxBandwidthSampleDuration\\\":60,\\\"LiveProtectedDuration\\\":0,\\\"CalculateEWMAFactor\\\":0.5,\\\"PriorityMap\\\":{\\\"vodBitrate\\\":100,\\\"cctkBw\\\":10000},\\\"MinBwEstimatorBitrate\\\":0,\\\"CalculateSize\\\":10,\\\"CalculateFunc\\\":2,\\\"UseWithAttributionImpl\\\":1,\\\"NetworkMatchMode\\\":1,\\\"MaxSessionSize\\\":10},\\\"Enable\\\":1,\\\"EnableSmartStrategyConfig\\\":0,\\\"InputFeatureList\\\":[\\\"PLAY-CCTKCongestionInfo\\\",\\\"NETWORK-RecommendBitrate\\\",\\\"PLAY-Bitrate\\\"]}},\\\"live_stream_strategy_startup_bitrate_predict\\\":{\\\"Name\\\":\\\"live_stream_strategy_startup_bitrate_predict\\\",\\\"Repeat\\\":0,\\\"StrategyInputParams\\\":{\\\"Enable\\\":1,\\\"EnableSmartStrategyConfig\\\":0,\\\"InputFeatureList\\\":[\\\"PLAY-BitrateList\\\",\\\"NETWORK-RecommendBitrate\\\",\\\"PLAY-ResolutionMap\\\",\\\"PLAY-IsPreview\\\",\\\"PLAY-PushResolution\\\",\\\"PLAY-NeptuneName\\\",\\\"PLAY-ProbeStartupBandwidth\\\",\\\"USER-Performance\\\",\\\"DEVICE-PhoneLevel\\\",\\\"NETWORK-NetworkLevel\\\"],\\\"InputSettingsParam\\\":{\\\"EnableUsePRDStrategy\\\":1,\\\"PRDSettings\\\":{\\\"BweToBitrateParams\\\":{\\\"BottomLineParams\\\":{\\\"SourceVoD-Preview\\\":{\\\"default\\\":{\\\"sd\\\":400000,\\\"uhd\\\":4000000,\\\"hd\\\":500000,\\\"ld\\\":300000}},\\\"Default\\\":{\\\"sd\\\":980000,\\\"uhd\\\":13200000,\\\"hd\\\":1100000,\\\"ld\\\":480000},\\\"SourceCCTK-NoPreview\\\":{\\\"default\\\":{\\\"uhd\\\":13200000,\\\"hd\\\":1100000,\\\"ld\\\":480000,\\\"sd\\\":980000}},\\\"SourceCCTK-Preview\\\":{\\\"default\\\":{\\\"sd\\\":980000,\\\"uhd\\\":12000000,\\\"hd\\\":1100000,\\\"ld\\\":480000}},\\\"SourceVoD-NoPreview\\\":{\\\"default\\\":{\\\"uhd\\\":4000000,\\\"hd\\\":500000,\\\"ld\\\":300000,\\\"sd\\\":400000}}},\\\"Mode\\\":\\\"bottomline\\\"},\\\"JudgePipeline\\\":{\\\"NoPreview\\\":[\\\"High-Bwe\\\"],\\\"Preview\\\":[\\\"High-Bwe\\\"]},\\\"BaselineParams\\\":{\\\"DefaultResolution\\\":\\\"hd\\\"}}}},\\\"Time\\\":0,\\\"Enable\\\":1}}},\\\"VideoRenderStallThreshold\\\":200,\\\"TTMPDnsParseTimeout\\\":5000000,\\\"EnableE2EDelayCalc\\\":1,\\\"FixBinBuffering\\\":1,\\\"EnableCertVerify\\\":1,\\\"LiveIOConfig\\\":{\\\"EnableH2QPreconn\\\":1,\\\"ConfigParams\\\":{\\\"H2Q\\\":{\\\"HttpConfigJson\\\":{\\\"EnableGetCCTK\\\":1,\\\"CCTKVersion\\\":2,\\\"EnableUseNewCCTKPath\\\":1,\\\"NetworkStatsContent\\\":10000,\\\"ProcessWrite\\\":0,\\\"ConnCheckTimeout\\\":120,\\\"SCFGSaveIntvS\\\":1,\\\"ICSL\\\":5,\\\"AddNetworkSeries\\\":1,\\\"EnableExtendHSK\\\":1,\\\"NewLog\\\":1,\\\"PING\\\":1,\\\"NetworkSeriesLen\\\":120,\\\"SendPeriodOfCCTK\\\":1000,\\\"LiveIOEnableRejAsSchlo\\\":0,\\\"NetworkStatsStringifyType\\\":1},\\\"LSEngineParamJson\\\":{\\\"FixCloseWithATTQ\\\":1,\\\"CloseOnNetChange\\\":1,\\\"EnableGetLocalAddr\\\":1,\\\"FastReSend\\\":1}},\\\"Common\\\":{\\\"EnableTaskListenerTransfer\\\":1,\\\"EnableRaceFailFix\\\":1,\\\"ff_live_cond_timeout\\\":50,\\\"http_is_enable_prepare\\\":1,\\\"NetworkStatsUpdatePeriod\\\":0,\\\"EnableRaceRedirectly\\\":true,\\\"EnableRaceDefaultConfig\\\":1}},\\\"EnableLiveIOUseNewInterface\\\":1,\\\"EnableABR\\\":1,\\\"EnableLiveIO\\\":1,\\\"EnableLiveIOUseJavaThread\\\":0,\\\"EnableQuic\\\":1},\\\"EnableMediaCodecAsync\\\":1,\\\"MediaCodecDeadTimeThresh\\\":1000,\\\"NetworkAdapt\\\":{\\\"SlowTime\\\":666,\\\"HurryTime\\\":3500,\\\"EnableFixPtsShift\\\":1,\\\"HurryMillisecond\\\":3500,\\\"Enabled\\\":1,\\\"SlowMillisecond\\\":666,\\\"HurrySpeed\\\":1.1,\\\"HurryType\\\":0,\\\"SlowSpeed\\\":1},\\\"FixMcAsyncCrash\\\":1,\\\"EnableAudioGraphRefactor\\\":1,\\\"MediaCodecFrames\\\":7,\\\"DisableDirectSetCodecId\\\":1,\\\"EnableSaveSCFG\\\":1,\\\"E2EDelayReportFix\\\":0,\\\"AudioEffectCompressor\\\":{\\\"Predelay\\\":0.007,\\\"Pregain\\\":0.25,\\\"Ratio\\\":8,\\\"Threshold\\\":-14,\\\"Type\\\":0,\\\"Enable\\\":1},\\\"AudioPrerollTimeout\\\":500,\\\"SizeOfCctkBwCollector\\\":5,\\\"QuicVersion\\\":43,\\\"ABRMethod\\\":3,\\\"ProtocolRetryTimes\\\":1,\\\"EnablePixelFormatFullRange\\\":1,\\\"EnableAbrLogOnBitrateChange\\\":0,\\\"AudioDecodeMaxCacheSize\\\":8,\\\"SizeOfGopSizeCollector\\\":3,\\\"AudioCalibrationType\\\":1,\\\"AudioGetLatencyFreq\\\":10000,\\\"AudioBalanceTargetLuft\\\":-8,\\\"EnableADecoderPlugin\\\":1,\\\"LoudnessStrategy\\\":{\\\"EffectType\\\":10,\\\"Enable\\\":1,\\\"LibraParamsStr\\\":\\\"{     \\\\\\\"max_block_size\\\\\\\": 1024,     \\\\\\\"Version\\\\\\\": 0,     \\\\\\\"used_in_live\\\\\\\": 1,     \\\\\\\"live_target_lu\\\\\\\": -8,     \\\\\\\"lower_limit_level\\\\\\\": -18,     \\\\\\\"loudness_lookahead_window\\\\\\\": 0.4,     \\\\\\\"noise_gate_compress_ratio\\\\\\\": 0.67,     \\\\\\\"lu_type\\\\\\\": 0,     \\\\\\\"use_no_mdsp_graph\\\\\\\": 1,     \\\\\\\"limiter_peak\\\\\\\": -1,     \\\\\\\"limiter_makeup_gain\\\\\\\": 1, \\\\\\\"is_fixed_drc_compressor_ratio\\\\\\\":1, \\\\\\\"drc_compressor_ratio\\\\\\\":2.5 }\\\"},\\\"DurationOfCctkBwCollector\\\":5000,\\\"SuggestProtocol\\\":\\\"h2q\\\",\\\"EnableGetMpdUrlOpt\\\":1,\\\"UseFastOpenDurationFromSetAPI\\\":1,\\\"FastOpenDuration\\\":-500,\\\"PreprocessAudioEffectType\\\":1,\\\"EnableCreateDecoderEarly\\\":1,\\\"EnableMcPipeline\\\":1,\\\"EnableBinControl\\\":1,\\\"EnableUpateSessionIdInRetry\\\":1,\\\"WaitSetSurfaceTimeout\\\":60,\\\"EnableAudioBalanceBySei\\\":1,\\\"ResetCalibPtsRollback\\\":1,\\\"EnableStopCloseIO\\\":1,\\\"EnableQueryWinSize\\\":1,\\\"cdn_name\\\":\\\"cdn77\\\",\\\"AudioSampleMap\\\":1,\\\"EnableSeiParserInCodec\\\":1,\\\"AudioRenderStallThreshold\\\":200,\\\"AbrStallDegradeImmediately\\\":0,\\\"EnablePlayerFR\\\":1,\\\"ABRDecisionReportLevel\\\":2,\\\"ProtocolDowngrade\\\":1,\\\"EnableUseRefactorStrategy\\\":1,\\\"BufferDataMs\\\":500,\\\"EnableBackupOriginInDecodeError\\\":1,\\\"ABROptimumStartupBiterateEnabled\\\":0,\\\"MainBackupSwitch\\\":{\\\"Enabled\\\":0},\\\"EnableCheckDropAudio\\\":1,\\\"EnableAudioDirectBuffer\\\":1,\\\"SuggestFormat\\\":\\\"flv\\\",\\\"EnableUseNewSeiTypeInLoudness\\\":1,\\\"disable_algorithm\\\":1,\\\"ABRCheckInterval\\\":1000,\\\"TTMPDnsParseEnable\\\":1,\\\"FixStreamFinAndRst\\\":1,\\\"quic\\\":{\\\"QuicEarlyClose\\\":1,\\\"QuicALogLevel\\\":2,\\\"QuicFifoRecvBufferLen\\\":8388608},\\\"httpx\\\":{\\\"HttpExecCreateRetryTimes\\\":2,\\\"UseLSQUIC\\\":1,\\\"HttpEnableCertVerify\\\":1,\\\"HttpMainJobDelay\\\":100,\\\"HttpConfigJson\\\":{\\\"SendPeriodOfCctk\\\":1000,\\\"AddNetworkSeries\\\":1,\\\"MaxSFCW\\\":0,\\\"ConnCheckPeriod\\\":5,\\\"UAID\\\":\\\"ttplayer-live\\\",\\\"MIDS\\\":100,\\\"MaxCFCW\\\":0,\\\"NetworkStatsContent\\\":10000,\\\"MaxProcTimeMs\\\":0,\\\"CCTKVersion\\\":2,\\\"NetworkStatsStringifyType\\\":1,\\\"MinHandshakeTimeoutMs\\\":10,\\\"WriteDelayFor0RTT\\\":0,\\\"JointCCOpti\\\":0,\\\"SCFGSaveIntvS\\\":1,\\\"PING\\\":5,\\\"ConnCheckTimeout\\\":60,\\\"Pacing\\\":1,\\\"SCLS\\\":0,\\\"NetworkSeriesLen\\\":120,\\\"LogLevel\\\":\\\"error\\\",\\\"SFCW\\\":16777216,\\\"AckPacketsThreshold\\\":2,\\\"ICSL\\\":30,\\\"CFCW\\\":33554432,\\\"EnableExtendHSK\\\":1,\\\"BlockRead\\\":1,\\\"EnableGetCCTK\\\":1,\\\"SendPeriodOfCCTK\\\":1000,\\\"EnableUseNewCCTKPath\\\":1,\\\"RWOnce\\\":1,\\\"HSTimeoutUs\\\":4000000,\\\"NewLog\\\":1},\\\"HttpQuicVersion\\\":43,\\\"HttpEnableHttpRace\\\":1,\\\"LSEngineParamJson\\\":{\\\"CloseOnNetChange\\\":1,\\\"FIFOSize\\\":1048576,\\\"FixCloseWithATTQ\\\":1,\\\"FIFOPoolLenInit\\\":1,\\\"EnableGetLocalAddr\\\":1,\\\"FIFOPoolLenLimit\\\":3,\\\"FastReSend\\\":1},\\\"HttpPreStart\\\":0,\\\"HttpPingInterval\\\":10000,\\\"HttpPingTimeout\\\":5000,\\\"NetworkStatsUpdatePeriod\\\":0,\\\"HttpMaxRetryAttempts\\\":0,\\\"HttpVersion\\\":2,\\\"HttpPingForHeaderFrame\\\":1,\\\"HttpExecCreateRetryInt\\\":5,\\\"HttpUseQuicCrypto\\\":1},\\\"EnableOptimizeLivePtsRollback\\\":1,\\\"EventReportConfig\\\":{\\\"EnableReportRecvedSpspps\\\":0,\\\"EnableReportDemuxStall\\\":0,\\\"EnableReportDecodeStall\\\":0},\\\"EnableRetryWithAbrSwitchRes\\\":1}\"}},\"data\":{\"uhd\":{\"main\":{\"flv\":\"https://pull-flv-f77-tt02.tiktokcdn-us.com/stage/stream-3866072390373737410_uhd5d.flv?expire=1775602764&sign=c9ace8734fdba9bee0d5264a93a8a69e\",\"hls\":\"\",\"cmaf\":\"https://pull-flv-f77-tt02.tiktokcdn-us.com/stage/stream-3866072390373737410_uhd5d/index.mpd?expire=1775602764&sign=f97a9af95cd835518762ee6dc8c2bfa7\",\"dash\":\"\",\"lls\":\"\",\"tsl\":\"\",\"tile\":\"\",\"rtc\":\"\",\"sdk_params\":\"{\\\"vbitrate\\\":4000000,\\\"v_rtbitrate\\\":2456460,\\\"v_rtpsnr\\\":0,\\\"v_rtbitrate_std\\\":224210,\\\"resolution\\\":\\\"960x1920\\\",\\\"VCodec\\\":\\\"bytevc1\\\",\\\"v_rtbitrate_pct\\\":2596050,\\\"v_rtbitrate_vpaas_timestamp\\\":1774393164319,\\\"gop\\\":4,\\\"stream_suffix\\\":\\\"uhd5d\\\",\\\"v_rtbitrate_timestamp\\\":1774393154825}\"}},\"sd\":{\"main\":{\"flv\":\"https://pull-flv-f77-tt02.tiktokcdn-us.com/stage/stream-3866072390373737410_ctsd5.flv?expire=1775602764&sign=05c7543a35de440245f02e6a12a48251\",\"hls\":\"\",\"cmaf\":\"https://pull-flv-f77-tt02.tiktokcdn-us.com/stage/stream-3866072390373737410_ctsd5/index.mpd?expire=1775602764&sign=a3b5b82d432246b1068ba5856d18736e\",\"dash\":\"\",\"lls\":\"\",\"tsl\":\"\",\"tile\":\"\",\"rtc\":\"\",\"sdk_params\":\"{\\\"stream_suffix\\\":\\\"ctsd5\\\",\\\"VCodec\\\":\\\"bytevc1\\\",\\\"gop\\\":4,\\\"vbitrate\\\":550000,\\\"resolution\\\":\\\"480x960\\\"}\"}},\"sld\":{\"main\":{\"flv\":\"https://pull-flv-f77-tt02.tiktokcdn-us.com/stage/stream-3866072390373737410_sld.flv?expire=1775602764&sign=d1d62ee54dd015dd45b7458b93437368\",\"hls\":\"\",\"cmaf\":\"https://pull-flv-f77-tt02.tiktokcdn-us.com/stage/stream-3866072390373737410_sld/index.mpd?expire=1775602764&sign=8c6809e87ea3c66ef2fffe1aa5165b88\",\"dash\":\"\",\"lls\":\"\",\"tsl\":\"\",\"tile\":\"\",\"rtc\":\"\",\"sdk_params\":\"{\\\"VCodec\\\":\\\"h264\\\",\\\"stream_suffix\\\":\\\"sld\\\",\\\"resolution\\\":\\\"240x480\\\",\\\"gop\\\":4,\\\"vbitrate\\\":176000}\"}},\"hd_h\":{\"main\":{\"flv\":\"https://pull-flv-f77-tt02.tiktokcdn-us.com/stage/stream-3866072390373737410_hd_h.flv?expire=1775602764&sign=83353c22d195d2663202e02fdaf685cd\",\"hls\":\"\",\"cmaf\":\"https://pull-flv-f77-tt02.tiktokcdn-us.com/stage/stream-3866072390373737410_hd_h/index.mpd?expire=1775602764&sign=c6e428cddd189a448134fb7b85324b63\",\"dash\":\"\",\"lls\":\"\",\"tsl\":\"\",\"tile\":\"\",\"rtc\":\"\",\"sdk_params\":\"{\\\"gop\\\":4,\\\"resolution\\\":\\\"720x1440\\\",\\\"vbitrate\\\":1600000,\\\"VCodec\\\":\\\"h264\\\",\\\"stream_suffix\\\":\\\"hd_h\\\"}\"}},\"ao\":{\"main\":{\"flv\":\"https://pull-flv-f77-tt02.tiktokcdn-us.com/stage/stream-3866072390373737410.flv?expire=1775602764&sign=02e23d5de69f24d5017391e296d8516b&only_audio=1\",\"hls\":\"\",\"cmaf\":\"https://pull-flv-f77-tt02.tiktokcdn-us.com/stage/stream-3866072390373737410_ao/index.mpd?expire=1775602764&sign=25025b2fe8d817500cebbf3da4f01856\",\"dash\":\"\",\"lls\":\"\",\"tsl\":\"\",\"tile\":\"\",\"rtc\":\"\",\"sdk_params\":\"{\\\"vbitrate\\\":0,\\\"stream_suffix\\\":\\\"ao\\\",\\\"resolution\\\":\\\"\\\",\\\"gop\\\":0,\\\"VCodec\\\":\\\"bytevc1\\\"}\"}},\"hd\":{\"main\":{\"flv\":\"https://pull-flv-f77-tt02.tiktokcdn-us.com/stage/stream-3866072390373737410_hd5.flv?expire=1775602764&sign=bee1a8372a6aaf746529b6cbf4d9b226\",\"hls\":\"\",\"cmaf\":\"https://pull-flv-f77-tt02.tiktokcdn-us.com/stage/stream-3866072390373737410_hd5/index.mpd?expire=1775602764&sign=5717aca23901835cb9bd0787f88bd2ee\",\"dash\":\"\",\"lls\":\"\",\"tsl\":\"\",\"tile\":\"\",\"rtc\":\"\",\"sdk_params\":\"{\\\"stream_suffix\\\":\\\"hd5\\\",\\\"resolution\\\":\\\"720x1440\\\",\\\"vbitrate\\\":1000000,\\\"v_rtbitrate_pct\\\":1353980,\\\"v_rtpsnr\\\":0,\\\"v_rtbitrate_timestamp\\\":1774393155101,\\\"v_rtbitrate_vpaas_timestamp\\\":1774393164319,\\\"v_rtbitrate\\\":1202970,\\\"VCodec\\\":\\\"bytevc1\\\",\\\"gop\\\":4,\\\"v_rtbitrate_std\\\":172900}\"}},\"ld\":{\"main\":{\"flv\":\"https://pull-flv-f77-tt02.tiktokcdn-us.com/stage/stream-3866072390373737410_ctld5.flv?expire=1775602764&sign=a5eaf422010db73c3d98cbd8610f85ee\",\"hls\":\"\",\"cmaf\":\"https://pull-flv-f77-tt02.tiktokcdn-us.com/stage/stream-3866072390373737410_ctld5/index.mpd?expire=1775602764&sign=3e2970670718e79c7af387f8c8b5b39d\",\"dash\":\"\",\"lls\":\"\",\"tsl\":\"\",\"tile\":\"\",\"rtc\":\"\",\"sdk_params\":\"{\\\"vbitrate\\\":300000,\\\"v_rtbitrate\\\":330610,\\\"v_rtbitrate_pct\\\":372220,\\\"resolution\\\":\\\"360x720\\\",\\\"v_rtbitrate_std\\\":36920,\\\"v_rtbitrate_vpaas_timestamp\\\":1774393164319,\\\"v_rtbitrate_timestamp\\\":1774393162509,\\\"gop\\\":4,\\\"VCodec\\\":\\\"bytevc1\\\",\\\"stream_suffix\\\":\\\"ctld5\\\",\\\"v_rtpsnr\\\":0}\"}},\"uhd_h\":{\"main\":{\"flv\":\"https://pull-flv-f77-tt02.tiktokcdn-us.com/stage/stream-3866072390373737410_uhd_h.flv?expire=1775602764&sign=8795af10b47ddf5225b6e97c216ca778\",\"hls\":\"\",\"cmaf\":\"https://pull-flv-f77-tt02.tiktokcdn-us.com/stage/stream-3866072390373737410_uhd_h/index.mpd?expire=1775602764&sign=28abfe439440be73ad0b0585cb718e4c\",\"dash\":\"\",\"lls\":\"\",\"tsl\":\"\",\"tile\":\"\",\"rtc\":\"\",\"sdk_params\":\"{\\\"gop\\\":4,\\\"resolution\\\":\\\"960x1920\\\",\\\"vbitrate\\\":4000000,\\\"stream_suffix\\\":\\\"uhd_h\\\",\\\"VCodec\\\":\\\"h264\\\"}\"}},\"origin\":{\"main\":{\"flv\":\"https://pull-flv-f77-tt02.tiktokcdn-us.com/stage/stream-3866072390373737410.flv?expire=1775602764&sign=02e23d5de69f24d5017391e296d8516b\",\"hls\":\"\",\"cmaf\":\"https://pull-flv-f77-tt02.tiktokcdn-us.com/stage/stream-3866072390373737410/index.mpd?expire=1775602764&sign=4984225d5e961077d1605fb3324b2919\",\"dash\":\"\",\"lls\":\"\",\"tsl\":\"\",\"tile\":\"\",\"rtc\":\"\",\"sdk_params\":\"{\\\"resolution\\\":\\\"960x1920\\\",\\\"vbitrate\\\":0,\\\"VCodec\\\":\\\"bytevc1\\\",\\\"gop\\\":4}\"}}}}",
+                "options": {
+                  "default_quality": {
+                    "name": "AUTO",
+                    "sdk_key": "auto"
+                  },
+                  "qualities": [
+                    {
+                      "name": "AUTO",
+                      "sdk_key": "auto",
+                      "level": 11
+                    },
+                    {
+                      "name": "Original",
+                      "sdk_key": "origin",
+                      "level": 10
+                    }
+                  ],
+                  "default_preview_quality": {}
+                }
+              },
+              "push_data": {}
+            },
+            "stream_size_width": 960,
+            "stream_size_height": 1920
+          },
+          "link_mic": {
+            "channel_info": {},
+            "battle_settings": {},
+            "audience_id_list": [
+              6754084638233265157
+            ],
+            "linked_user_list": [
+              {
+                "id": 6754084638233265157,
+                "nickname": "Aisling📚Reads📚",
+                "bio_description": "PA for Holdfast Publishing \n\n✨TT Shop Affiliate✨",
+                "avatar_thumb": {
+                  "url_list": [
+                    "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-avt-0068-tx/b54c8c5f55149fb6ee5f80b81dc4c6ca~tplv-tiktokx-cropcenter:100:100.webp?dr=9640&refresh_token=b3953f73&x-expires=1774562400&x-signature=gh%2Bsj5EqbCpGLj3GaQKtDVFcn%2Fw%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=fdd36af4&idc=useast5",
+                    "https://p19-common-sign.tiktokcdn-us.com/tos-useast5-avt-0068-tx/b54c8c5f55149fb6ee5f80b81dc4c6ca~tplv-tiktokx-cropcenter:100:100.webp?dr=9640&refresh_token=8d04dd2d&x-expires=1774562400&x-signature=UEpDXvJCyR3qdCqB8uNoYSF0068%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=fdd36af4&idc=useast5"
+                  ],
+                  "uri": "100x100/tos-useast5-avt-0068-tx/b54c8c5f55149fb6ee5f80b81dc4c6ca"
+                },
+                "avatar_medium": {
+                  "url_list": [
+                    "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-avt-0068-tx/b54c8c5f55149fb6ee5f80b81dc4c6ca~tplv-tiktokx-cropcenter:720:720.webp?dr=9640&refresh_token=311199f6&x-expires=1774562400&x-signature=2SvoipQsOf2tBXG74NWiTzpOd%2BY%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=fdd36af4&idc=useast5",
+                    "https://p19-common-sign.tiktokcdn-us.com/tos-useast5-avt-0068-tx/b54c8c5f55149fb6ee5f80b81dc4c6ca~tplv-tiktokx-cropcenter:720:720.webp?dr=9640&refresh_token=d837e102&x-expires=1774562400&x-signature=MYDq0wVJV2PiLDraPMjWhtIviNQ%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=fdd36af4&idc=useast5"
+                  ],
+                  "uri": "720x720/tos-useast5-avt-0068-tx/b54c8c5f55149fb6ee5f80b81dc4c6ca"
+                },
+                "avatar_large": {
+                  "url_list": [
+                    "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-avt-0068-tx/b54c8c5f55149fb6ee5f80b81dc4c6ca~tplv-tiktokx-cropcenter:1080:1080.webp?dr=9640&refresh_token=51982550&x-expires=1774562400&x-signature=i30suB6gs1DbL1muhKRiloKkzgk%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=fdd36af4&idc=useast5",
+                    "https://p19-common-sign.tiktokcdn-us.com/tos-useast5-avt-0068-tx/b54c8c5f55149fb6ee5f80b81dc4c6ca~tplv-tiktokx-cropcenter:1080:1080.webp?dr=9640&refresh_token=e443db83&x-expires=1774562400&x-signature=jj1N%2FzKMjjc%2BFgyzoJ2B1qf3p%2BQ%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=fdd36af4&idc=useast5"
+                  ],
+                  "uri": "1080x1080/tos-useast5-avt-0068-tx/b54c8c5f55149fb6ee5f80b81dc4c6ca"
+                },
+                "status": 1,
+                "modify_time": 1774012240,
+                "follow_info": {
+                  "following_count": 3528,
+                  "follower_count": 3579
+                },
+                "pay_grade": {},
+                "user_attr": {},
+                "display_id": "irishxeyesqq",
+                "sec_uid": "MS4wLjABAAAAjANKTk_Rt8uUkG2bWiCcPDZDGRufAqb4USFEJojRPQ9Vv09oecU3OyCU1kECIsUP",
+                "badge_list": [
+                  {
+                    "display_type": 4,
+                    "priority_type": 20,
+                    "scene_type": 8,
+                    "position": 1,
+                    "OpenWebURL": "aweme://roma_redirect/?spark_page=user_level_main_page_privilege_panel",
+                    "display": true,
+                    "privilege_log_extra": {
+                      "data_version": "2",
+                      "privilege_id": "7138382115757889316",
+                      "privilege_version": "0",
+                      "privilege_order_id": "mock_fix_width_transparent_7138382115757889316",
+                      "level": "31"
+                    },
+                    "Data": {
+                      "Combine": {
+                        "display_type": 4,
+                        "icon": {
+                          "url_list": [
+                            "https://p16-webcast.tiktokcdn.com/webcast-va/grade_badge_icon_lite_lv30_v1.png~tplv-obj.image",
+                            "https://p19-webcast.tiktokcdn.com/webcast-va/grade_badge_icon_lite_lv30_v1.png~tplv-obj.image"
+                          ],
+                          "uri": "webcast-va/grade_badge_icon_lite_lv30_v1.png",
+                          "open_web_url": "aweme://roma_redirect/?spark_page=user_level_main_page_privilege_panel"
+                        },
+                        "str": "31",
+                        "padding": {
+                          "use_specific": true,
+                          "middle_padding": 2,
+                          "badge_width": 32
+                        },
+                        "font_style": {},
+                        "profile_card_panel": {
+                          "projection_config": {
+                            "icon": {}
+                          },
+                          "profile_content": {}
+                        },
+                        "background": {
+                          "image": {},
+                          "background_color_code": "#BF2A19EE",
+                          "left_side_image": {}
+                        },
+                        "background_dark_mode": {
+                          "image": {},
+                          "background_color_code": "#BF2A19EE",
+                          "left_side_image": {}
+                        },
+                        "public_screen_show_style": 14,
+                        "personal_card_show_style": 15,
+                        "padding_new_font": {
+                          "use_specific": true,
+                          "middle_padding": 1,
+                          "badge_width": 32
+                        }
+                      }
+                    }
+                  }
+                ],
+                "id_str": "6754084638233265157"
+              }
+            ]
+          },
+          "stats": {
+            "user_count_composition": {}
+          },
+          "feed_room_label": {
+            "url_list": [
+              "https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/2ea90002aca1159b5c67~tplv-obj.image",
+              "https://p19-webcast.tiktokcdn.com/img/alisg/webcast-sg/2ea90002aca1159b5c67~tplv-obj.image"
+            ],
+            "uri": "webcast-sg/2ea90002aca1159b5c67",
+            "avg_color": "#E0C8BC"
+          },
+          "living_room_attrs": {},
+          "owner": {
+            "id": 6964119420864906245,
+            "nickname": "MikeGeraghtyAuthor",
+            "bio_description": "Small-town romance novel writer. Coma Survivor. #HoldFast #Faith #Family #Love",
+            "avatar_thumb": {
+              "url_list": [
+                "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-avt-0068-tx2/9938da800f5afba97fca0453ed9b7b72~tplv-tiktokx-cropcenter:100:100.webp?dr=9640&refresh_token=55c4aa99&x-expires=1774562400&x-signature=qGeD3ixPhswiQjlGFED0Q0wBa9k%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=fdd36af4&idc=useast5",
+                "https://p19-common-sign.tiktokcdn-us.com/tos-useast8-avt-0068-tx2/9938da800f5afba97fca0453ed9b7b72~tplv-tiktokx-cropcenter:100:100.webp?dr=9640&refresh_token=a55177a9&x-expires=1774562400&x-signature=ctFovny7TK0Ml0BH9dxKFmhBZ98%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=fdd36af4&idc=useast5"
+              ],
+              "uri": "100x100/tos-useast8-avt-0068-tx2/9938da800f5afba97fca0453ed9b7b72"
+            },
+            "avatar_medium": {
+              "url_list": [
+                "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-avt-0068-tx2/9938da800f5afba97fca0453ed9b7b72~tplv-tiktokx-cropcenter:720:720.webp?dr=9640&refresh_token=24a350f2&x-expires=1774562400&x-signature=klLmFf7i4Xhvd%2FGmfGfRx47Si1s%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=fdd36af4&idc=useast5",
+                "https://p19-common-sign.tiktokcdn-us.com/tos-useast8-avt-0068-tx2/9938da800f5afba97fca0453ed9b7b72~tplv-tiktokx-cropcenter:720:720.webp?dr=9640&refresh_token=bccd1ac6&x-expires=1774562400&x-signature=Yf6vTJG02dxhzoBmd1EILSIw1Mg%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=fdd36af4&idc=useast5"
+              ],
+              "uri": "720x720/tos-useast8-avt-0068-tx2/9938da800f5afba97fca0453ed9b7b72"
+            },
+            "avatar_large": {
+              "url_list": [
+                "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-avt-0068-tx2/9938da800f5afba97fca0453ed9b7b72~tplv-tiktokx-cropcenter:1080:1080.webp?dr=9640&refresh_token=ebe5253d&x-expires=1774562400&x-signature=Pwa7WggTp8JSopexrmHQ%2B96MT5c%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=fdd36af4&idc=useast5",
+                "https://p19-common-sign.tiktokcdn-us.com/tos-useast8-avt-0068-tx2/9938da800f5afba97fca0453ed9b7b72~tplv-tiktokx-cropcenter:1080:1080.webp?dr=9640&refresh_token=7627f200&x-expires=1774562400&x-signature=D0wTZIpg0xeSF5zIpxo5gG7yCxo%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=fdd36af4&idc=useast5"
+              ],
+              "uri": "1080x1080/tos-useast8-avt-0068-tx2/9938da800f5afba97fca0453ed9b7b72"
+            },
+            "status": 1,
+            "modify_time": 1774353834,
+            "follow_info": {
+              "following_count": 9991,
+              "follower_count": 12483
+            },
+            "pay_grade": {},
+            "user_attr": {},
+            "own_room": {
+              "room_ids": [
+                7620959749021960991
+              ],
+              "room_ids_str": [
+                "7620959749021960991"
+              ]
+            },
+            "display_id": "mikegeraghtyauthor",
+            "sec_uid": "MS4wLjABAAAAmkOCMQl6_lkZRvO5_xuR2eVQQ0q4Y7lWgago1xcd8G345UgDpIwo2pYopqkV3L3n",
+            "mint_type_label": [
+              7160893592603461633,
+              7240352032303874054
+            ],
+            "id_str": "6964119420864906245",
+            "enigma_info": {}
+          },
+          "has_commerce_goods": true,
+          "room_auth": {
+            "Chat": true,
+            "Gift": true,
+            "LuckMoney": true,
+            "Digg": true,
+            "UserCard": true,
+            "Banner": 1,
+            "Landscape": 2,
+            "PublicScreen": 1,
+            "GiftAnchorMt": 1,
+            "DonationSticker": 1,
+            "InteractionQuestion": true,
+            "ChatL2": true,
+            "Viewers": true,
+            "Share": true,
+            "transaction_history": 1,
+            "UserCount": 1,
+            "Rank": 1,
+            "BroadcastMessage": 1,
+            "anchor_level_permission": {}
+          },
+          "like_count": 677,
+          "anchor_tab_type": 7,
+          "commerce_info": {
+            "commerce_permission": 1,
+            "oec_live_enter_room_init_data": "{\"product_num\":41,\"server_time\":1774393164402,\"tt_version_code\":0,\"schema\":\"\",\"bag_index\":0,\"display_product_num\":41,\"is_new_user\":true,\"assistant_switch\":false,\"is_new_user_fixed\":true,\"recommend_info\":null,\"live_bag_and_pin_card_type\":4,\"pin_card_minimalism\":1,\"card_type\":0,\"enter_room_prompt\":{\"need_prompt\":false,\"prompt_text\":\"\",\"da_info\":\"\"},\"pin_card_config\":{\"display_duration_ms\":0,\"activity_finish_display_duration_ms\":0,\"real_card_type\":0,\"real_pop_card_id\":0}}"
+          },
+          "interaction_question_version": 1,
+          "feed_room_labels": [
+            {
+              "position": 3,
+              "text": {
+                "default_pattern": "Guests",
+                "default_format": {
+                  "color": "#ffffffff",
+                  "weight": 400
+                }
+              },
+              "icon": {
+                "url_list": [
+                  "https://p16-webcast.tiktokcdn.com/img/alisg/webcast-sg/guests_feed_label.png~tplv-obj.image",
+                  "https://p19-webcast.tiktokcdn.com/img/alisg/webcast-sg/guests_feed_label.png~tplv-obj.image"
+                ],
+                "uri": "webcast-sg/guests_feed_label.png",
+                "avg_color": "#666666"
+              },
+              "log_extra": "{\"label_language\":\"en\",\"label_type\":\"guests\",\"label_rank\":0,\"show_type\":0,\"game_name\":\"\"}",
+              "background_color": "#00000000"
+            }
+          ],
+          "stream_url_filtered_info": {},
+          "social_interaction": {},
+          "room_auth_message": {},
+          "existed_commerce_goods": true,
+          "age_restricted": {},
+          "bc_toggle_info": {
+            "ecom_bc_toggle": 8,
+            "bc_toggle_text": "Paid partnership",
+            "bc_toggle_show_interval": 15
+          },
+          "blurred_cover": {
+            "url_list": [
+              "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-avt-0068-tx2/9938da800f5afba97fca0453ed9b7b72~tplv-tiktokx-crop-blur:100:200:3:q100.jpeg?dr=9616&refresh_token=a945ec0d&x-expires=1774411200&x-signature=dh6OlD7msMUY%2FpCu1vggWawKZ8A%3D&t=4d5b0474&ps=13740610&shp=97fb53a0&shcp=2de197d8&idc=useast5&ftpl=1",
+              "https://p19-common-sign.tiktokcdn-us.com/tos-useast8-avt-0068-tx2/9938da800f5afba97fca0453ed9b7b72~tplv-tiktokx-crop-blur:100:200:3:q100.jpeg?dr=9616&refresh_token=afdf5756&x-expires=1774411200&x-signature=pTUGTKBBEO%2FcqiQaovOesmYyGD8%3D&t=4d5b0474&ps=13740610&shp=97fb53a0&shcp=2de197d8&idc=useast5&ftpl=1"
+            ],
+            "uri": "tos-useast8-avt-0068-tx2/9938da800f5afba97fca0453ed9b7b72",
+            "height": 200,
+            "width": 100,
+            "avg_color": "#8F8F8F"
+          },
+          "multi_stream_url": {
+            "extra": {
+              "super_resolution": {}
+            },
+            "live_core_sdk_data": {
+              "pull_data": {
+                "options": {
+                  "default_quality": {},
+                  "default_preview_quality": {}
+                }
+              },
+              "push_data": {}
+            }
+          },
+          "cover_type": 1,
+          "taxonomy_tag_info": {
+            "level2_tag": "destruction"
+          },
+          "detect_anchor_leave": 1,
+          "log_id": "20260324225923EEF26AC980C168149849",
+          "enlarge_view_info": {
+            "enabler_enlarge_view": true
+          }
+        },
+        "live_reason": "rec",
+        "flare_info": {},
+        "sort_stats_tags": {
+          "for_app_log": [
+            {
+              "key": "is_coldstart",
+              "value": "0"
+            },
+            {
+              "key": "coldstart_thresh",
+              "value": "0"
+            }
+          ],
+          "for_client_func": [
+            {
+              "key": "ttlive_survey_show_map"
+            },
+            {
+              "key": "rec_info",
+              "value": "{\"cvr_60s\":0.012565575540065765,\"staytime\":0.509585440158844,\"cvr_10s\":0.06568298488855362}"
+            }
+          ]
+        },
+        "room_event_tracking": "foru_feed_draw_loadmore:21:normal"
+      }
+    ]
+  },
+  "timestamp": 1774393165
+}

@@ -1,0 +1,96 @@
+{
+  "status": "ok",
+  "tiktok": {
+    "sug_list": [
+      {
+        "pos": null,
+        "content": "appletv",
+        "sug_type": "",
+        "word_record": {
+          "group_id": "694656104051144379",
+          "words_position": 0,
+          "words_content": "appletv",
+          "words_source": "sug"
+        },
+        "extra_info": {
+          "is_time_sensitive": "0",
+          "rich_sug_user_type": "1",
+          "is_personalized": "0",
+          "relation_type": "",
+          "hot_level": "0",
+          "generate_time": "0",
+          "rich_sug_nickname": "Apple TV",
+          "recall_reason": "tiktok_orion_origin_nickname|tiktok_orion_origin_uniq_id|orion_qse_uniqid_recall|tiktok_orion_uniq_id|tiktok_orion_nickname|orion_qse_nickname_recall",
+          "rich_sug_avatar_uri": "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-avt-0068-tx2/c70b64c603632268dd790a1fd4c34b2d~tplv-tiktokx-cropcenter:100:100.webp?dr=9640&refresh_token=bbfcb7ae&x-expires=1774555200&x-signature=3LDlSnZl9q5VanRqffOZFQ%2FcoxA%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=dafad184&idc=useast8",
+          "sug_sec_user_id": "MS4wLjABAAAAbL7QvHuGAj31jaLnthCFwQPhUFfdchnKuYg-U1VJC4lIl70qAnZiBFY3mQEfqO8T",
+          "ecom_intent": "2",
+          "is_creator_live": "0",
+          "lang": "en",
+          "sug_uniq_id": "appletv",
+          "sug_user_id": "6815991884222514181",
+          "is_history_sug": "0",
+          "rich_sug_type": "1",
+          "is_rich_sug": "1",
+          "is_verified_tako": "0",
+          "mention_block_type": 0,
+          "is_business_account": true,
+          "qrec_json_info": "{}"
+        },
+        "rich_sug_sec_pos": null,
+        "highlight_pos": null
+      },
+      {
+        "pos": null,
+        "content": "AppleTv+",
+        "sug_type": "",
+        "word_record": {
+          "group_id": "2645526311316135227",
+          "words_position": 1,
+          "words_content": "AppleTv+",
+          "words_source": "sug"
+        },
+        "extra_info": {
+          "relation_type": "",
+          "rich_sug_user_type": "-1",
+          "sug_user_id": "6906850655437374465",
+          "is_time_sensitive": "0",
+          "is_rich_sug": "1",
+          "hot_level": "0",
+          "lang": "un",
+          "rich_sug_type": "1",
+          "is_verified_tako": "0",
+          "ecom_intent": "0",
+          "generate_time": "0",
+          "rich_sug_avatar_uri": "https://p16-common-sign.tiktokcdn-us.com/tos-useast2a-avt-0068-giso/69d187486628248dab1e5d1295b04ea8~tplv-tiktokx-cropcenter:100:100.webp?dr=9640&refresh_token=00b696da&x-expires=1774555200&x-signature=vxPj26%2B8GfH1lMJYbY5nKqsGPyk%3D&t=4d5b0474&ps=13740610&shp=a5d48078&shcp=dafad184&idc=useast8",
+          "is_history_sug": "0",
+          "mention_block_type": 0,
+          "is_business_account": false,
+          "is_creator_live": "0",
+          "qrec_json_info": "{}",
+          "rich_sug_nickname": "AppleTv+",
+          "sug_sec_user_id": "MS4wLjABAAAA4XVDUiSxSY0y3uN0KZIQuiu2EJoxodW3lagub2klhd5FBBj0H2dHzRS-VOLctmqX",
+          "sug_uniq_id": "appletvappletv",
+          "is_personalized": "0",
+          "recall_reason": "tiktok_orion_nickname"
+        },
+        "rich_sug_sec_pos": null,
+        "highlight_pos": null
+      }
+    ],
+    "status_code": 0,
+    "status_msg": "",
+    "rid": "2026032420123245113B21664BAB19893F",
+    "extra": {
+      "now": 1774383152000,
+      "logid": "2026032420123245113B21664BAB19893F",
+      "fatal_item_ids": [],
+      "search_request_id": "",
+      "api_debug_info": null
+    },
+    "log_pb": {
+      "impr_id": "2026032420123245113B21664BAB19893F"
+    },
+    "has_more": 1
+  },
+  "timestamp": 1774383152
+}

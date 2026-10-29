@@ -402,7 +402,7 @@ class AwemeListItem extends AutoPropertyMapper
         'sort_label'                    =>  'string',
         'statistics'                    =>  'Statistics',
         'status'                        =>  'Status',
-        'text_extra'                    =>  'TextExtra',
+        'text_extra'                    =>  'TextExtra[]',
         'uniqid_position'               =>  '',
         'user_digged'                   =>  'int',
         'video'                         =>  'Video',

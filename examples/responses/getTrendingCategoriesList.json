@@ -1,0 +1,488 @@
+{
+  "status": "ok",
+  "tiktok": {
+    "category_list": [
+      {
+        "aweme_list": [
+          {
+            "anchors": null,
+            "aweme_id": "7612581418157313311",
+            "aweme_type": 0,
+            "banners": null,
+            "behind_the_song_music_ids": null,
+            "behind_the_song_video_music_ids": null,
+            "branded_content_accounts": null,
+            "cha_list": null,
+            "challenge_position": null,
+            "comment_topbar_info": null,
+            "commerce_config_data": null,
+            "content_desc_extra": null,
+            "cover_labels": null,
+            "create_time": 1772474880,
+            "desc": "Everyone’s talking about this blend.11-in-1 Magnesium. One powerful formula.#SpringStateme#SpringShine#Perseek#MagnesioComplejo",
+            "geofencing": null,
+            "geofencing_regions": null,
+            "green_screen_materials": null,
+            "has_promote_entry": 1,
+            "hybrid_label": null,
+            "image_infos": null,
+            "interaction_stickers": null,
+            "is_pgcshow": false,
+            "label_top_text": null,
+            "long_video": null,
+            "mask_infos": null,
+            "muf_comment_info_v2": null,
+            "nickname_position": null,
+            "operator_boost_info": null,
+            "origin_comment_ids": null,
+            "picked_users": null,
+            "position": null,
+            "products_info": null,
+            "promote_toast": "",
+            "promote_toast_key": "",
+            "question_list": null,
+            "reference_tts_voice_ids": null,
+            "reference_voice_filter_ids": null,
+            "search_highlight": null,
+            "status": {
+              "allow_comment": true,
+              "allow_share": true,
+              "download_status": 0,
+              "is_delete": false
+            },
+            "survey_info": null,
+            "text_extra": null,
+            "tts_voice_ids": null,
+            "uniqid_position": null,
+            "video": {
+              "animated_cover": {
+                "uri": "tos-useast8-p-0068-tx2/oEaBBZa6VLBRix1IZSlRVR9ME9UIAviAwVNLY",
+                "url_list": [
+                  "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/oEaBBZa6VLBRix1IZSlRVR9ME9UIAviAwVNLY~tplv-tiktokx-origin.image?dr=8606&refresh_token=303da0e6&x-expires=1772722800&x-signature=s1aAN05J2E2jQLFJC1pBes3gIzg%3D&t=bacd0480&ps=4f5296ae&shp=d05b14bd&shcp=3d78c6bd&idc=useast8&biz_tag=tt_video&s=CHALLENGE_AWEME&sc=dynamic_cover",
+                  "https://p19-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/oEaBBZa6VLBRix1IZSlRVR9ME9UIAviAwVNLY~tplv-tiktokx-origin.image?dr=8606&refresh_token=53633718&x-expires=1772722800&x-signature=eBZ%2FFiRbD5x%2Be5F5B5p%2BPui28bo%3D&t=bacd0480&ps=4f5296ae&shp=d05b14bd&shcp=3d78c6bd&idc=useast8&biz_tag=tt_video&s=CHALLENGE_AWEME&sc=dynamic_cover"
+                ],
+                "url_prefix": null
+              },
+              "big_thumbs": null,
+              "bit_rate": null,
+              "bit_rate_audio": null,
+              "cover": {
+                "data_size": 0,
+                "height": 720,
+                "uri": "tos-useast8-p-0068-tx2/octRE91NSBMRoAN9SVVlvTEBiBaiaIULVAVaL",
+                "url_list": [
+                  "https://p19-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/octRE91NSBMRoAN9SVVlvTEBiBaiaIULVAVaL~tplv-tiktokx-cropcenter-q:300:400:q72.heic?dr=8596&refresh_token=cf0b944d&x-expires=1772722800&x-signature=%2FJ3%2FwEIwtBOk7tf55hKK7c1E5Bo%3D&t=bacd0480&ps=933b5bde&shp=d05b14bd&shcp=3d78c6bd&idc=useast8&biz_tag=tt_video&s=CHALLENGE_AWEME&sc=cover",
+                  "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/octRE91NSBMRoAN9SVVlvTEBiBaiaIULVAVaL~tplv-tiktokx-cropcenter-q:300:400:q72.heic?dr=8596&refresh_token=298fd305&x-expires=1772722800&x-signature=BpCvDRJtyqBWFZhyZ4mJsoVBtqc%3D&t=bacd0480&ps=933b5bde&shp=d05b14bd&shcp=3d78c6bd&idc=useast8&biz_tag=tt_video&s=CHALLENGE_AWEME&sc=cover"
+                ],
+                "url_prefix": null,
+                "width": 720
+              },
+              "dynamic_cover": {
+                "data_size": 0,
+                "height": 720,
+                "uri": "tos-useast8-p-0068-tx2/oAVALBEa9vNEbUIaSGVRMBRLiiV9kACAxIClN",
+                "url_list": [
+                  "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/oAVALBEa9vNEbUIaSGVRMBRLiiV9kACAxIClN~tplv-tiktokx-origin.image?dr=8606&refresh_token=7021c9a5&x-expires=1772722800&x-signature=0xraiDPU5g7FMA0C7jJ5QWJk05w%3D&t=bacd0480&ps=4f5296ae&shp=d05b14bd&shcp=3d78c6bd&idc=useast8&biz_tag=tt_video&s=CHALLENGE_AWEME&sc=dynamic_cover",
+                  "https://p19-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/oAVALBEa9vNEbUIaSGVRMBRLiiV9kACAxIClN~tplv-tiktokx-origin.image?dr=8606&refresh_token=b09ae3b1&x-expires=1772722800&x-signature=C3pPeUQZpNg%2B2N2JxAE4cD7WuNA%3D&t=bacd0480&ps=4f5296ae&shp=d05b14bd&shcp=3d78c6bd&idc=useast8&biz_tag=tt_video&s=CHALLENGE_AWEME&sc=dynamic_cover"
+                ],
+                "url_prefix": null,
+                "width": 720
+              },
+              "height": 1280,
+              "tags": null,
+              "width": 720
+            },
+            "video_labels": null,
+            "video_text": null,
+            "voice_filter_ids": null
+          },
+          {
+            "anchors": null,
+            "aweme_id": "7611507921427451149",
+            "aweme_type": 0,
+            "banners": null,
+            "behind_the_song_music_ids": null,
+            "behind_the_song_video_music_ids": null,
+            "branded_content_accounts": null,
+            "cha_list": null,
+            "challenge_position": null,
+            "comment_topbar_info": null,
+            "commerce_config_data": null,
+            "content_desc_extra": null,
+            "cover_labels": null,
+            "create_time": 1772192378,
+            "desc": "No one’s talking about this… but every woman deserves to know it. ❤️ #intimatecare #hpvawareness #springbreak #springshine#springstatements",
+            "geofencing": null,
+            "geofencing_regions": null,
+            "green_screen_materials": null,
+            "has_promote_entry": 1,
+            "hybrid_label": null,
+            "image_infos": null,
+            "interaction_stickers": null,
+            "is_pgcshow": false,
+            "label_top_text": null,
+            "long_video": null,
+            "mask_infos": null,
+            "muf_comment_info_v2": null,
+            "nickname_position": null,
+            "operator_boost_info": null,
+            "origin_comment_ids": null,
+            "picked_users": null,
+            "position": null,
+            "products_info": null,
+            "promote_toast": "",
+            "promote_toast_key": "",
+            "question_list": null,
+            "reference_tts_voice_ids": null,
+            "reference_voice_filter_ids": null,
+            "search_highlight": null,
+            "status": {
+              "allow_comment": true,
+              "allow_share": true,
+              "download_status": 1,
+              "is_delete": false
+            },
+            "survey_info": null,
+            "text_extra": null,
+            "tts_voice_ids": null,
+            "uniqid_position": null,
+            "video": {
+              "animated_cover": {
+                "uri": "tos-useast5-p-0068-tx/oUIIg1oIvacgDHplJiYfEdiwhB4nfuAVRBBDiS",
+                "url_list": [
+                  "https://p19-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oUIIg1oIvacgDHplJiYfEdiwhB4nfuAVRBBDiS~tplv-tiktokx-origin.image?dr=8606&refresh_token=d6b9bfbc&x-expires=1772722800&x-signature=C8Yar8UMdQHRKloR1Tx7bqJp3Xo%3D&t=bacd0480&ps=4f5296ae&shp=d05b14bd&shcp=3d78c6bd&idc=useast8&s=CHALLENGE_AWEME&sc=dynamic_cover&biz_tag=tt_video",
+                  "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oUIIg1oIvacgDHplJiYfEdiwhB4nfuAVRBBDiS~tplv-tiktokx-origin.image?dr=8606&refresh_token=c6218d10&x-expires=1772722800&x-signature=dlpwsnW8%2BWV2m0dlDKUctess2U4%3D&t=bacd0480&ps=4f5296ae&shp=d05b14bd&shcp=3d78c6bd&idc=useast8&s=CHALLENGE_AWEME&sc=dynamic_cover&biz_tag=tt_video"
+                ],
+                "url_prefix": null
+              },
+              "big_thumbs": null,
+              "bit_rate": null,
+              "bit_rate_audio": null,
+              "cover": {
+                "data_size": 0,
+                "height": 720,
+                "uri": "tos-useast5-p-0068-tx/ooYrRbhIGISeQPeKgAIgxQPhQAem0iGAxfnOLF",
+                "url_list": [
+                  "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/ooYrRbhIGISeQPeKgAIgxQPhQAem0iGAxfnOLF~tplv-tiktokx-cropcenter-q:300:400:q72.heic?dr=8596&refresh_token=7891e5e2&x-expires=1772722800&x-signature=%2F5SydbyYvtRLYMNMffxUpPfsJgc%3D&t=bacd0480&ps=933b5bde&shp=d05b14bd&shcp=3d78c6bd&idc=useast8&biz_tag=tt_video&s=CHALLENGE_AWEME&sc=cover",
+                  "https://p19-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/ooYrRbhIGISeQPeKgAIgxQPhQAem0iGAxfnOLF~tplv-tiktokx-cropcenter-q:300:400:q72.heic?dr=8596&refresh_token=2c44b922&x-expires=1772722800&x-signature=vAdkZ57MwllIyF3QTb16ZHgPYuk%3D&t=bacd0480&ps=933b5bde&shp=d05b14bd&shcp=3d78c6bd&idc=useast8&biz_tag=tt_video&s=CHALLENGE_AWEME&sc=cover"
+                ],
+                "url_prefix": null,
+                "width": 720
+              },
+              "dynamic_cover": {
+                "data_size": 0,
+                "height": 720,
+                "uri": "tos-useast5-p-0068-tx/okosCfVJBDipikaEfhigY2InoBSIvlIg4xRWDA",
+                "url_list": [
+                  "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/okosCfVJBDipikaEfhigY2InoBSIvlIg4xRWDA~tplv-tiktokx-origin.image?dr=8606&refresh_token=f194b5c7&x-expires=1772722800&x-signature=e8XYt31kv9556DBTWDWMtFvtNVw%3D&t=bacd0480&ps=4f5296ae&shp=d05b14bd&shcp=3d78c6bd&idc=useast8&biz_tag=tt_video&s=CHALLENGE_AWEME&sc=dynamic_cover",
+                  "https://p19-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/okosCfVJBDipikaEfhigY2InoBSIvlIg4xRWDA~tplv-tiktokx-origin.image?dr=8606&refresh_token=98f84ad5&x-expires=1772722800&x-signature=YBg73D0dsAhFH9gUmJ1hvPKpB%2FI%3D&t=bacd0480&ps=4f5296ae&shp=d05b14bd&shcp=3d78c6bd&idc=useast8&biz_tag=tt_video&s=CHALLENGE_AWEME&sc=dynamic_cover"
+                ],
+                "url_prefix": null,
+                "width": 720
+              },
+              "height": 1280,
+              "tags": null,
+              "width": 720
+            },
+            "video_labels": null,
+            "video_text": null,
+            "voice_filter_ids": null
+          }
+        ],
+        "category_type": 0,
+        "challenge_info": {
+          "author": {
+            "account_labels": null,
+            "ad_cover_url": null,
+            "advance_feature_item_order": null,
+            "advanced_feature_info": null,
+            "bold_fields": null,
+            "can_message_follow_status_list": null,
+            "can_set_geofencing": null,
+            "cha_list": null,
+            "cover_url": null,
+            "events": null,
+            "followers_detail": null,
+            "geofencing": null,
+            "homepage_bottom_toast": null,
+            "item_list": null,
+            "mutual_relation_avatars": null,
+            "need_points": null,
+            "platform_sync_info": null,
+            "relative_users": null,
+            "search_highlight": null,
+            "shield_edit_field_info": null,
+            "type_label": null,
+            "user_profile_guide": null,
+            "user_tags": null,
+            "white_cover_url": null
+          },
+          "banner_list": null,
+          "cha_attrs": null,
+          "cha_name": "springshine",
+          "cid": "9249608",
+          "connect_music": null,
+          "desc": "",
+          "is_pgcshow": false,
+          "schema": "aweme://aweme/challenge/detail?cid=9249608",
+          "search_highlight": null,
+          "show_items": null,
+          "sub_type": 0,
+          "type": 0,
+          "use_count": 1276,
+          "user_count": 1276,
+          "view_count": 2734343
+        },
+        "click_track_url_list": null,
+        "desc": "Trending hashtag",
+        "track_url_list": null
+      },
+      {
+        "aweme_list": [
+          {
+            "anchors": null,
+            "aweme_id": "7553781862494194975",
+            "aweme_type": 0,
+            "banners": null,
+            "behind_the_song_music_ids": null,
+            "behind_the_song_video_music_ids": null,
+            "branded_content_accounts": null,
+            "cha_list": null,
+            "challenge_position": null,
+            "comment_topbar_info": null,
+            "commerce_config_data": null,
+            "content_desc_extra": null,
+            "cover_labels": null,
+            "create_time": 1758751914,
+            "desc": "Ocean front luxury that feels like home 😍Shutters on the Beach is such a hidden gem!! Save for your next visit to Santa Monica. Can’t beat these sunset views! @ShuttersOnTheBeach  #tiktokgocreator #TikTokGOStay #santamonica #losangeles #placestostay ",
+            "geofencing": null,
+            "geofencing_regions": null,
+            "green_screen_materials": null,
+            "hybrid_label": null,
+            "image_infos": null,
+            "interaction_stickers": null,
+            "is_pgcshow": false,
+            "label_top_text": null,
+            "long_video": null,
+            "mask_infos": null,
+            "muf_comment_info_v2": null,
+            "nickname_position": null,
+            "operator_boost_info": null,
+            "origin_comment_ids": null,
+            "picked_users": null,
+            "position": null,
+            "products_info": null,
+            "question_list": null,
+            "reference_tts_voice_ids": null,
+            "reference_voice_filter_ids": null,
+            "search_highlight": null,
+            "status": {
+              "allow_comment": true,
+              "allow_share": true,
+              "download_status": 0,
+              "is_delete": false
+            },
+            "survey_info": null,
+            "text_extra": null,
+            "tts_voice_ids": null,
+            "uniqid_position": null,
+            "video": {
+              "animated_cover": {
+                "uri": "tos-useast8-p-0068-tx2/oYvUVpaElcR5EAVBGRr0pgbB2iTANBKiIIg1W",
+                "url_list": [
+                  "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/oYvUVpaElcR5EAVBGRr0pgbB2iTANBKiIIg1W~tplv-tiktokx-dmt-logom:tos-useast8-i-0068-tx2/ocMPa8DKAERIlsiN3REiHMAjUy6AqA6IBBAbp.image?dr=8605&refresh_token=a8cc6a0a&x-expires=1772722800&x-signature=n%2BdtVagjhiWe5hygcl9i3UPwbKY%3D&t=bacd0480&ps=4f5296ae&shp=d05b14bd&shcp=3d78c6bd&idc=useast8&sc=dynamic_cover&biz_tag=tt_video&s=CHALLENGE_AWEME",
+                  "https://p19-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/oYvUVpaElcR5EAVBGRr0pgbB2iTANBKiIIg1W~tplv-tiktokx-dmt-logom:tos-useast8-i-0068-tx2/ocMPa8DKAERIlsiN3REiHMAjUy6AqA6IBBAbp.image?dr=8605&refresh_token=ded7d4cc&x-expires=1772722800&x-signature=4C02pTOtcK8m%2FUWREjku1P%2FIXnI%3D&t=bacd0480&ps=4f5296ae&shp=d05b14bd&shcp=3d78c6bd&idc=useast8&sc=dynamic_cover&biz_tag=tt_video&s=CHALLENGE_AWEME"
+                ],
+                "url_prefix": null
+              },
+              "big_thumbs": null,
+              "bit_rate": null,
+              "bit_rate_audio": null,
+              "cover": {
+                "data_size": 0,
+                "height": 720,
+                "uri": "tos-useast8-p-0068-tx2/o4yGKqAnsEf7pQSoAAMvQbQUflEXZBEVJDzR1F",
+                "url_list": [
+                  "https://p19-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/o4yGKqAnsEf7pQSoAAMvQbQUflEXZBEVJDzR1F~tplv-tiktokx-dmt-logoccm:300:400:tos-useast8-i-0068-tx2/ocMPa8DKAERIlsiN3REiHMAjUy6AqA6IBBAbp.heic?dr=8595&refresh_token=0d775524&x-expires=1772722800&x-signature=c5F7ui4DEYzQKmjNyGCdU9RwTfk%3D&t=bacd0480&ps=933b5bde&shp=d05b14bd&shcp=3d78c6bd&idc=useast8&s=CHALLENGE_AWEME&sc=cover&biz_tag=tt_video",
+                  "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/o4yGKqAnsEf7pQSoAAMvQbQUflEXZBEVJDzR1F~tplv-tiktokx-dmt-logoccm:300:400:tos-useast8-i-0068-tx2/ocMPa8DKAERIlsiN3REiHMAjUy6AqA6IBBAbp.heic?dr=8595&refresh_token=f1747492&x-expires=1772722800&x-signature=BPvFiiRsKyeg5e%2BCg8WrlS1H5fI%3D&t=bacd0480&ps=933b5bde&shp=d05b14bd&shcp=3d78c6bd&idc=useast8&s=CHALLENGE_AWEME&sc=cover&biz_tag=tt_video"
+                ],
+                "url_prefix": null,
+                "width": 720
+              },
+              "dynamic_cover": {
+                "data_size": 0,
+                "height": 720,
+                "uri": "tos-useast8-p-0068-tx2/oIBvN5WaApwbcQg0B3IuERKrVIEVipcCAUERi",
+                "url_list": [
+                  "https://p16-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/oIBvN5WaApwbcQg0B3IuERKrVIEVipcCAUERi~tplv-tiktokx-dmt-logom:tos-useast8-i-0068-tx2/ocMPa8DKAERIlsiN3REiHMAjUy6AqA6IBBAbp.image?dr=8605&refresh_token=41078511&x-expires=1772722800&x-signature=oFMoFUiD%2BlQj9SZusgF4Xa6PiuY%3D&t=bacd0480&ps=4f5296ae&shp=d05b14bd&shcp=3d78c6bd&idc=useast8&s=CHALLENGE_AWEME&sc=dynamic_cover&biz_tag=tt_video",
+                  "https://p19-common-sign.tiktokcdn-us.com/tos-useast8-p-0068-tx2/oIBvN5WaApwbcQg0B3IuERKrVIEVipcCAUERi~tplv-tiktokx-dmt-logom:tos-useast8-i-0068-tx2/ocMPa8DKAERIlsiN3REiHMAjUy6AqA6IBBAbp.image?dr=8605&refresh_token=1ce6b613&x-expires=1772722800&x-signature=7t7uLEIOVRMEocjr4MIC%2BrMftlA%3D&t=bacd0480&ps=4f5296ae&shp=d05b14bd&shcp=3d78c6bd&idc=useast8&s=CHALLENGE_AWEME&sc=dynamic_cover&biz_tag=tt_video"
+                ],
+                "url_prefix": null,
+                "width": 720
+              },
+              "height": 1024,
+              "tags": null,
+              "width": 576
+            },
+            "video_labels": null,
+            "video_text": null,
+            "voice_filter_ids": null
+          },
+          {
+            "anchors": null,
+            "aweme_id": "7612696069243161869",
+            "aweme_type": 0,
+            "banners": null,
+            "behind_the_song_music_ids": null,
+            "behind_the_song_video_music_ids": null,
+            "branded_content_accounts": null,
+            "cha_list": null,
+            "challenge_position": null,
+            "comment_topbar_info": null,
+            "commerce_config_data": null,
+            "content_desc_extra": null,
+            "cover_labels": null,
+            "create_time": 1772468972,
+            "desc": "Mondays #tiktokgocreator #fyp #nyc #food #FoodTok ",
+            "geofencing": null,
+            "geofencing_regions": null,
+            "green_screen_materials": null,
+            "has_promote_entry": 2,
+            "hybrid_label": null,
+            "image_infos": null,
+            "interaction_stickers": null,
+            "is_pgcshow": false,
+            "label_top_text": null,
+            "long_video": null,
+            "mask_infos": null,
+            "muf_comment_info_v2": null,
+            "nickname_position": null,
+            "operator_boost_info": null,
+            "origin_comment_ids": null,
+            "picked_users": null,
+            "position": null,
+            "products_info": null,
+            "promote_toast": "Can’t promote due to audio copyright issue",
+            "promote_toast_key": "reason_cannot_promote_music",
+            "question_list": null,
+            "reference_tts_voice_ids": null,
+            "reference_voice_filter_ids": null,
+            "search_highlight": null,
+            "status": {
+              "allow_comment": true,
+              "allow_share": true,
+              "download_status": 0,
+              "is_delete": false
+            },
+            "survey_info": null,
+            "text_extra": null,
+            "tts_voice_ids": null,
+            "uniqid_position": null,
+            "video": {
+              "animated_cover": {
+                "uri": "tos-useast5-p-0068-tx/okulI0RV0iOiCuM7BAIMa7yfo46wHiIBBBpADt",
+                "url_list": [
+                  "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/okulI0RV0iOiCuM7BAIMa7yfo46wHiIBBBpADt~tplv-tiktokx-origin.image?dr=8606&refresh_token=8fb52926&x-expires=1772722800&x-signature=%2F72J7zcoORjn7i1Ievwq4DSv%2FOY%3D&t=bacd0480&ps=4f5296ae&shp=d05b14bd&shcp=3d78c6bd&idc=useast8&biz_tag=tt_video&s=CHALLENGE_AWEME&sc=dynamic_cover",
+                  "https://p19-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/okulI0RV0iOiCuM7BAIMa7yfo46wHiIBBBpADt~tplv-tiktokx-origin.image?dr=8606&refresh_token=92a1826d&x-expires=1772722800&x-signature=67BTwOFcTzTfSHSsvXT8gLSYYLg%3D&t=bacd0480&ps=4f5296ae&shp=d05b14bd&shcp=3d78c6bd&idc=useast8&biz_tag=tt_video&s=CHALLENGE_AWEME&sc=dynamic_cover"
+                ],
+                "url_prefix": null
+              },
+              "big_thumbs": null,
+              "bit_rate": null,
+              "bit_rate_audio": null,
+              "cover": {
+                "data_size": 0,
+                "height": 720,
+                "uri": "tos-useast5-p-0068-tx/o4dEGfbLCgeRD6OQHw2EARBSdDpFQUZdp0lquF",
+                "url_list": [
+                  "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/o4dEGfbLCgeRD6OQHw2EARBSdDpFQUZdp0lquF~tplv-tiktokx-cropcenter-q:300:400:q72.heic?dr=8596&refresh_token=48bfb5aa&x-expires=1772722800&x-signature=1atmsQKYh0ISvW9SIWtjiID24Hk%3D&t=bacd0480&ps=933b5bde&shp=d05b14bd&shcp=3d78c6bd&idc=useast8&biz_tag=tt_video&s=CHALLENGE_AWEME&sc=cover",
+                  "https://p19-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/o4dEGfbLCgeRD6OQHw2EARBSdDpFQUZdp0lquF~tplv-tiktokx-cropcenter-q:300:400:q72.heic?dr=8596&refresh_token=817e05ba&x-expires=1772722800&x-signature=a%2FSx2LjhpHX%2BBpgsrlM4jf7UuJY%3D&t=bacd0480&ps=933b5bde&shp=d05b14bd&shcp=3d78c6bd&idc=useast8&biz_tag=tt_video&s=CHALLENGE_AWEME&sc=cover"
+                ],
+                "url_prefix": null,
+                "width": 720
+              },
+              "dynamic_cover": {
+                "data_size": 0,
+                "height": 720,
+                "uri": "tos-useast5-p-0068-tx/oUEwGRQgS6AFGEbd1eR02pfd7lDHDBzQCDdpqL",
+                "url_list": [
+                  "https://p16-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oUEwGRQgS6AFGEbd1eR02pfd7lDHDBzQCDdpqL~tplv-tiktokx-origin.image?dr=8606&refresh_token=6ffb2f79&x-expires=1772722800&x-signature=m0zRS0tQjzP7L9FhCi9pQyU9rwU%3D&t=bacd0480&ps=4f5296ae&shp=d05b14bd&shcp=3d78c6bd&idc=useast8&biz_tag=tt_video&s=CHALLENGE_AWEME&sc=dynamic_cover",
+                  "https://p19-common-sign.tiktokcdn-us.com/tos-useast5-p-0068-tx/oUEwGRQgS6AFGEbd1eR02pfd7lDHDBzQCDdpqL~tplv-tiktokx-origin.image?dr=8606&refresh_token=294e1226&x-expires=1772722800&x-signature=4uooeWAiNq8NAC%2BNJ%2Bvwq0EYX6o%3D&t=bacd0480&ps=4f5296ae&shp=d05b14bd&shcp=3d78c6bd&idc=useast8&biz_tag=tt_video&s=CHALLENGE_AWEME&sc=dynamic_cover"
+                ],
+                "url_prefix": null,
+                "width": 720
+              },
+              "height": 1280,
+              "tags": null,
+              "width": 720
+            },
+            "video_labels": null,
+            "video_text": null,
+            "voice_filter_ids": null
+          }
+        ],
+        "category_type": 0,
+        "challenge_info": {
+          "author": {
+            "account_labels": null,
+            "ad_cover_url": null,
+            "advance_feature_item_order": null,
+            "advanced_feature_info": null,
+            "bold_fields": null,
+            "can_message_follow_status_list": null,
+            "can_set_geofencing": null,
+            "cha_list": null,
+            "cover_url": null,
+            "events": null,
+            "followers_detail": null,
+            "geofencing": null,
+            "homepage_bottom_toast": null,
+            "item_list": null,
+            "mutual_relation_avatars": null,
+            "need_points": null,
+            "platform_sync_info": null,
+            "relative_users": null,
+            "search_highlight": null,
+            "shield_edit_field_info": null,
+            "type_label": null,
+            "user_profile_guide": null,
+            "user_tags": null,
+            "white_cover_url": null
+          },
+          "banner_list": null,
+          "cha_attrs": null,
+          "cha_name": "tiktokgocreator",
+          "cid": "7457046770502074374",
+          "connect_music": null,
+          "desc": "TikTok Go US Creator Campaign",
+          "is_pgcshow": false,
+          "schema": "aweme://aweme/challenge/detail?cid=7457046770502074374",
+          "search_highlight": null,
+          "show_items": null,
+          "sub_type": 0,
+          "type": 0,
+          "use_count": 3687,
+          "user_count": 3687,
+          "view_count": 42700578
+        },
+        "click_track_url_list": null,
+        "desc": "Trending hashtag",
+        "track_url_list": null
+      }
+    ],
+    "cursor": 10,
+    "device_type": 0,
+    "extra": {
+      "fatal_item_ids": [],
+      "logid": "20260304153937A4DD010D10C4B30E807C",
+      "now": 1772638778000
+    },
+    "has_more": 1,
+    "log_pb": {
+      "impr_id": "20260304153937A4DD010D10C4B30E807C"
+    },
+    "status_code": 0,
+    "status_msg": ""
+  },
+  "timestamp": 1772638779
+}

@@ -5,6 +5,8 @@ namespace TikTokRESTAPI\Response\Model;
 use TikTokRESTAPI\AutoPropertyMapper;
 
 /**
+ * @method AwemeDetail getAwemeInfo()
+ * @method mixed getData()
  * Data.
  * 
  * @method int      getType()
@@ -19,6 +21,9 @@ use TikTokRESTAPI\AutoPropertyMapper;
 class Data extends AutoPropertyMapper
 {
     const JSON_PROPERTY_MAP = [
+        'aweme_info' => 'AwemeDetail',
+        'data' => '',
+
         'type'  => 'int',
         'lives' => 'Lives'
     ];

@@ -1,0 +1,220 @@
+{
+  "status": "ok",
+  "tiktok": {
+    "banners": {
+      "conversion_bar_list": [
+        {
+          "item_link": "https://activity.tiktokw.us/magic/eco/runtime/release/66581e19df4daf02866b5cc9?appType=muse&magic_page_no=1&lang=en&region=Default&use_spark=1",
+          "item_text": "Learn more"
+        }
+      ],
+      "event_banners": {
+        "ecommerce_education": {
+          "eligible": {
+            "image_url": "https://sf16-muse-va.ibytedtos.com/obj/search-static-maliva/maliva/6cjd5rh91716193010532",
+            "link": "https://activity.tiktokw.us/magic/eco/runtime/release/664c4298f65e08d77319049b?appType=muse&magic_page_no=1&lang=en-US&region=US&use_spark=1 ",
+            "text": "Promote products people want to buy. Start earning now!"
+          },
+          "enrolled": {
+            "image_url": "https://sf16-muse-va.ibytedtos.com/obj/search-static-maliva/maliva/b0fmjabl1716192964040",
+            "link": "https://activity.tiktokw.us/magic/eco/runtime/release/6645db2e6f3a610291d0b0ac?appType=muse&magic_page_no=1&lang=en-US&region=US&use_spark=1",
+            "text": "Create shoppable videos with products people want to buy!"
+          },
+          "non_eligible": {
+            "image_url": "https://sf16-muse-va.ibytedtos.com/obj/search-static-maliva/maliva/hdskk6yq1716193026366",
+            "link": "https://activity.tiktokw.us/magic/eco/runtime/release/664c4c03f33586028244e7fb?appType=muse&magic_page_no=1&lang=en-US&region=US&use_spark=1",
+            "text": "Explore opportunities to earn with shopping insights"
+          }
+        }
+      },
+      "home_page_banner": "https://sf16-muse-va.ibytedtos.com/obj/search-static-maliva/maliva/q8hl7ump1713411026852",
+      "image_url": "https://sf16-muse-va.ibytedtos.com/obj/search-static-maliva/maliva/r8z2ni6s1708410808360",
+      "image_url_dark": "https://sf16-muse-va.ibytedtos.com/obj/search-static-maliva/maliva/a1av24511708410895413",
+      "loading_page_banner": "https://p16-search-fe-static.tiktokcdn-us.com/tos-alisg-i-baf7wf9fmw-sg/e06d4221d05a4859be4def9f58c37540~tplv-baf7wf9fmw-image.image"
+    },
+    "cost_tracker": {
+      "es_cost": 28,
+      "fetch_cache_cost": 21,
+      "model_cost": 115,
+      "post_process_cost": 16,
+      "recall_cost": 118,
+      "total_cost": 281
+    },
+    "cursor": 25,
+    "extra": {
+      "latency": 281,
+      "logid": "2026032419574039DBB78DCA94031704ED",
+      "now": 1774382260807,
+      "vgeo": "VGeo-US"
+    },
+    "has_more": true,
+    "inspiration_list": [
+      {
+        "cover_image": "https://p16-common-sign.tiktokcdn-us.com/tos-maliva-p-0068/b3c2b02021e5470e9f2c8bf78aa87d0f_1641754349~tplv-tiktokx-cropcenter:405:720.jpeg?dr=9638&refresh_token=b6feab5c&x-expires=1774400400&x-signature=G8o6QpSdtIXpD6HF1LiRTDCKAjA%3D&t=4d5b0474&ps=13740610&shp=cd09eea1&shcp=cd09eea1&idc=useast5",
+        "debug_info": {
+          "creator_category": [
+            {
+              "reason": "byFollowerCnt",
+              "type": "new_creator"
+            },
+            {
+              "type": "csi_new_user"
+            }
+          ],
+          "creator_lang": {
+            "infer_languages": [
+              "en"
+            ],
+            "use_mul_lang": false
+          },
+          "experiment": {
+            "csi_csi_exp_base_trending": "csi_exp_base_trending",
+            "csi_csi_exp_group_name_3": "involve_photomode_topic",
+            "csi_csi_exp_group_name_keyword_reward_model": "keyword_reward_model_v3_1_us",
+            "csi_csi_exp_group_token_rerank": "csi_exp_group_token_rerank_v2",
+            "csi_csi_video_quality_multitask_r1335488_0_publish_count": "csi_video_quality_multitask_r1335488_0_publish_count_v2"
+          },
+          "language": "en",
+          "recall_scores": [
+            0
+          ],
+          "recall_source": [
+            "FromAnalyticsSimilarQuery"
+          ],
+          "rough_score": 0,
+          "score": 0.35140612721443176,
+          "target_score": {
+            "all_boost": 1,
+            "before_boost": 0.35140612721443176,
+            "multitasks_click_score": 0.918769359588623,
+            "multitasks_collection_score": 0.001246035099029541,
+            "multitasks_info_collection_score": 0.00019496679306030273,
+            "multitasks_info_shoot_score": 0.0015124082565307617,
+            "multitasks_shoot_score": 0.007234036922454834,
+            "multitasks_strict_publish_score": 0.9289536476135254,
+            "rank_relevance_score": 0.24222567677497864,
+            "recall_relevance_score": 0.4983566105365753
+          }
+        },
+        "dislike_option_enabled": false,
+        "favorited_updated_at": 0,
+        "inspiration_types": [
+          "search"
+        ],
+        "is_favorited": false,
+        "order_popularity_seq": [],
+        "popularity": 72,
+        "popularity_updated_at": 1774363270,
+        "popularity_v2": 196341,
+        "query_id": 7449223089587552262,
+        "query_id_str": "7449223089587552262",
+        "query_labels": [],
+        "query_text": "Apple tv ",
+        "show_ai_canvas_entry": false,
+        "sug_id_str": "8539401092451833397",
+        "textnet": {
+          "layer1": "Science and Technology",
+          "layer2": "Software",
+          "layer3": "Apps/Computer Software",
+          "layer4": "Apps/Computer Software Downloads"
+        },
+        "trending_seq": [
+          74,
+          74
+        ],
+        "trending_seq_v2": [
+          295811,
+          290912
+        ],
+        "use_csi_api_for_related_videos": false,
+        "video_num": 848
+      },
+      {
+        "cover_image": "https://p16-common-sign.tiktokcdn-us.com/tos-no1a-p-0037-no/oMBiZUX4QPBIQB2diBxIIaDysDIYYEEvaAPiX~tplv-tiktokx-cropcenter:405:720.jpeg?dr=9638&refresh_token=f9ccd6af&x-expires=1774400400&x-signature=PHOVh%2BFGuBZcl%2B9Fmma0vQw2Bd0%3D&t=4d5b0474&ps=13740610&shp=cd09eea1&shcp=cd09eea1&idc=useast5",
+        "debug_info": {
+          "creator_category": [
+            {
+              "reason": "byFollowerCnt",
+              "type": "new_creator"
+            },
+            {
+              "type": "csi_new_user"
+            }
+          ],
+          "creator_lang": {
+            "infer_languages": [
+              "en"
+            ],
+            "use_mul_lang": false
+          },
+          "experiment": {
+            "csi_csi_exp_base_trending": "csi_exp_base_trending",
+            "csi_csi_exp_group_name_3": "involve_photomode_topic",
+            "csi_csi_exp_group_name_keyword_reward_model": "keyword_reward_model_v3_1_us",
+            "csi_csi_exp_group_token_rerank": "csi_exp_group_token_rerank_v2",
+            "csi_csi_video_quality_multitask_r1335488_0_publish_count": "csi_video_quality_multitask_r1335488_0_publish_count_v2"
+          },
+          "language": "en",
+          "recall_scores": [
+            0
+          ],
+          "recall_source": [
+            "FromAnalyticsSimilarQuery"
+          ],
+          "rough_score": 0,
+          "score": 0.2867792248725891,
+          "target_score": {
+            "all_boost": 1,
+            "before_boost": 0.2867792248725891,
+            "multitasks_click_score": 0.7139211893081665,
+            "multitasks_collection_score": 0.001451045274734497,
+            "multitasks_info_collection_score": 0.00026157498359680176,
+            "multitasks_info_shoot_score": 0.002296149730682373,
+            "multitasks_shoot_score": 0.006982713937759399,
+            "multitasks_strict_publish_score": 0.8233280777931213,
+            "rank_relevance_score": 0.1014854907989502,
+            "recall_relevance_score": 0.5149813890457153
+          }
+        },
+        "dislike_option_enabled": false,
+        "favorited_updated_at": 0,
+        "inspiration_types": [
+          "search"
+        ],
+        "is_favorited": false,
+        "order_popularity_seq": [],
+        "popularity": 64,
+        "popularity_updated_at": 1774382260,
+        "popularity_v2": 48104,
+        "query_id": 7584320780683444236,
+        "query_id_str": "7584320780683444236",
+        "query_labels": [
+          "content_gap"
+        ],
+        "query_text": "AppleTVPartner",
+        "show_ai_canvas_entry": false,
+        "sug_id_str": "0",
+        "textnet": {
+          "layer1": "Science and Technology",
+          "layer2": "Software",
+          "layer3": "Apps/Computer Software",
+          "layer4": "Apps/Computer Software Downloads"
+        },
+        "trending_seq": [
+          73,
+          71
+        ],
+        "trending_seq_v2": [
+          252825,
+          157615
+        ],
+        "use_csi_api_for_related_videos": false,
+        "video_num": 0
+      }
+    ],
+    "session_refresh_index": 0,
+    "status_code": 0,
+    "status_msg": ""
+  },
+  "timestamp": 1774382261
+}

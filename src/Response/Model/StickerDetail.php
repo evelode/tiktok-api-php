@@ -5,6 +5,9 @@ namespace TikTokRESTAPI\Response\Model;
 use TikTokRESTAPI\AutoPropertyMapper;
 
 /**
+ * @method string getOwnerNickname()
+ * @method int getUserCount()
+ * @method int getVvCount()
  * StickerDetail.
  *
  * @method string               getId()
@@ -39,11 +42,15 @@ use TikTokRESTAPI\AutoPropertyMapper;
 class StickerDetail extends AutoPropertyMapper
 {
     const JSON_PROPERTY_MAP = [
+        'owner_nickname' => 'string',
+        'user_count' => 'int',
+        'vv_count' => 'int',
+
         'id'                =>  'string',
         'name'              =>  'string',
         'children'          =>  '',
         'owner_id'          =>  'string',
-        'tags'              =>  'string',
+        'tags'              =>  'string[]',
         'sec_uid'           =>  'string',
         'linked_anchors'    =>  ''
     ];

@@ -1,0 +1,438 @@
+{
+  "getUserFeed": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "query": "therock"
+    }
+  },
+  "getFollowing": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "query": "diana_abissinian_cat"
+    }
+  },
+  "searchHashtag": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "keyword": "apple"
+    }
+  },
+  "getHashtagFeedByID": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "id": "13100"
+    }
+  },
+  "getNoWatermarkUrl": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "video_url": "https://www.tiktok.com/@therock/video/7106855913906081070"
+    }
+  },
+  "getFollowersByID": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "user_id": "6950548150479684610"
+    }
+  },
+  "getStoryInfoByID": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "story_id": "7620713971015798023"
+    }
+  },
+  "getRankingInfo": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "rank_type": "8",
+      "room_id": "7620881460702087949",
+      "user_id": "7427227547880047662"
+    }
+  },
+  "getLiveFeed": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "draw_room_id": "7620936076353440533"
+    }
+  },
+  "getVideoByID": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "video_id": "7106855913906081070"
+    }
+  },
+  "getLiveInfo": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "room_id": "7620881460702087949",
+      "user_id": "7427227547880047662"
+    }
+  },
+  "getInstagramUsername": {
+    "source": "Live API probe, 2026-10-29, query=therock",
+    "http_status": 404,
+    "excerpt": true,
+    "source_request": {
+      "query": "therock",
+      "cache_timeout": 60
+    }
+  },
+  "getCommentsByUrl": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "video_url": "https://www.tiktok.com/@onerepublic/video/7141505394869898538"
+    }
+  },
+  "searchVideo": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "keyword": "appletv"
+    }
+  },
+  "getUserID": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "query": "therock"
+    }
+  },
+  "getVideoByUrl": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "video_url": "https://www.tiktok.com/@onerepublic/video/7141505394869898538"
+    }
+  },
+  "getTwitterUsername": {
+    "source": "Live API probe, 2026-10-29, query=therock",
+    "http_status": 404,
+    "excerpt": true,
+    "source_request": {
+      "query": "therock",
+      "cache_timeout": 60
+    }
+  },
+  "getStickersByID": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "sticker_ids": "1108584,1108584"
+    }
+  },
+  "getCommentsByID": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "video_id": "7141505394869898538"
+    }
+  },
+  "searchTop": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "keyword": "appletv"
+    }
+  },
+  "getUserFeedByID": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "user_id": "6745191554350760966"
+    }
+  },
+  "getNoWatermarkUrlByID": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "video_id": "7106855913906081070"
+    }
+  },
+  "getYoutubeChannel": {
+    "source": "Live API probe, 2026-10-29, query=therock",
+    "http_status": 404,
+    "excerpt": true,
+    "source_request": {
+      "query": "therock",
+      "cache_timeout": 60
+    }
+  },
+  "getBasicUserInfo": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "query": "therock"
+    }
+  },
+  "getVideoByPlaylistID": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "user_id": "6745191554350760966",
+      "playlist_id": "7359404761613208363"
+    }
+  },
+  "getLocationInfoByID": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "location_id": "22535796485353377"
+    }
+  },
+  "getMusicCharts": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {}
+  },
+  "getUnshortenedUrl": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "video_url": "https://vt.tiktok.com/ZSFx4cagA/"
+    }
+  },
+  "getUserPlaylistByID": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "user_id": "6745191554350760966",
+      "playlist_id": "7359404761613208363"
+    }
+  },
+  "getUserInfo": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "query": "therock"
+    }
+  },
+  "getMusicFeed": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "query": "6928004115846924290"
+    }
+  },
+  "searchMusic": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "keyword": "apple"
+    }
+  },
+  "searchLive": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "keyword": "apple"
+    }
+  },
+  "searchUser": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "keyword": "apple"
+    }
+  },
+  "getCommentsReplies": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "video_id": "7141505394869898538",
+      "comment_id": "7141509601794540334"
+    }
+  },
+  "getUserStories": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "user_id": "7603011916704809991"
+    }
+  },
+  "getLocationFeedByID": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "location_id": "22535796485353377"
+    }
+  },
+  "getUserInfoByID": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "user_id": "6745191554350760966"
+    }
+  },
+  "searchCommentSuggestedUsers": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "keyword": "appletv"
+    }
+  },
+  "getFollowingByID": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "user_id": "6950548150479684610"
+    }
+  },
+  "searchInsights": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "keyword": "appletv"
+    }
+  },
+  "getMusicInfo": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "query": "6928004115846924290"
+    }
+  },
+  "getHashtagInfo": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "query": "apple"
+    }
+  },
+  "getFollowers": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "query": "diana_abissinian_cat"
+    }
+  },
+  "getStickerFeedByID": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "sticker_id": "1108584"
+    }
+  },
+  "getTrendingCategoriesList": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {}
+  },
+  "getHashtagFeed": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "query": "apple"
+    }
+  },
+  "getTrendingFeed": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {}
+  },
+  "getUsernameByID": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "user_id": "6745191554350760966"
+    }
+  },
+  "getAvailableRankingList": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "room_id": "7620881460702087949",
+      "user_id": "7427227547880047662"
+    }
+  },
+  "getLiveEventInfoByID": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "event_id": "7611130821763661845"
+    }
+  },
+  "searchLocation": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "keyword": "apple"
+    }
+  },
+  "getStickerByID": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "sticker_id": "1108584"
+    }
+  },
+  "getUserPlaylists": {
+    "source": "Local Postman collection",
+    "http_status": 200,
+    "excerpt": true,
+    "source_request": {
+      "user_id": "6745191554350760966"
+    }
+  }
+}

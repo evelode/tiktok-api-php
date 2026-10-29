@@ -1,7 +1,7 @@
 <?php
 /**
  * Get non watermarked video url.
- * One request; edit the sample inputs below. LazyJsonMapper supplies the getters.
+ * Run with --offline to inspect a real saved response, or edit inputs for one live request. LazyJsonMapper supplies the getters.
  * Full query-parameter CLI: endpoints/get_no_watermark_url.php
  */
 declare(strict_types=1);
@@ -13,6 +13,9 @@ $client = exampleClient();
 $response = $client->getNoWatermarkUrl('https://www.tiktok.com/@therock/video/7106855913906081070');
 exampleCheck($response);
 
-echo 'URL: ', $response->getTiktok()?->getUrl() ?? 'not supplied', PHP_EOL;
+$download = $response->getTiktok();
+echo 'Video ID: ', $download?->getId() ?? 'not supplied', PHP_EOL;
+echo 'Playback URL: ', $download?->getUrl() ?? 'not supplied', PHP_EOL;
+// Signed CDN URLs expire. Request a fresh URL before downloading later.
 
 exampleOutput($response); // Optional full JSON: --output=response.json

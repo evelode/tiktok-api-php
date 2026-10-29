@@ -2,7 +2,7 @@
 
 The PHP client uses `sergeykomlev/lazyjsonmapper` as a core component, alongside Guzzle for HTTP. Responses are not limited to raw arrays: the API envelope and nested TikTok data are mapped to objects with IDE-visible getters, `is...()` checks, setters and preserved upstream fields.
 
-The readable [profile](../examples/getUserInfo.php), [video](../examples/getVideoByID.php), [comments](../examples/getCommentsByID.php) and [feed](../examples/getUserFeed.php) examples demonstrate these getters in executable code. The shared CLI bootstrap only handles setup and errors. `call()` also returns an `APIResponse`; earlier JSON-only examples hid this by immediately exporting the model.
+The readable [profile](../examples/getUserInfo.php), [video](../examples/getVideoByID.php), [comments](../examples/getCommentsByID.php) and [feed](../examples/getUserFeed.php) examples demonstrate these getters in executable code. The shared CLI bootstrap handles setup, errors and optional offline replay. `call()` also returns an `APIResponse`; earlier JSON-only examples hid this by immediately exporting the model.
 
 ## Model hierarchy
 
@@ -10,7 +10,7 @@ The readable [profile](../examples/getUserInfo.php), [video](../examples/getVide
 APIResponse
 ├── getStatus(), isOk(), getRateLimitReached()
 ├── getLimitsInfo() → LimitsInfo
-└── getTiktok() → TikTok
+└── getTiktok() → TikTok (scalar account and object-data endpoints use response subclasses)
     ├── getUser() → User
     ├── getAwemeDetail() → AwemeDetail
     │   ├── getAuthor() → Author
@@ -80,7 +80,7 @@ if ($response->isOk()) {
 }
 ```
 
-Only fields with a declared class in `JSON_PROPERTY_MAP` become nested model objects. Unmapped arrays/objects are preserved as raw values, so their virtual getters do not promise a typed child model. The less common endpoint examples explicitly export those payloads rather than inventing schema-specific getters.
+Only fields with a declared class in `JSON_PROPERTY_MAP` become nested model objects. Unmapped arrays/objects are preserved as raw values, so their virtual getters do not promise a typed child model. All 54 named examples now show endpoint-specific field access. The [catalogue](../examples/README.md) links to each walkthrough, actual output and saved response. The three linked-account success schemas remain unverified; their examples show captured failures.
 
 ## Raw data and unknown fields
 

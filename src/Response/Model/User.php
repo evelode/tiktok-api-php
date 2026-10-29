@@ -436,7 +436,7 @@ class User extends AutoPropertyMapper
         'comment_filter_status'         =>  'int',
         'comment_setting'               =>  'int',
         'commerce_user_level'           =>  'int',
-        'cover_url'                     =>  'Media',
+        'cover_url'                     =>  'Media[]',
         'create_time'                   =>  'int',
         'custom_verify'                 =>  'string',
         'cv_level'                      =>  'string',

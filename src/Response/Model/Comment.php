@@ -19,7 +19,7 @@ use TikTokRESTAPI\AutoPropertyMapper;
  * @method int          getStatus()
  * @method int          getStickPosition()
  * @method string       getText()
- * @method TextExtra    getTextExtra()
+ * @method TextExtra[]    getTextExtra()
  * @method User         getUser()
  * @method bool         getUserBuried()
  * @method int          getUserDigged() 
@@ -87,7 +87,7 @@ class Comment extends AutoPropertyMapper
         'status'            =>  'int',
         'stick_position'    =>  'int',
         'text'              =>  'string',
-        'text_extra'        =>  'TextExtra',
+        'text_extra'        =>  'TextExtra[]',
         'user'              =>  'User',
         'user_buried'       =>  'bool',
         'user_digged'       =>  'int'

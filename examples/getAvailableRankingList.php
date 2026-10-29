@@ -1,7 +1,7 @@
 <?php
 /**
  * Get available ranking list.
- * One request; edit the sample inputs below. LazyJsonMapper supplies the getters.
+ * Run with --offline to inspect a real saved response, or edit inputs for one live request. LazyJsonMapper supplies the getters.
  * Full query-parameter CLI: endpoints/get_available_ranking_list.php
  */
 declare(strict_types=1);
@@ -16,11 +16,12 @@ $response = $client->getAvailableRankingList([
 ]);
 exampleCheck($response);
 
-$payload = $response->getTiktok(); // TikTok model extends LazyJsonMapper.
-echo 'API status: ', $response->getStatus(), PHP_EOL;
-echo 'TikTok status: ', $payload?->getStatusCode() ?? 'not supplied', PHP_EOL;
-// This endpoint has no dedicated nested schema in the SDK yet.
-// Export its payload explicitly instead of guessing getters or model types.
-exampleJson($payload);
+foreach ($response->getTiktok()?->getData() ?? [] as $group) {
+    // This nested data object differs from the top-level data list.
+    $details = new \TikTokRESTAPI\Response\Model\RankingGroup($group->getData() ?? []);
+    foreach ($details->getTabs() ?? [] as $tab) {
+        echo 'Rank type: ', $tab->getRankType(), ' — ', $tab->getTitle(), PHP_EOL;
+    }
+}
 
 exampleOutput($response); // Optional full JSON: --output=response.json

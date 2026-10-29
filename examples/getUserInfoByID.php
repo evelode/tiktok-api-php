@@ -1,7 +1,7 @@
 <?php
 /**
  * Get user info by profile ID.
- * One request; edit the sample inputs below. LazyJsonMapper supplies the getters.
+ * Run with --offline to inspect a real saved response, or edit inputs for one live request. LazyJsonMapper supplies the getters.
  * Full query-parameter CLI: endpoints/get_user_info_by_id.php
  */
 declare(strict_types=1);

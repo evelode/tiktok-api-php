@@ -1,0 +1,137 @@
+{
+  "status": "ok",
+  "tiktok": {
+    "status_code": 0,
+    "poi_info": {
+      "poi_info": [
+        {
+          "poi_name": "Apple (centralwOrld)",
+          "poi_id": 22535865205228906,
+          "poi_type": "Home and Living",
+          "video_count": 1011,
+          "poi_location": "4, 4/1-4/2, 4 4 Thanon Ratchadamri, ห์ Pathum Wan, Krung Thep Maha Nakhon 10330, Thailand",
+          "is_collected": 0,
+          "poi_id_str": "22535865205228906",
+          "price_level": "",
+          "lat": "13.744983",
+          "lng": "100.539910",
+          "opening_time": "",
+          "search_source": "poi_search",
+          "extra": "",
+          "poi_rating": "",
+          "poi_distance": "",
+          "parent_poi": "Pathum Wan",
+          "collect_info": "{\"tt_type_code\":\"06b2a0\",\"is_tt_key_category\":1,\"tt_poi_type_name_level0\":\"Shopping\",\"tt_poi_type_name_level1\":\"Shopping\",\"poi_detail_type\":\"store\",\"is_bad_case\":1,\"poi_region_code\":\"1605651\",\"local_service_key_category\":\"Others\",\"poi_class_name\":\"Store\"}",
+          "is_fallback_header_icon": 0,
+          "third_party_url": "",
+          "local_service_key_category": "",
+          "local_service_key_category_enum": 0,
+          "total_count_of_reviews": 0,
+          "poi_hotel_star_rating": "",
+          "poi_distance_info": "",
+          "user_in_same_city": false,
+          "ttoclid": "",
+          "operating_hours": [
+            {
+              "opening_show_time": "10:00 AM – 10:00 PM",
+              "day": 3
+            }
+          ],
+          "local_service_todo_model": "Other",
+          "search_result_industry": ""
+        },
+        {
+          "poi_name": "Apple",
+          "poi_id": 42203861086154043,
+          "poi_type": "Food and Beverage Retail",
+          "video_count": 0,
+          "poi_location": "1-chōme-1-17 Ōtakara, Saga, 840-0811, Japan",
+          "is_collected": 0,
+          "poi_id_str": "42203861086154043",
+          "price_level": "",
+          "lat": "33.256368",
+          "lng": "130.301149",
+          "opening_time": "",
+          "search_source": "poi_search",
+          "extra": "",
+          "poi_rating": "",
+          "poi_distance": "",
+          "parent_poi": "Saga",
+          "collect_info": "{\"tt_type_code\":\"05d0d0\",\"is_tt_key_category\":1,\"tt_poi_type_name_level0\":\"Food and Drink\",\"tt_poi_type_name_level1\":\"Food and Drink\",\"poi_detail_type\":\"store\",\"is_bad_case\":0,\"poi_region_code\":\"1861060\",\"local_service_key_category\":\"Food and Drink\",\"poi_class_name\":\"Store\"}",
+          "is_fallback_header_icon": 0,
+          "third_party_url": "",
+          "local_service_key_category": "Food and Drink",
+          "local_service_key_category_enum": 2,
+          "total_count_of_reviews": 0,
+          "poi_hotel_star_rating": "",
+          "poi_distance_info": "",
+          "user_in_same_city": false,
+          "ttoclid": "",
+          "local_service_todo_model": "Other",
+          "search_result_industry": ""
+        }
+      ],
+      "nearby_auth": {
+        "aweme_list": null,
+        "related_word_list": null,
+        "tab_map": null,
+        "nearby_auth": {},
+        "aweme_multi_tab_list": null
+      },
+      "dynamic_patch": {
+        "aweme_list": null,
+        "related_word_list": null,
+        "tab_map": null,
+        "aweme_multi_tab_list": null
+      },
+      "local_service_info": {
+        "vertical_filter_pass_through": "",
+        "ttd_poi_id": "0"
+      }
+    },
+    "cursor": 10,
+    "has_more": 1,
+    "extra": {
+      "now": 1772638130406,
+      "logid": "202603041528492EC8CF2FC293D1CF2BD0",
+      "fatal_item_ids": [],
+      "search_request_id": "",
+      "server_stream_time": 701,
+      "api_debug_info": [
+        "654"
+      ]
+    },
+    "global_doodle_config": {
+      "keyword": "apple",
+      "display_filter_bar": 1,
+      "new_source": "switch_tab",
+      "search_channel": "tiktok_places",
+      "tns_search_result": "Pass",
+      "hide_results": false,
+      "feedback_survey": [
+        {
+          "feedback_type": "poi",
+          "multiple_choices": [
+            {
+              "key": "Unrelated location",
+              "value": "Unrelated location"
+            },
+            {
+              "key": "Location not found",
+              "value": "Location not found"
+            }
+          ],
+          "long_stress_info": null,
+          "send_us_multiple_choices": null
+        }
+      ],
+      "hit_shark": false,
+      "hit_dolphin": false
+    },
+    "feedback_type": "poi",
+    "log_pb": {
+      "impr_id": "202603041528492EC8CF2FC293D1CF2BD0"
+    }
+  },
+  "timestamp": 1772638130
+}
